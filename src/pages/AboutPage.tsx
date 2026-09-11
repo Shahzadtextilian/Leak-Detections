@@ -1,0 +1,184 @@
+import React from 'react';
+import {
+  ShieldCheck,
+  Building,
+  MapPin,
+  Phone,
+  Droplets,
+  Flame,
+  CheckCircle2,
+  Users,
+  Award,
+  ShieldAlert,
+  ArrowRight
+} from 'lucide-react';
+import { Page } from '../types';
+import { BUSINESS_INFO, CITY_HEIGHTS_AREAS } from '../data/content';
+
+interface AboutPageProps {
+  onNavigate: (page: Page) => void;
+  onOpenQuote: () => void;
+}
+
+export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate, onOpenQuote }) => {
+  return (
+    <div className="space-y-16 pb-16">
+      {/* Header */}
+      <section className="bg-slate-900 text-white py-12 lg:py-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-wrap items-center gap-2 text-xs text-slate-400 mb-4">
+            <button onClick={() => onNavigate('home')} className="hover:underline">
+              Home
+            </button>
+            <span>/</span>
+            <span className="text-white font-medium">About Us</span>
+          </div>
+
+          <div className="max-w-3xl space-y-4">
+            <span className="bg-blue-600/20 text-blue-300 text-xs font-bold px-3 py-1 rounded-full border border-blue-500/30">
+              City Heights, San Diego • Established Referral Network
+            </span>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-white">
+              Connecting City Heights with Trusted Leak Detection Specialists
+            </h1>
+            <p className="text-base text-slate-300 leading-relaxed">
+              Based at <strong>3431 43rd St, San Diego, CA 92105</strong>, Leak Detection Pro was created to solve a pressing neighborhood problem: getting prompt, non-destructive water and gas leak diagnostics when you need it most.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Transparent Business Model & Disclaimer */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="bg-amber-50/90 border-2 border-amber-300 rounded-2xl p-6 sm:p-8">
+          <div className="flex items-start gap-4">
+            <div className="p-2 rounded-xl bg-amber-200/60 text-amber-800 shrink-0">
+              <ShieldAlert className="w-7 h-7" />
+            </div>
+            <div className="space-y-2">
+              <h2 className="text-lg font-bold text-amber-950">
+                Our Transparent Lead Generation & Referral Model
+              </h2>
+              <p className="text-xs sm:text-sm text-amber-900 leading-relaxed">
+                <strong>We believe in complete consumer transparency:</strong> Leak Detection Pro is a marketing, referral, and lead generation network. We are <strong>not</strong> direct plumbing contractors, and we do not employ technicians directly. Instead, when you contact us online or via our hotline at <strong>877-701-1129</strong>, we instantly match your request with an independent, pre-screened, and state-licensed plumbing contractor who is on call in the City Heights / San Diego 92105 area.
+              </p>
+              <div className="pt-2">
+                <button
+                  onClick={() => onNavigate('disclaimer')}
+                  className="text-xs font-bold text-amber-900 underline hover:text-amber-700"
+                >
+                  Review our complete Contractor Match Terms & Disclaimer &rarr;
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Why Choose Our Network */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center max-w-2xl mx-auto mb-12">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+            Why City Heights Property Owners Trust Our Referral Network
+          </h2>
+          <p className="text-sm text-slate-600 mt-2">
+            Instead of calling ten different plumbing companies only to be put on voicemail, our network provides single-call dispatch.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200 shadow-xs space-y-3">
+            <div className="w-12 h-12 rounded-xl bg-blue-100 text-blue-600 flex items-center justify-center">
+              <ShieldCheck className="w-6 h-6" />
+            </div>
+            <h3 className="text-lg font-bold text-slate-900">Rigorous Contractor Vetting</h3>
+            <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              We exclusively route customer inquiries to independent contractors with active California State License Board (CSLB) plumbing credentials, verified commercial general liability insurance, and documented non-invasive detection equipment.
+            </p>
+          </div>
+
+          <div className="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200 shadow-xs space-y-3">
+            <div className="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-600 flex items-center justify-center">
+              <MapPin className="w-6 h-6" />
+            </div>
+            <h3 className="text-lg font-bold text-slate-900">City Heights Focus</h3>
+            <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              Positioned on the 43rd Street corridor near University Ave, we understand the specific plumbing architecture of City Heights — from 1950s copper slab foundations to older black iron gas risers that require seasoned diagnostic expertise.
+            </p>
+          </div>
+
+          <div className="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200 shadow-xs space-y-3">
+            <div className="w-12 h-12 rounded-xl bg-red-100 text-red-600 flex items-center justify-center">
+              <Phone className="w-6 h-6" />
+            </div>
+            <h3 className="text-lg font-bold text-slate-900">24/7 Rapid Emergency Match</h3>
+            <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              Water damage and gas hazards happen at night and on weekends. Our automated routing system and live phone team operate 24 hours a day, 365 days a year to ensure minimal response delay.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Business Details Summary */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="bg-slate-900 text-white rounded-3xl p-8 sm:p-12 border border-slate-800">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            <div className="lg:col-span-7 space-y-4">
+              <span className="text-xs font-bold text-blue-400 uppercase tracking-wider">
+                Official Business Information
+              </span>
+              <h3 className="text-2xl sm:text-3xl font-bold text-white">
+                Leak Detection Pro
+              </h3>
+              <p className="text-sm text-slate-300 leading-relaxed">
+                Dedicated lead referral service for residential, commercial, and property management accounts across City Heights and Greater San Diego County.
+              </p>
+
+              <div className="space-y-2 text-xs text-slate-300 pt-2">
+                <div className="flex items-center gap-2">
+                  <strong className="text-white w-28">Address:</strong>
+                  <span>{BUSINESS_INFO.fullAddress}</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <strong className="text-white w-28">Neighborhood:</strong>
+                  <span>City Heights, San Diego (Zip: 92105)</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <strong className="text-white w-28">Phone Line:</strong>
+                  <a href={BUSINESS_INFO.telLink} className="text-blue-400 font-bold hover:underline">
+                    {BUSINESS_INFO.phoneFormatted}
+                  </a>
+                </div>
+                <div className="flex items-center gap-2">
+                  <strong className="text-white w-28">Operation:</strong>
+                  <span>24 Hours / 7 Days Network Dispatch</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="lg:col-span-5 bg-slate-800 p-6 rounded-2xl border border-slate-700 space-y-4 text-center">
+              <div className="text-xs text-slate-400 uppercase font-semibold">
+                Ready to find your leak?
+              </div>
+              <div className="text-lg font-bold text-white">
+                Speak with a Local Dispatch Coordinator
+              </div>
+              <a
+                href={BUSINESS_INFO.telLink}
+                className="block w-full py-3.5 bg-red-600 hover:bg-red-700 text-white font-bold rounded-xl text-sm shadow-md"
+              >
+                Call {BUSINESS_INFO.phoneFormatted}
+              </a>
+              <button
+                onClick={onOpenQuote}
+                className="block w-full py-3 bg-slate-700 hover:bg-slate-600 text-slate-200 font-semibold rounded-xl text-xs"
+              >
+                Request Online Quote
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+};

@@ -1,0 +1,6 @@
+{
+  "name": "Leak Detection Pro - City Heights",
+  "description": "City Heights, San Diego leak detection and repair referral service connecting homeowners with certified water and gas leak specialists.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
