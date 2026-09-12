@@ -126,14 +126,6 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onOpenQuote }) =
                   <ArrowRight className="w-4 h-4" />
                 </button>
               </div>
-
-              {/* Explicit Referral Disclaimer Card in Hero */}
-              <div className="bg-slate-800/60 border border-slate-700 rounded-xl p-3.5 text-xs text-slate-300 flex items-start gap-2.5">
-                <ShieldAlert className="w-4 h-4 text-amber-400 shrink-0 mt-0.5" />
-                <p className="leading-normal">
-                  <strong className="text-amber-300">Consumer Notice:</strong> Leak Detection Pro is a marketing & referral service connecting users with licensed independent contractors. We do not provide direct plumbing or repair services.
-                </p>
-              </div>
             </div>
 
             {/* Right Col: Instant Dispatch / Quote Card */}

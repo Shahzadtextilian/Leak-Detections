@@ -60,8 +60,11 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate, onOpenQuote })
                 Our Transparent Lead Generation & Referral Model
               </h2>
               <p className="text-xs sm:text-sm text-amber-900 leading-relaxed">
-                <strong>We believe in complete consumer transparency:</strong> Leak Detection Pro is a marketing, referral, and lead generation network. We are <strong>not</strong> direct plumbing contractors, and we do not employ technicians directly. Instead, when you contact us online or via our hotline at <strong>877-701-1129</strong>, we instantly match your request with an independent, pre-screened, and state-licensed plumbing contractor who is on call in the City Heights / San Diego 92105 area.
+                <strong>We believe in complete consumer transparency:</strong> Leak Detection Pro is a marketing, referral, and lead generation network. We are <strong>not</strong> direct plumbing contractors, and we do not employ technicians directly. Instead, when you contact us online or via our hotline at <strong>{BUSINESS_INFO.phoneFormatted}</strong>, we instantly match your request with an independent, pre-screened, and state-licensed plumbing contractor who is on call in the City Heights / San Diego 92105 area.
               </p>
+              <div className="p-3 bg-amber-100/90 rounded-xl border border-amber-300/80 text-xs font-semibold text-amber-950">
+                <strong>Referral Notice:</strong> We connect City Heights residents with independent licensed contractors. We are not direct service providers.
+              </div>
               <div className="pt-2">
                 <button
                   onClick={() => onNavigate('disclaimer')}

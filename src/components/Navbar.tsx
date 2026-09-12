@@ -20,25 +20,28 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate, onOpenQ
 
   return (
     <header className="sticky top-0 z-40 bg-white border-b border-slate-200 shadow-xs">
-      {/* Top Banner: Disclaimer & Emergency Hotline */}
+      {/* Top Banner: Local Address & Emergency Hotline */}
       <div className="bg-slate-900 text-slate-200 text-xs py-1.5 px-4">
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2">
           <div className="flex items-center gap-1.5 text-center sm:text-left">
-            <Info className="w-3.5 h-3.5 text-amber-400 shrink-0" />
+            <MapPin className="w-3.5 h-3.5 text-red-400 shrink-0" />
             <span className="text-slate-300">
-              <strong className="text-amber-300 font-medium">Referral Notice:</strong> We connect City Heights residents with independent licensed contractors. We are not direct service providers.
+              Serving City Heights, San Diego (92105) &bull; 3431 43rd St
             </span>
           </div>
 
           <div className="flex items-center gap-4 text-xs font-medium">
-            <div className="flex items-center gap-1 text-slate-300">
-              <MapPin className="w-3 h-3 text-red-400" />
-              <span>City Heights, San Diego (92105)</span>
-            </div>
             <div className="flex items-center gap-1 text-emerald-400">
               <Clock className="w-3 h-3" />
-              <span>24/7 Network Dispatch</span>
+              <span>24/7 Emergency Dispatch</span>
             </div>
+            <a
+              href={BUSINESS_INFO.telLink}
+              className="text-white hover:text-blue-300 font-bold flex items-center gap-1"
+            >
+              <Phone className="w-3 h-3 text-emerald-400" />
+              <span>{BUSINESS_INFO.phoneFormatted}</span>
+            </a>
           </div>
         </div>
       </div>

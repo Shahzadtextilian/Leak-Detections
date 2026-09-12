@@ -94,11 +94,6 @@ export const WaterLeakPage: React.FC<WaterLeakPageProps> = ({ onNavigate, onOpen
                   Request Dispatch Quote
                 </button>
               </div>
-
-              {/* Disclaimer reminder */}
-              <div className="text-[11px] text-slate-300 bg-slate-800/50 p-2.5 rounded-lg border border-slate-700">
-                <strong>Referral Notice:</strong> Leak Detection Pro is an advertising & lead matching service connecting you with independent licensed California plumbers. We are not a direct plumbing service provider.
-              </div>
             </div>
 
             <div className="lg:col-span-4 bg-slate-800/80 border border-slate-700 rounded-2xl p-6 text-xs space-y-3">

@@ -56,7 +56,7 @@ export const DisclaimerPage: React.FC<DisclaimerPageProps> = ({ onNavigate, onOp
               1. Referral & Lead Generation Services
             </h3>
             <p>
-              The purpose of Leak Detection Pro (accessible via our website and telephone hotline 877-701-1129) is to assist property owners in City Heights, San Diego (92105) by connecting them with independent, third-party contractors who perform water leak detection, slab leak testing, gas leak locating, and pipe repairs. When you request service, you are requesting a referral to an independent contractor.
+              The purpose of Leak Detection Pro (accessible via our website and telephone hotline (858) 422-5102) is to assist property owners in City Heights, San Diego (92105) by connecting them with independent, third-party contractors who perform water leak detection, slab leak testing, gas leak locating, and pipe repairs. When you request service, you are requesting a referral to an independent contractor.
             </p>
           </div>
 
@@ -105,7 +105,7 @@ export const DisclaimerPage: React.FC<DisclaimerPageProps> = ({ onNavigate, onOp
           <div className="pt-6 border-t border-slate-200 text-xs text-slate-500 space-y-1">
             <p><strong>Entity:</strong> Leak Detection Pro (Lead Generation & Referral Network)</p>
             <p><strong>Physical Address:</strong> 3431 43rd St, San Diego, CA 92105</p>
-            <p><strong>Toll-Free Dispatch:</strong> (877) 701-1129</p>
+            <p><strong>Dispatch Hotline:</strong> (858) 422-5102</p>
             <p><strong>Service Location:</strong> City Heights, San Diego County, California</p>
           </div>
 

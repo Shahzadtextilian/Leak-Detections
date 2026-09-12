@@ -29,7 +29,7 @@ export const GasLeakPage: React.FC<GasLeakPageProps> = ({ onNavigate, onOpenQuot
   const gasFaqs = [
     {
       q: 'What should I do right now if I smell a strong gas odor in my house?',
-      a: '1) Do not turn light switches on or off, and do not use landline phones or lighters inside. 2) Evacuate all people and pets immediately. 3) Leave exterior doors open behind you if possible. 4) Call SDG&E from outside at 1-800-411-7343 or dial 911. 5) Call our network at 877-701-1129 to arrange an emergency licensed gas repair specialist once the immediate hazard is stabilized.'
+      a: '1) Do not turn light switches on or off, and do not use landline phones or lighters inside. 2) Evacuate all people and pets immediately. 3) Leave exterior doors open behind you if possible. 4) Call SDG&E from outside at 1-800-411-7343 or dial 911. 5) Call our network at (858) 422-5102 to arrange an emergency licensed gas repair specialist once the immediate hazard is stabilized.'
     },
     {
       q: 'SDG&E shut off my gas meter and locked it with a red tag. How do I get it restored?',
@@ -99,11 +99,6 @@ export const GasLeakPage: React.FC<GasLeakPageProps> = ({ onNavigate, onOpenQuot
                 >
                   Request Dispatch Quote
                 </button>
-              </div>
-
-              {/* Disclaimer reminder */}
-              <div className="text-[11px] text-slate-300 bg-slate-800/50 p-2.5 rounded-lg border border-slate-700">
-                <strong>Referral Notice:</strong> Leak Detection Pro is an advertising & lead matching service connecting you with independent licensed California contractors. We are not a direct service provider.
               </div>
             </div>
 
@@ -191,7 +186,7 @@ export const GasLeakPage: React.FC<GasLeakPageProps> = ({ onNavigate, onOpenQuot
                 05
               </div>
               <h4 className="font-bold text-xs text-slate-900 mb-1">Dispatch Repair</h4>
-              <p className="text-[11px] text-slate-600">Call 877-701-1129 for licensed contractor repair & certification.</p>
+              <p className="text-[11px] text-slate-600">Call (858) 422-5102 for licensed contractor repair & certification.</p>
             </div>
           </div>
         </div>
