@@ -40,44 +40,47 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onOpenQuote }) =
   return (
     <div className="space-y-16 pb-12">
       {/* 1. HERO SECTION */}
-      <section className="relative overflow-hidden bg-gradient-to-b from-slate-900 via-slate-900 to-slate-950 text-white pt-10 pb-16 lg:pt-14 lg:pb-24">
+      <section className="relative overflow-hidden bg-gradient-to-b from-slate-900 via-slate-900 to-slate-950 text-white pt-6 pb-12 sm:pt-8 sm:pb-16 lg:pt-10 lg:pb-20">
         {/* Background glow effects */}
         <div className="absolute top-0 left-1/4 w-96 h-96 bg-blue-600/15 rounded-full blur-3xl pointer-events-none" />
         <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-amber-500/10 rounded-full blur-3xl pointer-events-none" />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          {/* Breadcrumb / Local Tag */}
-          <div className="flex flex-wrap items-center gap-2 text-xs text-slate-400 mb-6">
-            <span className="flex items-center gap-1 text-blue-400 font-semibold bg-blue-950/80 px-2.5 py-1 rounded-md border border-blue-800/60">
-              <MapPin className="w-3.5 h-3.5 text-red-400" /> City Heights, San Diego • 92105
-            </span>
-            <span>&bull;</span>
-            <span className="text-slate-300">Fast Local Leak Detection</span>
-            <span>&bull;</span>
-            <span className="text-emerald-400 font-medium flex items-center gap-1">
-              <Clock className="w-3 h-3" /> Average Match Time: &lt; 15 mins
-            </span>
-          </div>
-
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-start">
             {/* Left Col: Hero Copy */}
-            <div className="lg:col-span-7 space-y-6">
-              <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-800/80 border border-slate-700 text-xs text-slate-300">
-                <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping" />
-                <span>Certified Independent Plumbers Ready on 43rd St Corridor</span>
+            <div className="lg:col-span-7 space-y-4 sm:space-y-5">
+              {/* Single Refined Status Eyebrow Badge */}
+              <div className="inline-flex flex-wrap items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-800/90 border border-slate-700/80 text-xs text-slate-200 shadow-xs backdrop-blur-xs">
+                <span className="relative flex h-2 w-2">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+                </span>
+                <span className="font-semibold text-cyan-300 flex items-center gap-1">
+                  <MapPin className="w-3.5 h-3.5 text-red-400" /> City Heights, San Diego • 92105
+                </span>
+                <span className="text-slate-600 hidden sm:inline">&bull;</span>
+                <span className="text-slate-300 hidden sm:inline">3431 43rd St Corridor</span>
+                <span className="text-slate-600">&bull;</span>
+                <span className="text-emerald-400 font-medium flex items-center gap-1">
+                  <Clock className="w-3 h-3" /> Rapid &lt; 15 Min Match
+                </span>
               </div>
 
-              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-white leading-tight">
-                City Heights <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">Water & Gas Leak</span> Detection & Repair Service
+              {/* Refined, Balanced Title with High Aesthetic Hierarchy */}
+              <h1 className="text-3xl sm:text-4xl lg:text-[42px] xl:text-[48px] font-extrabold tracking-tight text-white leading-[1.16]">
+                <span className="text-slate-100">City Heights Water &amp; Gas Leak</span>
+                <span className="block text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-sky-300 to-blue-400 mt-1 sm:mt-1.5">
+                  Detection &amp; Repair Services
+                </span>
               </h1>
 
-              <p className="text-base sm:text-lg text-slate-300 max-w-2xl leading-relaxed">
-                Suffering from an unexplained high water bill, warm flooring, or dangerous sulfur gas odor? <strong>Leak Detection Pro</strong> quickly connects property owners at 3431 43rd St and across City Heights (92105) with licensed, insured leak detection contractors equipped with acoustic sensors and thermal scanners.
+              <p className="text-sm sm:text-base text-slate-300 max-w-xl leading-relaxed">
+                Suffering from an unexplained high water bill, warm flooring, or dangerous sulfur gas odor? <strong>Leak Detection Pro</strong> connects City Heights (92105) homeowners and businesses with licensed, insured leak detection contractors equipped with acoustic ground probes and thermal FLIR cameras.
               </p>
 
               {/* Quick Trust Badges */}
-              <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2">
-                <div className="flex items-center gap-2.5 p-3 rounded-xl bg-slate-800/50 border border-slate-700/60">
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-2.5 pt-1">
+                <div className="flex items-center gap-2.5 p-2.5 rounded-xl bg-slate-800/50 border border-slate-700/60">
                   <div className="p-1.5 rounded-lg bg-blue-500/20 text-blue-400 shrink-0">
                     <Activity className="w-4 h-4" />
                   </div>
@@ -87,7 +90,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onOpenQuote }) =
                   </div>
                 </div>
 
-                <div className="flex items-center gap-2.5 p-3 rounded-xl bg-slate-800/50 border border-slate-700/60">
+                <div className="flex items-center gap-2.5 p-2.5 rounded-xl bg-slate-800/50 border border-slate-700/60">
                   <div className="p-1.5 rounded-lg bg-emerald-500/20 text-emerald-400 shrink-0">
                     <ShieldCheck className="w-4 h-4" />
                   </div>
@@ -97,7 +100,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onOpenQuote }) =
                   </div>
                 </div>
 
-                <div className="flex items-center gap-2.5 p-3 rounded-xl bg-slate-800/50 border border-slate-700/60 col-span-2 sm:col-span-1">
+                <div className="flex items-center gap-2.5 p-2.5 rounded-xl bg-slate-800/50 border border-slate-700/60 col-span-2 sm:col-span-1">
                   <div className="p-1.5 rounded-lg bg-red-500/20 text-red-400 shrink-0">
                     <Zap className="w-4 h-4" />
                   </div>
@@ -109,19 +112,19 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onOpenQuote }) =
               </div>
 
               {/* Action Buttons */}
-              <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 pt-2">
+              <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 pt-1">
                 <a
                   href={BUSINESS_INFO.telLink}
-                  className="flex items-center justify-center gap-3 bg-red-600 hover:bg-red-700 active:scale-98 text-white px-6 py-4 rounded-xl font-extrabold text-base shadow-lg shadow-red-600/30 transition-all text-center"
+                  className="flex items-center justify-center gap-2.5 bg-red-600 hover:bg-red-700 active:scale-98 text-white px-5 py-3.5 rounded-xl font-extrabold text-sm sm:text-base shadow-lg shadow-red-600/30 transition-all text-center"
                   id="hero-call-now"
                 >
-                  <Phone className="w-5 h-5 animate-pulse" />
+                  <Phone className="w-4 h-4 animate-pulse" />
                   <span>Call 24/7 Hotline: {BUSINESS_INFO.phoneFormatted}</span>
                 </a>
 
                 <button
                   onClick={() => onOpenQuote('water')}
-                  className="px-5 py-4 bg-slate-800 hover:bg-slate-700 text-white rounded-xl font-bold text-sm border border-slate-600 transition-colors flex items-center justify-center gap-2"
+                  className="px-4 py-3.5 bg-slate-800 hover:bg-slate-700 text-white rounded-xl font-bold text-sm border border-slate-600 transition-colors flex items-center justify-center gap-2"
                 >
                   <span>Request Online Quote</span>
                   <ArrowRight className="w-4 h-4" />
@@ -129,29 +132,29 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onOpenQuote }) =
               </div>
 
               {/* Authentic Equipment & Field Preview in Hero */}
-              <div className="pt-2 flex items-center gap-3">
+              <div className="pt-1 flex items-center gap-3">
                 <div className="flex -space-x-2 overflow-hidden shrink-0">
                   <img
                     src={APP_IMAGES.heroWaterLeak}
                     alt="Technician detecting slab leak"
-                    className="inline-block h-10 w-10 rounded-full ring-2 ring-slate-800 object-cover"
+                    className="inline-block h-9 w-9 rounded-full ring-2 ring-slate-800 object-cover"
                     referrerPolicy="no-referrer"
                   />
                   <img
                     src={APP_IMAGES.thermalImaging}
                     alt="Thermal imaging inspection"
-                    className="inline-block h-10 w-10 rounded-full ring-2 ring-slate-800 object-cover"
+                    className="inline-block h-9 w-9 rounded-full ring-2 ring-slate-800 object-cover"
                     referrerPolicy="no-referrer"
                   />
                   <img
                     src={APP_IMAGES.gasLeakTesting}
                     alt="Gas detector testing"
-                    className="inline-block h-10 w-10 rounded-full ring-2 ring-slate-800 object-cover"
+                    className="inline-block h-9 w-9 rounded-full ring-2 ring-slate-800 object-cover"
                     referrerPolicy="no-referrer"
                   />
                 </div>
                 <div className="text-xs text-slate-300">
-                  <span className="font-semibold text-white">Non-destructive diagnostic tools:</span> Acoustic probes, thermal imaging, & electronic gas sniffers on call.
+                  <span className="font-semibold text-white">Non-destructive tools:</span> Acoustic probes, thermal imaging, &amp; gas sniffers.
                 </div>
               </div>
             </div>
