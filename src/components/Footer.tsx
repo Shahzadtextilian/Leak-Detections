@@ -16,31 +16,6 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
   return (
     <footer className="bg-slate-950 text-slate-300 border-t border-slate-800 pt-14 pb-24 sm:pb-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* MANDATORY PROMINENT LEAD GENERATION DISCLAIMER BOX */}
-        <div className="bg-slate-900/90 border border-amber-500/40 rounded-2xl p-5 mb-12 shadow-lg">
-          <div className="flex items-start gap-3.5">
-            <div className="p-2 rounded-xl bg-amber-500/10 text-amber-400 shrink-0 mt-0.5">
-              <ShieldAlert className="w-6 h-6" />
-            </div>
-            <div>
-              <h4 className="text-base font-bold text-amber-300 tracking-tight mb-1 flex items-center gap-2">
-                Mandatory Consumer Disclosure & Lead Generation Disclaimer
-              </h4>
-              <p className="text-sm text-slate-300 leading-relaxed">
-                <strong>Leak Detection Pro is a referral advertising and lead generation service, NOT a licensed plumbing or leak detection contractor.</strong> We connect homeowners and business clients with independent, licensed, and insured plumbing and leak detection specialists operating in City Heights and San Diego County. All diagnostic evaluations, inspections, repairs, warranties, and pricing are handled directly and independently by the third-party contractor assigned to your request. We do not provide physical labor or direct contracting services.
-              </p>
-              <div className="mt-2.5">
-                <button
-                  onClick={() => handleNav('disclaimer')}
-                  className="text-xs font-semibold text-amber-400 hover:text-amber-300 underline underline-offset-4"
-                >
-                  Read our full Referral Network Terms & Contractor Match Disclosure &rarr;
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-
         {/* 4-Column Layout */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-slate-800/80">
           {/* Col 1: About & Local Presence */}

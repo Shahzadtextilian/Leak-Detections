@@ -17,6 +17,7 @@ import {
 import { Page } from '../types';
 import { BUSINESS_INFO } from '../data/content';
 import { LeadCaptureForm } from '../components/LeadCaptureForm';
+import { APP_IMAGES } from '../data/images';
 
 interface GasLeakPageProps {
   onNavigate: (page: Page) => void;
@@ -102,7 +103,18 @@ export const GasLeakPage: React.FC<GasLeakPageProps> = ({ onNavigate, onOpenQuot
               </div>
             </div>
 
-            <div className="lg:col-span-4 bg-slate-800/80 border border-slate-700 rounded-2xl p-6 text-xs space-y-3">
+            <div className="lg:col-span-4 bg-slate-800/80 border border-slate-700 rounded-2xl p-5 text-xs space-y-3 overflow-hidden">
+              <div className="relative rounded-xl overflow-hidden mb-3 border border-slate-700">
+                <img
+                  src={APP_IMAGES.gasLeakTesting}
+                  alt="Electronic combustible gas detector sniffer inspecting gas line valve"
+                  className="w-full h-40 object-cover"
+                  referrerPolicy="no-referrer"
+                />
+                <span className="absolute bottom-2 left-2 bg-slate-900/90 text-amber-300 text-[10px] font-semibold px-2 py-0.5 rounded">
+                  Digital Combustible Gas Sniffing
+                </span>
+              </div>
               <div className="text-sm font-bold text-white flex items-center gap-2">
                 <ShieldCheck className="w-4 h-4 text-amber-400" />
                 <span>Gas Diagnostic Standards</span>
@@ -203,6 +215,35 @@ export const GasLeakPage: React.FC<GasLeakPageProps> = ({ onNavigate, onOpenQuot
               <p className="text-sm text-slate-600 leading-relaxed mb-6">
                 Gas line systems require licensed technical precision. The independent contractors in our City Heights network are certified to test and locate leaks across natural gas and propane infrastructure.
               </p>
+
+              {/* Equipment Photo Cards */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+                <div className="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-xs">
+                  <img
+                    src={APP_IMAGES.gasLeakTesting}
+                    alt="Electronic gas sniffer detecting valve leak"
+                    className="w-full h-36 object-cover"
+                    referrerPolicy="no-referrer"
+                  />
+                  <div className="p-3">
+                    <div className="font-bold text-xs text-slate-900">Combustible Gas Sniffer Wand</div>
+                    <div className="text-[11px] text-slate-500 mt-0.5">Detects PPM natural gas and propane levels</div>
+                  </div>
+                </div>
+
+                <div className="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-xs">
+                  <img
+                    src={APP_IMAGES.plumberInspection}
+                    alt="Certified plumber inspecting gas line manifold"
+                    className="w-full h-36 object-cover"
+                    referrerPolicy="no-referrer"
+                  />
+                  <div className="p-3">
+                    <div className="font-bold text-xs text-slate-900">Licensed Gas Contractor Testing</div>
+                    <div className="text-[11px] text-slate-500 mt-0.5">Complete SDG&E clearance documentation</div>
+                  </div>
+                </div>
+              </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="bg-white p-5 rounded-xl border border-slate-200 shadow-xs">

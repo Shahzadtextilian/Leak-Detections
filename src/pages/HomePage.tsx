@@ -22,6 +22,7 @@ import {
 import { Page } from '../types';
 import { BUSINESS_INFO, FAQ_ITEMS, TESTIMONIALS, CITY_HEIGHTS_AREAS } from '../data/content';
 import { LeadCaptureForm } from '../components/LeadCaptureForm';
+import { APP_IMAGES } from '../data/images';
 
 interface HomePageProps {
   onNavigate: (page: Page) => void;
@@ -126,6 +127,33 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onOpenQuote }) =
                   <ArrowRight className="w-4 h-4" />
                 </button>
               </div>
+
+              {/* Authentic Equipment & Field Preview in Hero */}
+              <div className="pt-2 flex items-center gap-3">
+                <div className="flex -space-x-2 overflow-hidden shrink-0">
+                  <img
+                    src={APP_IMAGES.heroWaterLeak}
+                    alt="Technician detecting slab leak"
+                    className="inline-block h-10 w-10 rounded-full ring-2 ring-slate-800 object-cover"
+                    referrerPolicy="no-referrer"
+                  />
+                  <img
+                    src={APP_IMAGES.thermalImaging}
+                    alt="Thermal imaging inspection"
+                    className="inline-block h-10 w-10 rounded-full ring-2 ring-slate-800 object-cover"
+                    referrerPolicy="no-referrer"
+                  />
+                  <img
+                    src={APP_IMAGES.gasLeakTesting}
+                    alt="Gas detector testing"
+                    className="inline-block h-10 w-10 rounded-full ring-2 ring-slate-800 object-cover"
+                    referrerPolicy="no-referrer"
+                  />
+                </div>
+                <div className="text-xs text-slate-300">
+                  <span className="font-semibold text-white">Non-destructive diagnostic tools:</span> Acoustic probes, thermal imaging, & electronic gas sniffers on call.
+                </div>
+              </div>
             </div>
 
             {/* Right Col: Instant Dispatch / Quote Card */}
@@ -152,8 +180,22 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onOpenQuote }) =
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Card 1: Water Leak Detection */}
-          <div className="bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow p-6 sm:p-8 flex flex-col justify-between">
+          <div className="bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow p-6 sm:p-8 flex flex-col justify-between overflow-hidden">
             <div>
+              {/* Authentic Leak Detection Photo */}
+              <div className="relative rounded-xl overflow-hidden mb-5 border border-slate-200 shadow-xs">
+                <img
+                  src={APP_IMAGES.heroWaterLeak}
+                  alt="Acoustic ground sensor water leak detection under slab floor"
+                  className="w-full h-52 object-cover transition-transform duration-300 hover:scale-102"
+                  referrerPolicy="no-referrer"
+                />
+                <div className="absolute bottom-2 left-2 bg-slate-900/85 backdrop-blur-xs text-white text-[11px] font-semibold px-2.5 py-1 rounded-md flex items-center gap-1.5">
+                  <Activity className="w-3.5 h-3.5 text-cyan-400" />
+                  <span>Acoustic Ground Sensor Testing</span>
+                </div>
+              </div>
+
               <div className="flex items-center justify-between gap-4 mb-4">
                 <div className="w-12 h-12 rounded-xl bg-blue-100 text-blue-600 flex items-center justify-center">
                   <Droplets className="w-7 h-7" />
@@ -216,8 +258,22 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onOpenQuote }) =
           </div>
 
           {/* Card 2: Gas Leak Detection */}
-          <div className="bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow p-6 sm:p-8 flex flex-col justify-between">
+          <div className="bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow p-6 sm:p-8 flex flex-col justify-between overflow-hidden">
             <div>
+              {/* Authentic Gas Leak Testing Photo */}
+              <div className="relative rounded-xl overflow-hidden mb-5 border border-slate-200 shadow-xs">
+                <img
+                  src={APP_IMAGES.gasLeakTesting}
+                  alt="Electronic combustible gas detector sniffer inspecting gas meter line"
+                  className="w-full h-52 object-cover transition-transform duration-300 hover:scale-102"
+                  referrerPolicy="no-referrer"
+                />
+                <div className="absolute bottom-2 left-2 bg-slate-900/85 backdrop-blur-xs text-white text-[11px] font-semibold px-2.5 py-1 rounded-md flex items-center gap-1.5">
+                  <Flame className="w-3.5 h-3.5 text-amber-400" />
+                  <span>Digital Combustible Gas Sniffing</span>
+                </div>
+              </div>
+
               <div className="flex items-center justify-between gap-4 mb-4">
                 <div className="w-12 h-12 rounded-xl bg-amber-100 text-amber-600 flex items-center justify-center">
                   <Flame className="w-7 h-7" />
@@ -276,6 +332,129 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onOpenQuote }) =
               >
                 Get Gas Quote
               </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 2B. DIAGNOSTIC TECHNOLOGY SHOWCASE GALLERY */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="bg-gradient-to-b from-slate-900 to-slate-950 text-white rounded-3xl p-6 sm:p-10 border border-slate-800 shadow-xl">
+          <div className="text-center max-w-3xl mx-auto mb-10">
+            <span className="text-xs font-bold uppercase tracking-wider text-cyan-400 bg-cyan-950/80 px-3 py-1 rounded-full border border-cyan-800">
+              State-Of-The-Art Equipment
+            </span>
+            <h2 className="text-2xl sm:text-3xl font-extrabold text-white mt-3 tracking-tight">
+              Advanced Non-Destructive Leak Detection Technology
+            </h2>
+            <p className="text-sm text-slate-300 mt-2 leading-relaxed">
+              We connect City Heights property owners with licensed specialists who use diagnostic sensors to pinpoint leaks within inches before tearing up floors, slabs, or drywall.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {/* Equipment 1: Acoustic */}
+            <div className="bg-slate-800/80 border border-slate-700 rounded-2xl overflow-hidden flex flex-col group">
+              <div className="relative h-44 overflow-hidden">
+                <img
+                  src={APP_IMAGES.heroWaterLeak}
+                  alt="Acoustic ground microphone sensor on concrete floor"
+                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  referrerPolicy="no-referrer"
+                />
+                <span className="absolute top-2 left-2 bg-blue-600 text-white text-[10px] font-bold px-2 py-0.5 rounded">
+                  Acoustic Probe
+                </span>
+              </div>
+              <div className="p-4 flex-1 flex flex-col justify-between space-y-2">
+                <div>
+                  <h4 className="font-bold text-sm text-white">Electro-Acoustic Ground Sensor</h4>
+                  <p className="text-xs text-slate-300 mt-1 leading-relaxed">
+                    Amplifies micro-vibrations of pressurized water rushing through pinhole pipe ruptures under concrete.
+                  </p>
+                </div>
+                <div className="text-[11px] text-cyan-300 font-medium pt-2 border-t border-slate-700">
+                  Pinpoint accuracy: within 1-2 inches
+                </div>
+              </div>
+            </div>
+
+            {/* Equipment 2: Thermal Camera */}
+            <div className="bg-slate-800/80 border border-slate-700 rounded-2xl overflow-hidden flex flex-col group">
+              <div className="relative h-44 overflow-hidden">
+                <img
+                  src={APP_IMAGES.thermalImaging}
+                  alt="FLIR infrared thermal camera inspecting drywall water leak"
+                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  referrerPolicy="no-referrer"
+                />
+                <span className="absolute top-2 left-2 bg-purple-600 text-white text-[10px] font-bold px-2 py-0.5 rounded">
+                  Thermal FLIR
+                </span>
+              </div>
+              <div className="p-4 flex-1 flex flex-col justify-between space-y-2">
+                <div>
+                  <h4 className="font-bold text-sm text-white">Infrared Thermal Imaging</h4>
+                  <p className="text-xs text-slate-300 mt-1 leading-relaxed">
+                    Maps temperature variations behind walls and ceilings to detect hidden moisture plumes without drilling.
+                  </p>
+                </div>
+                <div className="text-[11px] text-cyan-300 font-medium pt-2 border-t border-slate-700">
+                  Zero wall damage inspection
+                </div>
+              </div>
+            </div>
+
+            {/* Equipment 3: Gas Sniffer */}
+            <div className="bg-slate-800/80 border border-slate-700 rounded-2xl overflow-hidden flex flex-col group">
+              <div className="relative h-44 overflow-hidden">
+                <img
+                  src={APP_IMAGES.gasLeakTesting}
+                  alt="Combustible gas electronic detector wand inspecting brass valve"
+                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  referrerPolicy="no-referrer"
+                />
+                <span className="absolute top-2 left-2 bg-amber-600 text-white text-[10px] font-bold px-2 py-0.5 rounded">
+                  Gas Detector
+                </span>
+              </div>
+              <div className="p-4 flex-1 flex flex-col justify-between space-y-2">
+                <div>
+                  <h4 className="font-bold text-sm text-white">Digital Gas Sniffer Wand</h4>
+                  <p className="text-xs text-slate-300 mt-1 leading-relaxed">
+                    Detects trace methane and propane concentrations down to 1 PPM around appliance valves and meter fittings.
+                  </p>
+                </div>
+                <div className="text-[11px] text-amber-300 font-medium pt-2 border-t border-slate-700">
+                  Instant hazardous gas alert
+                </div>
+              </div>
+            </div>
+
+            {/* Equipment 4: Licensed Plumber */}
+            <div className="bg-slate-800/80 border border-slate-700 rounded-2xl overflow-hidden flex flex-col group">
+              <div className="relative h-44 overflow-hidden">
+                <img
+                  src={APP_IMAGES.plumberInspection}
+                  alt="Certified licensed plumbing technician inspecting water manifold"
+                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  referrerPolicy="no-referrer"
+                />
+                <span className="absolute top-2 left-2 bg-emerald-600 text-white text-[10px] font-bold px-2 py-0.5 rounded">
+                  Verified Pros
+                </span>
+              </div>
+              <div className="p-4 flex-1 flex flex-col justify-between space-y-2">
+                <div>
+                  <h4 className="font-bold text-sm text-white">CSLB Licensed Specialists</h4>
+                  <p className="text-xs text-slate-300 mt-1 leading-relaxed">
+                    Background-verified, insured contractors with years of field experience in San Diego residential plumbing.
+                  </p>
+                </div>
+                <div className="text-[11px] text-emerald-300 font-medium pt-2 border-t border-slate-700">
+                  3431 43rd St, City Heights base
+                </div>
+              </div>
             </div>
           </div>
         </div>

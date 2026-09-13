@@ -19,6 +19,7 @@ import {
 import { Page } from '../types';
 import { BUSINESS_INFO } from '../data/content';
 import { LeadCaptureForm } from '../components/LeadCaptureForm';
+import { APP_IMAGES } from '../data/images';
 
 interface WaterLeakPageProps {
   onNavigate: (page: Page) => void;
@@ -96,7 +97,18 @@ export const WaterLeakPage: React.FC<WaterLeakPageProps> = ({ onNavigate, onOpen
               </div>
             </div>
 
-            <div className="lg:col-span-4 bg-slate-800/80 border border-slate-700 rounded-2xl p-6 text-xs space-y-3">
+            <div className="lg:col-span-4 bg-slate-800/80 border border-slate-700 rounded-2xl p-5 text-xs space-y-3 overflow-hidden">
+              <div className="relative rounded-xl overflow-hidden mb-3 border border-slate-700">
+                <img
+                  src={APP_IMAGES.heroWaterLeak}
+                  alt="Acoustic ground sensor detecting slab water leak"
+                  className="w-full h-40 object-cover"
+                  referrerPolicy="no-referrer"
+                />
+                <span className="absolute bottom-2 left-2 bg-slate-900/90 text-cyan-300 text-[10px] font-semibold px-2 py-0.5 rounded">
+                  Acoustic Slab Leak Testing
+                </span>
+              </div>
               <div className="text-sm font-bold text-white flex items-center gap-2">
                 <ShieldCheck className="w-4 h-4 text-emerald-400" />
                 <span>Fast Diagnostic Match Promise</span>
@@ -189,6 +201,36 @@ export const WaterLeakPage: React.FC<WaterLeakPageProps> = ({ onNavigate, onOpen
                 <Zap className="w-5 h-5 text-blue-600" />
                 Cutting-Edge Detection Technology Deployed
               </h3>
+
+              {/* Equipment Visual Cards */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+                <div className="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-xs">
+                  <img
+                    src={APP_IMAGES.heroWaterLeak}
+                    alt="Technician operating acoustic leak locator on concrete floor"
+                    className="w-full h-36 object-cover"
+                    referrerPolicy="no-referrer"
+                  />
+                  <div className="p-3">
+                    <div className="font-bold text-xs text-slate-900">Acoustic Listening Probes</div>
+                    <div className="text-[11px] text-slate-500 mt-0.5">Captures underground pressurized hiss</div>
+                  </div>
+                </div>
+
+                <div className="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-xs">
+                  <img
+                    src={APP_IMAGES.thermalImaging}
+                    alt="FLIR thermal camera detecting cold and hot water spread in wall"
+                    className="w-full h-36 object-cover"
+                    referrerPolicy="no-referrer"
+                  />
+                  <div className="p-3">
+                    <div className="font-bold text-xs text-slate-900">FLIR Infrared Scanners</div>
+                    <div className="text-[11px] text-slate-500 mt-0.5">Visualizes sub-surface moisture gradients</div>
+                  </div>
+                </div>
+              </div>
+
               <div className="space-y-4 text-xs sm:text-sm text-slate-700">
                 <div className="flex items-start gap-3">
                   <div className="p-1 rounded-md bg-blue-100 text-blue-700 font-bold shrink-0 mt-0.5">01</div>

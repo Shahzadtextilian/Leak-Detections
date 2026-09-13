@@ -14,6 +14,7 @@ import {
 } from 'lucide-react';
 import { Page } from '../types';
 import { BUSINESS_INFO, CITY_HEIGHTS_AREAS } from '../data/content';
+import { APP_IMAGES } from '../data/images';
 
 interface AboutPageProps {
   onNavigate: (page: Page) => void;
@@ -34,43 +35,72 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate, onOpenQuote })
             <span className="text-white font-medium">About Us</span>
           </div>
 
-          <div className="max-w-3xl space-y-4">
-            <span className="bg-blue-600/20 text-blue-300 text-xs font-bold px-3 py-1 rounded-full border border-blue-500/30">
-              City Heights, San Diego • Established Referral Network
-            </span>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-white">
-              Connecting City Heights with Trusted Leak Detection Specialists
-            </h1>
-            <p className="text-base text-slate-300 leading-relaxed">
-              Based at <strong>3431 43rd St, San Diego, CA 92105</strong>, Leak Detection Pro was created to solve a pressing neighborhood problem: getting prompt, non-destructive water and gas leak diagnostics when you need it most.
-            </p>
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            <div className="lg:col-span-7 space-y-4">
+              <span className="bg-blue-600/20 text-blue-300 text-xs font-bold px-3 py-1 rounded-full border border-blue-500/30">
+                City Heights, San Diego • Established Referral Network
+              </span>
+              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-white">
+                Connecting City Heights with Trusted Leak Detection Specialists
+              </h1>
+              <p className="text-base text-slate-300 leading-relaxed">
+                Based at <strong>3431 43rd St, San Diego, CA 92105</strong>, Leak Detection Pro was created to solve a pressing neighborhood problem: getting prompt, non-destructive water and gas leak diagnostics when you need it most.
+              </p>
+              <div className="flex items-center gap-4 text-xs text-slate-300 pt-2">
+                <div className="flex items-center gap-1.5">
+                  <ShieldCheck className="w-4 h-4 text-emerald-400" />
+                  <span>Licensed Independent Contractors</span>
+                </div>
+                <div className="flex items-center gap-1.5">
+                  <CheckCircle2 className="w-4 h-4 text-cyan-400" />
+                  <span>Non-Invasive Acoustic & Thermal Tools</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="lg:col-span-5">
+              <div className="relative rounded-2xl overflow-hidden border border-slate-700 shadow-2xl">
+                <img
+                  src={APP_IMAGES.plumberInspection}
+                  alt="Verified plumbing specialist inspecting residential water system in City Heights"
+                  className="w-full h-64 sm:h-72 object-cover"
+                  referrerPolicy="no-referrer"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent flex items-end p-4">
+                  <div className="text-white">
+                    <div className="text-xs font-bold">Local Verified Plumbing Contractors</div>
+                    <div className="text-[11px] text-slate-300">Ready for non-invasive water & gas leak dispatch</div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Transparent Business Model & Disclaimer */}
+      {/* Transparent Business Model & Mandatory Consumer Disclosure */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="bg-amber-50/90 border-2 border-amber-300 rounded-2xl p-6 sm:p-8">
+        <div className="bg-amber-50/95 border-2 border-amber-300 rounded-2xl p-6 sm:p-8 shadow-xs">
           <div className="flex items-start gap-4">
-            <div className="p-2 rounded-xl bg-amber-200/60 text-amber-800 shrink-0">
+            <div className="p-2.5 rounded-xl bg-amber-200/70 text-amber-800 shrink-0 mt-0.5">
               <ShieldAlert className="w-7 h-7" />
             </div>
-            <div className="space-y-2">
-              <h2 className="text-lg font-bold text-amber-950">
-                Our Transparent Lead Generation & Referral Model
+            <div className="space-y-3">
+              <h2 className="text-lg sm:text-xl font-bold text-amber-950">
+                Mandatory Consumer Disclosure & Lead Generation Disclaimer
               </h2>
               <p className="text-xs sm:text-sm text-amber-900 leading-relaxed">
-                <strong>We believe in complete consumer transparency:</strong> Leak Detection Pro is a marketing, referral, and lead generation network. We are <strong>not</strong> direct plumbing contractors, and we do not employ technicians directly. Instead, when you contact us online or via our hotline at <strong>{BUSINESS_INFO.phoneFormatted}</strong>, we instantly match your request with an independent, pre-screened, and state-licensed plumbing contractor who is on call in the City Heights / San Diego 92105 area.
+                <strong>Leak Detection Pro is a referral advertising and lead generation service, NOT a licensed plumbing or leak detection contractor.</strong> We connect homeowners and business clients with independent, licensed, and insured plumbing and leak detection specialists operating in City Heights and San Diego County. All diagnostic evaluations, inspections, repairs, warranties, and pricing are handled directly and independently by the third-party contractor assigned to your request. We do not provide physical labor or direct contracting services.
               </p>
               <div className="p-3 bg-amber-100/90 rounded-xl border border-amber-300/80 text-xs font-semibold text-amber-950">
                 <strong>Referral Notice:</strong> We connect City Heights residents with independent licensed contractors. We are not direct service providers.
               </div>
-              <div className="pt-2">
+              <div className="pt-1">
                 <button
                   onClick={() => onNavigate('disclaimer')}
-                  className="text-xs font-bold text-amber-900 underline hover:text-amber-700"
+                  className="text-xs font-semibold text-amber-900 hover:text-amber-700 underline underline-offset-4"
                 >
-                  Review our complete Contractor Match Terms & Disclaimer &rarr;
+                  Read our full Referral Network Terms & Contractor Match Disclosure &rarr;
                 </button>
               </div>
             </div>

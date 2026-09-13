@@ -14,6 +14,7 @@ import {
 import { Page } from '../types';
 import { BUSINESS_INFO, CITY_HEIGHTS_AREAS } from '../data/content';
 import { LeadCaptureForm } from '../components/LeadCaptureForm';
+import { APP_IMAGES } from '../data/images';
 
 interface ContactPageProps {
   onNavigate: (page: Page) => void;
@@ -105,15 +106,28 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate, onOpenQuot
                 </div>
               </div>
 
-              {/* Explicit Disclaimer Notice */}
-              <div className="bg-amber-50 border border-amber-300 rounded-xl p-4 text-xs text-amber-900 space-y-1">
-                <div className="font-bold flex items-center gap-1.5 text-amber-950">
-                  <ShieldAlert className="w-4 h-4 text-amber-600" />
-                  Lead Generation & Referral Disclaimer
+              {/* Professional Dispatch & Inspection Photo Card */}
+              <div className="rounded-xl overflow-hidden border border-slate-200 shadow-xs bg-slate-50">
+                <div className="relative h-44 overflow-hidden">
+                  <img
+                    src={APP_IMAGES.plumberInspection}
+                    alt="Licensed plumbing technician on site for leak inspection in City Heights"
+                    className="w-full h-full object-cover"
+                    referrerPolicy="no-referrer"
+                  />
+                  <span className="absolute bottom-2 left-2 bg-slate-900/85 text-emerald-300 text-[10px] font-bold px-2 py-0.5 rounded flex items-center gap-1">
+                    <CheckCircle2 className="w-3 h-3" />
+                    <span>CSLB Licensed Specialists</span>
+                  </span>
                 </div>
-                <p className="leading-relaxed">
-                  Leak Detection Pro is a lead referral network. We are not a direct plumbing company. Calling this phone number or submitting a web form matches you with independent, licensed local contractors.
-                </p>
+                <div className="p-4 text-xs text-slate-600 space-y-1">
+                  <div className="font-bold text-slate-900 flex items-center gap-1.5">
+                    Fast Local Diagnostic Dispatch
+                  </div>
+                  <p className="leading-relaxed">
+                    Our City Heights coordination desk routes incoming calls directly to certified local leak locators equipped with acoustic microphones, thermal FLIR cameras, and combustible gas sensors.
+                  </p>
+                </div>
               </div>
             </div>
 
