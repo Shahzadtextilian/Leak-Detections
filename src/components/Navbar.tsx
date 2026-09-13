@@ -68,7 +68,7 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate, onOpenQ
                 </span>
               </div>
               <p className="text-xs text-slate-500 hidden sm:block">
-                San Diego Water & Gas Leak Contractor Referral Network
+                San Diego Water & Gas Leak Detection & Repair
               </p>
             </div>
           </button>

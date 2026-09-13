@@ -51,7 +51,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onOpenQuote }) =
               <MapPin className="w-3.5 h-3.5 text-red-400" /> City Heights, San Diego • 92105
             </span>
             <span>&bull;</span>
-            <span className="text-slate-300">Local Contractor Referral Network</span>
+            <span className="text-slate-300">Fast Local Leak Detection</span>
             <span>&bull;</span>
             <span className="text-emerald-400 font-medium flex items-center gap-1">
               <Clock className="w-3 h-3" /> Average Match Time: &lt; 15 mins
@@ -472,7 +472,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onOpenQuote }) =
             Trusted by Your Neighbors in 92105
           </h2>
           <p className="text-sm text-slate-600 mt-1">
-            See how our referral network connected local San Diego residents with rapid leak solutions.
+            See how our local leak specialists helped San Diego residents with rapid leak solutions.
           </p>
         </div>
 
@@ -518,7 +518,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onOpenQuote }) =
             City Heights Leak Detection FAQs
           </h2>
           <p className="text-sm text-slate-600 mt-1">
-            Clear answers about pricing, referral process, technology, and gas emergency protocols.
+            Clear answers about pricing, service process, technology, and gas emergency protocols.
           </p>
         </div>
 

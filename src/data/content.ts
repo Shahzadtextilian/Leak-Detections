@@ -1,6 +1,6 @@
 export const BUSINESS_INFO = {
   name: 'Leak Detection Pro',
-  tagline: 'Fast Water & Gas Leak Detection Contractor Referral Network',
+  tagline: 'Fast Water & Gas Leak Detection & Repair Services in City Heights',
   phone: '858-422-5102',
   phoneFormatted: '(858) 422-5102',
   telLink: 'tel:18584225102',

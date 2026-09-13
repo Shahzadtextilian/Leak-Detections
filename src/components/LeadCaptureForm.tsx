@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Phone, CheckCircle2, ShieldAlert, Clock, AlertTriangle, Droplets, Flame, Search, ChevronRight } from 'lucide-react';
+import { Phone, CheckCircle2, ShieldAlert, ShieldCheck, Clock, AlertTriangle, Droplets, Flame, Search, ChevronRight } from 'lucide-react';
 import { BUSINESS_INFO } from '../data/content';
 
 interface LeadCaptureFormProps {
@@ -74,10 +74,10 @@ export const LeadCaptureForm: React.FC<LeadCaptureFormProps> = ({
           Dispatch Ticket: {submittedTicket.id}
         </span>
         <h3 className="text-2xl font-bold text-slate-900 tracking-tight mb-2">
-          Contractor Referral Dispatched
+          Service Request Dispatched
         </h3>
         <p className="text-sm text-slate-600 max-w-md mx-auto mb-6 leading-relaxed">
-          Thank you, <strong>{name}</strong>. Your request for <span className="capitalize font-semibold">{serviceType} Leak Detection</span> in City Heights (Zip: {zip}) has been matched with our nearest licensed plumbing specialist.
+          Thank you, <strong>{name}</strong>. Your request for <span className="capitalize font-semibold">{serviceType} Leak Detection</span> in City Heights (Zip: {zip}) has been received and scheduled for immediate dispatch.
         </p>
 
         <div className="bg-slate-50 border border-slate-200 rounded-xl p-4 mb-6 text-left text-xs space-y-2">
@@ -86,7 +86,7 @@ export const LeadCaptureForm: React.FC<LeadCaptureFormProps> = ({
             <strong className="text-slate-900 font-semibold">{urgency === 'emergency' ? '15 - 30 minutes' : 'Within 1 - 2 hours'}</strong>
           </div>
           <div className="flex justify-between text-slate-600">
-            <span>Referral Service:</span>
+            <span>Service Center:</span>
             <span className="text-slate-900 font-medium">Leak Detection Pro (3431 43rd St, City Heights)</span>
           </div>
           <div className="flex justify-between text-slate-600">
@@ -118,7 +118,7 @@ export const LeadCaptureForm: React.FC<LeadCaptureFormProps> = ({
         </div>
 
         <p className="text-[11px] text-slate-400 mt-5 leading-tight">
-          Disclaimer reminder: Leak Detection Pro connects you with independent licensed contractors and does not directly perform repair work.
+          Leak Detection Pro connects you with verified local leak detection specialists in City Heights, San Diego.
         </p>
       </div>
     );
@@ -342,14 +342,10 @@ export const LeadCaptureForm: React.FC<LeadCaptureFormProps> = ({
         </div>
       </div>
 
-      {/* Explicit Disclaimer & Lead Generation Notice */}
-      <div className="bg-amber-50/90 border border-amber-300/80 rounded-xl p-3 mb-4 text-[11px] text-amber-900 flex items-start gap-2">
-        <ShieldAlert className="w-4 h-4 text-amber-600 shrink-0 mt-0.5" />
-        <div>
-          <p className="leading-snug">
-            <strong>Referral Notice:</strong> By submitting, you authorize Leak Detection Pro to share your information with licensed independent local plumbing and leak contractors in City Heights to fulfill your request. We are a lead generation referral service, not a direct plumbing provider.
-          </p>
-        </div>
+      {/* Privacy Guarantee */}
+      <div className="flex items-center gap-1.5 text-[11px] text-slate-500 mb-4 justify-center">
+        <ShieldCheck className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
+        <span>Your information is protected and used solely to fulfill your service request.</span>
       </div>
 
       {/* Submit Button */}
