@@ -31,6 +31,20 @@ export default function App() {
     return () => window.removeEventListener('hashchange', handleHash);
   }, []);
 
+  // Synchronize concise, high-ranking document titles (under 60 characters)
+  useEffect(() => {
+    const titles: Record<Page, string> = {
+      'home': 'Leak Detection Pro | City Heights, San Diego CA',
+      'water-leak': 'Water Leak Detection | City Heights, San Diego',
+      'gas-leak': 'Gas Leak Detection | City Heights, San Diego',
+      'about': 'About Us | Leak Detection Pro City Heights',
+      'contact': 'Contact Us | Leak Detection Pro City Heights',
+      'privacy': 'Privacy Policy | Leak Detection Pro',
+      'disclaimer': 'Legal Disclaimers | Leak Detection Pro'
+    };
+    document.title = titles[currentPage] || titles.home;
+  }, [currentPage]);
+
   const handleNavigate = (page: Page) => {
     setCurrentPage(page);
     window.location.hash = page === 'home' ? '' : page;

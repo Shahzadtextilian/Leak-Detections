@@ -1,0 +1,58 @@
+# Leak Detection Pro — City Heights, San Diego CA
+
+> 24/7 Water and Gas Leak Detection Referral & Dispatch Network serving City Heights (92105) and the greater San Diego metropolitan area. Connects property owners with pre-screened, licensed, and insured plumbing and leak detection contractors utilizing non-invasive acoustic, thermal, and tracer diagnostic technology.
+
+## Overview
+- **Service Name:** Leak Detection Pro
+- **Location:** 3431 43rd St, San Diego, CA 92105 (City Heights)
+- **Phone:** (858) 422-5102
+- **Website:** https://leakdetectioncityheightsca.vercel.app/
+- **Availability:** 24 Hours a Day, 7 Days a Week, 365 Days a Year
+- **Service Type:** Pre-screened Contractor Referral & Lead Generation Network
+- **Target Zip Codes:** 92105, 92104, 92115, 92116, 92102, 92113, 92114
+
+## Primary Services
+
+### Water Leak Detection & Diagnostic Locating
+- **Slab Leak Pinpointing:** High-precision acoustic ground microphones and ultrasonic listening sensors locate sub-slab copper pipe pinhole leaks without destructive trenching.
+- **Thermal Infrared Imaging:** FLIR cameras identify hidden moisture behind drywall, ceilings, and under hardwood or tile flooring by detecting thermal temperature anomalies.
+- **Underground Supply Line Tracing:** Non-destructive locating of broken municipal main lines, yard supply pipes, and landscape irrigation system leaks.
+- **Water Bill Spike Investigations:** Systematic meter isolation and hydrostatic pressure testing to identify silent, high-volume water loss.
+
+### Gas Leak Detection & Emergency Safety Coordination
+- **Combustible Gas Sniffing:** Electronic sensors calibrate for trace methane and propane concentrations to pinpoint leaks along exposed or concealed black iron pipe.
+- **Line Pressure Decay Testing:** Digital manometer gauges certify gas pipe integrity before and after repairs.
+- **Appliance & Line Inspections:** Testing gas water heaters, furnaces, cooktops, outdoor grills, and meter connection joints.
+- **Utility Coordination:** Assisting with San Diego Gas & Electric (SDG&E) red-tag clearance, pressure certification, and municipal permits.
+
+## Non-Destructive Equipment & Methods
+1. **Electro-Acoustic Ground Probes:** Amplify subsurface water pressurized escaping sound frequencies.
+2. **Thermal Imaging (FLIR):** Visualizes moisture signatures and hot water lines behind finished surfaces.
+3. **Helium / Hydrogen Tracer Gas:** Injected into pressurized dry lines to escape through minute cracks and be identified by sniffing probes at parts-per-million levels.
+4. **Miniature Pipe Inspection Cameras:** High-definition video inspection inside drainage and sewer conduits.
+
+## Service Areas in City Heights & Metro San Diego
+- **City Heights Core (92105):** 43rd St corridor, University Ave, and Fairmount Ave commercial/residential zones.
+- **Teralta East & West:** Historic craftsman bungalows and multi-family residential parcels.
+- **Castle & Azalea Park:** Canyon-side residences vulnerable to ground shifting and aging galvanized supply pipes.
+- **Cherokee Point & Colina Park:** Multi-family apartment complexes, retail plazas, and single-family dwellings.
+- **Surrounding San Diego Neighborhoods:** North Park (92104), Normal Heights (92116), College Area (92115), Kensington, and South Park.
+
+## Emergency Gas Safety Protocol
+If you smell rotten eggs (mercaptan sulfur odor) or suspect an active natural gas leak:
+1. Do not operate light switches, electric appliances, cell phones, or open flames indoors.
+2. Evacuate all occupants and pets outside immediately, leaving doors open for ventilation if safe.
+3. Call **SDG&E Emergency Hotline (1-800-411-7343)** or **911** from a safe distance outdoors.
+4. Call **Leak Detection Pro at (858) 422-5102** to dispatch a licensed contractor for line pressure testing, repairs, and city inspection certification.
+
+## Key URLs & Documentation
+- [Home Page](https://leakdetectioncityheightsca.vercel.app/): 24/7 service overview, quick quote dispatch form, and customer reviews.
+- [Water Leak Detection](https://leakdetectioncityheightsca.vercel.app/#water-leak): In-depth guide to slab leak signs, acoustic testing, and repair options.
+- [Gas Leak Detection](https://leakdetectioncityheightsca.vercel.app/#gas-leak): Emergency gas leak detection steps, pressure test requirements, and safety guidelines.
+- [About Us](https://leakdetectioncityheightsca.vercel.app/#about): Contractor vetting criteria, licensing requirements, and company mission.
+- [Contact & Dispatch](https://leakdetectioncityheightsca.vercel.app/#contact): 24/7 phone number, address, and interactive quote submission.
+- [Legal Disclaimers](https://leakdetectioncityheightsca.vercel.app/#disclaimer): Independent contractor relationship, liability limitations, and referral role disclaimers.
+- [Privacy Policy](https://leakdetectioncityheightsca.vercel.app/#privacy): Consumer data handling and privacy terms.
+
+## Legal & Compliance Notice
+Leak Detection Pro operates as an independent marketing and referral intermediary. It connects residential and commercial property owners with independent, pre-screened California State License Board (CSLB) licensed plumbing and leak detection contractors. Leak Detection Pro does not directly perform plumbing repairs or physical engineering services. All contracts, warranties, and service agreements are executed directly between the property owner and the assigned independent contractor.
