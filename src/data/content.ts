@@ -1,9 +1,9 @@
 export const BUSINESS_INFO = {
   name: 'Leak Detection Pro',
   tagline: 'Fast Water & Gas Leak Detection & Repair Services in City Heights',
-  phone: '858-422-5102',
-  phoneFormatted: '(858) 422-5102',
-  telLink: 'tel:18584225102',
+  phone: '619-910-9411',
+  phoneFormatted: '(619) 910-9411',
+  telLink: 'tel:16199109411',
   address: '3431 43rd St',
   city: 'City Heights, San Diego',
   state: 'CA',
@@ -90,7 +90,7 @@ export const FAQ_ITEMS = [
   },
   {
     question: 'What should I do immediately if I smell gas in City Heights?',
-    answer: 'If you smell rotten eggs or suspect a natural gas leak: 1) Do NOT flip any light switches or ignite matches. 2) Evacuate all occupants and pets immediately. 3) Leave doors open behind you if safe. 4) Call SDG&E at 800-411-7343 or 911 from a safe distance outside. 5) Call our dispatch line at 858-422-5102 to arrange a certified gas line technician for official repairs and safety certification.'
+    answer: 'If you smell rotten eggs or suspect a natural gas leak: 1) Do NOT flip any light switches or ignite matches. 2) Evacuate all occupants and pets immediately. 3) Leave doors open behind you if safe. 4) Call SDG&E at 800-411-7343 or 911 from a safe distance outside. 5) Call our dispatch line at 619-910-9411 to arrange a certified gas line technician for official repairs and safety certification.'
   },
   {
     question: 'Are the contractors licensed and insured in California?',

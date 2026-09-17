@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { Phone, CheckCircle2, ShieldAlert, ShieldCheck, Clock, AlertTriangle, Droplets, Flame, Search, ChevronRight } from 'lucide-react';
+import { Phone, CheckCircle2, ShieldAlert, ShieldCheck, Clock, AlertTriangle, Droplets, Flame, Search, ChevronRight, Sparkles } from 'lucide-react';
 import { BUSINESS_INFO } from '../data/content';
+import { LeadSmartEmbed } from './LeadSmartEmbed';
 
 interface LeadCaptureFormProps {
   initialService?: 'water' | 'gas' | 'both' | 'inspection';
@@ -13,6 +14,7 @@ export const LeadCaptureForm: React.FC<LeadCaptureFormProps> = ({
   compact = false,
   onSuccess
 }) => {
+  const [formMode, setFormMode] = useState<'quick' | 'leadsmart'>('quick');
   const [serviceType, setServiceType] = useState<'water' | 'gas' | 'both' | 'inspection'>(initialService);
   const [urgency, setUrgency] = useState<'emergency' | 'today' | 'quote_only'>('emergency');
   const [name, setName] = useState('');
@@ -124,6 +126,31 @@ export const LeadCaptureForm: React.FC<LeadCaptureFormProps> = ({
     );
   }
 
+  if (formMode === 'leadsmart') {
+    return (
+      <div className="space-y-2">
+        <div className="flex bg-slate-100 p-1 rounded-xl gap-1 border border-slate-200">
+          <button
+            type="button"
+            onClick={() => setFormMode('quick')}
+            className="flex-1 py-1.5 px-3 rounded-lg text-xs font-semibold text-slate-600 hover:text-slate-900 transition-colors"
+          >
+            Fast Phone Callback
+          </button>
+          <button
+            type="button"
+            onClick={() => setFormMode('leadsmart')}
+            className="flex-1 py-1.5 px-3 rounded-lg text-xs font-bold bg-white text-blue-700 shadow-xs border border-slate-200 flex items-center justify-center gap-1"
+          >
+            <Sparkles className="w-3.5 h-3.5 text-emerald-500" />
+            LeadSmart Match (Live)
+          </button>
+        </div>
+        <LeadSmartEmbed category={serviceType === 'gas' ? '75' : '1'} zipCode={zip || '92105'} />
+      </div>
+    );
+  }
+
   return (
     <form
       onSubmit={handleSubmit}
@@ -132,7 +159,27 @@ export const LeadCaptureForm: React.FC<LeadCaptureFormProps> = ({
       }`}
       id="lead-capture-form"
     >
-      <div className="mb-6">
+      <div className="mb-4">
+        {/* Toggle Mode Switcher */}
+        <div className="flex bg-slate-100 p-1 rounded-xl gap-1 mb-4 border border-slate-200/80">
+          <button
+            type="button"
+            onClick={() => setFormMode('quick')}
+            className="flex-1 py-1.5 px-2.5 rounded-lg text-xs font-bold bg-white text-blue-700 shadow-xs border border-slate-200 flex items-center justify-center gap-1"
+          >
+            <Clock className="w-3.5 h-3.5 text-blue-600" />
+            Fast Local Callback
+          </button>
+          <button
+            type="button"
+            onClick={() => setFormMode('leadsmart')}
+            className="flex-1 py-1.5 px-2.5 rounded-lg text-xs font-semibold text-slate-600 hover:text-slate-900 transition-colors flex items-center justify-center gap-1"
+          >
+            <Sparkles className="w-3.5 h-3.5 text-emerald-500" />
+            LeadSmart Match
+          </button>
+        </div>
+
         <div className="flex items-center justify-between gap-2 mb-1">
           <span className="text-xs font-bold uppercase tracking-wider text-blue-600 flex items-center gap-1">
             <Clock className="w-3.5 h-3.5" /> Fast Local Match
