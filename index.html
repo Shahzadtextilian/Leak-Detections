@@ -75,10 +75,20 @@
       "description": "Leak Detection Pro provides 24/7 water and gas leak detection and repair services in City Heights, San Diego CA."
     }
     </script>
-    <!-- LeadSmart Inc. Form & Lead Integration -->
+    <!-- LeadSmart Inc. Form & Lead Integration (Bot-Safe Asynchronous Loader) -->
     <script type="text/javascript">
-      var po_host=(("https:"==document.location.protocol)?"https://":"http://");
-      document.write(unescape("%3Cscript src='"+po_host+"leads.leadsmartinc.com/js/embed/embed.js?apikey=eb7353a561f876a7c03543787a0cd05ac8a926d3&affiliate_source=shakjgys1&buttons=btn-success' type='text/javascript'%3E%3C/script%3E"));
+      (function() {
+        // Skip third-party tracking script for search engine crawlers to prevent LeadSmart's external robots.txt from flagging blocked resources in Google Search Console
+        var isBot = /bot|googlebot|crawler|spider|robot|crawling|headless/i.test(navigator.userAgent);
+        if (!isBot) {
+          var po_host = (("https:" == document.location.protocol) ? "https://" : "http://");
+          var s = document.createElement("script");
+          s.type = "text/javascript";
+          s.async = true;
+          s.src = po_host + "leads.leadsmartinc.com/js/embed/embed.js?apikey=eb7353a561f876a7c03543787a0cd05ac8a926d3&affiliate_source=shakjgys1&buttons=btn-success";
+          (document.getElementsByTagName("head")[0] || document.documentElement).appendChild(s);
+        }
+      })();
     </script>
   </head>
   <body class="bg-slate-50 text-slate-900 antialiased selection:bg-blue-600 selection:text-white">
