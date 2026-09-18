@@ -22,6 +22,7 @@ import {
 import { Page } from '../types';
 import { BUSINESS_INFO, FAQ_ITEMS, TESTIMONIALS, CITY_HEIGHTS_AREAS } from '../data/content';
 import { LeadCaptureForm } from '../components/LeadCaptureForm';
+import { LocationMap } from '../components/LocationMap';
 import { APP_IMAGES } from '../data/images';
 
 interface HomePageProps {
@@ -592,52 +593,37 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onOpenQuote }) =
               </div>
             </div>
 
-            {/* Visual Location Card */}
-            <div className="lg:col-span-6 bg-slate-900 text-white rounded-2xl p-6 sm:p-8 border border-slate-800 relative overflow-hidden">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-10 h-10 rounded-xl bg-red-600 flex items-center justify-center text-white shrink-0">
-                  <MapPin className="w-5 h-5" />
-                </div>
-                <div>
-                  <h4 className="text-lg font-bold text-white">City Heights Operations Hub</h4>
-                  <p className="text-xs text-slate-400">{BUSINESS_INFO.fullAddress}</p>
-                </div>
-              </div>
+            {/* Visual Location Card with Live Google Map */}
+            <div className="lg:col-span-6 space-y-4">
+              <LocationMap height="h-64 sm:h-72" />
 
-              {/* Stylized Local Map Representation */}
-              <div className="bg-slate-950 border border-slate-800 rounded-xl p-4 text-xs space-y-3 mb-5">
-                <div className="flex justify-between items-center pb-2 border-b border-slate-800">
-                  <span className="text-slate-400">Primary Service Zip:</span>
-                  <span className="font-bold text-emerald-400">92105 (City Heights Core)</span>
+              <div className="bg-slate-900 text-white rounded-2xl p-5 sm:p-6 border border-slate-800">
+                <div className="grid grid-cols-2 gap-3 text-xs mb-4">
+                  <div className="bg-slate-950 p-3 rounded-xl border border-slate-800">
+                    <span className="text-slate-400 block text-[11px]">Primary Service Zip:</span>
+                    <strong className="text-emerald-400 font-bold">92105 (City Heights Core)</strong>
+                  </div>
+                  <div className="bg-slate-950 p-3 rounded-xl border border-slate-800">
+                    <span className="text-slate-400 block text-[11px]">Major Cross Streets:</span>
+                    <strong className="text-slate-200 font-semibold">43rd St & University Ave</strong>
+                  </div>
                 </div>
-                <div className="flex justify-between items-center pb-2 border-b border-slate-800">
-                  <span className="text-slate-400">Major Cross Streets:</span>
-                  <span className="font-semibold text-slate-200">43rd St & University Ave</span>
-                </div>
-                <div className="flex justify-between items-center pb-2 border-b border-slate-800">
-                  <span className="text-slate-400">Response Window:</span>
-                  <span className="font-bold text-blue-400">45 - 90 mins priority</span>
-                </div>
-                <div className="flex justify-between items-center">
-                  <span className="text-slate-400">Contractor Verification:</span>
-                  <span className="font-semibold text-slate-200">California CSLB Licensed</span>
-                </div>
-              </div>
 
-              <div className="flex flex-col sm:flex-row gap-3">
-                <a
-                  href={BUSINESS_INFO.telLink}
-                  className="flex-1 bg-red-600 hover:bg-red-700 text-white py-3 rounded-xl font-bold text-center text-xs flex items-center justify-center gap-2"
-                >
-                  <Phone className="w-3.5 h-3.5" />
-                  <span>Call {BUSINESS_INFO.phoneFormatted}</span>
-                </a>
-                <button
-                  onClick={() => onNavigate('contact')}
-                  className="flex-1 bg-slate-800 hover:bg-slate-700 text-slate-200 py-3 rounded-xl font-semibold text-center text-xs border border-slate-700"
-                >
-                  View Location & Directions
-                </button>
+                <div className="flex flex-col sm:flex-row gap-2.5">
+                  <a
+                    href={BUSINESS_INFO.telLink}
+                    className="flex-1 bg-red-600 hover:bg-red-700 text-white py-2.5 px-4 rounded-xl font-bold text-center text-xs flex items-center justify-center gap-2 transition-colors"
+                  >
+                    <Phone className="w-3.5 h-3.5" />
+                    <span>Call {BUSINESS_INFO.phoneFormatted}</span>
+                  </a>
+                  <button
+                    onClick={() => onNavigate('contact')}
+                    className="flex-1 bg-slate-800 hover:bg-slate-700 text-slate-200 py-2.5 px-4 rounded-xl font-semibold text-center text-xs border border-slate-700 transition-colors"
+                  >
+                    Contact & Driving Directions
+                  </button>
+                </div>
               </div>
             </div>
           </div>

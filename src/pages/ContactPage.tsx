@@ -14,6 +14,7 @@ import {
 import { Page } from '../types';
 import { BUSINESS_INFO, CITY_HEIGHTS_AREAS } from '../data/content';
 import { LeadCaptureForm } from '../components/LeadCaptureForm';
+import { LocationMap } from '../components/LocationMap';
 import { APP_IMAGES } from '../data/images';
 
 interface ContactPageProps {
@@ -131,8 +132,11 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate, onOpenQuot
               </div>
             </div>
 
-            {/* Local Map & Directions Card */}
-            <div className="bg-slate-900 text-white rounded-2xl p-6 sm:p-8 border border-slate-800 space-y-4">
+            {/* Embedded Live Google Map Card */}
+            <LocationMap height="h-72 sm:h-80" />
+
+            {/* Local Navigation Details Card */}
+            <div className="bg-slate-900 text-white rounded-2xl p-6 border border-slate-800 space-y-4">
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-2 font-bold text-base text-white">
                   <Navigation className="w-5 h-5 text-blue-400" />
@@ -154,16 +158,6 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate, onOpenQuot
                   <div>• El Cajon Blvd (5 mins)</div>
                 </div>
               </div>
-
-              <a
-                href="https://maps.google.com/?q=3431+43rd+St,+San+Diego,+CA+92105"
-                target="_blank"
-                rel="noreferrer"
-                className="w-full py-3 bg-slate-800 hover:bg-slate-700 text-slate-200 rounded-xl text-xs font-semibold flex items-center justify-center gap-2 border border-slate-700 transition-colors"
-              >
-                <Compass className="w-4 h-4" />
-                <span>Open 3431 43rd St in Google Maps</span>
-              </a>
             </div>
           </div>
 
