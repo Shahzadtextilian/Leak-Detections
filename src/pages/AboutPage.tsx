@@ -37,7 +37,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate, onOpenQuote })
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             <div className="lg:col-span-7 space-y-4">
               <span className="bg-blue-600/20 text-blue-300 text-xs font-bold px-3 py-1 rounded-full border border-blue-500/30">
-                City Heights, San Diego • Established Referral Network
+                City Heights, San Diego • Established Network
               </span>
               <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-white">
                 Connecting City Heights with Trusted Leak Detection Specialists
@@ -81,7 +81,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate, onOpenQuote })
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-2xl mx-auto mb-12">
           <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-            Why City Heights Property Owners Trust Our Referral Network
+            Why City Heights Property Owners Trust Our Network
           </h2>
           <p className="text-sm text-slate-600 mt-2">
             Instead of calling ten different plumbing companies only to be put on voicemail, our network provides single-call dispatch.
