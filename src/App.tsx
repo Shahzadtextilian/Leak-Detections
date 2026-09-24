@@ -82,6 +82,23 @@ export default function App() {
     if (ogDesc) {
       ogDesc.setAttribute('content', current.desc);
     }
+
+    // Dynamically synchronize canonical URL to match production canonical URL
+    let canonical = document.querySelector('link[rel="canonical"]');
+    if (!canonical) {
+      canonical = document.createElement('link');
+      canonical.setAttribute('rel', 'canonical');
+      document.head.appendChild(canonical);
+    }
+    const canonicalUrl = window.location.origin.includes('cityheightsleakdetectionpro.com')
+      ? 'https://www.cityheightsleakdetectionpro.com/'
+      : window.location.origin + '/';
+    canonical.setAttribute('href', canonicalUrl);
+
+    let ogUrl = document.querySelector('meta[property="og:url"]');
+    if (ogUrl) {
+      ogUrl.setAttribute('content', canonicalUrl);
+    }
   }, [currentPage]);
 
   const handleNavigate = (page: Page) => {
