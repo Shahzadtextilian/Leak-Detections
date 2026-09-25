@@ -47,12 +47,12 @@ If you smell rotten eggs (mercaptan sulfur odor) or suspect an active natural ga
 
 ## Key URLs & Documentation
 - [Home Page](https://www.cityheightsleakdetectionpro.com/): 24/7 service overview, quick quote dispatch form, and customer reviews.
-- [Water Leak Detection](https://www.cityheightsleakdetectionpro.com/#water-leak): In-depth guide to slab leak signs, acoustic testing, and repair options.
-- [Gas Leak Detection](https://www.cityheightsleakdetectionpro.com/#gas-leak): Emergency gas leak detection steps, pressure test requirements, and safety guidelines.
-- [About Us](https://www.cityheightsleakdetectionpro.com/#about): Contractor vetting criteria, licensing requirements, and company mission.
-- [Contact & Dispatch](https://www.cityheightsleakdetectionpro.com/#contact): 24/7 phone number, address, and interactive quote submission.
-- [Legal Disclaimers](https://www.cityheightsleakdetectionpro.com/#disclaimer): Independent contractor relationship, liability limitations, and referral role disclaimers.
-- [Privacy Policy](https://www.cityheightsleakdetectionpro.com/#privacy): Consumer data handling and privacy terms.
+- [Water Leak Detection](https://www.cityheightsleakdetectionpro.com/water-leak): In-depth guide to slab leak signs, acoustic testing, and repair options.
+- [Gas Leak Detection](https://www.cityheightsleakdetectionpro.com/gas-leak): Emergency gas leak detection steps, pressure test requirements, and safety guidelines.
+- [About Us](https://www.cityheightsleakdetectionpro.com/about): Contractor vetting criteria, licensing requirements, and company mission.
+- [Contact & Dispatch](https://www.cityheightsleakdetectionpro.com/contact): 24/7 phone number, address, and interactive quote submission.
+- [Legal Disclaimers](https://www.cityheightsleakdetectionpro.com/disclaimer): Independent contractor relationship, liability limitations, and referral role disclaimers.
+- [Privacy Policy](https://www.cityheightsleakdetectionpro.com/privacy): Consumer data handling and privacy terms.
 
 ## Legal & Compliance Notice
 Leak Detection Pro operates as an independent marketing and referral intermediary. It connects residential and commercial property owners with independent, pre-screened California State License Board (CSLB) licensed plumbing and leak detection contractors. Leak Detection Pro does not directly perform plumbing repairs or physical engineering services. All contracts, warranties, and service agreements are executed directly between the property owner and the assigned independent contractor.

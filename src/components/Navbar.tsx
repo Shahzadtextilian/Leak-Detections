@@ -50,8 +50,12 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate, onOpenQ
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between min-h-[76px] py-2">
           {/* Brand Logo */}
-          <button
-            onClick={() => handleNav('home')}
+          <a
+            href="/"
+            onClick={(e) => {
+              e.preventDefault();
+              handleNav('home');
+            }}
             className="flex items-center gap-3 text-left group focus:outline-none shrink-0"
             id="brand-logo-btn"
           >
@@ -71,12 +75,16 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate, onOpenQ
                 San Diego Water &amp; Gas Leak Detection &amp; Repair
               </p>
             </div>
-          </button>
+          </a>
 
           {/* Desktop Nav Links */}
           <nav className="hidden lg:flex items-center gap-1 xl:gap-1.5 shrink-0">
-            <button
-              onClick={() => handleNav('home')}
+            <a
+              href="/"
+              onClick={(e) => {
+                e.preventDefault();
+                handleNav('home');
+              }}
               className={`px-2.5 xl:px-3 py-2 rounded-lg text-xs xl:text-sm font-medium transition-colors whitespace-nowrap ${
                 currentPage === 'home'
                   ? 'bg-blue-50 text-blue-700'
@@ -85,10 +93,14 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate, onOpenQ
               id="nav-link-home"
             >
               Home
-            </button>
+            </a>
 
-            <button
-              onClick={() => handleNav('water-leak')}
+            <a
+              href="/water-leak"
+              onClick={(e) => {
+                e.preventDefault();
+                handleNav('water-leak');
+              }}
               className={`px-2.5 xl:px-3 py-2 rounded-lg text-xs xl:text-sm font-medium flex items-center gap-1.5 transition-colors whitespace-nowrap ${
                 currentPage === 'water-leak'
                   ? 'bg-blue-50 text-blue-700'
@@ -98,10 +110,14 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate, onOpenQ
             >
               <Droplets className="w-4 h-4 text-blue-500 shrink-0" />
               <span>Water Leak Detection</span>
-            </button>
+            </a>
 
-            <button
-              onClick={() => handleNav('gas-leak')}
+            <a
+              href="/gas-leak"
+              onClick={(e) => {
+                e.preventDefault();
+                handleNav('gas-leak');
+              }}
               className={`px-2.5 xl:px-3 py-2 rounded-lg text-xs xl:text-sm font-medium flex items-center gap-1.5 transition-colors whitespace-nowrap ${
                 currentPage === 'gas-leak'
                   ? 'bg-amber-50 text-amber-800'
@@ -111,10 +127,14 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate, onOpenQ
             >
               <Flame className="w-4 h-4 text-amber-500 shrink-0" />
               <span>Gas Leak Detection</span>
-            </button>
+            </a>
 
-            <button
-              onClick={() => handleNav('about')}
+            <a
+              href="/about"
+              onClick={(e) => {
+                e.preventDefault();
+                handleNav('about');
+              }}
               className={`px-2.5 xl:px-3 py-2 rounded-lg text-xs xl:text-sm font-medium transition-colors whitespace-nowrap ${
                 currentPage === 'about'
                   ? 'bg-blue-50 text-blue-700'
@@ -123,10 +143,14 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate, onOpenQ
               id="nav-link-about"
             >
               About Us
-            </button>
+            </a>
 
-            <button
-              onClick={() => handleNav('contact')}
+            <a
+              href="/contact"
+              onClick={(e) => {
+                e.preventDefault();
+                handleNav('contact');
+              }}
               className={`px-2.5 xl:px-3 py-2 rounded-lg text-xs xl:text-sm font-medium transition-colors whitespace-nowrap ${
                 currentPage === 'contact'
                   ? 'bg-blue-50 text-blue-700'
@@ -135,7 +159,7 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate, onOpenQ
               id="nav-link-contact"
             >
               Contact Us
-            </button>
+            </a>
           </nav>
 
           {/* Desktop Right Phone CTA */}
@@ -199,65 +223,93 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate, onOpenQ
             </p>
           </div>
 
-          <button
-            onClick={() => handleNav('home')}
-            className={`w-full text-left px-3.5 py-2.5 rounded-lg text-sm font-medium ${
+          <a
+            href="/"
+            onClick={(e) => {
+              e.preventDefault();
+              handleNav('home');
+            }}
+            className={`w-full block text-left px-3.5 py-2.5 rounded-lg text-sm font-medium ${
               currentPage === 'home' ? 'bg-blue-50 text-blue-700 font-semibold' : 'text-slate-800'
             }`}
           >
             Home
-          </button>
-          <button
-            onClick={() => handleNav('water-leak')}
-            className={`w-full text-left px-3.5 py-2.5 rounded-lg text-sm font-medium flex items-center gap-2 ${
+          </a>
+          <a
+            href="/water-leak"
+            onClick={(e) => {
+              e.preventDefault();
+              handleNav('water-leak');
+            }}
+            className={`w-full block text-left px-3.5 py-2.5 rounded-lg text-sm font-medium flex items-center gap-2 ${
               currentPage === 'water-leak' ? 'bg-blue-50 text-blue-700 font-semibold' : 'text-slate-800'
             }`}
           >
             <Droplets className="w-4 h-4 text-blue-500" />
             Water Leak Detection
-          </button>
-          <button
-            onClick={() => handleNav('gas-leak')}
-            className={`w-full text-left px-3.5 py-2.5 rounded-lg text-sm font-medium flex items-center gap-2 ${
+          </a>
+          <a
+            href="/gas-leak"
+            onClick={(e) => {
+              e.preventDefault();
+              handleNav('gas-leak');
+            }}
+            className={`w-full block text-left px-3.5 py-2.5 rounded-lg text-sm font-medium flex items-center gap-2 ${
               currentPage === 'gas-leak' ? 'bg-amber-50 text-amber-800 font-semibold' : 'text-slate-800'
             }`}
           >
             <Flame className="w-4 h-4 text-amber-500" />
             Gas Leak Detection
-          </button>
-          <button
-            onClick={() => handleNav('about')}
-            className={`w-full text-left px-3.5 py-2.5 rounded-lg text-sm font-medium ${
+          </a>
+          <a
+            href="/about"
+            onClick={(e) => {
+              e.preventDefault();
+              handleNav('about');
+            }}
+            className={`w-full block text-left px-3.5 py-2.5 rounded-lg text-sm font-medium ${
               currentPage === 'about' ? 'bg-blue-50 text-blue-700 font-semibold' : 'text-slate-800'
             }`}
           >
             About Us
-          </button>
-          <button
-            onClick={() => handleNav('contact')}
-            className={`w-full text-left px-3.5 py-2.5 rounded-lg text-sm font-medium ${
+          </a>
+          <a
+            href="/contact"
+            onClick={(e) => {
+              e.preventDefault();
+              handleNav('contact');
+            }}
+            className={`w-full block text-left px-3.5 py-2.5 rounded-lg text-sm font-medium ${
               currentPage === 'contact' ? 'bg-blue-50 text-blue-700 font-semibold' : 'text-slate-800'
             }`}
           >
             Contact Us
-          </button>
-          <button
-            onClick={() => handleNav('privacy')}
-            className={`w-full text-left px-3.5 py-2.5 rounded-lg text-sm font-medium ${
+          </a>
+          <a
+            href="/privacy"
+            onClick={(e) => {
+              e.preventDefault();
+              handleNav('privacy');
+            }}
+            className={`w-full block text-left px-3.5 py-2.5 rounded-lg text-sm font-medium ${
               currentPage === 'privacy' ? 'bg-blue-50 text-blue-700 font-semibold' : 'text-slate-600'
             }`}
           >
             Privacy Policy
-          </button>
-          <button
-            onClick={() => handleNav('disclaimer')}
-            className={`w-full text-left px-3.5 py-2.5 rounded-lg text-sm font-medium flex items-center gap-2 ${
+          </a>
+          <a
+            href="/disclaimer"
+            onClick={(e) => {
+              e.preventDefault();
+              handleNav('disclaimer');
+            }}
+            className={`w-full block text-left px-3.5 py-2.5 rounded-lg text-sm font-medium flex items-center gap-2 ${
               currentPage === 'disclaimer' ? 'bg-amber-50 text-amber-800 font-semibold' : 'text-amber-700'
             }`}
           >
             <ShieldAlert className="w-4 h-4" />
             Lead Generation Disclaimer
-          </button>
+          </a>
 
           <div className="pt-3 border-t border-slate-200 flex flex-col gap-2">
             <a

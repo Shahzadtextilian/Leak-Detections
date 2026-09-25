@@ -17,18 +17,35 @@ export default function App() {
   const [isQuoteModalOpen, setIsQuoteModalOpen] = useState(false);
   const [quoteServiceType, setQuoteServiceType] = useState<'water' | 'gas' | 'both' | 'inspection'>('water');
 
-  // Handle URL hash changes if present
+  // Resolve initial and updated page based on pathname or hash
   useEffect(() => {
-    const handleHash = () => {
-      const hash = window.location.hash.replace('#', '') as Page;
-      if (['home', 'water-leak', 'gas-leak', 'about', 'contact', 'privacy', 'disclaimer'].includes(hash)) {
-        setCurrentPage(hash);
+    const validPages: Page[] = ['home', 'water-leak', 'gas-leak', 'about', 'contact', 'privacy', 'disclaimer'];
+
+    const resolvePageFromLocation = (): Page => {
+      // First check clean pathname e.g. /water-leak or /water-leak/
+      const pathSegment = window.location.pathname.replace(/^\/|\/$/g, '').toLowerCase() as Page;
+      if (validPages.includes(pathSegment)) {
+        return pathSegment;
       }
+      // Then check hash fallback e.g. #water-leak
+      const hashSegment = window.location.hash.replace(/^#\/?/, '').toLowerCase() as Page;
+      if (validPages.includes(hashSegment)) {
+        return hashSegment;
+      }
+      return 'home';
     };
 
-    handleHash();
-    window.addEventListener('hashchange', handleHash);
-    return () => window.removeEventListener('hashchange', handleHash);
+    const handleLocationChange = () => {
+      setCurrentPage(resolvePageFromLocation());
+    };
+
+    handleLocationChange();
+    window.addEventListener('popstate', handleLocationChange);
+    window.addEventListener('hashchange', handleLocationChange);
+    return () => {
+      window.removeEventListener('popstate', handleLocationChange);
+      window.removeEventListener('hashchange', handleLocationChange);
+    };
   }, []);
 
   // Synchronize high-ranking document titles and meta tags per view
@@ -83,16 +100,18 @@ export default function App() {
       ogDesc.setAttribute('content', current.desc);
     }
 
-    // Dynamically synchronize canonical URL to match production canonical URL
+    // Dynamically synchronize canonical URL and og:url to match exact sitemap URL
     let canonical = document.querySelector('link[rel="canonical"]');
     if (!canonical) {
       canonical = document.createElement('link');
       canonical.setAttribute('rel', 'canonical');
       document.head.appendChild(canonical);
     }
-    const canonicalUrl = window.location.origin.includes('cityheightsleakdetectionpro.com')
-      ? 'https://www.cityheightsleakdetectionpro.com/'
-      : window.location.origin + '/';
+    const pageSuffix = currentPage === 'home' ? '' : currentPage;
+    const baseOrigin = window.location.origin.includes('cityheightsleakdetectionpro.com')
+      ? 'https://www.cityheightsleakdetectionpro.com'
+      : window.location.origin;
+    const canonicalUrl = pageSuffix ? `${baseOrigin}/${pageSuffix}` : `${baseOrigin}/`;
     canonical.setAttribute('href', canonicalUrl);
 
     let ogUrl = document.querySelector('meta[property="og:url"]');
@@ -103,7 +122,10 @@ export default function App() {
 
   const handleNavigate = (page: Page) => {
     setCurrentPage(page);
-    window.location.hash = page === 'home' ? '' : page;
+    const targetPath = page === 'home' ? '/' : `/${page}`;
+    if (window.location.pathname !== targetPath) {
+      window.history.pushState({ page }, '', targetPath);
+    }
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 

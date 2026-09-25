@@ -1,7 +1,6 @@
 # robots.txt for Leak Detection Pro - City Heights, San Diego
 User-agent: *
 Allow: /
-Disallow: /google787a08286a6466cd.html
 
 # Sitemap
 Sitemap: https://www.cityheightsleakdetectionpro.com/sitemap.xml

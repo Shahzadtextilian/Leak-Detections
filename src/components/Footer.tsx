@@ -60,54 +60,78 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
             </h4>
             <ul className="space-y-2 text-sm text-slate-400">
               <li>
-                <button
-                  onClick={() => handleNav('water-leak')}
+                <a
+                  href="/water-leak"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    handleNav('water-leak');
+                  }}
                   className="hover:text-blue-400 transition-colors flex items-center gap-2 text-left"
                 >
                   <Droplets className="w-3.5 h-3.5 text-blue-400" />
                   Water Leak Detection
-                </button>
+                </a>
               </li>
               <li>
-                <button
-                  onClick={() => handleNav('water-leak')}
-                  className="hover:text-blue-400 transition-colors pl-5 text-xs text-left"
+                <a
+                  href="/water-leak"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    handleNav('water-leak');
+                  }}
+                  className="hover:text-blue-400 transition-colors pl-5 text-xs text-left block"
                 >
                   • Concrete Slab Leak Tracing
-                </button>
+                </a>
               </li>
               <li>
-                <button
-                  onClick={() => handleNav('water-leak')}
-                  className="hover:text-blue-400 transition-colors pl-5 text-xs text-left"
+                <a
+                  href="/water-leak"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    handleNav('water-leak');
+                  }}
+                  className="hover:text-blue-400 transition-colors pl-5 text-xs text-left block"
                 >
                   • Underground Main Line Acoustic Locating
-                </button>
+                </a>
               </li>
               <li>
-                <button
-                  onClick={() => handleNav('gas-leak')}
+                <a
+                  href="/gas-leak"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    handleNav('gas-leak');
+                  }}
                   className="hover:text-amber-400 transition-colors flex items-center gap-2 text-left pt-1"
                 >
                   <Flame className="w-3.5 h-3.5 text-amber-400" />
-                  Gas Leak Detection & Testing
-                </button>
+                  Gas Leak Detection &amp; Testing
+                </a>
               </li>
               <li>
-                <button
-                  onClick={() => handleNav('gas-leak')}
-                  className="hover:text-amber-400 transition-colors pl-5 text-xs text-left"
+                <a
+                  href="/gas-leak"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    handleNav('gas-leak');
+                  }}
+                  className="hover:text-amber-400 transition-colors pl-5 text-xs text-left block"
                 >
-                  • Electronic Sniffer & Pressure Drop
-                </button>
+                  • Electronic Sniffer &amp; Pressure Drop
+                </a>
               </li>
               <li>
-                <button
-                  onClick={() => handleNav('gas-leak')}
-                  className="hover:text-amber-400 transition-colors pl-5 text-xs text-left"
+                <a
+                  href="/gas-leak"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    handleNav('gas-leak');
+                  }}
+                  className="hover:text-amber-400 transition-colors pl-5 text-xs text-left block"
                 >
-                  • SDG&E Shut-Off Tag Clearance
-                </button>
+                  • SDG&amp;E Shut-Off Tag Clearance
+                </a>
               </li>
             </ul>
           </div>
@@ -139,29 +163,64 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
             </h4>
             <ul className="space-y-2 text-sm text-slate-400">
               <li>
-                <button onClick={() => handleNav('home')} className="hover:text-white transition-colors">
+                <a
+                  href="/"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    handleNav('home');
+                  }}
+                  className="hover:text-white transition-colors block"
+                >
                   Home
-                </button>
+                </a>
               </li>
               <li>
-                <button onClick={() => handleNav('about')} className="hover:text-white transition-colors">
+                <a
+                  href="/about"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    handleNav('about');
+                  }}
+                  className="hover:text-white transition-colors block"
+                >
                   About Our Referral Network
-                </button>
+                </a>
               </li>
               <li>
-                <button onClick={() => handleNav('contact')} className="hover:text-white transition-colors">
-                  Contact & Location Details
-                </button>
+                <a
+                  href="/contact"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    handleNav('contact');
+                  }}
+                  className="hover:text-white transition-colors block"
+                >
+                  Contact &amp; Location Details
+                </a>
               </li>
               <li>
-                <button onClick={() => handleNav('privacy')} className="hover:text-white transition-colors">
+                <a
+                  href="/privacy"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    handleNav('privacy');
+                  }}
+                  className="hover:text-white transition-colors block"
+                >
                   Privacy Policy (CCPA Compliant)
-                </button>
+                </a>
               </li>
               <li>
-                <button onClick={() => handleNav('disclaimer')} className="hover:text-amber-400 transition-colors">
-                  Lead Generation & Contractor Disclaimer
-                </button>
+                <a
+                  href="/disclaimer"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    handleNav('disclaimer');
+                  }}
+                  className="hover:text-amber-400 transition-colors block"
+                >
+                  Lead Generation &amp; Contractor Disclaimer
+                </a>
               </li>
             </ul>
 
