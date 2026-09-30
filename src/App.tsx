@@ -100,6 +100,16 @@ export default function App() {
       ogDesc.setAttribute('content', current.desc);
     }
 
+    // Update Twitter card tags
+    let twitterTitle = document.querySelector('meta[name="twitter:title"]');
+    if (twitterTitle) {
+      twitterTitle.setAttribute('content', current.title);
+    }
+    let twitterDesc = document.querySelector('meta[name="twitter:description"]');
+    if (twitterDesc) {
+      twitterDesc.setAttribute('content', current.desc);
+    }
+
     // Dynamically synchronize canonical URL and og:url to match exact sitemap URL
     let canonical = document.querySelector('link[rel="canonical"]');
     if (!canonical) {

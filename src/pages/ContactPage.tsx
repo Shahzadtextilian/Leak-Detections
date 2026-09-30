@@ -113,6 +113,10 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate, onOpenQuot
                   <img
                     src={APP_IMAGES.plumberInspection}
                     alt="Licensed plumbing technician on site for leak inspection in City Heights"
+                    width={400}
+                    height={180}
+                    loading="lazy"
+                    decoding="async"
                     className="w-full h-full object-cover"
                     referrerPolicy="no-referrer"
                   />

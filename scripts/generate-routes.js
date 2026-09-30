@@ -22,6 +22,27 @@ const routes = [
     desc: 'Non-invasive underground water leak detection and slab leak locating in City Heights (92105). Thermal FLIR imaging and acoustic pipe testing. Call (619) 910-9411.',
     h1: 'Water &amp; Slab Leak Detection Services in City Heights, San Diego',
     h2: 'Precision Acoustic Locating &amp; Thermal Imaging for Hidden Leaks',
+    breadcrumbName: 'Water & Slab Leak Detection',
+    serviceSchema: {
+      "@type": "Service",
+      "@id": "https://www.cityheightsleakdetectionpro.com/water-leak#service",
+      "name": "Water & Slab Leak Detection City Heights",
+      "serviceType": "Water and Slab Leak Locating",
+      "provider": {
+        "@id": "https://www.cityheightsleakdetectionpro.com/#organization"
+      },
+      "areaServed": {
+        "@type": "AdministrativeArea",
+        "name": "City Heights, San Diego CA 92105"
+      },
+      "description": "Non-invasive underground water leak detection and slab leak locating in City Heights (92105). Thermal FLIR imaging and acoustic pipe testing.",
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "USD",
+        "price": "Free Quote & Diagnostics",
+        "availability": "https://schema.org/InStock"
+      }
+    },
     bodySnippet: `
       <p style="margin-bottom: 12px;">
         Unexplained spikes on your San Diego water bill? Damp drywall or warm spots on your floor? <strong>Leak Detection Pro</strong> connects City Heights (92105) homeowners and businesses with licensed, insured leak detection contractors equipped with electro-acoustic ground sensors and thermal FLIR imaging cameras.
@@ -42,6 +63,27 @@ const routes = [
     desc: 'Emergency natural gas odor detection, line pressure decay testing, and SDG&E coordination in City Heights, San Diego (92105). Rapid 24/7 certified dispatch.',
     h1: 'Emergency Gas Leak Detection in City Heights, San Diego',
     h2: '24/7 Combustible Gas Sniffing &amp; Line Pressure Decay Testing',
+    breadcrumbName: 'Emergency Gas Leak Detection',
+    serviceSchema: {
+      "@type": "Service",
+      "@id": "https://www.cityheightsleakdetectionpro.com/gas-leak#service",
+      "name": "Emergency Gas Leak Detection City Heights",
+      "serviceType": "Emergency Combustible Gas Leak Locating",
+      "provider": {
+        "@id": "https://www.cityheightsleakdetectionpro.com/#organization"
+      },
+      "areaServed": {
+        "@type": "AdministrativeArea",
+        "name": "City Heights, San Diego CA 92105"
+      },
+      "description": "Emergency natural gas odor detection, line pressure decay testing, and SDG&E coordination in City Heights, San Diego (92105). Rapid 24/7 certified dispatch.",
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "USD",
+        "price": "Emergency dispatch available",
+        "availability": "https://schema.org/InStock"
+      }
+    },
     bodySnippet: `
       <p style="margin-bottom: 12px;">
         Smelling rotten eggs or experiencing natural gas odor in City Heights? Natural gas leaks require immediate certified emergency intervention. <strong>Leak Detection Pro</strong> connects residents with licensed gas pipe technicians for digital sniffing and pressure decay testing.
@@ -62,6 +104,7 @@ const routes = [
     desc: 'Learn about Leak Detection Pro based at 3431 43rd St, connecting City Heights property owners with licensed, certified San Diego leak detection contractors.',
     h1: 'About Leak Detection Pro — City Heights, San Diego',
     h2: 'Connecting Property Owners with Pre-Screened Local Leak Specialists',
+    breadcrumbName: 'About Us',
     bodySnippet: `
       <p style="margin-bottom: 12px;">
         Operating from <strong>3431 43rd St, San Diego CA 92105</strong>, Leak Detection Pro serves the vibrant City Heights community by maintaining an elite referral network of licensed, insured plumbing and leak detection contractors.
@@ -77,6 +120,7 @@ const routes = [
     desc: 'Contact Leak Detection Pro at 3431 43rd St, San Diego CA 92105. 24/7 emergency hotline (619) 910-9411 or instant online contractor matching.',
     h1: 'Contact &amp; 24/7 Dispatch — City Heights, San Diego',
     h2: 'Direct Phone Line &amp; Local Dispatch Office',
+    breadcrumbName: 'Contact & Dispatch',
     bodySnippet: `
       <p style="margin-bottom: 12px;">
         <strong>Address:</strong> 3431 43rd St, San Diego, CA 92105<br/>
@@ -94,6 +138,7 @@ const routes = [
     desc: 'Privacy policy and consumer data protection terms for Leak Detection Pro serving City Heights, San Diego CA.',
     h1: 'Privacy Policy &amp; Consumer Protection',
     h2: 'CCPA &amp; California Consumer Privacy Compliance',
+    breadcrumbName: 'Privacy Policy',
     bodySnippet: `
       <p style="margin-bottom: 12px;">
         Leak Detection Pro respects your privacy. This policy explains how we collect, use, and protect your information when you request leak detection contractor referral services at 3431 43rd St, San Diego CA 92105.
@@ -106,6 +151,7 @@ const routes = [
     desc: 'Consumer referral notices, California licensing standards, and lead generation disclosures for Leak Detection Pro.',
     h1: 'Licensing &amp; Lead Generation Disclaimers',
     h2: 'Independent Contractor Network Notice',
+    breadcrumbName: 'Legal Disclaimers',
     bodySnippet: `
       <p style="margin-bottom: 12px;">
         Leak Detection Pro is an independent advertising and contractor matchmaking referral service. We connect consumers with independent California State License Board (CSLB) licensed plumbing contractors.
@@ -156,7 +202,46 @@ routes.forEach((route) => {
     `<meta property="og:description" content="${route.desc}" />`
   );
 
-  // Inject Pre-rendered semantic SEO fallback inside #root
+  // Replace Twitter Title & Desc
+  pageHtml = pageHtml.replace(
+    /<meta\s+name="twitter:title"\s+content=".*?"\s*\/?>/i,
+    `<meta name="twitter:title" content="${route.title}" />`
+  );
+  pageHtml = pageHtml.replace(
+    /<meta\s+name="twitter:description"\s+content=".*?"\s*\/?>/i,
+    `<meta name="twitter:description" content="${route.desc}" />`
+  );
+
+  // Generate specialized BreadcrumbList & Service Schema for this subpage
+  const breadcrumbSchema = {
+    "@type": "BreadcrumbList",
+    "@id": `${pageCanonical}#breadcrumbs`,
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.cityheightsleakdetectionpro.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": route.breadcrumbName,
+        "item": pageCanonical
+      }
+    ]
+  };
+
+  // Replace the default BreadcrumbList in the schema graph
+  pageHtml = pageHtml.replace(
+    /\{\s*"@type":\s*"BreadcrumbList"[\s\S]*?\}\s*\]\s*\}\s*<\/script>/i,
+    (match) => {
+      const extra = route.serviceSchema ? `,\n        ${JSON.stringify(route.serviceSchema, null, 2)}` : '';
+      return `${JSON.stringify(breadcrumbSchema, null, 2)}${extra}\n      ]\n    }\n    </script>`;
+    }
+  );
+
+  // Inject Pre-rendered semantic SEO fallback inside #root with full semantic navigation
   const semanticContent = `
     <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; min-height: 100vh; background: #0f172a; color: #f8fafc;">
       <header style="padding: 20px 24px; border-bottom: 1px solid rgba(255,255,255,0.1); display: flex; align-items: center; justify-content: space-between; max-width: 1200px; margin: 0 auto;">
@@ -173,12 +258,24 @@ routes.forEach((route) => {
             </div>
           </a>
         </div>
-        <a href="tel:+16199109411" style="background: #dc2626; color: white; padding: 10px 18px; border-radius: 10px; font-weight: bold; text-decoration: none; font-size: 14px; display: inline-flex; align-items: center; gap: 8px;">
-          📞 (619) 910-9411
-        </a>
+        <div style="display: flex; align-items: center; gap: 16px;">
+          <nav style="display: flex; gap: 14px; font-size: 14px;">
+            <a href="/" style="color: #94a3b8; text-decoration: none;">Home</a>
+            <a href="/water-leak" style="color: #94a3b8; text-decoration: none;">Water Leaks</a>
+            <a href="/gas-leak" style="color: #94a3b8; text-decoration: none;">Gas Leaks</a>
+            <a href="/about" style="color: #94a3b8; text-decoration: none;">About</a>
+            <a href="/contact" style="color: #94a3b8; text-decoration: none;">Contact</a>
+          </nav>
+          <a href="tel:+16199109411" style="background: #dc2626; color: white; padding: 10px 18px; border-radius: 10px; font-weight: bold; text-decoration: none; font-size: 14px; display: inline-flex; align-items: center; gap: 8px;">
+            📞 (619) 910-9411
+          </a>
+        </div>
       </header>
 
       <main style="max-width: 900px; margin: 40px auto; padding: 0 24px;">
+        <nav aria-label="Breadcrumb" style="font-size: 13px; color: #94a3b8; margin-bottom: 20px;">
+          <a href="/" style="color: #60a5fa; text-decoration: none;">Home</a> &rsaquo; <span>${route.breadcrumbName}</span>
+        </nav>
         <h1 style="font-size: 32px; font-weight: 800; margin-bottom: 16px; line-height: 1.25; color: white;">
           ${route.h1}
         </h1>

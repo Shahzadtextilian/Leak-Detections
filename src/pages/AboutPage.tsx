@@ -62,6 +62,10 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate, onOpenQuote })
                 <img
                   src={APP_IMAGES.plumberInspection}
                   alt="Verified plumbing specialist inspecting residential water system in City Heights"
+                  width={500}
+                  height={300}
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-64 sm:h-72 object-cover"
                   referrerPolicy="no-referrer"
                 />

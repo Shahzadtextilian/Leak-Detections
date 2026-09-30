@@ -191,6 +191,10 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onOpenQuote }) =
                 <img
                   src={APP_IMAGES.heroWaterLeak}
                   alt="Acoustic ground sensor water leak detection under slab floor"
+                  width={600}
+                  height={350}
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-52 object-cover transition-transform duration-300 hover:scale-102"
                   referrerPolicy="no-referrer"
                 />
@@ -243,14 +247,19 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onOpenQuote }) =
             </div>
 
             <div className="pt-4 border-t border-slate-100 flex items-center justify-between">
-              <button
-                onClick={() => onNavigate('water-leak')}
+              <a
+                href="/water-leak"
+                onClick={(e) => {
+                  e.preventDefault();
+                  onNavigate('water-leak');
+                }}
                 className="text-sm font-bold text-blue-600 hover:text-blue-700 flex items-center gap-1.5"
                 id="explore-water-leak-btn"
+                title="View City Heights Water & Slab Leak Detection Services"
               >
                 <span>View Water Leak Service Page</span>
                 <ArrowRight className="w-4 h-4" />
-              </button>
+              </a>
 
               <button
                 onClick={() => onOpenQuote('water')}
@@ -269,6 +278,10 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onOpenQuote }) =
                 <img
                   src={APP_IMAGES.gasLeakTesting}
                   alt="Electronic combustible gas detector sniffer inspecting gas meter line"
+                  width={600}
+                  height={350}
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-52 object-cover transition-transform duration-300 hover:scale-102"
                   referrerPolicy="no-referrer"
                 />
@@ -321,14 +334,19 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onOpenQuote }) =
             </div>
 
             <div className="pt-4 border-t border-slate-100 flex items-center justify-between">
-              <button
-                onClick={() => onNavigate('gas-leak')}
+              <a
+                href="/gas-leak"
+                onClick={(e) => {
+                  e.preventDefault();
+                  onNavigate('gas-leak');
+                }}
                 className="text-sm font-bold text-amber-700 hover:text-amber-800 flex items-center gap-1.5"
                 id="explore-gas-leak-btn"
+                title="View City Heights Emergency Gas Leak Detection Services"
               >
                 <span>View Gas Leak Service Page</span>
                 <ArrowRight className="w-4 h-4" />
-              </button>
+              </a>
 
               <button
                 onClick={() => onOpenQuote('gas')}
@@ -363,6 +381,10 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onOpenQuote }) =
                 <img
                   src={APP_IMAGES.heroWaterLeak}
                   alt="Acoustic ground microphone sensor on concrete floor"
+                  width={400}
+                  height={250}
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                   referrerPolicy="no-referrer"
                 />
@@ -389,6 +411,10 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onOpenQuote }) =
                 <img
                   src={APP_IMAGES.thermalImaging}
                   alt="FLIR infrared thermal camera inspecting drywall water leak"
+                  width={400}
+                  height={250}
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                   referrerPolicy="no-referrer"
                 />
@@ -415,6 +441,10 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onOpenQuote }) =
                 <img
                   src={APP_IMAGES.gasLeakTesting}
                   alt="Combustible gas electronic detector wand inspecting brass valve"
+                  width={400}
+                  height={250}
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                   referrerPolicy="no-referrer"
                 />
@@ -441,6 +471,10 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onOpenQuote }) =
                 <img
                   src={APP_IMAGES.plumberInspection}
                   alt="Certified licensed plumbing technician inspecting water manifold"
+                  width={400}
+                  height={250}
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                   referrerPolicy="no-referrer"
                 />

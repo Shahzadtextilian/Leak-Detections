@@ -102,6 +102,10 @@ export const WaterLeakPage: React.FC<WaterLeakPageProps> = ({ onNavigate, onOpen
                 <img
                   src={APP_IMAGES.heroWaterLeak}
                   alt="Acoustic ground sensor detecting slab water leak"
+                  width={400}
+                  height={160}
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-40 object-cover"
                   referrerPolicy="no-referrer"
                 />
@@ -208,6 +212,10 @@ export const WaterLeakPage: React.FC<WaterLeakPageProps> = ({ onNavigate, onOpen
                   <img
                     src={APP_IMAGES.heroWaterLeak}
                     alt="Technician operating acoustic leak locator on concrete floor"
+                    width={350}
+                    height={150}
+                    loading="lazy"
+                    decoding="async"
                     className="w-full h-36 object-cover"
                     referrerPolicy="no-referrer"
                   />
@@ -221,6 +229,10 @@ export const WaterLeakPage: React.FC<WaterLeakPageProps> = ({ onNavigate, onOpen
                   <img
                     src={APP_IMAGES.thermalImaging}
                     alt="FLIR thermal camera detecting cold and hot water spread in wall"
+                    width={350}
+                    height={150}
+                    loading="lazy"
+                    decoding="async"
                     className="w-full h-36 object-cover"
                     referrerPolicy="no-referrer"
                   />

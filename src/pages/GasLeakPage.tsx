@@ -108,6 +108,10 @@ export const GasLeakPage: React.FC<GasLeakPageProps> = ({ onNavigate, onOpenQuot
                 <img
                   src={APP_IMAGES.gasLeakTesting}
                   alt="Electronic combustible gas detector sniffer inspecting gas line valve"
+                  width={400}
+                  height={160}
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-40 object-cover"
                   referrerPolicy="no-referrer"
                 />
@@ -222,6 +226,10 @@ export const GasLeakPage: React.FC<GasLeakPageProps> = ({ onNavigate, onOpenQuot
                   <img
                     src={APP_IMAGES.gasLeakTesting}
                     alt="Electronic gas sniffer detecting valve leak"
+                    width={350}
+                    height={150}
+                    loading="lazy"
+                    decoding="async"
                     className="w-full h-36 object-cover"
                     referrerPolicy="no-referrer"
                   />
@@ -235,6 +243,10 @@ export const GasLeakPage: React.FC<GasLeakPageProps> = ({ onNavigate, onOpenQuot
                   <img
                     src={APP_IMAGES.plumberInspection}
                     alt="Certified plumber inspecting gas line manifold"
+                    width={350}
+                    height={150}
+                    loading="lazy"
+                    decoding="async"
                     className="w-full h-36 object-cover"
                     referrerPolicy="no-referrer"
                   />
