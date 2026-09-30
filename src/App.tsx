@@ -52,7 +52,7 @@ export default function App() {
   useEffect(() => {
     const pageMeta: Record<Page, { title: string; desc: string }> = {
       'home': {
-        title: '24/7 Leak Detection City Heights, San Diego CA | Water & Gas Leak Locating (92105)',
+        title: 'Leak Detection Pro City Heights San Diego, CA',
         desc: '24/7 emergency water and gas leak detection in City Heights, San Diego (92105). Non-invasive slab leak locating, acoustic testing & thermal imaging. Call (619) 910-9411.'
       },
       'water-leak': {
