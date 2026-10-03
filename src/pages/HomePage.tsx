@@ -17,7 +17,8 @@ import {
   Zap,
   Layers,
   HelpCircle,
-  Eye
+  Eye,
+  FileText
 } from 'lucide-react';
 import { Page } from '../types';
 import { BUSINESS_INFO, FAQ_ITEMS, TESTIMONIALS, CITY_HEIGHTS_AREAS } from '../data/content';
@@ -716,6 +717,71 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
                     Contact & Driving Directions
                   </button>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 4B. FEATURED BLOG & KNOWLEDGE CENTER: LEAK DETECTION & LEAK REPAIR */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="bg-gradient-to-br from-slate-900 via-slate-900 to-blue-950 text-white rounded-3xl p-6 sm:p-10 border border-slate-800 shadow-2xl">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            <div className="lg:col-span-7 space-y-4">
+              <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-cyan-950/80 border border-cyan-800 text-xs text-cyan-300 font-semibold">
+                <FileText className="w-3.5 h-3.5" />
+                <span>Featured Homeowner Guide • City Heights SEO Hub</span>
+              </div>
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-white tracking-tight leading-snug">
+                Complete Guide to <span className="text-cyan-400">Leak Detection</span> &amp; <span className="text-amber-400">Leak Repair</span>
+              </h2>
+              <p className="text-sm text-slate-300 leading-relaxed max-w-xl">
+                Wondering how acoustic ground microphones and thermal imaging isolate slab leaks without floor demolition? Or what repair method—spot repair vs. overhead PEX bypass—best protects your San Diego foundation? Read our comprehensive local guide.
+              </p>
+              <div className="flex flex-wrap items-center gap-3 pt-2">
+                <button
+                  onClick={() => onNavigate('blog')}
+                  className="px-5 py-3 bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold rounded-xl text-xs sm:text-sm flex items-center gap-2 shadow-lg transition-transform active:scale-95"
+                  id="home-read-blog-btn"
+                >
+                  <span>Read Full Leak Detection &amp; Repair Article</span>
+                  <ArrowRight className="w-4 h-4" />
+                </button>
+                <a
+                  href={BUSINESS_INFO.telLink}
+                  className="px-4 py-3 bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold rounded-xl text-xs sm:text-sm border border-slate-700 flex items-center gap-1.5 transition-colors"
+                >
+                  <Phone className="w-4 h-4 text-emerald-400" />
+                  <span>Call 24/7: {BUSINESS_INFO.phoneFormatted}</span>
+                </a>
+              </div>
+            </div>
+
+            <div className="lg:col-span-5 bg-slate-950/70 border border-slate-800 rounded-2xl p-5 sm:p-6 space-y-3.5">
+              <div className="text-xs font-bold text-slate-400 uppercase tracking-wider">
+                In This Local Diagnostic Guide:
+              </div>
+              <ul className="space-y-2.5 text-xs text-slate-300">
+                <li className="flex items-start gap-2">
+                  <CheckCircle2 className="w-4 h-4 text-cyan-400 shrink-0 mt-0.5" />
+                  <span><strong>Non-Invasive Locating:</strong> Acoustic probes, thermal imaging &amp; line pressure holding.</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle2 className="w-4 h-4 text-cyan-400 shrink-0 mt-0.5" />
+                  <span><strong>Early Warning Signs:</strong> Spinning water meter dials, warm floor spots &amp; bill spikes.</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle2 className="w-4 h-4 text-cyan-400 shrink-0 mt-0.5" />
+                  <span><strong>Repair Methods:</strong> Surgical slab spot repair, overhead rerouting, and gas line clearances.</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle2 className="w-4 h-4 text-cyan-400 shrink-0 mt-0.5" />
+                  <span><strong>Soil Heave Prevention:</strong> Safeguarding City Heights expansive clay foundations.</span>
+                </li>
+              </ul>
+              <div className="pt-2 border-t border-slate-800 flex items-center justify-between text-[11px] text-slate-400">
+                <span>By City Heights Editorial Desk</span>
+                <span className="text-amber-400">6 min read</span>
               </div>
             </div>
           </div>

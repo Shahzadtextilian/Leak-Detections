@@ -1,4 +1,4 @@
-export type Page = 'home' | 'water-leak' | 'gas-leak' | 'about' | 'contact' | 'privacy' | 'disclaimer';
+export type Page = 'home' | 'water-leak' | 'gas-leak' | 'blog' | 'about' | 'contact' | 'privacy' | 'disclaimer';
 
 export interface LeadSubmission {
   id: string;

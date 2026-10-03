@@ -6,6 +6,7 @@ import { StickyCallBanner } from './components/StickyCallBanner';
 import { HomePage } from './pages/HomePage';
 import { WaterLeakPage } from './pages/WaterLeakPage';
 import { GasLeakPage } from './pages/GasLeakPage';
+import { BlogPage } from './pages/BlogPage';
 import { AboutPage } from './pages/AboutPage';
 import { ContactPage } from './pages/ContactPage';
 import { PrivacyPolicyPage } from './pages/PrivacyPolicyPage';
@@ -16,7 +17,7 @@ export default function App() {
 
   // Resolve initial and updated page based on pathname or hash
   useEffect(() => {
-    const validPages: Page[] = ['home', 'water-leak', 'gas-leak', 'about', 'contact', 'privacy', 'disclaimer'];
+    const validPages: Page[] = ['home', 'water-leak', 'gas-leak', 'blog', 'about', 'contact', 'privacy', 'disclaimer'];
 
     const resolvePageFromLocation = (): Page => {
       // First check clean pathname e.g. /water-leak or /water-leak/
@@ -59,6 +60,10 @@ export default function App() {
       'gas-leak': {
         title: 'Emergency Gas Leak Detection City Heights, San Diego CA | 24/7 Hotline',
         desc: 'Emergency natural gas odor detection, line pressure decay testing, and SDG&E coordination in City Heights, San Diego (92105). Rapid 24/7 certified dispatch.'
+      },
+      'blog': {
+        title: 'Leak Detection & Leak Repair Guide | City Heights, San Diego CA',
+        desc: 'Expert guide to non-invasive leak detection and fast leak repair in City Heights (92105). Understand slab leaks, thermal imaging, acoustic tests & emergency dispatch.'
       },
       'about': {
         title: 'About Us | City Heights Local Leak Detection Network (92105)',
@@ -154,6 +159,9 @@ export default function App() {
         )}
         {currentPage === 'gas-leak' && (
           <GasLeakPage onNavigate={handleNavigate} />
+        )}
+        {currentPage === 'blog' && (
+          <BlogPage onNavigate={handleNavigate} />
         )}
         {currentPage === 'about' && (
           <AboutPage onNavigate={handleNavigate} />

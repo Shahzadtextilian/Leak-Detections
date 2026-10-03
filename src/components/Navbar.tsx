@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Phone, ShieldAlert, Droplets, Flame, Menu, X, MapPin, Clock, Info } from 'lucide-react';
+import { Phone, ShieldAlert, Droplets, Flame, Menu, X, MapPin, Clock, Info, FileText } from 'lucide-react';
 import { Page } from '../types';
 import { BUSINESS_INFO } from '../data/content';
 
@@ -129,6 +129,23 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate }) => {
             </a>
 
             <a
+              href="/blog"
+              onClick={(e) => {
+                e.preventDefault();
+                handleNav('blog');
+              }}
+              className={`px-2.5 xl:px-3 py-2 rounded-lg text-xs xl:text-sm font-medium flex items-center gap-1.5 transition-colors whitespace-nowrap ${
+                currentPage === 'blog'
+                  ? 'bg-cyan-50 text-cyan-800 font-semibold'
+                  : 'text-slate-700 hover:text-cyan-700 hover:bg-slate-50'
+              }`}
+              id="nav-link-blog"
+            >
+              <FileText className="w-4 h-4 text-cyan-600 shrink-0" />
+              <span>Blog &amp; Guides</span>
+            </a>
+
+            <a
               href="/about"
               onClick={(e) => {
                 e.preventDefault();
@@ -251,6 +268,19 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate }) => {
           >
             <Flame className="w-4 h-4 text-amber-500" />
             Gas Leak Detection
+          </a>
+          <a
+            href="/blog"
+            onClick={(e) => {
+              e.preventDefault();
+              handleNav('blog');
+            }}
+            className={`w-full block text-left px-3.5 py-2.5 rounded-lg text-sm font-medium flex items-center gap-2 ${
+              currentPage === 'blog' ? 'bg-cyan-50 text-cyan-800 font-semibold' : 'text-slate-800'
+            }`}
+          >
+            <FileText className="w-4 h-4 text-cyan-600" />
+            Leak Detection &amp; Repair Blog
           </a>
           <a
             href="/about"

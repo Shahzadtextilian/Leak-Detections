@@ -1,5 +1,16 @@
 import React from 'react';
-import { Phone, MapPin, ShieldAlert, Droplets, Flame, Clock, HeartHandshake } from 'lucide-react';
+import {
+  Phone,
+  MapPin,
+  ShieldAlert,
+  Droplets,
+  Flame,
+  Clock,
+  HeartHandshake,
+  FileText,
+  Facebook,
+  Instagram
+} from 'lucide-react';
 import { Page } from '../types';
 import { BUSINESS_INFO, LEGAL_DISCLAIMER, CITY_HEIGHTS_AREAS } from '../data/content';
 
@@ -29,7 +40,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               </span>
             </div>
             <p className="text-xs text-slate-400 leading-relaxed">
-              Your trusted connection for prompt, non-destructive water and gas leak detection referrals throughout City Heights, San Diego CA 92105.
+              Your trusted connection for prompt, non-destructive water and gas leak detection and leak repair referrals throughout City Heights, San Diego CA 92105.
             </p>
             <div className="pt-1 space-y-2 text-xs">
               <div className="flex items-start gap-2 text-slate-300">
@@ -49,6 +60,33 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               <div className="flex items-center gap-2 text-slate-300">
                 <Clock className="w-4 h-4 text-blue-400 shrink-0" />
                 <span>24/7 Rapid Emergency Dispatch Line</span>
+              </div>
+            </div>
+
+            {/* Social Media Links in Brand Column */}
+            <div className="pt-3 border-t border-slate-800 space-y-2">
+              <div className="text-xs font-semibold text-slate-300">Follow Our Community Updates:</div>
+              <div className="flex items-center gap-2.5">
+                <a
+                  href="https://facebook.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Visit Leak Detection Pro on Facebook"
+                  className="px-3 py-1.5 rounded-lg bg-slate-900 hover:bg-blue-600 text-slate-300 hover:text-white text-xs font-medium flex items-center gap-1.5 transition-colors border border-slate-800"
+                >
+                  <Facebook className="w-3.5 h-3.5 text-blue-400 group-hover:text-white" />
+                  <span>Facebook</span>
+                </a>
+                <a
+                  href="https://instagram.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Visit Leak Detection Pro on Instagram"
+                  className="px-3 py-1.5 rounded-lg bg-slate-900 hover:bg-pink-600 text-slate-300 hover:text-white text-xs font-medium flex items-center gap-1.5 transition-colors border border-slate-800"
+                >
+                  <Instagram className="w-3.5 h-3.5 text-pink-400 group-hover:text-white" />
+                  <span>Instagram</span>
+                </a>
               </div>
             </div>
           </div>
@@ -156,10 +194,10 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
             </p>
           </div>
 
-          {/* Col 4: Quick Links & Trust */}
+          {/* Col 4: Quick Links, Blog & Legal */}
           <div className="space-y-3">
             <h4 className="text-sm font-bold uppercase tracking-wider text-slate-100">
-              Company & Legal
+              Company &amp; Resources
             </h4>
             <ul className="space-y-2 text-sm text-slate-400">
               <li>
@@ -172,6 +210,19 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                   className="hover:text-white transition-colors block"
                 >
                   Home
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/blog"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    handleNav('blog');
+                  }}
+                  className="hover:text-cyan-400 transition-colors flex items-center gap-1.5 font-medium text-cyan-300"
+                >
+                  <FileText className="w-3.5 h-3.5 text-cyan-400" />
+                  <span>Leak Detection &amp; Repair Blog</span>
                 </a>
               </li>
               <li>
@@ -227,19 +278,46 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
             <div className="pt-3 border-t border-slate-800">
               <div className="flex items-center gap-2 text-xs text-slate-300">
                 <HeartHandshake className="w-4 h-4 text-blue-400" />
-                <span>Pre-screened & CSLB licensed independent contractor network</span>
+                <span>Pre-screened &amp; CSLB licensed independent contractor network</span>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Bottom copyright & emergency warning */}
+        {/* Bottom copyright, social media links & emergency warning */}
         <div className="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-slate-500">
           <p>
             &copy; {new Date().getFullYear()} Leak Detection Pro. All rights reserved. 3431 43rd St, San Diego, CA 92105.
           </p>
+
+          {/* Social Links Centered on Bottom Bar */}
+          <div className="flex items-center gap-4 text-xs text-slate-400">
+            <span className="text-slate-500 font-medium">Follow Us:</span>
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-blue-400 flex items-center gap-1.5 transition-colors"
+              aria-label="Facebook Page"
+            >
+              <Facebook className="w-4 h-4 text-blue-500" />
+              <span>Facebook</span>
+            </a>
+            <span className="text-slate-700">•</span>
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-pink-400 flex items-center gap-1.5 transition-colors"
+              aria-label="Instagram Page"
+            >
+              <Instagram className="w-4 h-4 text-pink-500" />
+              <span>Instagram</span>
+            </a>
+          </div>
+
           <p className="text-center md:text-right text-[11px] text-slate-400">
-            Immediate Gas Emergency? Call 911 or SDG&E at 1-800-411-7343 before ordering contractor service.
+            Immediate Gas Emergency? Call 911 or SDG&amp;E at 1-800-411-7343 before ordering contractor service.
           </p>
         </div>
       </div>
