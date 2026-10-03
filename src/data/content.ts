@@ -21,7 +21,9 @@ export const BUSINESS_INFO = {
     'Officer Jeremy Henwood Memorial Park',
     'Teralta Park / Interstate 15 lid',
     'Colina Del Sol Golf Course'
-  ]
+  ],
+  facebookUrl: 'https://www.facebook.com/profile.php?id=61595322680001',
+  instagramUrl: 'https://instagram.com'
 };
 
 export const LEGAL_DISCLAIMER = {

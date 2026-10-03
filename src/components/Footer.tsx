@@ -68,7 +68,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               <div className="text-xs font-semibold text-slate-300">Follow Our Community Updates:</div>
               <div className="flex items-center gap-2.5">
                 <a
-                  href="https://facebook.com"
+                  href={BUSINESS_INFO.facebookUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Visit Leak Detection Pro on Facebook"
@@ -294,7 +294,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
           <div className="flex items-center gap-4 text-xs text-slate-400">
             <span className="text-slate-500 font-medium">Follow Us:</span>
             <a
-              href="https://facebook.com"
+              href={BUSINESS_INFO.facebookUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-blue-400 flex items-center gap-1.5 transition-colors"

@@ -337,7 +337,7 @@ export const BlogPage: React.FC<BlogPageProps> = ({ onNavigate }) => {
 
           <div className="flex items-center gap-3">
             <a
-              href="https://facebook.com"
+              href={BUSINESS_INFO.facebookUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-blue-50 text-blue-700 hover:bg-blue-100 font-medium transition-colors border border-blue-200"
