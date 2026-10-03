@@ -16,8 +16,7 @@ import {
   Layers,
   FileText,
   Share2,
-  Facebook,
-  Instagram
+  Facebook
 } from 'lucide-react';
 import { Page } from '../types';
 import { BUSINESS_INFO } from '../data/content';
@@ -345,17 +344,6 @@ export const BlogPage: React.FC<BlogPageProps> = ({ onNavigate }) => {
             >
               <Facebook className="w-4 h-4 text-blue-600" />
               <span>Facebook</span>
-            </a>
-
-            <a
-              href="https://instagram.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-pink-50 text-pink-700 hover:bg-pink-100 font-medium transition-colors border border-pink-200"
-              aria-label="Follow Leak Detection Pro on Instagram"
-            >
-              <Instagram className="w-4 h-4 text-pink-600" />
-              <span>Instagram</span>
             </a>
           </div>
         </div>

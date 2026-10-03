@@ -22,8 +22,7 @@ export const BUSINESS_INFO = {
     'Teralta Park / Interstate 15 lid',
     'Colina Del Sol Golf Course'
   ],
-  facebookUrl: 'https://www.facebook.com/profile.php?id=61595322680001',
-  instagramUrl: 'https://instagram.com'
+  facebookUrl: 'https://www.facebook.com/profile.php?id=61595322680001'
 };
 
 export const LEGAL_DISCLAIMER = {

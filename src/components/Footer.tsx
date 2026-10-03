@@ -8,8 +8,7 @@ import {
   Clock,
   HeartHandshake,
   FileText,
-  Facebook,
-  Instagram
+  Facebook
 } from 'lucide-react';
 import { Page } from '../types';
 import { BUSINESS_INFO, LEGAL_DISCLAIMER, CITY_HEIGHTS_AREAS } from '../data/content';
@@ -76,16 +75,6 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                 >
                   <Facebook className="w-3.5 h-3.5 text-blue-400 group-hover:text-white" />
                   <span>Facebook</span>
-                </a>
-                <a
-                  href="https://instagram.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Visit Leak Detection Pro on Instagram"
-                  className="px-3 py-1.5 rounded-lg bg-slate-900 hover:bg-pink-600 text-slate-300 hover:text-white text-xs font-medium flex items-center gap-1.5 transition-colors border border-slate-800"
-                >
-                  <Instagram className="w-3.5 h-3.5 text-pink-400 group-hover:text-white" />
-                  <span>Instagram</span>
                 </a>
               </div>
             </div>
@@ -291,7 +280,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
           </p>
 
           {/* Social Links Centered on Bottom Bar */}
-          <div className="flex items-center gap-4 text-xs text-slate-400">
+          <div className="flex items-center gap-2.5 text-xs text-slate-400">
             <span className="text-slate-500 font-medium">Follow Us:</span>
             <a
               href={BUSINESS_INFO.facebookUrl}
@@ -302,17 +291,6 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
             >
               <Facebook className="w-4 h-4 text-blue-500" />
               <span>Facebook</span>
-            </a>
-            <span className="text-slate-700">•</span>
-            <a
-              href="https://instagram.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-pink-400 flex items-center gap-1.5 transition-colors"
-              aria-label="Instagram Page"
-            >
-              <Instagram className="w-4 h-4 text-pink-500" />
-              <span>Instagram</span>
             </a>
           </div>
 
