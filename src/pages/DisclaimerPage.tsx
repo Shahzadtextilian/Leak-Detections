@@ -5,10 +5,9 @@ import { BUSINESS_INFO, LEGAL_DISCLAIMER } from '../data/content';
 
 interface DisclaimerPageProps {
   onNavigate: (page: Page) => void;
-  onOpenQuote: () => void;
 }
 
-export const DisclaimerPage: React.FC<DisclaimerPageProps> = ({ onNavigate, onOpenQuote }) => {
+export const DisclaimerPage: React.FC<DisclaimerPageProps> = ({ onNavigate }) => {
   return (
     <div className="space-y-12 pb-16">
       {/* Header */}

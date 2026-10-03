@@ -17,10 +17,9 @@ import { APP_IMAGES } from '../data/images';
 
 interface AboutPageProps {
   onNavigate: (page: Page) => void;
-  onOpenQuote: () => void;
 }
 
-export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate, onOpenQuote }) => {
+export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
   return (
     <div className="space-y-16 pb-16">
       {/* Header */}
@@ -175,12 +174,16 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate, onOpenQuote })
               >
                 Call {BUSINESS_INFO.phoneFormatted}
               </a>
-              <button
-                onClick={onOpenQuote}
+              <a
+                href="/contact"
+                onClick={(e) => {
+                  e.preventDefault();
+                  onNavigate('contact');
+                }}
                 className="block w-full py-3 bg-slate-700 hover:bg-slate-600 text-slate-200 font-semibold rounded-xl text-xs"
               >
-                Request Online Quote
-              </button>
+                View Dispatch Office &amp; Details
+              </a>
             </div>
           </div>
         </div>

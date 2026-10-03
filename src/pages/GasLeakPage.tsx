@@ -16,15 +16,13 @@ import {
 } from 'lucide-react';
 import { Page } from '../types';
 import { BUSINESS_INFO } from '../data/content';
-import { LeadCaptureForm } from '../components/LeadCaptureForm';
 import { APP_IMAGES } from '../data/images';
 
 interface GasLeakPageProps {
   onNavigate: (page: Page) => void;
-  onOpenQuote: (service?: 'water' | 'gas') => void;
 }
 
-export const GasLeakPage: React.FC<GasLeakPageProps> = ({ onNavigate, onOpenQuote }) => {
+export const GasLeakPage: React.FC<GasLeakPageProps> = ({ onNavigate }) => {
   const [openFaq, setOpenFaq] = useState<number | null>(0);
 
   const gasFaqs = [
@@ -93,13 +91,6 @@ export const GasLeakPage: React.FC<GasLeakPageProps> = ({ onNavigate, onOpenQuot
                   <Phone className="w-4 h-4" />
                   <span>Call Emergency Gas Dispatch: {BUSINESS_INFO.phoneFormatted}</span>
                 </a>
-
-                <button
-                  onClick={() => onOpenQuote('gas')}
-                  className="bg-amber-800/80 hover:bg-amber-700 text-white font-semibold px-5 py-3.5 rounded-xl text-sm border border-amber-600"
-                >
-                  Request Dispatch Quote
-                </button>
               </div>
             </div>
 
@@ -331,21 +322,43 @@ export const GasLeakPage: React.FC<GasLeakPageProps> = ({ onNavigate, onOpenQuot
           {/* Sidebar */}
           <div className="lg:col-span-4 space-y-6">
             <div className="sticky top-28 space-y-6">
-              <LeadCaptureForm initialService="gas" compact />
-
-              <div className="bg-amber-50 border border-amber-200 rounded-2xl p-5 text-xs text-amber-950 space-y-3">
-                <div className="flex items-center gap-2 font-bold text-sm text-amber-950">
-                  <Phone className="w-4 h-4 text-amber-700" />
-                  <span>Urgent Gas Dispatch Line</span>
+              <div className="bg-slate-900 text-white rounded-2xl p-6 border border-slate-800 shadow-xl space-y-4">
+                <div className="flex items-center gap-2 text-xs uppercase tracking-wider font-bold text-amber-400">
+                  <span className="flex h-2 w-2 relative">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span>
+                    <span className="relative inline-flex rounded-full h-2 w-2 bg-amber-500"></span>
+                  </span>
+                  <span>Urgent Gas Safety &amp; Dispatch</span>
                 </div>
-                <p className="text-amber-900 leading-relaxed">
-                  Call our 24/7 City Heights hotline. A coordinator will dispatch an on-call licensed gas specialist to your property right away.
+                <h3 className="text-xl font-extrabold text-white">
+                  Smell Rotten Eggs or Gas?
+                </h3>
+                <p className="text-xs text-slate-300 leading-relaxed">
+                  Evacuate immediately if odor is strong. For line inspections, digital PPM sniffing, and SDG&amp;E red-tag clearance, call our direct 24/7 hotline.
                 </p>
+                <div className="p-3 bg-slate-800/80 rounded-xl border border-slate-700 space-y-2 text-xs text-slate-300">
+                  <div className="flex items-center justify-between">
+                    <span>Dispatch Priority:</span>
+                    <strong className="text-amber-400">Immediate Routing</strong>
+                  </div>
+                  <div className="flex items-center justify-between">
+                    <span>Safety Standard:</span>
+                    <strong className="text-white">CSLB Gas Licensed</strong>
+                  </div>
+                  <div className="flex items-center justify-between">
+                    <span>SDG&amp;E Notice:</span>
+                    <strong className="text-emerald-400">Clearance Repairs</strong>
+                  </div>
+                </div>
                 <a
                   href={BUSINESS_INFO.telLink}
-                  className="block w-full py-3 bg-red-600 hover:bg-red-700 text-white font-bold text-center rounded-xl shadow-xs"
+                  className="block w-full py-3.5 bg-amber-600 hover:bg-amber-700 active:scale-98 text-white font-extrabold text-center rounded-xl shadow-lg transition-all"
+                  id="gas-sidebar-call"
                 >
-                  Call {BUSINESS_INFO.phoneFormatted}
+                  <div className="flex items-center justify-center gap-2">
+                    <Phone className="w-4 h-4 animate-pulse" />
+                    <span>Call Gas Hotline: {BUSINESS_INFO.phoneFormatted}</span>
+                  </div>
                 </a>
               </div>
             </div>

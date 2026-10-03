@@ -18,15 +18,13 @@ import {
 } from 'lucide-react';
 import { Page } from '../types';
 import { BUSINESS_INFO } from '../data/content';
-import { LeadCaptureForm } from '../components/LeadCaptureForm';
 import { APP_IMAGES } from '../data/images';
 
 interface WaterLeakPageProps {
   onNavigate: (page: Page) => void;
-  onOpenQuote: (service?: 'water' | 'gas') => void;
 }
 
-export const WaterLeakPage: React.FC<WaterLeakPageProps> = ({ onNavigate, onOpenQuote }) => {
+export const WaterLeakPage: React.FC<WaterLeakPageProps> = ({ onNavigate }) => {
   const [openFaq, setOpenFaq] = useState<number | null>(0);
 
   const waterFaqs = [
@@ -87,13 +85,6 @@ export const WaterLeakPage: React.FC<WaterLeakPageProps> = ({ onNavigate, onOpen
                   <Phone className="w-4 h-4" />
                   <span>Call 24/7 Water Dispatch: {BUSINESS_INFO.phoneFormatted}</span>
                 </a>
-
-                <button
-                  onClick={() => onOpenQuote('water')}
-                  className="bg-blue-800/80 hover:bg-blue-700 text-white font-semibold px-5 py-3.5 rounded-xl text-sm border border-blue-600"
-                >
-                  Request Dispatch Quote
-                </button>
               </div>
             </div>
 
@@ -293,24 +284,46 @@ export const WaterLeakPage: React.FC<WaterLeakPageProps> = ({ onNavigate, onOpen
             </div>
           </div>
 
-          {/* Sidebar Quote Request */}
+          {/* Sidebar Emergency Dispatch */}
           <div className="lg:col-span-4 space-y-6">
             <div className="sticky top-28 space-y-6">
-              <LeadCaptureForm initialService="water" compact />
-
-              <div className="bg-blue-50 border border-blue-200 rounded-2xl p-5 text-xs text-blue-900 space-y-3">
-                <div className="flex items-center gap-2 font-bold text-sm text-blue-950">
-                  <Phone className="w-4 h-4 text-blue-700" />
-                  <span>Prefer to Speak to a Human?</span>
+              <div className="bg-slate-900 text-white rounded-2xl p-6 border border-slate-800 shadow-xl space-y-4">
+                <div className="flex items-center gap-2 text-xs uppercase tracking-wider font-bold text-cyan-300">
+                  <span className="flex h-2 w-2 relative">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                    <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+                  </span>
+                  <span>24/7 Water Leak Priority Dispatch</span>
                 </div>
-                <p className="text-blue-800 leading-relaxed">
-                  Call our 24/7 City Heights dispatch hotline. A representative will gather your address details and match you with the closest licensed technician.
+                <h3 className="text-xl font-extrabold text-white">
+                  Need Immediate Water Leak Help?
+                </h3>
+                <p className="text-xs text-slate-300 leading-relaxed">
+                  Connect directly with on-call licensed leak detection specialists stationed in City Heights (92105) equipped with acoustic listening probes and thermal imaging cameras.
                 </p>
+                <div className="p-3 bg-slate-800/80 rounded-xl border border-slate-700 space-y-2 text-xs text-slate-300">
+                  <div className="flex items-center justify-between">
+                    <span>Average Response:</span>
+                    <strong className="text-emerald-400">45-90 Minutes</strong>
+                  </div>
+                  <div className="flex items-center justify-between">
+                    <span>Local Base:</span>
+                    <strong className="text-white">3431 43rd St</strong>
+                  </div>
+                  <div className="flex items-center justify-between">
+                    <span>Diagnostic Tools:</span>
+                    <strong className="text-cyan-300">FLIR &amp; Acoustic</strong>
+                  </div>
+                </div>
                 <a
                   href={BUSINESS_INFO.telLink}
-                  className="block w-full py-3 bg-red-600 hover:bg-red-700 text-white font-bold text-center rounded-xl shadow-xs"
+                  className="block w-full py-3.5 bg-red-600 hover:bg-red-700 active:scale-98 text-white font-extrabold text-center rounded-xl shadow-lg transition-all"
+                  id="water-sidebar-call"
                 >
-                  Call {BUSINESS_INFO.phoneFormatted}
+                  <div className="flex items-center justify-center gap-2">
+                    <Phone className="w-4 h-4 animate-pulse" />
+                    <span>Call: {BUSINESS_INFO.phoneFormatted}</span>
+                  </div>
                 </a>
               </div>
             </div>

@@ -21,16 +21,14 @@ import {
 } from 'lucide-react';
 import { Page } from '../types';
 import { BUSINESS_INFO, FAQ_ITEMS, TESTIMONIALS, CITY_HEIGHTS_AREAS } from '../data/content';
-import { LeadCaptureForm } from '../components/LeadCaptureForm';
 import { LocationMap } from '../components/LocationMap';
 import { APP_IMAGES } from '../data/images';
 
 interface HomePageProps {
   onNavigate: (page: Page) => void;
-  onOpenQuote: (service?: 'water' | 'gas') => void;
 }
 
-export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onOpenQuote }) => {
+export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
   const [openFaq, setOpenFaq] = useState<number | null>(0);
   const [diagnosticChoice, setDiagnosticChoice] = useState<'water' | 'gas'>('water');
 
@@ -63,7 +61,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onOpenQuote }) =
                 <span className="text-slate-300 hidden sm:inline">3431 43rd St Corridor</span>
                 <span className="text-slate-600">&bull;</span>
                 <span className="text-emerald-400 font-medium flex items-center gap-1">
-                  <Clock className="w-3 h-3" /> Rapid &lt; 15 Min Match
+                  <Clock className="w-3 h-3" /> Rapid 24/7 Dispatch
                 </span>
               </div>
 
@@ -123,13 +121,17 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onOpenQuote }) =
                   <span>Call 24/7 Hotline: {BUSINESS_INFO.phoneFormatted}</span>
                 </a>
 
-                <button
-                  onClick={() => onOpenQuote('water')}
+                <a
+                  href="/water-leak"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    onNavigate('water-leak');
+                  }}
                   className="px-4 py-3.5 bg-slate-800 hover:bg-slate-700 text-white rounded-xl font-bold text-sm border border-slate-600 transition-colors flex items-center justify-center gap-2"
                 >
-                  <span>Request Online Quote</span>
+                  <span>Explore Leak Services</span>
                   <ArrowRight className="w-4 h-4" />
-                </button>
+                </a>
               </div>
 
               {/* Authentic Equipment & Field Preview in Hero */}
@@ -160,9 +162,63 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onOpenQuote }) =
               </div>
             </div>
 
-            {/* Right Col: Instant Dispatch / Quote Card */}
+            {/* Right Col: 24/7 Emergency Dispatch Information Showcase */}
             <div className="lg:col-span-5">
-              <LeadCaptureForm initialService="water" compact />
+              <div className="bg-slate-800/80 border border-slate-700/80 rounded-2xl p-6 shadow-2xl space-y-5">
+                <div className="relative rounded-xl overflow-hidden border border-slate-700">
+                  <img
+                    src={APP_IMAGES.heroWaterLeak}
+                    alt="Acoustic ground sensor detecting slab water leak in City Heights"
+                    width={500}
+                    height={280}
+                    className="w-full h-56 object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent flex items-end p-4">
+                    <div>
+                      <span className="text-[11px] font-bold text-emerald-400 bg-emerald-950/80 px-2 py-0.5 rounded border border-emerald-800">
+                        ● Technicians On Call 24/7
+                      </span>
+                      <div className="text-white font-bold text-sm mt-1">
+                        City Heights (92105) &amp; San Diego County
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="space-y-3">
+                  <div className="flex items-center justify-between text-xs text-slate-300">
+                    <span className="flex items-center gap-1.5 font-semibold text-white">
+                      <MapPin className="w-3.5 h-3.5 text-red-400" />
+                      3431 43rd St, City Heights
+                    </span>
+                    <span className="text-emerald-400 font-bold">45-90 Min Response</span>
+                  </div>
+
+                  <div className="grid grid-cols-2 gap-2 text-xs">
+                    <div className="p-3 rounded-xl bg-slate-900/80 border border-slate-700">
+                      <div className="font-bold text-blue-400 flex items-center gap-1.5">
+                        <Droplets className="w-4 h-4" /> Water Leaks
+                      </div>
+                      <div className="text-[11px] text-slate-400 mt-1">Acoustic &amp; FLIR slab leak pinpointing</div>
+                    </div>
+                    <div className="p-3 rounded-xl bg-slate-900/80 border border-slate-700">
+                      <div className="font-bold text-amber-400 flex items-center gap-1.5">
+                        <Flame className="w-4 h-4" /> Gas Leaks
+                      </div>
+                      <div className="text-[11px] text-slate-400 mt-1">Sniffing &amp; SDG&amp;E safety clearance</div>
+                    </div>
+                  </div>
+
+                  <a
+                    href={BUSINESS_INFO.telLink}
+                    className="w-full py-3.5 px-4 bg-red-600 hover:bg-red-700 active:scale-98 text-white font-extrabold text-sm rounded-xl flex items-center justify-center gap-2 shadow-lg transition-all"
+                    id="hero-dispatch-box-call"
+                  >
+                    <Phone className="w-4 h-4" />
+                    <span>Call 24/7 Dispatch: {BUSINESS_INFO.phoneFormatted}</span>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -261,12 +317,13 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onOpenQuote }) =
                 <ArrowRight className="w-4 h-4" />
               </a>
 
-              <button
-                onClick={() => onOpenQuote('water')}
-                className="px-3.5 py-2 bg-blue-50 hover:bg-blue-100 text-blue-700 rounded-lg text-xs font-semibold"
+              <a
+                href={BUSINESS_INFO.telLink}
+                className="px-3.5 py-2 bg-blue-50 hover:bg-blue-100 text-blue-700 rounded-lg text-xs font-bold flex items-center gap-1.5 transition-colors"
               >
-                Get Water Quote
-              </button>
+                <Phone className="w-3.5 h-3.5 text-blue-600" />
+                <span>Call Dispatch</span>
+              </a>
             </div>
           </div>
 
@@ -348,12 +405,13 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onOpenQuote }) =
                 <ArrowRight className="w-4 h-4" />
               </a>
 
-              <button
-                onClick={() => onOpenQuote('gas')}
-                className="px-3.5 py-2 bg-amber-50 hover:bg-amber-100 text-amber-800 rounded-lg text-xs font-semibold"
+              <a
+                href={BUSINESS_INFO.telLink}
+                className="px-3.5 py-2 bg-amber-50 hover:bg-amber-100 text-amber-800 rounded-lg text-xs font-bold flex items-center gap-1.5 transition-colors"
               >
-                Get Gas Quote
-              </button>
+                <Phone className="w-3.5 h-3.5 text-amber-600" />
+                <span>Emergency Call</span>
+              </a>
             </div>
           </div>
         </div>
@@ -779,12 +837,17 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onOpenQuote }) =
                 <span>Call {BUSINESS_INFO.phoneFormatted}</span>
               </a>
 
-              <button
-                onClick={() => onOpenQuote('water')}
-                className="w-full sm:w-auto bg-blue-600/60 hover:bg-blue-600 text-white font-bold px-6 py-4 rounded-xl text-sm border border-white/30 transition-all"
+              <a
+                href="/contact"
+                onClick={(e) => {
+                  e.preventDefault();
+                  onNavigate('contact');
+                }}
+                className="w-full sm:w-auto bg-blue-600/60 hover:bg-blue-600 text-white font-bold px-6 py-4 rounded-xl text-sm border border-white/30 transition-all flex items-center justify-center gap-2"
               >
-                Request Free Match Online
-              </button>
+                <span>Dispatch Office &amp; Hours</span>
+                <ArrowRight className="w-4 h-4" />
+              </a>
             </div>
           </div>
         </div>

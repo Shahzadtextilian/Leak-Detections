@@ -6,10 +6,9 @@ import { BUSINESS_INFO } from '../data/content';
 interface NavbarProps {
   currentPage: Page;
   onNavigate: (page: Page) => void;
-  onOpenQuote: () => void;
 }
 
-export const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate, onOpenQuote }) => {
+export const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const handleNav = (page: Page) => {
@@ -181,14 +180,6 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate, onOpenQ
                 </div>
               </div>
             </a>
-
-            <button
-              onClick={onOpenQuote}
-              className="hidden 2xl:inline-flex px-3.5 py-2 bg-slate-100 hover:bg-slate-200 text-slate-800 rounded-xl text-sm font-semibold transition-colors border border-slate-300 shrink-0 whitespace-nowrap"
-              id="header-quote-btn"
-            >
-              Get Dispatch Quote
-            </button>
           </div>
 
           {/* Mobile Menu Toggle */}
@@ -217,9 +208,9 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate, onOpenQ
       {mobileMenuOpen && (
         <div className="lg:hidden border-t border-slate-200 bg-white px-4 pt-3 pb-6 space-y-2 shadow-xl animate-in slide-in-from-top-2">
           <div className="p-3 bg-blue-50/60 rounded-xl border border-blue-100 text-xs text-blue-900 mb-3">
-            <p className="font-semibold text-blue-950">City Heights Lead Matching Service</p>
+            <p className="font-semibold text-blue-950">City Heights 24/7 Leak Detection Network</p>
             <p className="text-blue-800 mt-0.5">
-              3431 43rd St, San Diego, CA 92105 • Free dispatch estimate
+              3431 43rd St, San Diego, CA 92105 • Priority local dispatch
             </p>
           </div>
 
@@ -314,20 +305,11 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate, onOpenQ
           <div className="pt-3 border-t border-slate-200 flex flex-col gap-2">
             <a
               href={BUSINESS_INFO.telLink}
-              className="w-full flex items-center justify-center gap-2 bg-red-600 text-white font-bold py-3 rounded-xl shadow-md"
+              className="w-full flex items-center justify-center gap-2 bg-red-600 text-white font-bold py-3.5 rounded-xl shadow-md"
             >
               <Phone className="w-4 h-4" />
               <span>Call Emergency Line: {BUSINESS_INFO.phoneFormatted}</span>
             </a>
-            <button
-              onClick={() => {
-                setMobileMenuOpen(false);
-                onOpenQuote();
-              }}
-              className="w-full py-2.5 bg-blue-50 border border-blue-200 text-blue-700 font-semibold rounded-xl text-sm"
-            >
-              Request Contractor Quote Online
-            </button>
           </div>
         </div>
       )}
