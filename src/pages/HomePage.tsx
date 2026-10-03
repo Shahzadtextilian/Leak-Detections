@@ -67,9 +67,9 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
 
               {/* Refined, Balanced Title with High Aesthetic Hierarchy */}
               <h1 className="text-3xl sm:text-4xl lg:text-[42px] xl:text-[48px] font-extrabold tracking-tight text-white leading-[1.16]">
-                <span className="text-slate-100">City Heights Water &amp; Gas Leak</span>
+                <span className="text-slate-100">Water &amp; Gas Leak</span>
                 <span className="block text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-sky-300 to-blue-400 mt-1 sm:mt-1.5">
-                  Detection &amp; Repair Services
+                  Detection &amp; Repair Services in City Heights, San Diego
                 </span>
               </h1>
 
