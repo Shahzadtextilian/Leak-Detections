@@ -47,7 +47,7 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate }) => {
 
       {/* Main Navbar */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between min-h-[76px] py-2">
+        <div className="flex items-center justify-between min-h-[72px] lg:min-h-[76px] py-2 gap-2 sm:gap-4">
           {/* Brand Logo */}
           <a
             href="/"
@@ -55,38 +55,38 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate }) => {
               e.preventDefault();
               handleNav('home');
             }}
-            className="flex items-center gap-3 text-left group focus:outline-none shrink-0"
+            className="flex items-center gap-2.5 sm:gap-3 text-left group focus:outline-none shrink-0"
             id="brand-logo-btn"
           >
-            <div className="w-11 h-11 rounded-2xl bg-gradient-to-br from-blue-600 to-indigo-700 flex items-center justify-center text-white shadow-md shadow-blue-500/20 group-hover:scale-105 transition-transform shrink-0">
-              <Droplets className="w-6 h-6" />
+            <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-2xl bg-gradient-to-br from-blue-600 to-indigo-700 flex items-center justify-center text-white shadow-md shadow-blue-500/20 group-hover:scale-105 transition-transform shrink-0">
+              <Droplets className="w-5 h-5 sm:w-6 sm:h-6" />
             </div>
-            <div className="whitespace-nowrap">
-              <div className="flex items-center gap-2.5 whitespace-nowrap">
-                <span className="text-xl sm:text-2xl font-extrabold tracking-tight text-slate-900 whitespace-nowrap">
+            <div>
+              <div className="flex items-center gap-2">
+                <span className="text-lg sm:text-xl xl:text-2xl font-extrabold tracking-tight text-slate-900 whitespace-nowrap">
                   Leak Detection <span className="text-blue-600">Pro</span>
                 </span>
-                <span className="bg-blue-50/80 text-blue-700 text-xs font-semibold px-2.5 py-0.5 rounded-full border border-blue-200/80 whitespace-nowrap shrink-0">
+                <span className="hidden sm:inline-flex lg:hidden 2xl:inline-flex bg-blue-50/80 text-blue-700 text-xs font-semibold px-2 py-0.5 rounded-full border border-blue-200/80 whitespace-nowrap shrink-0">
                   City Heights, CA
                 </span>
               </div>
-              <p className="text-xs text-slate-500 font-medium hidden sm:block whitespace-nowrap mt-0.5">
+              <p className="text-[11px] text-slate-500 font-medium hidden 2xl:block whitespace-nowrap mt-0.5">
                 San Diego Water &amp; Gas Leak Detection &amp; Repair
               </p>
             </div>
           </a>
 
           {/* Desktop Nav Links */}
-          <nav className="hidden lg:flex items-center gap-1 xl:gap-1.5 shrink-0">
+          <nav className="hidden lg:flex items-center gap-0.5 xl:gap-1 2xl:gap-1.5 shrink">
             <a
               href="/"
               onClick={(e) => {
                 e.preventDefault();
                 handleNav('home');
               }}
-              className={`px-2.5 xl:px-3 py-2 rounded-lg text-xs xl:text-sm font-medium transition-colors whitespace-nowrap ${
+              className={`px-2 xl:px-2.5 2xl:px-3 py-1.5 xl:py-2 rounded-lg text-xs xl:text-sm font-medium transition-colors whitespace-nowrap ${
                 currentPage === 'home'
-                  ? 'bg-blue-50 text-blue-700'
+                  ? 'bg-blue-50 text-blue-700 font-semibold'
                   : 'text-slate-700 hover:text-blue-600 hover:bg-slate-50'
               }`}
               id="nav-link-home"
@@ -100,15 +100,17 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate }) => {
                 e.preventDefault();
                 handleNav('water-leak');
               }}
-              className={`px-2.5 xl:px-3 py-2 rounded-lg text-xs xl:text-sm font-medium flex items-center gap-1.5 transition-colors whitespace-nowrap ${
+              className={`px-2 xl:px-2.5 2xl:px-3 py-1.5 xl:py-2 rounded-lg text-xs xl:text-sm font-medium flex items-center gap-1 xl:gap-1.5 transition-colors whitespace-nowrap ${
                 currentPage === 'water-leak'
-                  ? 'bg-blue-50 text-blue-700'
+                  ? 'bg-blue-50 text-blue-700 font-semibold'
                   : 'text-slate-700 hover:text-blue-600 hover:bg-slate-50'
               }`}
               id="nav-link-water"
             >
-              <Droplets className="w-4 h-4 text-blue-500 shrink-0" />
-              <span>Water Leak Detection</span>
+              <Droplets className="w-3.5 h-3.5 xl:w-4 xl:h-4 text-blue-500 shrink-0" />
+              <span>
+                Water Leak<span className="hidden 2xl:inline"> Detection</span>
+              </span>
             </a>
 
             <a
@@ -117,15 +119,17 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate }) => {
                 e.preventDefault();
                 handleNav('gas-leak');
               }}
-              className={`px-2.5 xl:px-3 py-2 rounded-lg text-xs xl:text-sm font-medium flex items-center gap-1.5 transition-colors whitespace-nowrap ${
+              className={`px-2 xl:px-2.5 2xl:px-3 py-1.5 xl:py-2 rounded-lg text-xs xl:text-sm font-medium flex items-center gap-1 xl:gap-1.5 transition-colors whitespace-nowrap ${
                 currentPage === 'gas-leak'
-                  ? 'bg-amber-50 text-amber-800'
+                  ? 'bg-amber-50 text-amber-800 font-semibold'
                   : 'text-slate-700 hover:text-amber-700 hover:bg-slate-50'
               }`}
               id="nav-link-gas"
             >
-              <Flame className="w-4 h-4 text-amber-500 shrink-0" />
-              <span>Gas Leak Detection</span>
+              <Flame className="w-3.5 h-3.5 xl:w-4 xl:h-4 text-amber-500 shrink-0" />
+              <span>
+                Gas Leak<span className="hidden 2xl:inline"> Detection</span>
+              </span>
             </a>
 
             <a
@@ -134,15 +138,17 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate }) => {
                 e.preventDefault();
                 handleNav('blog');
               }}
-              className={`px-2.5 xl:px-3 py-2 rounded-lg text-xs xl:text-sm font-medium flex items-center gap-1.5 transition-colors whitespace-nowrap ${
+              className={`px-2 xl:px-2.5 2xl:px-3 py-1.5 xl:py-2 rounded-lg text-xs xl:text-sm font-medium flex items-center gap-1 xl:gap-1.5 transition-colors whitespace-nowrap ${
                 currentPage === 'blog'
                   ? 'bg-cyan-50 text-cyan-800 font-semibold'
                   : 'text-slate-700 hover:text-cyan-700 hover:bg-slate-50'
               }`}
               id="nav-link-blog"
             >
-              <FileText className="w-4 h-4 text-cyan-600 shrink-0" />
-              <span>Blog &amp; Guides</span>
+              <FileText className="w-3.5 h-3.5 xl:w-4 xl:h-4 text-cyan-600 shrink-0" />
+              <span>
+                Blog<span className="hidden xl:inline"> &amp; Guides</span>
+              </span>
             </a>
 
             <a
@@ -151,14 +157,14 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate }) => {
                 e.preventDefault();
                 handleNav('about');
               }}
-              className={`px-2.5 xl:px-3 py-2 rounded-lg text-xs xl:text-sm font-medium transition-colors whitespace-nowrap ${
+              className={`px-2 xl:px-2.5 2xl:px-3 py-1.5 xl:py-2 rounded-lg text-xs xl:text-sm font-medium transition-colors whitespace-nowrap ${
                 currentPage === 'about'
-                  ? 'bg-blue-50 text-blue-700'
+                  ? 'bg-blue-50 text-blue-700 font-semibold'
                   : 'text-slate-700 hover:text-blue-600 hover:bg-slate-50'
               }`}
               id="nav-link-about"
             >
-              About Us
+              <span>About<span className="hidden 2xl:inline"> Us</span></span>
             </a>
 
             <a
@@ -167,32 +173,32 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate }) => {
                 e.preventDefault();
                 handleNav('contact');
               }}
-              className={`px-2.5 xl:px-3 py-2 rounded-lg text-xs xl:text-sm font-medium transition-colors whitespace-nowrap ${
+              className={`px-2 xl:px-2.5 2xl:px-3 py-1.5 xl:py-2 rounded-lg text-xs xl:text-sm font-medium transition-colors whitespace-nowrap ${
                 currentPage === 'contact'
-                  ? 'bg-blue-50 text-blue-700'
+                  ? 'bg-blue-50 text-blue-700 font-semibold'
                   : 'text-slate-700 hover:text-blue-600 hover:bg-slate-50'
               }`}
               id="nav-link-contact"
             >
-              Contact Us
+              <span>Contact<span className="hidden 2xl:inline"> Us</span></span>
             </a>
           </nav>
 
           {/* Desktop Right Phone CTA */}
-          <div className="hidden sm:flex items-center gap-2.5 xl:gap-3 shrink-0">
+          <div className="hidden lg:flex items-center shrink-0">
             <a
               href={BUSINESS_INFO.telLink}
-              className="flex items-center gap-2.5 bg-red-600 hover:bg-red-700 text-white px-3.5 py-2 rounded-xl font-bold shadow-md shadow-red-600/20 transition-all hover:scale-102 active:scale-98 shrink-0 whitespace-nowrap"
+              className="flex items-center gap-2 xl:gap-2.5 bg-red-600 hover:bg-red-700 text-white px-3 py-1.5 xl:px-3.5 xl:py-2 rounded-xl font-bold shadow-md shadow-red-600/20 transition-all hover:scale-102 active:scale-98 shrink-0 whitespace-nowrap"
               id="header-call-btn"
             >
-              <div className="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center animate-pulse shrink-0">
-                <Phone className="w-4 h-4 text-white" />
+              <div className="w-7 h-7 xl:w-8 xl:h-8 rounded-full bg-white/20 flex items-center justify-center animate-pulse shrink-0">
+                <Phone className="w-3.5 h-3.5 xl:w-4 xl:h-4 text-white" />
               </div>
               <div className="text-left">
-                <div className="text-[10px] uppercase tracking-wider font-semibold text-red-100 leading-tight">
+                <div className="text-[9px] xl:text-[10px] uppercase tracking-wider font-semibold text-red-100 leading-tight">
                   24/7 Emergency Line
                 </div>
-                <div className="text-base tracking-tight font-extrabold leading-tight">
+                <div className="text-sm xl:text-base tracking-tight font-extrabold leading-tight">
                   {BUSINESS_INFO.phoneFormatted}
                 </div>
               </div>
