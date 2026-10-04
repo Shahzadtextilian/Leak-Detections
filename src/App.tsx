@@ -51,35 +51,35 @@ export default function App() {
     const pageMeta: Record<Page, { title: string; desc: string }> = {
       'home': {
         title: 'Leak Detection Pro | City Heights, San Diego, CA',
-        desc: '24/7 emergency water and gas leak detection in City Heights, San Diego (92105). Non-invasive slab leak locating, acoustic testing & thermal imaging. Call (619) 910-9411.'
+        desc: '24/7 water & gas leak detection in City Heights, San Diego, 92105. Non-invasive slab leak locating, acoustic tests & thermal imaging. Call (619) 910-9411 today!'
       },
       'water-leak': {
         title: 'Water & Slab Leak Detection City Heights, San Diego | 24/7 Dispatch',
-        desc: 'Non-invasive underground water leak detection and slab leak locating in City Heights (92105). Thermal FLIR imaging and acoustic pipe testing. Call (619) 910-9411.'
+        desc: 'City Heights water & slab leak detection in 92105. Non-invasive acoustic ground tests, FLIR thermal imaging & pipe repair. Call our 24/7 hotline (619) 910-9411!'
       },
       'gas-leak': {
         title: 'Emergency Gas Leak Detection City Heights, San Diego CA | 24/7 Hotline',
-        desc: 'Emergency natural gas odor detection, line pressure decay testing, and SDG&E coordination in City Heights, San Diego (92105). Rapid 24/7 certified dispatch.'
+        desc: '24/7 emergency gas leak detection in City Heights, San Diego CA (92105). Pressure decay testing, line repairs & SDG&E safety tag clearance. Call (619) 910-9411.'
       },
       'blog': {
         title: 'Leak Detection & Leak Repair Guide | City Heights, San Diego CA',
-        desc: 'Expert guide to non-invasive leak detection and fast leak repair in City Heights (92105). Understand slab leaks, thermal imaging, acoustic tests & emergency dispatch.'
+        desc: 'Expert guide to leak detection & leak repair in City Heights (92105). Learn how acoustic sensors, thermal scans & slab reroutes work. Call (619) 910-9411 today!'
       },
       'about': {
         title: 'About Us | City Heights Local Leak Detection Network (92105)',
-        desc: 'Learn about Leak Detection Pro based at 3431 43rd St, connecting City Heights property owners with licensed, certified San Diego leak detection contractors.'
+        desc: 'About Leak Detection Pro at 3431 43rd St, City Heights, CA 92105. Connecting San Diego property owners with pre-screened CSLB contractors. Call: (619) 910-9411.'
       },
       'contact': {
         title: 'Contact & Emergency Dispatch | 3431 43rd St, City Heights CA 92105',
-        desc: 'Contact Leak Detection Pro at 3431 43rd St, San Diego CA 92105. 24/7 emergency hotline (619) 910-9411 or instant online contractor matching.'
+        desc: 'Contact Leak Detection Pro at 3431 43rd St, City Heights, San Diego, CA 92105. 24/7 emergency dispatch desk & instant contractor referrals. Call (619) 910-9411.'
       },
       'privacy': {
         title: 'Privacy Policy | Leak Detection Pro City Heights',
-        desc: 'Privacy policy and consumer data protection terms for Leak Detection Pro serving City Heights, San Diego CA.'
+        desc: 'Privacy Policy for Leak Detection Pro in City Heights, San Diego CA 92105. Learn how we safeguard your personal data under CCPA guidelines. Call (619) 910-9411.'
       },
       'disclaimer': {
         title: 'Legal Disclaimers & Licensing | Leak Detection Pro',
-        desc: 'Consumer referral notices, California licensing standards, and lead generation disclosures for Leak Detection Pro.'
+        desc: 'Contractor referral disclosures & licensing notices for Leak Detection Pro serving City Heights, San Diego CA 92105. Independent CSLB pros. Call (619) 910-9411.'
       }
     };
 
