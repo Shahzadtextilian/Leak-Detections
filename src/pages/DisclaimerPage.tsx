@@ -14,9 +14,16 @@ export const DisclaimerPage: React.FC<DisclaimerPageProps> = ({ onNavigate }) =>
       <section className="bg-slate-900 text-white py-12 lg:py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-wrap items-center gap-2 text-xs text-slate-400 mb-4">
-            <button onClick={() => onNavigate('home')} className="hover:underline">
+            <a
+              href="/"
+              onClick={(e) => {
+                e.preventDefault();
+                onNavigate('home');
+              }}
+              className="hover:underline hover:text-white"
+            >
               Home
-            </button>
+            </a>
             <span>/</span>
             <span className="text-white font-medium">Legal Disclaimers</span>
           </div>
@@ -91,10 +98,10 @@ export const DisclaimerPage: React.FC<DisclaimerPageProps> = ({ onNavigate }) =>
 
           {/* Section 5: Emergency Protocols */}
           <div className="bg-red-50 border border-red-200 rounded-xl p-4 text-xs text-red-950 space-y-1">
-            <h4 className="font-bold text-red-900 text-sm flex items-center gap-1.5">
+            <h3 className="font-bold text-red-900 text-sm flex items-center gap-1.5">
               <AlertTriangle className="w-4 h-4 text-red-600" />
               5. Life-Safety & Gas Emergency Protocols
-            </h4>
+            </h3>
             <p className="leading-relaxed">
               If you detect strong sulfur / rotten egg odor, hear high-pressure hissing from gas lines, or suspect a life-threatening natural gas leak, you must <strong>immediately evacuate the premises</strong> and contact your local utility provider (SDG&E at 1-800-411-7343) or call 911. Do not use this website or delay evacuation to submit an online form during an active life-safety emergency.
             </p>

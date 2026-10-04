@@ -26,9 +26,16 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate }) => {
       <section className="bg-slate-900 text-white py-12 lg:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-wrap items-center gap-2 text-xs text-slate-400 mb-4">
-            <button onClick={() => onNavigate('home')} className="hover:underline">
+            <a
+              href="/"
+              onClick={(e) => {
+                e.preventDefault();
+                onNavigate('home');
+              }}
+              className="hover:underline hover:text-white"
+            >
               Home
-            </button>
+            </a>
             <span>/</span>
             <span className="text-white font-medium">Contact Us</span>
           </div>
@@ -191,6 +198,41 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate }) => {
                 <div className="p-3 bg-blue-50 border border-blue-200 rounded-xl text-blue-950">
                   <strong>Active Slab Water Leak:</strong> Locate your home's main water shutoff valve (usually at the front hose bib or curb box) and turn clockwise to stop flow until technician arrival.
                 </div>
+              </div>
+
+              <div className="pt-3 border-t border-slate-100 flex flex-wrap gap-2 text-xs">
+                <a
+                  href="/water-leak"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    onNavigate('water-leak');
+                  }}
+                  className="text-blue-600 hover:underline font-semibold"
+                >
+                  &rarr; Water Leak Diagnostics
+                </a>
+                <span className="text-slate-300">•</span>
+                <a
+                  href="/gas-leak"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    onNavigate('gas-leak');
+                  }}
+                  className="text-amber-700 hover:underline font-semibold"
+                >
+                  &rarr; Gas Line Testing
+                </a>
+                <span className="text-slate-300">•</span>
+                <a
+                  href="/blog"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    onNavigate('blog');
+                  }}
+                  className="text-cyan-700 hover:underline font-semibold"
+                >
+                  &rarr; Field Guides
+                </a>
               </div>
             </div>
           </div>

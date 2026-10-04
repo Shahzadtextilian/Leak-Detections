@@ -34,9 +34,16 @@ export const BlogPage: React.FC<BlogPageProps> = ({ onNavigate }) => {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4">
           {/* Breadcrumb */}
           <nav aria-label="Breadcrumbs" className="flex flex-wrap items-center gap-2 text-xs text-slate-400">
-            <button onClick={() => onNavigate('home')} className="hover:underline">
+            <a
+              href="/"
+              onClick={(e) => {
+                e.preventDefault();
+                onNavigate('home');
+              }}
+              className="hover:underline hover:text-white"
+            >
               Home
-            </button>
+            </a>
             <span>/</span>
             <span className="text-slate-300">Blog &amp; Knowledge Center</span>
             <span>/</span>
@@ -318,12 +325,16 @@ export const BlogPage: React.FC<BlogPageProps> = ({ onNavigate }) => {
               <Phone className="w-4 h-4 animate-pulse" />
               <span>Call Dispatch: {BUSINESS_INFO.phoneFormatted}</span>
             </a>
-            <button
-              onClick={() => onNavigate('contact')}
-              className="bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold px-5 py-3.5 rounded-xl text-xs border border-slate-700 transition-colors"
+            <a
+              href="/contact"
+              onClick={(e) => {
+                e.preventDefault();
+                onNavigate('contact');
+              }}
+              className="bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold px-5 py-3.5 rounded-xl text-xs border border-slate-700 transition-colors text-center flex items-center justify-center"
             >
               View Dispatch Location (3431 43rd St)
-            </button>
+            </a>
           </div>
         </section>
 
@@ -354,8 +365,12 @@ export const BlogPage: React.FC<BlogPageProps> = ({ onNavigate }) => {
             Related Emergency Services in City Heights, San Diego:
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-            <button
-              onClick={() => onNavigate('water-leak')}
+            <a
+              href="/water-leak"
+              onClick={(e) => {
+                e.preventDefault();
+                onNavigate('water-leak');
+              }}
               className="p-4 rounded-xl border border-slate-200 hover:border-blue-300 hover:bg-blue-50/50 transition-all text-left flex items-center justify-between group"
             >
               <div>
@@ -367,10 +382,14 @@ export const BlogPage: React.FC<BlogPageProps> = ({ onNavigate }) => {
                 </div>
               </div>
               <ArrowRight className="w-4 h-4 text-slate-400 group-hover:text-blue-600 transition-transform group-hover:translate-x-1" />
-            </button>
+            </a>
 
-            <button
-              onClick={() => onNavigate('gas-leak')}
+            <a
+              href="/gas-leak"
+              onClick={(e) => {
+                e.preventDefault();
+                onNavigate('gas-leak');
+              }}
               className="p-4 rounded-xl border border-slate-200 hover:border-amber-300 hover:bg-amber-50/50 transition-all text-left flex items-center justify-between group"
             >
               <div>
@@ -382,7 +401,7 @@ export const BlogPage: React.FC<BlogPageProps> = ({ onNavigate }) => {
                 </div>
               </div>
               <ArrowRight className="w-4 h-4 text-slate-400 group-hover:text-amber-700 transition-transform group-hover:translate-x-1" />
-            </button>
+            </a>
           </div>
         </div>
       </article>

@@ -280,10 +280,11 @@ routes.forEach((route) => {
           </a>
         </div>
         <div style="display: flex; align-items: center; gap: 16px;">
-          <nav style="display: flex; gap: 14px; font-size: 14px;">
+          <nav style="display: flex; gap: 14px; font-size: 14px; flex-wrap: wrap;">
             <a href="/" style="color: #94a3b8; text-decoration: none;">Home</a>
             <a href="/water-leak" style="color: #94a3b8; text-decoration: none;">Water Leaks</a>
             <a href="/gas-leak" style="color: #94a3b8; text-decoration: none;">Gas Leaks</a>
+            <a href="/blog" style="color: #94a3b8; text-decoration: none;">Blog</a>
             <a href="/about" style="color: #94a3b8; text-decoration: none;">About</a>
             <a href="/contact" style="color: #94a3b8; text-decoration: none;">Contact</a>
           </nav>
@@ -310,6 +311,27 @@ routes.forEach((route) => {
           ${route.bodySnippet}
         </div>
       </main>
+
+      <footer style="margin-top: 60px; padding: 32px 24px; border-top: 1px solid rgba(255,255,255,0.1); max-width: 1200px; margin-left: auto; margin-right: auto; font-size: 13px; color: #94a3b8;">
+        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; margin-bottom: 16px;">
+          <div>
+            <strong>Leak Detection Pro</strong> &bull; 3431 43rd St, City Heights, San Diego, CA 92105 &bull; <a href="tel:+16199109411" style="color: #60a5fa; text-decoration: none;">(619) 910-9411</a>
+          </div>
+          <nav style="display: flex; gap: 16px; flex-wrap: wrap;">
+            <a href="/" style="color: #94a3b8; text-decoration: none;">Home</a>
+            <a href="/water-leak" style="color: #94a3b8; text-decoration: none;">Water Leaks</a>
+            <a href="/gas-leak" style="color: #94a3b8; text-decoration: none;">Gas Leaks</a>
+            <a href="/blog" style="color: #94a3b8; text-decoration: none;">Blog</a>
+            <a href="/about" style="color: #94a3b8; text-decoration: none;">About</a>
+            <a href="/contact" style="color: #94a3b8; text-decoration: none;">Contact</a>
+            <a href="/privacy" style="color: #94a3b8; text-decoration: none;">Privacy</a>
+            <a href="/disclaimer" style="color: #94a3b8; text-decoration: none;">Disclaimer</a>
+          </nav>
+        </div>
+        <p style="font-size: 11px; color: #64748b; margin: 0;">
+          &copy; 2026 Leak Detection Pro. Non-invasive water &amp; gas leak detection referral network serving City Heights, San Diego (92105).
+        </p>
+      </footer>
     </div>
   `;
 

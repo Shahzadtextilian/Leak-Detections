@@ -82,9 +82,9 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
 
           {/* Col 2: Services */}
           <div className="space-y-3">
-            <h4 className="text-sm font-bold uppercase tracking-wider text-slate-100">
+            <h3 className="text-sm font-bold uppercase tracking-wider text-slate-100">
               Leak Detection Services
-            </h4>
+            </h3>
             <ul className="space-y-2 text-sm text-slate-400">
               <li>
                 <a
@@ -165,9 +165,9 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
 
           {/* Col 3: Service Areas in City Heights */}
           <div className="space-y-3">
-            <h4 className="text-sm font-bold uppercase tracking-wider text-slate-100">
+            <h3 className="text-sm font-bold uppercase tracking-wider text-slate-100">
               City Heights Service Coverage
-            </h4>
+            </h3>
             <ul className="space-y-1.5 text-xs text-slate-400">
               {CITY_HEIGHTS_AREAS.map((area, idx) => (
                 <li key={idx} className="flex items-start gap-1.5">
@@ -185,9 +185,9 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
 
           {/* Col 4: Quick Links, Blog & Legal */}
           <div className="space-y-3">
-            <h4 className="text-sm font-bold uppercase tracking-wider text-slate-100">
+            <h3 className="text-sm font-bold uppercase tracking-wider text-slate-100">
               Company &amp; Resources
-            </h4>
+            </h3>
             <ul className="space-y-2 text-sm text-slate-400">
               <li>
                 <a

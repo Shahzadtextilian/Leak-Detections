@@ -26,9 +26,16 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
       <section className="bg-slate-900 text-white py-12 lg:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-wrap items-center gap-2 text-xs text-slate-400 mb-4">
-            <button onClick={() => onNavigate('home')} className="hover:underline">
+            <a
+              href="/"
+              onClick={(e) => {
+                e.preventDefault();
+                onNavigate('home');
+              }}
+              className="hover:underline hover:text-white"
+            >
               Home
-            </button>
+            </a>
             <span>/</span>
             <span className="text-white font-medium">About Us</span>
           </div>
@@ -136,7 +143,37 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
                 Leak Detection Pro
               </h3>
               <p className="text-sm text-slate-300 leading-relaxed">
-                Dedicated lead referral service for residential, commercial, and property management accounts across City Heights and Greater San Diego County.
+                Dedicated lead referral service for residential, commercial, and property management accounts across City Heights and Greater San Diego County. Looking for specific services? Connect with specialists in{' '}
+                <a
+                  href="/water-leak"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    onNavigate('water-leak');
+                  }}
+                  className="text-cyan-400 font-bold underline hover:text-cyan-300"
+                >
+                  Underground Water &amp; Slab Leaks
+                </a>,{' '}
+                <a
+                  href="/gas-leak"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    onNavigate('gas-leak');
+                  }}
+                  className="text-amber-400 font-bold underline hover:text-amber-300"
+                >
+                  Emergency Gas Line Testing
+                </a>, or browse our{' '}
+                <a
+                  href="/blog"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    onNavigate('blog');
+                  }}
+                  className="text-blue-400 font-bold underline hover:text-blue-300"
+                >
+                  City Heights Diagnostic Guides
+                </a>.
               </p>
 
               <div className="space-y-2 text-xs text-slate-300 pt-2">

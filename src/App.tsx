@@ -51,7 +51,7 @@ export default function App() {
     const pageMeta: Record<Page, { title: string; desc: string }> = {
       'home': {
         title: 'Leak Detection Pro | City Heights, San Diego, CA',
-        desc: '24/7 water & gas leak detection in City Heights, San Diego, 92105. Non-invasive slab leak locating, acoustic tests & thermal imaging. Call (619) 910-9411 today!'
+        desc: 'Call (619) 910-9411 for 24/7 water & gas leak detection in City Heights, San Diego (92105). Non-invasive slab leak locating & thermal imaging.'
       },
       'water-leak': {
         title: 'Water & Slab Leak Detection City Heights, San Diego | 24/7 Dispatch',

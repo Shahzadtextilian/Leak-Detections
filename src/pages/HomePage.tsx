@@ -453,7 +453,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
               </div>
               <div className="p-4 flex-1 flex flex-col justify-between space-y-2">
                 <div>
-                  <h4 className="font-bold text-sm text-white">Electro-Acoustic Ground Sensor</h4>
+                  <h3 className="font-bold text-sm text-white">Electro-Acoustic Ground Sensor</h3>
                   <p className="text-xs text-slate-300 mt-1 leading-relaxed">
                     Amplifies micro-vibrations of pressurized water rushing through pinhole pipe ruptures under concrete.
                   </p>
@@ -483,7 +483,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
               </div>
               <div className="p-4 flex-1 flex flex-col justify-between space-y-2">
                 <div>
-                  <h4 className="font-bold text-sm text-white">Infrared Thermal Imaging</h4>
+                  <h3 className="font-bold text-sm text-white">Infrared Thermal Imaging</h3>
                   <p className="text-xs text-slate-300 mt-1 leading-relaxed">
                     Maps temperature variations behind walls and ceilings to detect hidden moisture plumes without drilling.
                   </p>
@@ -513,7 +513,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
               </div>
               <div className="p-4 flex-1 flex flex-col justify-between space-y-2">
                 <div>
-                  <h4 className="font-bold text-sm text-white">Digital Gas Sniffer Wand</h4>
+                  <h3 className="font-bold text-sm text-white">Digital Gas Sniffer Wand</h3>
                   <p className="text-xs text-slate-300 mt-1 leading-relaxed">
                     Detects trace methane and propane concentrations down to 1 PPM around appliance valves and meter fittings.
                   </p>
@@ -543,7 +543,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
               </div>
               <div className="p-4 flex-1 flex flex-col justify-between space-y-2">
                 <div>
-                  <h4 className="font-bold text-sm text-white">CSLB Licensed Specialists</h4>
+                  <h3 className="font-bold text-sm text-white">CSLB Licensed Specialists</h3>
                   <p className="text-xs text-slate-300 mt-1 leading-relaxed">
                     Background-verified, insured contractors with years of field experience in San Diego residential plumbing.
                   </p>
@@ -564,9 +564,9 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
             <span className="text-xs font-bold text-cyan-400 uppercase tracking-wider flex items-center gap-1.5">
               <Eye className="w-4 h-4" /> City Heights Homeowner Diagnostic Guide
             </span>
-            <h3 className="text-2xl sm:text-3xl font-extrabold text-white mt-2">
+            <h2 className="text-2xl sm:text-3xl font-extrabold text-white mt-2">
               Common Signs You Need Emergency Leak Detection
-            </h3>
+            </h2>
             <p className="text-sm text-slate-300 mt-2">
               Don't wait for visible ceiling collapse or dangerous gas accumulation. Look for these early telltale signs around your 92105 property:
             </p>

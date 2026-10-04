@@ -52,9 +52,16 @@ export const WaterLeakPage: React.FC<WaterLeakPageProps> = ({ onNavigate }) => {
       <section className="bg-gradient-to-br from-blue-950 via-slate-900 to-blue-900 text-white py-12 lg:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-wrap items-center gap-2 text-xs text-blue-200 mb-4">
-            <button onClick={() => onNavigate('home')} className="hover:underline">
+            <a
+              href="/"
+              onClick={(e) => {
+                e.preventDefault();
+                onNavigate('home');
+              }}
+              className="hover:underline hover:text-white"
+            >
               Home
-            </button>
+            </a>
             <span>/</span>
             <span className="text-white font-medium">Services</span>
             <span>/</span>
@@ -143,8 +150,33 @@ export const WaterLeakPage: React.FC<WaterLeakPageProps> = ({ onNavigate }) => {
               <h2 className="text-2xl font-bold text-slate-900 mb-4 tracking-tight">
                 Types of Water Leaks Located in City Heights Properties
               </h2>
-              <p className="text-sm text-slate-600 leading-relaxed mb-6">
-                Hidden water leaks waste thousands of gallons per month and inflict catastrophic structural damage before water ever surfaces. The independent contractors in our referral network specialize in diagnosing all residential and light commercial plumbing systems.
+              <p className="text-sm text-slate-600 leading-relaxed mb-4">
+                Hidden water leaks waste thousands of gallons per month and inflict catastrophic structural damage before water ever surfaces. The independent contractors in our referral network specialize in diagnosing all residential and light commercial plumbing systems across City Heights and 92105.
+              </p>
+              <p className="text-xs text-slate-500 leading-relaxed mb-6 bg-blue-50/60 p-3.5 rounded-xl border border-blue-100">
+                <strong>Need more information?</strong> Consult our comprehensive{' '}
+                <a
+                  href="/blog"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    onNavigate('blog');
+                  }}
+                  className="text-blue-600 font-bold underline hover:text-blue-800"
+                >
+                  Slab Leak Diagnostic Guide
+                </a>{' '}
+                or explore our{' '}
+                <a
+                  href="/gas-leak"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    onNavigate('gas-leak');
+                  }}
+                  className="text-amber-700 font-bold underline hover:text-amber-900"
+                >
+                  Emergency Gas Leak Detection Services
+                </a>{' '}
+                if you detect odor or suspect a pipeline hazard.
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -325,6 +357,79 @@ export const WaterLeakPage: React.FC<WaterLeakPageProps> = ({ onNavigate }) => {
                     <span>Call: {BUSINESS_INFO.phoneFormatted}</span>
                   </div>
                 </a>
+
+                <a
+                  href="/contact"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    onNavigate('contact');
+                  }}
+                  className="block w-full py-2.5 px-4 bg-slate-800 hover:bg-slate-700 text-cyan-300 border border-slate-700 font-semibold text-center rounded-xl text-xs transition-colors"
+                  id="water-sidebar-contact"
+                >
+                  Book Dispatch Online &rarr;
+                </a>
+              </div>
+
+              {/* Related Local Links Card */}
+              <div className="bg-white rounded-2xl p-5 border border-slate-200 shadow-xs space-y-3">
+                <h3 className="font-bold text-sm text-slate-900">
+                  Related Services &amp; Resources
+                </h3>
+                <ul className="space-y-2 text-xs text-slate-600">
+                  <li>
+                    <a
+                      href="/gas-leak"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        onNavigate('gas-leak');
+                      }}
+                      className="text-blue-600 hover:underline flex items-center gap-1.5"
+                    >
+                      <ArrowRight className="w-3 h-3 text-amber-500" />
+                      Emergency Gas Leak Detection
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="/blog"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        onNavigate('blog');
+                      }}
+                      className="text-blue-600 hover:underline flex items-center gap-1.5"
+                    >
+                      <ArrowRight className="w-3 h-3 text-cyan-500" />
+                      Slab Leak Symptoms &amp; Diagnostic Guide
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="/about"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        onNavigate('about');
+                      }}
+                      className="text-blue-600 hover:underline flex items-center gap-1.5"
+                    >
+                      <ArrowRight className="w-3 h-3 text-blue-500" />
+                      About Our Contractor Network
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="/contact"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        onNavigate('contact');
+                      }}
+                      className="text-blue-600 hover:underline flex items-center gap-1.5"
+                    >
+                      <ArrowRight className="w-3 h-3 text-emerald-500" />
+                      City Heights Dispatch Office
+                    </a>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>

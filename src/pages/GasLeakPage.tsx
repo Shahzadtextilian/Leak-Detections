@@ -58,9 +58,16 @@ export const GasLeakPage: React.FC<GasLeakPageProps> = ({ onNavigate }) => {
       <section className="bg-gradient-to-br from-amber-950 via-slate-900 to-amber-900 text-white py-12 lg:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-wrap items-center gap-2 text-xs text-amber-200 mb-4">
-            <button onClick={() => onNavigate('home')} className="hover:underline">
+            <a
+              href="/"
+              onClick={(e) => {
+                e.preventDefault();
+                onNavigate('home');
+              }}
+              className="hover:underline hover:text-white"
+            >
               Home
-            </button>
+            </a>
             <span>/</span>
             <span className="text-white font-medium">Services</span>
             <span>/</span>
@@ -160,7 +167,7 @@ export const GasLeakPage: React.FC<GasLeakPageProps> = ({ onNavigate }) => {
               <div className="w-7 h-7 rounded-full bg-red-100 text-red-700 font-bold text-xs flex items-center justify-center mb-2">
                 01
               </div>
-              <h4 className="font-bold text-xs text-slate-900 mb-1">Evacuate Immediate Area</h4>
+              <h3 className="font-bold text-xs text-slate-900 mb-1">Evacuate Immediate Area</h3>
               <p className="text-[11px] text-slate-600">Get every person and pet out of the structure immediately.</p>
             </div>
 
@@ -168,7 +175,7 @@ export const GasLeakPage: React.FC<GasLeakPageProps> = ({ onNavigate }) => {
               <div className="w-7 h-7 rounded-full bg-red-100 text-red-700 font-bold text-xs flex items-center justify-center mb-2">
                 02
               </div>
-              <h4 className="font-bold text-xs text-slate-900 mb-1">No Light Switches</h4>
+              <h3 className="font-bold text-xs text-slate-900 mb-1">No Light Switches</h3>
               <p className="text-[11px] text-slate-600">Do NOT touch light switches, appliances, or garage door openers.</p>
             </div>
 
@@ -176,7 +183,7 @@ export const GasLeakPage: React.FC<GasLeakPageProps> = ({ onNavigate }) => {
               <div className="w-7 h-7 rounded-full bg-red-100 text-red-700 font-bold text-xs flex items-center justify-center mb-2">
                 03
               </div>
-              <h4 className="font-bold text-xs text-slate-900 mb-1">No Phones Indoors</h4>
+              <h3 className="font-bold text-xs text-slate-900 mb-1">No Phones Indoors</h3>
               <p className="text-[11px] text-slate-600">Cell phones can create static sparks. Only use phones outdoors.</p>
             </div>
 
@@ -184,7 +191,7 @@ export const GasLeakPage: React.FC<GasLeakPageProps> = ({ onNavigate }) => {
               <div className="w-7 h-7 rounded-full bg-red-100 text-red-700 font-bold text-xs flex items-center justify-center mb-2">
                 04
               </div>
-              <h4 className="font-bold text-xs text-slate-900 mb-1">Call SDG&E / 911</h4>
+              <h3 className="font-bold text-xs text-slate-900 mb-1">Call SDG&E / 911</h3>
               <p className="text-[11px] text-slate-600">Dial 1-800-411-7343 or 911 from a safe distance outside.</p>
             </div>
 
@@ -192,7 +199,7 @@ export const GasLeakPage: React.FC<GasLeakPageProps> = ({ onNavigate }) => {
               <div className="w-7 h-7 rounded-full bg-red-100 text-red-700 font-bold text-xs flex items-center justify-center mb-2">
                 05
               </div>
-              <h4 className="font-bold text-xs text-slate-900 mb-1">Dispatch Repair</h4>
+              <h3 className="font-bold text-xs text-slate-900 mb-1">Dispatch Repair</h3>
               <p className="text-[11px] text-slate-600">Call (619) 910-9411 for licensed contractor repair & certification.</p>
             </div>
           </div>
@@ -207,8 +214,43 @@ export const GasLeakPage: React.FC<GasLeakPageProps> = ({ onNavigate }) => {
               <h2 className="text-2xl font-bold text-slate-900 mb-4 tracking-tight">
                 Complete Gas Line Detection & Inspection Capabilities
               </h2>
-              <p className="text-sm text-slate-600 leading-relaxed mb-6">
+              <p className="text-sm text-slate-600 leading-relaxed mb-4">
                 Gas line systems require licensed technical precision. The independent contractors in our City Heights network are certified to test and locate leaks across natural gas and propane infrastructure.
+              </p>
+              <p className="text-xs text-slate-500 leading-relaxed mb-6 bg-amber-50/60 p-3.5 rounded-xl border border-amber-200/80">
+                <strong>Need non-gas leak locating?</strong> Check our{' '}
+                <a
+                  href="/water-leak"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    onNavigate('water-leak');
+                  }}
+                  className="text-blue-600 font-bold underline hover:text-blue-800"
+                >
+                  Underground Water &amp; Slab Leak Detection Services
+                </a>{' '}
+                or read our{' '}
+                <a
+                  href="/blog"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    onNavigate('blog');
+                  }}
+                  className="text-cyan-700 font-bold underline hover:text-cyan-900"
+                >
+                  City Heights Diagnostic Field Guide
+                </a>{' '}
+                for technical inspection methods. For safety guidelines, view our{' '}
+                <a
+                  href="/disclaimer"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    onNavigate('disclaimer');
+                  }}
+                  className="text-slate-700 font-bold underline hover:text-slate-900"
+                >
+                  Life-Safety Emergency Disclaimer
+                </a>.
               </p>
 
               {/* Equipment Photo Cards */}
@@ -360,6 +402,79 @@ export const GasLeakPage: React.FC<GasLeakPageProps> = ({ onNavigate }) => {
                     <span>Call Gas Hotline: {BUSINESS_INFO.phoneFormatted}</span>
                   </div>
                 </a>
+
+                <a
+                  href="/contact"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    onNavigate('contact');
+                  }}
+                  className="block w-full py-2.5 px-4 bg-slate-800 hover:bg-slate-700 text-amber-300 border border-slate-700 font-semibold text-center rounded-xl text-xs transition-colors"
+                  id="gas-sidebar-contact"
+                >
+                  Non-Emergency Dispatch Inquiry &rarr;
+                </a>
+              </div>
+
+              {/* Related Local Links Card */}
+              <div className="bg-white rounded-2xl p-5 border border-slate-200 shadow-xs space-y-3">
+                <h3 className="font-bold text-sm text-slate-900">
+                  Related Services &amp; Resources
+                </h3>
+                <ul className="space-y-2 text-xs text-slate-600">
+                  <li>
+                    <a
+                      href="/water-leak"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        onNavigate('water-leak');
+                      }}
+                      className="text-blue-600 hover:underline flex items-center gap-1.5"
+                    >
+                      <ArrowRight className="w-3 h-3 text-blue-500" />
+                      Water &amp; Slab Leak Locating
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="/blog"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        onNavigate('blog');
+                      }}
+                      className="text-blue-600 hover:underline flex items-center gap-1.5"
+                    >
+                      <ArrowRight className="w-3 h-3 text-cyan-500" />
+                      Gas &amp; Water Diagnostic Knowledgebase
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="/about"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        onNavigate('about');
+                      }}
+                      className="text-blue-600 hover:underline flex items-center gap-1.5"
+                    >
+                      <ArrowRight className="w-3 h-3 text-indigo-500" />
+                      About Our Referral Standards
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="/contact"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        onNavigate('contact');
+                      }}
+                      className="text-blue-600 hover:underline flex items-center gap-1.5"
+                    >
+                      <ArrowRight className="w-3 h-3 text-emerald-500" />
+                      City Heights Dispatch Office
+                    </a>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
