@@ -112,7 +112,7 @@ export default function App() {
       twitterDesc.setAttribute('content', current.desc);
     }
 
-    // Dynamically synchronize canonical URL and og:url to match exact sitemap URL
+    // Dynamically synchronize canonical URL, hreflang, and og:url to match exact sitemap URL
     let canonical = document.querySelector('link[rel="canonical"]');
     if (!canonical) {
       canonical = document.createElement('link');
@@ -125,6 +125,16 @@ export default function App() {
       : window.location.origin;
     const canonicalUrl = pageSuffix ? `${baseOrigin}/${pageSuffix}` : `${baseOrigin}/`;
     canonical.setAttribute('href', canonicalUrl);
+
+    // Synchronize self-referential hreflang annotations
+    const hreflangUs = document.querySelector('link[hreflang="en-US"]');
+    if (hreflangUs) {
+      hreflangUs.setAttribute('href', canonicalUrl);
+    }
+    const hreflangDefault = document.querySelector('link[hreflang="x-default"]');
+    if (hreflangDefault) {
+      hreflangDefault.setAttribute('href', canonicalUrl);
+    }
 
     let ogUrl = document.querySelector('meta[property="og:url"]');
     if (ogUrl) {
