@@ -133,6 +133,27 @@ const routes = [
     `
   },
   {
+    path: 'blog',
+    title: 'Leak Detection & Leak Repair Guide | City Heights, San Diego CA',
+    desc: 'Expert guide to leak detection & leak repair in City Heights (92105). Learn how acoustic sensors, thermal scans & slab reroutes work. Call (619) 910-9411 today!',
+    h1: 'Leak Detection &amp; Repair Knowledge Base — City Heights',
+    h2: 'Expert Guides on Slab Leaks, Gas Line Safety &amp; Non-Invasive Diagnostics',
+    breadcrumbName: 'Blog & Field Guides',
+    bodySnippet: `
+      <p style="margin-bottom: 12px;">
+        Understanding plumbing leaks before structural foundation damage occurs can save thousands of dollars in water bills and restoration fees.
+      </p>
+      <p style="margin-bottom: 12px;">
+        Discover how ultrasonic listening sticks, FLIR thermal imaging, and pressure decay testing isolate hidden underground pipe issues in City Heights (92105).
+      </p>
+      <div style="margin-top: 16px;">
+        <a href="tel:+16199109411" style="background: #2563eb; color: white; padding: 10px 20px; border-radius: 8px; text-decoration: none; font-weight: bold; display: inline-block;">
+          📞 Speak With a Leak Specialist: (619) 910-9411
+        </a>
+      </div>
+    `
+  },
+  {
     path: 'privacy',
     title: 'Privacy Policy | Leak Detection Pro City Heights',
     desc: 'Privacy policy and consumer data protection terms for Leak Detection Pro serving City Heights, San Diego CA.',
@@ -292,15 +313,29 @@ routes.forEach((route) => {
     </div>
   `;
 
+  // Ensure all script tags explicitly have the defer attribute
+  pageHtml = pageHtml.replace(
+    /<script\s+type="module"(\s+crossorigin)?\s+src=/gi,
+    '<script type="module"$1 defer src='
+  );
+
   // Replace content of <div id="root">...</div> with semantic content for this route
   pageHtml = pageHtml.replace(
-    /<div id="root">[\s\S]*?<\/div>\s*<script type="module"/i,
-    `<div id="root">${semanticContent}</div>\n    <script type="module"`
+    /<div id="root">[\s\S]*?<\/div>/i,
+    `<div id="root">${semanticContent}</div>`
   );
 
   const targetFile = path.join(routeDir, 'index.html');
   fs.writeFileSync(targetFile, pageHtml, 'utf-8');
   console.log(`Generated route: ${route.path} -> ${targetFile}`);
 });
+
+// Also ensure base dist/index.html script tags explicitly include defer
+let updatedIndexHtml = fs.readFileSync(indexPath, 'utf-8');
+updatedIndexHtml = updatedIndexHtml.replace(
+  /<script\s+type="module"(\s+crossorigin)?\s+src=/gi,
+  '<script type="module"$1 defer src='
+);
+fs.writeFileSync(indexPath, updatedIndexHtml, 'utf-8');
 
 console.log('All static routes generated successfully.');

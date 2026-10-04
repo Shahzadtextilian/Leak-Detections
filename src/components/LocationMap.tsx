@@ -37,7 +37,7 @@ export const LocationMap: React.FC<LocationMapProps> = ({
             <a
               href={directionsUrl}
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold transition-colors shadow-xs"
               id="get-directions-btn"
             >
@@ -64,7 +64,7 @@ export const LocationMap: React.FC<LocationMapProps> = ({
           style={{ border: 0 }}
           allowFullScreen
           loading="lazy"
-          referrerPolicy="strict-origin-when-cross-origin"
+          referrerPolicy="no-referrer-when-downgrade"
           title="Leak Detection Pro - 3431 43rd St, San Diego CA 92105 Google Maps Location"
           className="w-full h-full"
         />
@@ -74,12 +74,12 @@ export const LocationMap: React.FC<LocationMapProps> = ({
       <div className="px-4 py-3 bg-slate-50 border-t border-slate-200 flex flex-wrap items-center justify-between gap-2 text-xs text-slate-600">
         <div className="flex items-center gap-2">
           <span className="inline-block w-2 h-2 rounded-full bg-emerald-500"></span>
-          <span>Strategically located at 43rd St & University Ave corridor</span>
+          <span>Strategically located at 43rd St &amp; University Ave corridor</span>
         </div>
         <a
           href={viewMapUrl}
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
           className="text-blue-700 hover:text-blue-800 font-semibold inline-flex items-center gap-1"
         >
           <span>View larger map</span>
