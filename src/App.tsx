@@ -52,7 +52,7 @@ export default function App() {
     const pageMeta: Record<Page, { title: string; desc: string }> = {
       'home': {
         title: 'Leak Detection in North Mountain Villege, AZ | Leak Detection Pro',
-        desc: 'Call (619) 910-9411 for 24/7 water & gas leak detection in City Heights, San Diego (92105). Non-invasive slab leak locating & thermal imaging.'
+        desc: 'Need expert leak detection in City Heights? We find hidden water, slab, and gas leaks quickly using non-invasive tools. Call for an upfront estimate today!'
       },
       'water-leak': {
         title: 'Water & Slab Leak Detection City Heights, San Diego | 24/7 Dispatch',
