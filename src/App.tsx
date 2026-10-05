@@ -11,13 +11,14 @@ import { AboutPage } from './pages/AboutPage';
 import { ContactPage } from './pages/ContactPage';
 import { PrivacyPolicyPage } from './pages/PrivacyPolicyPage';
 import { DisclaimerPage } from './pages/DisclaimerPage';
+import { SitemapPage } from './pages/SitemapPage';
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState<Page>('home');
 
   // Resolve initial and updated page based on pathname or hash
   useEffect(() => {
-    const validPages: Page[] = ['home', 'water-leak', 'gas-leak', 'blog', 'about', 'contact', 'privacy', 'disclaimer'];
+    const validPages: Page[] = ['home', 'water-leak', 'gas-leak', 'blog', 'about', 'contact', 'privacy', 'disclaimer', 'sitemap'];
 
     const resolvePageFromLocation = (): Page => {
       // First check clean pathname e.g. /water-leak or /water-leak/
@@ -50,7 +51,7 @@ export default function App() {
   useEffect(() => {
     const pageMeta: Record<Page, { title: string; desc: string }> = {
       'home': {
-        title: 'Leak Detection Pro | City Heights, San Diego, CA',
+        title: 'Leak Detection in North Mountain Villege, AZ | Leak Detection Pro',
         desc: 'Call (619) 910-9411 for 24/7 water & gas leak detection in City Heights, San Diego (92105). Non-invasive slab leak locating & thermal imaging.'
       },
       'water-leak': {
@@ -80,6 +81,10 @@ export default function App() {
       'disclaimer': {
         title: 'Legal Disclaimers & Licensing | Leak Detection Pro',
         desc: 'Contractor referral disclosures & licensing notices for Leak Detection Pro serving City Heights, San Diego CA 92105. Independent CSLB pros. Call (619) 910-9411.'
+      },
+      'sitemap': {
+        title: 'Website Sitemap & XML Feed | Leak Detection Pro',
+        desc: 'Complete XML and HTML sitemap index for Leak Detection Pro. Access all services, diagnostic guides, and verified URLs.'
       }
     };
 
@@ -184,6 +189,9 @@ export default function App() {
         )}
         {currentPage === 'disclaimer' && (
           <DisclaimerPage onNavigate={handleNavigate} />
+        )}
+        {currentPage === 'sitemap' && (
+          <SitemapPage onNavigate={handleNavigate} />
         )}
       </main>
 

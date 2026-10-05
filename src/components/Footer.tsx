@@ -262,6 +262,27 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                   Lead Generation &amp; Contractor Disclaimer
                 </a>
               </li>
+              <li className="flex items-center gap-2 pt-1">
+                <a
+                  href="/sitemap"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    handleNav('sitemap');
+                  }}
+                  className="text-cyan-400 hover:underline font-semibold"
+                >
+                  HTML Sitemap
+                </a>
+                <span className="text-slate-600">&bull;</span>
+                <a
+                  href="/sitemap.xml"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-400 hover:underline font-semibold"
+                >
+                  XML Sitemap
+                </a>
+              </li>
             </ul>
 
             <div className="pt-3 border-t border-slate-800">

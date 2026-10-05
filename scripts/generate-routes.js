@@ -178,6 +178,34 @@ const routes = [
         Leak Detection Pro is an independent advertising and contractor matchmaking referral service. We connect consumers with independent California State License Board (CSLB) licensed plumbing contractors.
       </p>
     `
+  },
+  {
+    path: 'sitemap',
+    title: 'Website Sitemap & XML Feed | Leak Detection Pro',
+    desc: 'Complete XML and HTML sitemap index for Leak Detection Pro. Access all services, diagnostic guides, and verified URLs.',
+    h1: 'Website Sitemap &amp; Verified URL Index',
+    h2: 'Sitemaps.org Compliant XML &amp; Navigation Links',
+    breadcrumbName: 'Sitemap',
+    bodySnippet: `
+      <p style="margin-bottom: 12px;">
+        Browse the complete directory of services, diagnostic guides, and emergency dispatch links for Leak Detection Pro.
+      </p>
+      <ul style="margin: 12px 0 16px 20px; line-height: 1.8;">
+        <li><a href="/" style="color: #60a5fa;">Home (North Mountain Village / City Heights)</a></li>
+        <li><a href="/water-leak" style="color: #60a5fa;">Water &amp; Slab Leak Locating</a></li>
+        <li><a href="/gas-leak" style="color: #60a5fa;">Emergency Gas Leak Testing</a></li>
+        <li><a href="/blog" style="color: #60a5fa;">Diagnostic Field Guides &amp; Blog</a></li>
+        <li><a href="/about" style="color: #60a5fa;">About Our Contractor Network</a></li>
+        <li><a href="/contact" style="color: #60a5fa;">Contact &amp; 24/7 Dispatch</a></li>
+        <li><a href="/privacy" style="color: #60a5fa;">Privacy Policy</a></li>
+        <li><a href="/disclaimer" style="color: #60a5fa;">Legal Disclaimers</a></li>
+      </ul>
+      <div style="margin-top: 16px;">
+        <a href="/sitemap.xml" target="_blank" style="background: #2563eb; color: white; padding: 10px 18px; border-radius: 8px; text-decoration: none; font-weight: bold; display: inline-block;">
+          Open Raw XML Sitemap &rarr;
+        </a>
+      </div>
+    `
   }
 ];
 
