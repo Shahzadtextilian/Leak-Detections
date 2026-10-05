@@ -51,7 +51,7 @@ export default function App() {
   useEffect(() => {
     const pageMeta: Record<Page, { title: string; desc: string }> = {
       'home': {
-        title: 'Leak Detection in North Mountain Villege, AZ | Leak Detection Pro',
+        title: 'Leak Detection City Heights, San Diego | Leak Detection Pro',
         desc: 'Need expert leak detection in City Heights? We find hidden water, slab, and gas leaks quickly using non-invasive tools. Call for an upfront estimate today!'
       },
       'water-leak': {
