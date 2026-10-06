@@ -156,7 +156,7 @@ export const WaterLeakPage: React.FC<WaterLeakPageProps> = ({ onNavigate }) => {
               <p className="text-xs text-slate-500 leading-relaxed mb-6 bg-blue-50/60 p-3.5 rounded-xl border border-blue-100">
                 <strong>Need more information?</strong> Consult our comprehensive{' '}
                 <a
-                  href="/blog"
+                  href="/blog/"
                   onClick={(e) => {
                     e.preventDefault();
                     onNavigate('blog');
@@ -167,7 +167,7 @@ export const WaterLeakPage: React.FC<WaterLeakPageProps> = ({ onNavigate }) => {
                 </a>{' '}
                 or explore our{' '}
                 <a
-                  href="/gas-leak"
+                  href="/gas-leak/"
                   onClick={(e) => {
                     e.preventDefault();
                     onNavigate('gas-leak');
@@ -359,7 +359,7 @@ export const WaterLeakPage: React.FC<WaterLeakPageProps> = ({ onNavigate }) => {
                 </a>
 
                 <a
-                  href="/contact"
+                  href="/contact/"
                   onClick={(e) => {
                     e.preventDefault();
                     onNavigate('contact');
@@ -379,7 +379,7 @@ export const WaterLeakPage: React.FC<WaterLeakPageProps> = ({ onNavigate }) => {
                 <ul className="space-y-2 text-xs text-slate-600">
                   <li>
                     <a
-                      href="/gas-leak"
+                      href="/gas-leak/"
                       onClick={(e) => {
                         e.preventDefault();
                         onNavigate('gas-leak');
@@ -392,7 +392,7 @@ export const WaterLeakPage: React.FC<WaterLeakPageProps> = ({ onNavigate }) => {
                   </li>
                   <li>
                     <a
-                      href="/blog"
+                      href="/blog/"
                       onClick={(e) => {
                         e.preventDefault();
                         onNavigate('blog');
@@ -405,7 +405,7 @@ export const WaterLeakPage: React.FC<WaterLeakPageProps> = ({ onNavigate }) => {
                   </li>
                   <li>
                     <a
-                      href="/about"
+                      href="/about/"
                       onClick={(e) => {
                         e.preventDefault();
                         onNavigate('about');
@@ -418,7 +418,7 @@ export const WaterLeakPage: React.FC<WaterLeakPageProps> = ({ onNavigate }) => {
                   </li>
                   <li>
                     <a
-                      href="/contact"
+                      href="/contact/"
                       onClick={(e) => {
                         e.preventDefault();
                         onNavigate('contact');

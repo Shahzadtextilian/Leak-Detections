@@ -28,51 +28,57 @@ export const SitemapPage: React.FC<SitemapPageProps> = ({ onNavigate }) => {
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.cityheightsleakdetectionpro.com/</loc>
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.cityheightsleakdetectionpro.com/water-leak</loc>
-    <lastmod>2026-10-04</lastmod>
+    <loc>https://www.cityheightsleakdetectionpro.com/water-leak/</loc>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.cityheightsleakdetectionpro.com/gas-leak</loc>
-    <lastmod>2026-10-04</lastmod>
+    <loc>https://www.cityheightsleakdetectionpro.com/gas-leak/</loc>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.cityheightsleakdetectionpro.com/blog</loc>
-    <lastmod>2026-10-04</lastmod>
+    <loc>https://www.cityheightsleakdetectionpro.com/blog/</loc>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.cityheightsleakdetectionpro.com/about</loc>
-    <lastmod>2026-10-04</lastmod>
+    <loc>https://www.cityheightsleakdetectionpro.com/about/</loc>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.cityheightsleakdetectionpro.com/contact</loc>
-    <lastmod>2026-10-04</lastmod>
+    <loc>https://www.cityheightsleakdetectionpro.com/contact/</loc>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.cityheightsleakdetectionpro.com/privacy</loc>
-    <lastmod>2026-10-04</lastmod>
+    <loc>https://www.cityheightsleakdetectionpro.com/privacy/</loc>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://www.cityheightsleakdetectionpro.com/disclaimer</loc>
-    <lastmod>2026-10-04</lastmod>
+    <loc>https://www.cityheightsleakdetectionpro.com/disclaimer/</loc>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://www.cityheightsleakdetectionpro.com/sitemap/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
 </urlset>`;
 
@@ -81,15 +87,15 @@ export const SitemapPage: React.FC<SitemapPageProps> = ({ onNavigate }) => {
       loc: 'https://www.cityheightsleakdetectionpro.com/',
       path: '/',
       page: 'home' as Page,
-      title: 'Leak Detection in North Mountain Villege, AZ | Leak Detection Pro (Home)',
+      title: 'Leak Detection City Heights, San Diego | Leak Detection Pro (Home)',
       desc: '24/7 emergency water & gas leak detection referral network. Acoustic locating, thermal FLIR imaging, and rapid dispatch.',
       priority: '1.0',
       changefreq: 'daily',
       icon: <Globe className="w-5 h-5 text-blue-500" />
     },
     {
-      loc: 'https://www.cityheightsleakdetectionpro.com/water-leak',
-      path: '/water-leak',
+      loc: 'https://www.cityheightsleakdetectionpro.com/water-leak/',
+      path: '/water-leak/',
       page: 'water-leak' as Page,
       title: 'Water & Slab Leak Detection Services',
       desc: 'Underground copper pipe acoustic detection, slab leak locating, and non-destructive thermal scanning.',
@@ -98,8 +104,8 @@ export const SitemapPage: React.FC<SitemapPageProps> = ({ onNavigate }) => {
       icon: <Droplets className="w-5 h-5 text-blue-400" />
     },
     {
-      loc: 'https://www.cityheightsleakdetectionpro.com/gas-leak',
-      path: '/gas-leak',
+      loc: 'https://www.cityheightsleakdetectionpro.com/gas-leak/',
+      path: '/gas-leak/',
       page: 'gas-leak' as Page,
       title: 'Emergency Gas Leak Detection & Safety',
       desc: 'Combustible gas PPM sniffers, manometer pressure decay testing, and SDG&E safety tag clearance.',
@@ -108,8 +114,8 @@ export const SitemapPage: React.FC<SitemapPageProps> = ({ onNavigate }) => {
       icon: <Flame className="w-5 h-5 text-amber-500" />
     },
     {
-      loc: 'https://www.cityheightsleakdetectionpro.com/blog',
-      path: '/blog',
+      loc: 'https://www.cityheightsleakdetectionpro.com/blog/',
+      path: '/blog/',
       page: 'blog' as Page,
       title: 'Leak Diagnostic Knowledgebase & Field Guides',
       desc: 'In-depth homeowner technical guides on acoustic vs thermal testing, signs of hidden slab leaks, and piping repairs.',
@@ -118,8 +124,8 @@ export const SitemapPage: React.FC<SitemapPageProps> = ({ onNavigate }) => {
       icon: <FileText className="w-5 h-5 text-cyan-500" />
     },
     {
-      loc: 'https://www.cityheightsleakdetectionpro.com/about',
-      path: '/about',
+      loc: 'https://www.cityheightsleakdetectionpro.com/about/',
+      path: '/about/',
       page: 'about' as Page,
       title: 'About Leak Detection Pro Network',
       desc: 'Learn about our contractor vetting benchmarks, local 3431 43rd St dispatch base, and equipment standards.',
@@ -128,8 +134,8 @@ export const SitemapPage: React.FC<SitemapPageProps> = ({ onNavigate }) => {
       icon: <Info className="w-5 h-5 text-indigo-500" />
     },
     {
-      loc: 'https://www.cityheightsleakdetectionpro.com/contact',
-      path: '/contact',
+      loc: 'https://www.cityheightsleakdetectionpro.com/contact/',
+      path: '/contact/',
       page: 'contact' as Page,
       title: 'Contact & 24/7 Emergency Dispatch',
       desc: 'Stationed at 3431 43rd St. Call (619) 910-9411 or submit an emergency dispatch ticket online.',
@@ -138,8 +144,8 @@ export const SitemapPage: React.FC<SitemapPageProps> = ({ onNavigate }) => {
       icon: <Mail className="w-5 h-5 text-emerald-500" />
     },
     {
-      loc: 'https://www.cityheightsleakdetectionpro.com/privacy',
-      path: '/privacy',
+      loc: 'https://www.cityheightsleakdetectionpro.com/privacy/',
+      path: '/privacy/',
       page: 'privacy' as Page,
       title: 'Privacy Policy (CCPA / CPRA)',
       desc: 'California Consumer Privacy Act disclosure regarding data collection, protection, and consumer rights.',
@@ -148,14 +154,24 @@ export const SitemapPage: React.FC<SitemapPageProps> = ({ onNavigate }) => {
       icon: <ShieldCheck className="w-5 h-5 text-slate-400" />
     },
     {
-      loc: 'https://www.cityheightsleakdetectionpro.com/disclaimer',
-      path: '/disclaimer',
+      loc: 'https://www.cityheightsleakdetectionpro.com/disclaimer/',
+      path: '/disclaimer/',
       page: 'disclaimer' as Page,
       title: 'Legal Disclaimer & Referral Notice',
       desc: 'Independent contractor referral disclosure and life-safety emergency response guidance.',
       priority: '0.3',
       changefreq: 'yearly',
       icon: <AlertTriangle className="w-5 h-5 text-slate-400" />
+    },
+    {
+      loc: 'https://www.cityheightsleakdetectionpro.com/sitemap/',
+      path: '/sitemap/',
+      page: 'sitemap' as Page,
+      title: 'Website Sitemap & Verified URL Index',
+      desc: 'Directory of all active services, emergency dispatch resources, and sitemaps.org 0.9 XML feed.',
+      priority: '0.5',
+      changefreq: 'weekly',
+      icon: <FileCode className="w-5 h-5 text-blue-400" />
     }
   ];
 

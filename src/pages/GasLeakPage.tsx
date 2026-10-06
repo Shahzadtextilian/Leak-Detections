@@ -220,7 +220,7 @@ export const GasLeakPage: React.FC<GasLeakPageProps> = ({ onNavigate }) => {
               <p className="text-xs text-slate-500 leading-relaxed mb-6 bg-amber-50/60 p-3.5 rounded-xl border border-amber-200/80">
                 <strong>Need non-gas leak locating?</strong> Check our{' '}
                 <a
-                  href="/water-leak"
+                  href="/water-leak/"
                   onClick={(e) => {
                     e.preventDefault();
                     onNavigate('water-leak');
@@ -231,7 +231,7 @@ export const GasLeakPage: React.FC<GasLeakPageProps> = ({ onNavigate }) => {
                 </a>{' '}
                 or read our{' '}
                 <a
-                  href="/blog"
+                  href="/blog/"
                   onClick={(e) => {
                     e.preventDefault();
                     onNavigate('blog');
@@ -242,7 +242,7 @@ export const GasLeakPage: React.FC<GasLeakPageProps> = ({ onNavigate }) => {
                 </a>{' '}
                 for technical inspection methods. For safety guidelines, view our{' '}
                 <a
-                  href="/disclaimer"
+                  href="/disclaimer/"
                   onClick={(e) => {
                     e.preventDefault();
                     onNavigate('disclaimer');
@@ -404,7 +404,7 @@ export const GasLeakPage: React.FC<GasLeakPageProps> = ({ onNavigate }) => {
                 </a>
 
                 <a
-                  href="/contact"
+                  href="/contact/"
                   onClick={(e) => {
                     e.preventDefault();
                     onNavigate('contact');
@@ -424,7 +424,7 @@ export const GasLeakPage: React.FC<GasLeakPageProps> = ({ onNavigate }) => {
                 <ul className="space-y-2 text-xs text-slate-600">
                   <li>
                     <a
-                      href="/water-leak"
+                      href="/water-leak/"
                       onClick={(e) => {
                         e.preventDefault();
                         onNavigate('water-leak');
@@ -437,7 +437,7 @@ export const GasLeakPage: React.FC<GasLeakPageProps> = ({ onNavigate }) => {
                   </li>
                   <li>
                     <a
-                      href="/blog"
+                      href="/blog/"
                       onClick={(e) => {
                         e.preventDefault();
                         onNavigate('blog');
@@ -450,7 +450,7 @@ export const GasLeakPage: React.FC<GasLeakPageProps> = ({ onNavigate }) => {
                   </li>
                   <li>
                     <a
-                      href="/about"
+                      href="/about/"
                       onClick={(e) => {
                         e.preventDefault();
                         onNavigate('about');
@@ -463,7 +463,7 @@ export const GasLeakPage: React.FC<GasLeakPageProps> = ({ onNavigate }) => {
                   </li>
                   <li>
                     <a
-                      href="/contact"
+                      href="/contact/"
                       onClick={(e) => {
                         e.preventDefault();
                         onNavigate('contact');

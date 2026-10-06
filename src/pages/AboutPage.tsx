@@ -145,7 +145,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
               <p className="text-sm text-slate-300 leading-relaxed">
                 Dedicated lead referral service for residential, commercial, and property management accounts across City Heights and Greater San Diego County. Looking for specific services? Connect with specialists in{' '}
                 <a
-                  href="/water-leak"
+                  href="/water-leak/"
                   onClick={(e) => {
                     e.preventDefault();
                     onNavigate('water-leak');
@@ -155,7 +155,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
                   Underground Water &amp; Slab Leaks
                 </a>,{' '}
                 <a
-                  href="/gas-leak"
+                  href="/gas-leak/"
                   onClick={(e) => {
                     e.preventDefault();
                     onNavigate('gas-leak');
@@ -165,7 +165,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
                   Emergency Gas Line Testing
                 </a>, or browse our{' '}
                 <a
-                  href="/blog"
+                  href="/blog/"
                   onClick={(e) => {
                     e.preventDefault();
                     onNavigate('blog');
@@ -212,7 +212,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
                 Call {BUSINESS_INFO.phoneFormatted}
               </a>
               <a
-                href="/contact"
+                href="/contact/"
                 onClick={(e) => {
                   e.preventDefault();
                   onNavigate('contact');

@@ -56,31 +56,31 @@ export default function App() {
       },
       'water-leak': {
         title: 'Water & Slab Leak Detection City Heights, San Diego | 24/7 Dispatch',
-        desc: 'City Heights water & slab leak detection in 92105. Non-invasive acoustic ground tests, FLIR thermal imaging & pipe repair. Call our 24/7 hotline (619) 910-9411!'
+        desc: 'Non-invasive water leak detection & slab leak locating in City Heights (92105). Acoustic pipe testing & FLIR thermal scans. Call (619) 910-9411.'
       },
       'gas-leak': {
         title: 'Emergency Gas Leak Detection City Heights, San Diego CA | 24/7 Hotline',
-        desc: '24/7 emergency gas leak detection in City Heights, San Diego CA (92105). Pressure decay testing, line repairs & SDG&E safety tag clearance. Call (619) 910-9411.'
+        desc: '24/7 emergency gas leak detection in City Heights, CA (92105). Pressure decay testing, safety inspections & SDG&E tag clearance. Call (619) 910-9411.'
       },
       'blog': {
         title: 'Leak Detection & Leak Repair Guide | City Heights, San Diego CA',
-        desc: 'Expert guide to leak detection & leak repair in City Heights (92105). Learn how acoustic sensors, thermal scans & slab reroutes work. Call (619) 910-9411 today!'
+        desc: 'Complete leak detection & repair guide for City Heights (92105). Learn how acoustic sensors, thermal imaging & slab repairs work. Call (619) 910-9411.'
       },
       'about': {
         title: 'About Us | City Heights Local Leak Detection Network (92105)',
-        desc: 'About Leak Detection Pro at 3431 43rd St, City Heights, CA 92105. Connecting San Diego property owners with pre-screened CSLB contractors. Call: (619) 910-9411.'
+        desc: 'About Leak Detection Pro at 3431 43rd St, City Heights, CA. Connecting homeowners with pre-screened CSLB licensed plumbers. Call (619) 910-9411.'
       },
       'contact': {
         title: 'Contact & Emergency Dispatch | 3431 43rd St, City Heights CA 92105',
-        desc: 'Contact Leak Detection Pro at 3431 43rd St, City Heights, San Diego, CA 92105. 24/7 emergency dispatch desk & instant contractor referrals. Call (619) 910-9411.'
+        desc: 'Contact Leak Detection Pro at 3431 43rd St, City Heights, CA 92105. 24/7 emergency dispatch desk & instant contractor referral. Call (619) 910-9411.'
       },
       'privacy': {
         title: 'Privacy Policy | Leak Detection Pro City Heights',
-        desc: 'Privacy Policy for Leak Detection Pro in City Heights, San Diego CA 92105. Learn how we safeguard your personal data under CCPA guidelines. Call (619) 910-9411.'
+        desc: 'Privacy policy for Leak Detection Pro in City Heights, CA. Learn how we protect your personal information under CCPA regulations. Call (619) 910-9411.'
       },
       'disclaimer': {
         title: 'Legal Disclaimers & Licensing | Leak Detection Pro',
-        desc: 'Contractor referral disclosures & licensing notices for Leak Detection Pro serving City Heights, San Diego CA 92105. Independent CSLB pros. Call (619) 910-9411.'
+        desc: 'Contractor referral disclosure & licensing terms for Leak Detection Pro in City Heights, San Diego CA. Independent CSLB plumbers. Call (619) 910-9411.'
       },
       'sitemap': {
         title: 'Website Sitemap & XML Feed | Leak Detection Pro',
@@ -128,7 +128,7 @@ export default function App() {
     const baseOrigin = window.location.origin.includes('cityheightsleakdetectionpro.com')
       ? 'https://www.cityheightsleakdetectionpro.com'
       : window.location.origin;
-    const canonicalUrl = pageSuffix ? `${baseOrigin}/${pageSuffix}` : `${baseOrigin}/`;
+    const canonicalUrl = pageSuffix ? `${baseOrigin}/${pageSuffix}/` : `${baseOrigin}/`;
     canonical.setAttribute('href', canonicalUrl);
 
     // Synchronize self-referential hreflang annotations
@@ -149,7 +149,7 @@ export default function App() {
 
   const handleNavigate = (page: Page) => {
     setCurrentPage(page);
-    const targetPath = page === 'home' ? '/' : `/${page}`;
+    const targetPath = page === 'home' ? '/' : `/${page}/`;
     if (window.location.pathname !== targetPath) {
       window.history.pushState({ page }, '', targetPath);
     }

@@ -326,7 +326,7 @@ export const BlogPage: React.FC<BlogPageProps> = ({ onNavigate }) => {
               <span>Call Dispatch: {BUSINESS_INFO.phoneFormatted}</span>
             </a>
             <a
-              href="/contact"
+              href="/contact/"
               onClick={(e) => {
                 e.preventDefault();
                 onNavigate('contact');
@@ -366,7 +366,7 @@ export const BlogPage: React.FC<BlogPageProps> = ({ onNavigate }) => {
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             <a
-              href="/water-leak"
+              href="/water-leak/"
               onClick={(e) => {
                 e.preventDefault();
                 onNavigate('water-leak');
@@ -385,7 +385,7 @@ export const BlogPage: React.FC<BlogPageProps> = ({ onNavigate }) => {
             </a>
 
             <a
-              href="/gas-leak"
+              href="/gas-leak/"
               onClick={(e) => {
                 e.preventDefault();
                 onNavigate('gas-leak');

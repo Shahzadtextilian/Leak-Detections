@@ -202,7 +202,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate }) => {
 
               <div className="pt-3 border-t border-slate-100 flex flex-wrap gap-2 text-xs">
                 <a
-                  href="/water-leak"
+                  href="/water-leak/"
                   onClick={(e) => {
                     e.preventDefault();
                     onNavigate('water-leak');
@@ -213,7 +213,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate }) => {
                 </a>
                 <span className="text-slate-300">•</span>
                 <a
-                  href="/gas-leak"
+                  href="/gas-leak/"
                   onClick={(e) => {
                     e.preventDefault();
                     onNavigate('gas-leak');
@@ -224,7 +224,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate }) => {
                 </a>
                 <span className="text-slate-300">•</span>
                 <a
-                  href="/blog"
+                  href="/blog/"
                   onClick={(e) => {
                     e.preventDefault();
                     onNavigate('blog');

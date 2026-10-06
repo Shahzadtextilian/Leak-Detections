@@ -88,7 +88,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
             <ul className="space-y-2 text-sm text-slate-400">
               <li>
                 <a
-                  href="/water-leak"
+                  href="/water-leak/"
                   onClick={(e) => {
                     e.preventDefault();
                     handleNav('water-leak');
@@ -101,7 +101,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               </li>
               <li>
                 <a
-                  href="/water-leak"
+                  href="/water-leak/"
                   onClick={(e) => {
                     e.preventDefault();
                     handleNav('water-leak');
@@ -113,7 +113,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               </li>
               <li>
                 <a
-                  href="/water-leak"
+                  href="/water-leak/"
                   onClick={(e) => {
                     e.preventDefault();
                     handleNav('water-leak');
@@ -125,7 +125,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               </li>
               <li>
                 <a
-                  href="/gas-leak"
+                  href="/gas-leak/"
                   onClick={(e) => {
                     e.preventDefault();
                     handleNav('gas-leak');
@@ -138,7 +138,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               </li>
               <li>
                 <a
-                  href="/gas-leak"
+                  href="/gas-leak/"
                   onClick={(e) => {
                     e.preventDefault();
                     handleNav('gas-leak');
@@ -150,7 +150,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               </li>
               <li>
                 <a
-                  href="/gas-leak"
+                  href="/gas-leak/"
                   onClick={(e) => {
                     e.preventDefault();
                     handleNav('gas-leak');
@@ -203,7 +203,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               </li>
               <li>
                 <a
-                  href="/blog"
+                  href="/blog/"
                   onClick={(e) => {
                     e.preventDefault();
                     handleNav('blog');
@@ -216,7 +216,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               </li>
               <li>
                 <a
-                  href="/about"
+                  href="/about/"
                   onClick={(e) => {
                     e.preventDefault();
                     handleNav('about');
@@ -228,7 +228,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               </li>
               <li>
                 <a
-                  href="/contact"
+                  href="/contact/"
                   onClick={(e) => {
                     e.preventDefault();
                     handleNav('contact');
@@ -240,7 +240,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               </li>
               <li>
                 <a
-                  href="/privacy"
+                  href="/privacy/"
                   onClick={(e) => {
                     e.preventDefault();
                     handleNav('privacy');
@@ -252,7 +252,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               </li>
               <li>
                 <a
-                  href="/disclaimer"
+                  href="/disclaimer/"
                   onClick={(e) => {
                     e.preventDefault();
                     handleNav('disclaimer');
@@ -264,7 +264,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               </li>
               <li className="flex items-center gap-2 pt-1">
                 <a
-                  href="/sitemap"
+                  href="/sitemap/"
                   onClick={(e) => {
                     e.preventDefault();
                     handleNav('sitemap');

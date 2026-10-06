@@ -95,7 +95,7 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate }) => {
             </a>
 
             <a
-              href="/water-leak"
+              href="/water-leak/"
               onClick={(e) => {
                 e.preventDefault();
                 handleNav('water-leak');
@@ -114,7 +114,7 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate }) => {
             </a>
 
             <a
-              href="/gas-leak"
+              href="/gas-leak/"
               onClick={(e) => {
                 e.preventDefault();
                 handleNav('gas-leak');
@@ -133,7 +133,7 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate }) => {
             </a>
 
             <a
-              href="/blog"
+              href="/blog/"
               onClick={(e) => {
                 e.preventDefault();
                 handleNav('blog');
@@ -152,7 +152,7 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate }) => {
             </a>
 
             <a
-              href="/about"
+              href="/about/"
               onClick={(e) => {
                 e.preventDefault();
                 handleNav('about');
@@ -168,7 +168,7 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate }) => {
             </a>
 
             <a
-              href="/contact"
+              href="/contact/"
               onClick={(e) => {
                 e.preventDefault();
                 handleNav('contact');
@@ -250,7 +250,7 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate }) => {
             Home
           </a>
           <a
-            href="/water-leak"
+            href="/water-leak/"
             onClick={(e) => {
               e.preventDefault();
               handleNav('water-leak');
@@ -263,7 +263,7 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate }) => {
             Water Leak Detection
           </a>
           <a
-            href="/gas-leak"
+            href="/gas-leak/"
             onClick={(e) => {
               e.preventDefault();
               handleNav('gas-leak');
@@ -276,7 +276,7 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate }) => {
             Gas Leak Detection
           </a>
           <a
-            href="/blog"
+            href="/blog/"
             onClick={(e) => {
               e.preventDefault();
               handleNav('blog');
@@ -289,7 +289,7 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate }) => {
             Leak Detection &amp; Repair Blog
           </a>
           <a
-            href="/about"
+            href="/about/"
             onClick={(e) => {
               e.preventDefault();
               handleNav('about');
@@ -301,7 +301,7 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate }) => {
             About Us
           </a>
           <a
-            href="/contact"
+            href="/contact/"
             onClick={(e) => {
               e.preventDefault();
               handleNav('contact');
@@ -313,7 +313,7 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate }) => {
             Contact Us
           </a>
           <a
-            href="/privacy"
+            href="/privacy/"
             onClick={(e) => {
               e.preventDefault();
               handleNav('privacy');
@@ -325,7 +325,7 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate }) => {
             Privacy Policy
           </a>
           <a
-            href="/disclaimer"
+            href="/disclaimer/"
             onClick={(e) => {
               e.preventDefault();
               handleNav('disclaimer');

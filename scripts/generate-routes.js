@@ -19,13 +19,13 @@ const routes = [
   {
     path: 'water-leak',
     title: 'Water & Slab Leak Detection City Heights, San Diego | 24/7 Dispatch',
-    desc: 'Non-invasive underground water leak detection and slab leak locating in City Heights (92105). Thermal FLIR imaging and acoustic pipe testing. Call (619) 910-9411.',
+    desc: 'Non-invasive water leak detection & slab leak locating in City Heights (92105). Acoustic pipe testing & FLIR thermal scans. Call (619) 910-9411.',
     h1: 'Water &amp; Slab Leak Detection Services in City Heights, San Diego',
     h2: 'Precision Acoustic Locating &amp; Thermal Imaging for Hidden Leaks',
     breadcrumbName: 'Water & Slab Leak Detection',
     serviceSchema: {
       "@type": "Service",
-      "@id": "https://www.cityheightsleakdetectionpro.com/water-leak#service",
+      "@id": "https://www.cityheightsleakdetectionpro.com/water-leak/#service",
       "name": "Water & Slab Leak Detection City Heights",
       "serviceType": "Water and Slab Leak Locating",
       "provider": {
@@ -35,7 +35,7 @@ const routes = [
         "@type": "AdministrativeArea",
         "name": "City Heights, San Diego CA 92105"
       },
-      "description": "Non-invasive underground water leak detection and slab leak locating in City Heights (92105). Thermal FLIR imaging and acoustic pipe testing.",
+      "description": "Non-invasive water leak detection and slab leak locating in City Heights (92105). Thermal FLIR imaging and acoustic pipe testing.",
       "offers": {
         "@type": "Offer",
         "priceCurrency": "USD",
@@ -60,13 +60,13 @@ const routes = [
   {
     path: 'gas-leak',
     title: 'Emergency Gas Leak Detection City Heights, San Diego CA | 24/7 Hotline',
-    desc: 'Emergency natural gas odor detection, line pressure decay testing, and SDG&E coordination in City Heights, San Diego (92105). Rapid 24/7 certified dispatch.',
+    desc: '24/7 emergency gas leak detection in City Heights, CA (92105). Pressure decay testing, safety inspections & SDG&E tag clearance. Call (619) 910-9411.',
     h1: 'Emergency Gas Leak Detection in City Heights, San Diego',
     h2: '24/7 Combustible Gas Sniffing &amp; Line Pressure Decay Testing',
     breadcrumbName: 'Emergency Gas Leak Detection',
     serviceSchema: {
       "@type": "Service",
-      "@id": "https://www.cityheightsleakdetectionpro.com/gas-leak#service",
+      "@id": "https://www.cityheightsleakdetectionpro.com/gas-leak/#service",
       "name": "Emergency Gas Leak Detection City Heights",
       "serviceType": "Emergency Combustible Gas Leak Locating",
       "provider": {
@@ -101,7 +101,7 @@ const routes = [
   {
     path: 'about',
     title: 'About Us | City Heights Local Leak Detection Network (92105)',
-    desc: 'Learn about Leak Detection Pro based at 3431 43rd St, connecting City Heights property owners with licensed, certified San Diego leak detection contractors.',
+    desc: 'About Leak Detection Pro at 3431 43rd St, City Heights, CA. Connecting homeowners with pre-screened CSLB licensed plumbers. Call (619) 910-9411.',
     h1: 'About Leak Detection Pro — City Heights, San Diego',
     h2: 'Connecting Property Owners with Pre-Screened Local Leak Specialists',
     breadcrumbName: 'About Us',
@@ -117,7 +117,7 @@ const routes = [
   {
     path: 'contact',
     title: 'Contact & Emergency Dispatch | 3431 43rd St, City Heights CA 92105',
-    desc: 'Contact Leak Detection Pro at 3431 43rd St, San Diego CA 92105. 24/7 emergency hotline (619) 910-9411 or instant online contractor matching.',
+    desc: 'Contact Leak Detection Pro at 3431 43rd St, City Heights, CA 92105. 24/7 emergency dispatch desk & instant contractor referral. Call (619) 910-9411.',
     h1: 'Contact &amp; 24/7 Dispatch — City Heights, San Diego',
     h2: 'Direct Phone Line &amp; Local Dispatch Office',
     breadcrumbName: 'Contact & Dispatch',
@@ -135,7 +135,7 @@ const routes = [
   {
     path: 'blog',
     title: 'Leak Detection & Leak Repair Guide | City Heights, San Diego CA',
-    desc: 'Expert guide to leak detection & leak repair in City Heights (92105). Learn how acoustic sensors, thermal scans & slab reroutes work. Call (619) 910-9411 today!',
+    desc: 'Complete leak detection & repair guide for City Heights (92105). Learn how acoustic sensors, thermal imaging & slab repairs work. Call (619) 910-9411.',
     h1: 'Leak Detection &amp; Repair Knowledge Base — City Heights',
     h2: 'Expert Guides on Slab Leaks, Gas Line Safety &amp; Non-Invasive Diagnostics',
     breadcrumbName: 'Blog & Field Guides',
@@ -156,7 +156,7 @@ const routes = [
   {
     path: 'privacy',
     title: 'Privacy Policy | Leak Detection Pro City Heights',
-    desc: 'Privacy policy and consumer data protection terms for Leak Detection Pro serving City Heights, San Diego CA.',
+    desc: 'Privacy policy for Leak Detection Pro in City Heights, CA. Learn how we protect your personal information under CCPA regulations. Call (619) 910-9411.',
     h1: 'Privacy Policy &amp; Consumer Protection',
     h2: 'CCPA &amp; California Consumer Privacy Compliance',
     breadcrumbName: 'Privacy Policy',
@@ -169,7 +169,7 @@ const routes = [
   {
     path: 'disclaimer',
     title: 'Legal Disclaimers & Licensing | Leak Detection Pro',
-    desc: 'Consumer referral notices, California licensing standards, and lead generation disclosures for Leak Detection Pro.',
+    desc: 'Contractor referral disclosure & licensing terms for Leak Detection Pro in City Heights, San Diego CA. Independent CSLB plumbers. Call (619) 910-9411.',
     h1: 'Licensing &amp; Lead Generation Disclaimers',
     h2: 'Independent Contractor Network Notice',
     breadcrumbName: 'Legal Disclaimers',
@@ -192,13 +192,13 @@ const routes = [
       </p>
       <ul style="margin: 12px 0 16px 20px; line-height: 1.8;">
         <li><a href="/" style="color: #60a5fa;">Home (North Mountain Village / City Heights)</a></li>
-        <li><a href="/water-leak" style="color: #60a5fa;">Water &amp; Slab Leak Locating</a></li>
-        <li><a href="/gas-leak" style="color: #60a5fa;">Emergency Gas Leak Testing</a></li>
-        <li><a href="/blog" style="color: #60a5fa;">Diagnostic Field Guides &amp; Blog</a></li>
-        <li><a href="/about" style="color: #60a5fa;">About Our Contractor Network</a></li>
-        <li><a href="/contact" style="color: #60a5fa;">Contact &amp; 24/7 Dispatch</a></li>
-        <li><a href="/privacy" style="color: #60a5fa;">Privacy Policy</a></li>
-        <li><a href="/disclaimer" style="color: #60a5fa;">Legal Disclaimers</a></li>
+        <li><a href="/water-leak/" style="color: #60a5fa;">Water &amp; Slab Leak Locating</a></li>
+        <li><a href="/gas-leak/" style="color: #60a5fa;">Emergency Gas Leak Testing</a></li>
+        <li><a href="/blog/" style="color: #60a5fa;">Diagnostic Field Guides &amp; Blog</a></li>
+        <li><a href="/about/" style="color: #60a5fa;">About Our Contractor Network</a></li>
+        <li><a href="/contact/" style="color: #60a5fa;">Contact &amp; 24/7 Dispatch</a></li>
+        <li><a href="/privacy/" style="color: #60a5fa;">Privacy Policy</a></li>
+        <li><a href="/disclaimer/" style="color: #60a5fa;">Legal Disclaimers</a></li>
       </ul>
       <div style="margin-top: 16px;">
         <a href="/sitemap.xml" target="_blank" style="background: #2563eb; color: white; padding: 10px 18px; border-radius: 8px; text-decoration: none; font-weight: bold; display: inline-block;">
@@ -215,7 +215,7 @@ routes.forEach((route) => {
     fs.mkdirSync(routeDir, { recursive: true });
   }
 
-  const pageCanonical = `https://www.cityheightsleakdetectionpro.com/${route.path}`;
+  const pageCanonical = `https://www.cityheightsleakdetectionpro.com/${route.path}/`;
 
   let pageHtml = baseHtml;
 
@@ -231,7 +231,7 @@ routes.forEach((route) => {
     `<meta name="description" content="${route.desc}" />`
   );
 
-  // Replace Canonical Link
+  // Replace Canonical Link (strictly with trailing slash)
   pageHtml = pageHtml.replace(
     /<link\s+rel="canonical"\s+href=".*?"\s*\/?>/i,
     `<link rel="canonical" href="${pageCanonical}" />`
@@ -310,11 +310,11 @@ routes.forEach((route) => {
         <div style="display: flex; align-items: center; gap: 16px;">
           <nav style="display: flex; gap: 14px; font-size: 14px; flex-wrap: wrap;">
             <a href="/" style="color: #94a3b8; text-decoration: none;">Home</a>
-            <a href="/water-leak" style="color: #94a3b8; text-decoration: none;">Water Leaks</a>
-            <a href="/gas-leak" style="color: #94a3b8; text-decoration: none;">Gas Leaks</a>
-            <a href="/blog" style="color: #94a3b8; text-decoration: none;">Blog</a>
-            <a href="/about" style="color: #94a3b8; text-decoration: none;">About</a>
-            <a href="/contact" style="color: #94a3b8; text-decoration: none;">Contact</a>
+            <a href="/water-leak/" style="color: #94a3b8; text-decoration: none;">Water Leaks</a>
+            <a href="/gas-leak/" style="color: #94a3b8; text-decoration: none;">Gas Leaks</a>
+            <a href="/blog/" style="color: #94a3b8; text-decoration: none;">Blog</a>
+            <a href="/about/" style="color: #94a3b8; text-decoration: none;">About</a>
+            <a href="/contact/" style="color: #94a3b8; text-decoration: none;">Contact</a>
           </nav>
           <a href="tel:+16199109411" style="background: #dc2626; color: white; padding: 10px 18px; border-radius: 10px; font-weight: bold; text-decoration: none; font-size: 14px; display: inline-flex; align-items: center; gap: 8px;">
             📞 (619) 910-9411
@@ -347,13 +347,14 @@ routes.forEach((route) => {
           </div>
           <nav style="display: flex; gap: 16px; flex-wrap: wrap;">
             <a href="/" style="color: #94a3b8; text-decoration: none;">Home</a>
-            <a href="/water-leak" style="color: #94a3b8; text-decoration: none;">Water Leaks</a>
-            <a href="/gas-leak" style="color: #94a3b8; text-decoration: none;">Gas Leaks</a>
-            <a href="/blog" style="color: #94a3b8; text-decoration: none;">Blog</a>
-            <a href="/about" style="color: #94a3b8; text-decoration: none;">About</a>
-            <a href="/contact" style="color: #94a3b8; text-decoration: none;">Contact</a>
-            <a href="/privacy" style="color: #94a3b8; text-decoration: none;">Privacy</a>
-            <a href="/disclaimer" style="color: #94a3b8; text-decoration: none;">Disclaimer</a>
+            <a href="/water-leak/" style="color: #94a3b8; text-decoration: none;">Water Leaks</a>
+            <a href="/gas-leak/" style="color: #94a3b8; text-decoration: none;">Gas Leaks</a>
+            <a href="/blog/" style="color: #94a3b8; text-decoration: none;">Blog</a>
+            <a href="/about/" style="color: #94a3b8; text-decoration: none;">About</a>
+            <a href="/contact/" style="color: #94a3b8; text-decoration: none;">Contact</a>
+            <a href="/privacy/" style="color: #94a3b8; text-decoration: none;">Privacy</a>
+            <a href="/disclaimer/" style="color: #94a3b8; text-decoration: none;">Disclaimer</a>
+            <a href="/sitemap/" style="color: #94a3b8; text-decoration: none;">Sitemap</a>
           </nav>
         </div>
         <p style="font-size: 11px; color: #64748b; margin: 0;">
@@ -369,10 +370,10 @@ routes.forEach((route) => {
     '<script type="module"$1 defer src='
   );
 
-  // Replace content of <div id="root">...</div> with semantic content for this route
+  // Replace content of <div id="root">...</div> cleanly to ensure EXACTLY ONE <h1> per page
   pageHtml = pageHtml.replace(
-    /<div id="root">[\s\S]*?<\/div>/i,
-    `<div id="root">${semanticContent}</div>`
+    /<div id="root">[\s\S]*?<\/div>\s*(?=<script)/i,
+    `<div id="root">\n${semanticContent}\n    </div>\n    `
   );
 
   const targetFile = path.join(routeDir, 'index.html');

@@ -123,7 +123,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
                 </a>
 
                 <a
-                  href="/water-leak"
+                  href="/water-leak/"
                   onClick={(e) => {
                     e.preventDefault();
                     onNavigate('water-leak');
@@ -305,7 +305,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
 
             <div className="pt-4 border-t border-slate-100 flex items-center justify-between">
               <a
-                href="/water-leak"
+                href="/water-leak/"
                 onClick={(e) => {
                   e.preventDefault();
                   onNavigate('water-leak');
@@ -393,7 +393,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
 
             <div className="pt-4 border-t border-slate-100 flex items-center justify-between">
               <a
-                href="/gas-leak"
+                href="/gas-leak/"
                 onClick={(e) => {
                   e.preventDefault();
                   onNavigate('gas-leak');
@@ -904,7 +904,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
               </a>
 
               <a
-                href="/contact"
+                href="/contact/"
                 onClick={(e) => {
                   e.preventDefault();
                   onNavigate('contact');
