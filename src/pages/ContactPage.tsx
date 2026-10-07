@@ -158,7 +158,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate }) => {
           {/* Right Column: Interactive Map & Area Details */}
           <div className="lg:col-span-6 space-y-8">
             {/* Embedded Live Google Map Card */}
-            <LocationMap height="h-72 sm:h-80" />
+            <LocationMap height="h-96 sm:h-[420px]" />
 
             {/* Local Navigation Details Card */}
             <div className="bg-slate-900 text-white rounded-2xl p-6 border border-slate-800 space-y-4">

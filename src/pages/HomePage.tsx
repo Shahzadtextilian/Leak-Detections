@@ -688,7 +688,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
 
             {/* Visual Location Card with Live Google Map */}
             <div className="lg:col-span-6 space-y-4">
-              <LocationMap height="h-64 sm:h-72" />
+              <LocationMap height="h-80 sm:h-96" />
 
               <div className="bg-slate-900 text-white rounded-2xl p-5 sm:p-6 border border-slate-800">
                 <div className="grid grid-cols-2 gap-3 text-xs mb-4">
