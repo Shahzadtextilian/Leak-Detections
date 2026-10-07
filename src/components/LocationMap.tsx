@@ -90,6 +90,7 @@ export const LocationMap: React.FC<LocationMapProps> = ({
     left: number;
     top: number;
     url: string;
+    fallbackUrl?: string;
     key: string;
   }> = [];
 
@@ -119,7 +120,12 @@ export const LocationMap: React.FC<LocationMapProps> = ({
         const tileUrl =
           mapType === 'satellite'
             ? `https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/${zoom}/${tileY}/${tileX}`
-            : `https://basemaps.cartocdn.com/rastertiles/voyager/${zoom}/${tileX}/${tileY}.png`;
+            : `https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/${zoom}/${tileY}/${tileX}`;
+
+        const fallbackUrl =
+          mapType === 'satellite'
+            ? `https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/${zoom}/${tileY}/${tileX}`
+            : `https://tile.openstreetmap.de/${zoom}/${tileX}/${tileY}.png`;
 
         tiles.push({
           x: tileX,
@@ -127,6 +133,7 @@ export const LocationMap: React.FC<LocationMapProps> = ({
           left,
           top,
           url: tileUrl,
+          fallbackUrl,
           key: `${mapType}-${zoom}-${tileX}-${tileY}`,
         });
       }
@@ -234,6 +241,12 @@ export const LocationMap: React.FC<LocationMapProps> = ({
               alt="Map tile"
               loading="eager"
               decoding="async"
+              onError={(e) => {
+                const target = e.currentTarget;
+                if (tile.fallbackUrl && target.src !== tile.fallbackUrl) {
+                  target.src = tile.fallbackUrl;
+                }
+              }}
               className="absolute w-[256px] h-[256px] object-cover transition-opacity duration-200 pointer-events-none"
               style={{
                 left: `${tile.left}px`,
