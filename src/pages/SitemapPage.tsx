@@ -88,7 +88,7 @@ export const SitemapPage: React.FC<SitemapPageProps> = ({ onNavigate }) => {
       path: '/',
       page: 'home' as Page,
       title: 'Leak Detection City Heights, San Diego | Leak Detection Pro (Home)',
-      desc: '24/7 emergency water & gas leak detection referral network. Acoustic locating, thermal FLIR imaging, and rapid dispatch.',
+      desc: '24/7 emergency water & gas leak detection services. Acoustic locating, thermal FLIR imaging, and rapid dispatch through our qualified contractor network.',
       priority: '1.0',
       changefreq: 'daily',
       icon: <Globe className="w-5 h-5 text-blue-500" />
@@ -157,8 +157,8 @@ export const SitemapPage: React.FC<SitemapPageProps> = ({ onNavigate }) => {
       loc: 'https://www.cityheightsleakdetectionpro.com/disclaimer/',
       path: '/disclaimer/',
       page: 'disclaimer' as Page,
-      title: 'Legal Disclaimer & Referral Notice',
-      desc: 'Independent contractor referral disclosure and life-safety emergency response guidance.',
+      title: 'Legal Disclaimer & Contractor Network Notice',
+      desc: 'Independent qualified contractor network disclosure and life-safety emergency response guidance.',
       priority: '0.3',
       changefreq: 'yearly',
       icon: <AlertTriangle className="w-5 h-5 text-slate-400" />

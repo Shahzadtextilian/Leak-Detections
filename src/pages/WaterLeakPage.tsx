@@ -72,7 +72,7 @@ export const WaterLeakPage: React.FC<WaterLeakPageProps> = ({ onNavigate }) => {
             <div className="lg:col-span-8 space-y-4">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-800/60 border border-blue-600/60 text-xs text-blue-200">
                 <Droplets className="w-3.5 h-3.5 text-cyan-400" />
-                <span>City Heights Specialist Contractor Referral</span>
+                <span>City Heights Specialist Contractor Network</span>
               </div>
 
               <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-white leading-tight">
@@ -151,7 +151,7 @@ export const WaterLeakPage: React.FC<WaterLeakPageProps> = ({ onNavigate }) => {
                 Types of Water Leaks Located in City Heights Properties
               </h2>
               <p className="text-sm text-slate-600 leading-relaxed mb-4">
-                Hidden water leaks waste thousands of gallons per month and inflict catastrophic structural damage before water ever surfaces. The independent contractors in our referral network specialize in diagnosing all residential and light commercial plumbing systems across City Heights and 92105.
+                Hidden water leaks waste thousands of gallons per month and inflict catastrophic structural damage before water ever surfaces. The independent contractors in our qualified network specialize in diagnosing all residential and light commercial plumbing systems across City Heights and 92105.
               </p>
               <p className="text-xs text-slate-500 leading-relaxed mb-6 bg-blue-50/60 p-3.5 rounded-xl border border-blue-100">
                 <strong>Need more information?</strong> Consult our comprehensive{' '}

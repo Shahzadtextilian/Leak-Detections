@@ -26,12 +26,12 @@ export const BUSINESS_INFO = {
 };
 
 export const LEGAL_DISCLAIMER = {
-  shortNotice: 'Notice: Leak Detection Pro is a free referral and lead generation service connecting property owners with independent, pre-screened licensed plumbing and leak detection contractors. We are not a direct plumbing contractor or service provider.',
-  fullNotice: `Leak Detection Pro operates strictly as a lead generation, marketing, and referral intermediary. We connect property owners in City Heights, San Diego, CA with independent, pre-screened licensed and insured plumbing and leak detection contractors.
+  shortNotice: 'Notice: Leak Detection Pro connects property owners with our qualified network of licensed, pre-screened plumbing and leak detection contractors. We facilitate service dispatch through independent licensed contractor partners.',
+  fullNotice: `Leak Detection Pro connects property owners in City Heights, San Diego, CA with qualified, pre-screened licensed and insured plumbing and leak detection contractors.
 
 IMPORTANT DISCLOSURES:
-1. Not a Direct Service Provider: Leak Detection Pro does not directly perform plumbing, leak detection, or gas line repair work. Any services, inspections, diagnostics, or repairs are performed solely by independent third-party contractors.
-2. Independent Contractor Relationship: All contractors in our referral network are independent service professionals. We do not employ plumbers or field technicians directly.
+1. Qualified Contractor Network: Leak Detection Pro coordinates services through an elite network of independent California State License Board (CSLB) licensed plumbing and leak detection specialists. Field inspections, diagnostics, and repairs are performed directly by qualified contractor professionals.
+2. Independent Contractor Network: All technicians in our contractor network are independent licensed service professionals. We do not employ plumbers or field technicians directly.
 3. Verification & Estimates: Homeowners and business owners are encouraged to verify licenses, insurance, and warranty terms directly with the matched contractor prior to authorizing any work.
 4. No Liability: Leak Detection Pro assumes no responsibility or liability for contractor performance, pricing disputes, property damages, or work guarantees.
 5. Emergency Protocol: If you detect a severe natural gas leak or smell strong rotten egg odor indoors, please evacuate immediately and contact SDG&E at 1-800-411-7343 or dial 911.`
@@ -63,7 +63,7 @@ export const TESTIMONIALS = [
     service: 'Emergency Gas Odor Detection',
     rating: 5,
     date: '1 month ago',
-    text: 'Smelled a faint sulfur odor near our stove and water heater. The referral service immediately dispatched a certified gas leak specialist who used an electronic sniffer to locate a loose fitting behind the kitchen wall. Fast, professional, and gave us peace of mind.'
+    text: 'Smelled a faint sulfur odor near our stove and water heater. The dispatch team immediately coordinated a certified gas leak specialist who used an electronic sniffer to locate a loose fitting behind the kitchen wall. Fast, professional, and gave us peace of mind.'
   },
   {
     id: '3',
@@ -83,7 +83,7 @@ export const FAQ_ITEMS = [
   },
   {
     question: 'What is the role of Leak Detection Pro?',
-    answer: 'Leak Detection Pro is an advertising, referral, and lead generation service. We match residential and commercial property owners with licensed, vetted, and insured independent leak detection and plumbing specialists in City Heights, San Diego. We do not provide physical repair or detection services ourselves.'
+    answer: 'Leak Detection Pro provides specialized plumbing and leak detection solutions by connecting residential and commercial property owners with licensed, vetted, and insured independent leak detection and plumbing specialists in City Heights, San Diego.'
   },
   {
     question: 'How do technicians find leaks without tearing down walls or jackhammering floors?',
@@ -95,6 +95,6 @@ export const FAQ_ITEMS = [
   },
   {
     question: 'Are the contractors licensed and insured in California?',
-    answer: 'Yes. We only refer leads to independent contractors who hold valid California State License Board (CSLB) plumbing/specialty licenses and carry active general liability insurance and workers compensation.'
+    answer: 'Yes. We work exclusively with qualified contractors who hold valid California State License Board (CSLB) plumbing/specialty licenses and carry active general liability insurance and workers compensation.'
   }
 ];

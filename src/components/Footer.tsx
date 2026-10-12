@@ -39,7 +39,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               </span>
             </div>
             <p className="text-xs text-slate-400 leading-relaxed">
-              Your trusted connection for prompt, non-destructive water and gas leak detection and leak repair referrals throughout City Heights, San Diego CA 92105.
+              Your trusted connection for prompt, non-destructive water and gas leak detection and plumbing repair services throughout City Heights, San Diego CA 92105.
             </p>
             <div className="pt-1 space-y-2 text-xs">
               <div className="flex items-start gap-2 text-slate-300">
@@ -223,7 +223,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                   }}
                   className="hover:text-white transition-colors block"
                 >
-                  About Our Referral Network
+                  About Our Contractor Network
                 </a>
               </li>
               <li>

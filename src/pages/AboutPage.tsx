@@ -143,7 +143,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
                 Leak Detection Pro
               </h3>
               <p className="text-sm text-slate-300 leading-relaxed">
-                Dedicated lead referral service for residential, commercial, and property management accounts across City Heights and Greater San Diego County. Looking for specific services? Connect with specialists in{' '}
+                Dedicated plumbing and leak detection dispatch service for residential, commercial, and property management accounts across City Heights and Greater San Diego County through our qualified contractor network. Looking for specific services? Connect with specialists in{' '}
                 <a
                   href="/water-leak/"
                   onClick={(e) => {

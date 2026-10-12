@@ -78,7 +78,7 @@ export const GasLeakPage: React.FC<GasLeakPageProps> = ({ onNavigate }) => {
             <div className="lg:col-span-8 space-y-4">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-800/60 border border-amber-600/60 text-xs text-amber-200">
                 <Flame className="w-3.5 h-3.5 text-amber-400" />
-                <span>City Heights Gas Safety & Contractor Referral</span>
+                <span>City Heights Gas Safety & Qualified Contractor Network</span>
               </div>
 
               <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-white leading-tight">
@@ -458,7 +458,7 @@ export const GasLeakPage: React.FC<GasLeakPageProps> = ({ onNavigate }) => {
                       className="text-blue-600 hover:underline flex items-center gap-1.5"
                     >
                       <ArrowRight className="w-3 h-3 text-indigo-500" />
-                      About Our Referral Standards
+                      About Our Qualified Network Standards
                     </a>
                   </li>
                   <li>

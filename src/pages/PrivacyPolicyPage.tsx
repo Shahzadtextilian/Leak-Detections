@@ -47,17 +47,17 @@ export const PrivacyPolicyPage: React.FC<PrivacyPolicyPageProps> = ({ onNavigate
           <div>
             <h2 className="text-lg font-bold text-slate-900 mb-2">1. Introduction & Overview</h2>
             <p>
-              This Privacy Policy describes how <strong>Leak Detection Pro</strong> ("we", "us", or "our"), located at <strong>3431 43rd St, San Diego, CA 92105</strong>, collects, uses, processes, and shares personal information when you visit our website, call our telephone number (<strong>(619) 910-9411</strong>), or submit an online inquiry for water and gas leak detection contractor referral services in City Heights, San Diego, California.
+              This Privacy Policy describes how <strong>Leak Detection Pro</strong> ("we", "us", or "our"), located at <strong>3431 43rd St, San Diego, CA 92105</strong>, collects, uses, processes, and shares personal information when you visit our website, call our telephone number (<strong>(619) 910-9411</strong>), or submit an online inquiry for water and gas leak detection plumbing services through our qualified contractors network in City Heights, San Diego, California.
             </p>
           </div>
 
           {/* Section 2: Lead Generation Role */}
           <div className="bg-amber-50/80 border border-amber-300 p-4 rounded-xl text-xs text-amber-950">
             <h3 className="font-bold text-sm text-amber-900 mb-1">
-              2. Explicit Lead Generation & Referral Disclosure
+              2. Explicit Contractor Network & Service Coordination Disclosure
             </h3>
             <p className="leading-relaxed">
-              Leak Detection Pro operates as a marketing and lead generation intermediary. When you submit your name, telephone number, address, zip code, or leak details on our website or over the phone, you expressly authorize us to transmit this information to independent third-party licensed plumbing and leak detection contractors in San Diego County to evaluate, quote, and fulfill your service inquiry.
+              Leak Detection Pro operates as a service coordination platform. When you submit your name, telephone number, address, zip code, or leak details on our website or over the phone, you expressly authorize us to transmit this information to independent third-party licensed plumbing and leak detection contractors in San Diego County to evaluate, quote, and fulfill your service inquiry.
             </p>
           </div>
 

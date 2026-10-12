@@ -48,7 +48,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate }) => {
               Contact &amp; 24/7 Emergency Dispatch
             </h1>
             <p className="text-base text-slate-300 leading-relaxed">
-              Have an urgent water or gas leak? Stationed at 3431 43rd St in City Heights, our contractor referral network connects you immediately with certified technicians across the 92105 area.
+              Have an urgent water or gas leak? Stationed at 3431 43rd St in City Heights, our qualified contractor network connects you immediately with certified technicians across the 92105 area.
             </p>
           </div>
         </div>
@@ -61,7 +61,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate }) => {
           <div className="lg:col-span-6 space-y-8">
             <div className="bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 shadow-xs space-y-6">
               <h2 className="text-xl font-bold text-slate-900 tracking-tight">
-                Business &amp; Referral Desk Details
+                Business &amp; Dispatch Desk Details
               </h2>
 
               <div className="space-y-5">

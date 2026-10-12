@@ -484,7 +484,7 @@ export const BlogPage: React.FC<BlogPageProps> = ({ onNavigate }) => {
                 <span>Need Underground Leak Detection in City Heights, San Diego?</span>
               </h3>
               <p className="text-xs sm:text-sm text-blue-900 leading-relaxed">
-                Whether you live near 43rd Street, University Avenue, Fairmount Avenue, Azalea Park, or Teralta West, our referral network connects you with pre-screened California State License Board (CSLB) contractors specialized in non-destructive electronic leak detection and long-term leak repair.
+                Whether you live near 43rd Street, University Avenue, Fairmount Avenue, Azalea Park, or Teralta West, our qualified contractor network connects you with pre-screened California State License Board (CSLB) contractors specialized in non-destructive electronic leak detection and long-term leak repair.
               </p>
               <div className="pt-2 flex flex-col sm:flex-row gap-3">
                 <a

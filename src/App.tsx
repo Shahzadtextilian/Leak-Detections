@@ -72,7 +72,7 @@ export default function App() {
       },
       'contact': {
         title: 'Contact & Emergency Dispatch | 3431 43rd St, City Heights CA 92105',
-        desc: 'Contact Leak Detection Pro at 3431 43rd St, City Heights, CA 92105. 24/7 emergency dispatch desk & instant contractor referral. Call (619) 910-9411.'
+        desc: 'Contact Leak Detection Pro at 3431 43rd St, City Heights, CA 92105. 24/7 emergency dispatch desk & qualified contractor network. Call (619) 910-9411.'
       },
       'privacy': {
         title: 'Privacy Policy | Leak Detection Pro City Heights',
@@ -80,7 +80,7 @@ export default function App() {
       },
       'disclaimer': {
         title: 'Legal Disclaimers & Licensing | Leak Detection Pro',
-        desc: 'Contractor referral disclosure & licensing terms for Leak Detection Pro in City Heights, San Diego CA. Independent CSLB plumbers. Call (619) 910-9411.'
+        desc: 'Contractor network standards & licensing terms for Leak Detection Pro in City Heights, San Diego CA. Independent CSLB plumbers. Call (619) 910-9411.'
       },
       'sitemap': {
         title: 'Website Sitemap & XML Feed | Leak Detection Pro',

@@ -35,7 +35,7 @@ export const DisclaimerPage: React.FC<DisclaimerPageProps> = ({ onNavigate }) =>
             Lead Generation & Service Provider Disclaimer
           </h1>
           <p className="text-sm text-slate-300 mt-2">
-            Important Information Regarding Our Referral Model & Independent Contractor Network
+            Important Information Regarding Our Qualified Independent Contractor Network
           </p>
         </div>
       </section>
@@ -51,18 +51,18 @@ export const DisclaimerPage: React.FC<DisclaimerPageProps> = ({ onNavigate }) =>
                 Summary of Business Operations:
               </h2>
               <p className="text-xs sm:text-sm leading-relaxed">
-                <strong>Leak Detection Pro is NOT a plumbing or leak detection contractor.</strong> We do NOT provide direct contracting, physical plumbing services, leak repair, or field labor. We operate solely as an advertising, referral, and lead generation intermediary connecting consumers with independent third-party licensed contractors in City Heights, San Diego, CA.
+                <strong>Leak Detection Pro delivers plumbing and leak detection services through a qualified network of licensed contractors.</strong> Field plumbing, acoustic diagnostics, and physical repairs are performed by independent third-party licensed contractors in City Heights, San Diego, CA.
               </p>
             </div>
           </div>
 
-          {/* Section 1: Lead Referral Service Nature */}
+          {/* Section 1: Service Coordination Nature */}
           <div>
             <h3 className="text-base font-bold text-slate-900 mb-2">
-              1. Referral & Lead Generation Services
+              1. Qualified Contractor Network &amp; Services
             </h3>
             <p>
-              The purpose of Leak Detection Pro (accessible via our website and telephone hotline (619) 910-9411) is to assist property owners in City Heights, San Diego (92105) by connecting them with independent, third-party contractors who perform water leak detection, slab leak testing, gas leak locating, and pipe repairs. When you request service, you are requesting a referral to an independent contractor.
+              The purpose of Leak Detection Pro (accessible via our website and telephone hotline (619) 910-9411) is to assist property owners in City Heights, San Diego (92105) by connecting them with our network of independent, third-party contractors who perform water leak detection, slab leak testing, gas leak locating, and pipe repairs. When you request service, you are requesting prompt dispatch of an independent qualified contractor.
             </p>
           </div>
 
@@ -72,7 +72,7 @@ export const DisclaimerPage: React.FC<DisclaimerPageProps> = ({ onNavigate }) =>
               2. Independent Contractor Relationship
             </h3>
             <p>
-              All service providers in our referral network are independent business entities and are not employees, partners, agents, or joint venturers of Leak Detection Pro. We do not supervise, direct, or control the manner, means, or details of the work performed by matched contractors.
+              All service providers in our qualified contractor network are independent business entities and are not employees, partners, agents, or joint venturers of Leak Detection Pro. We do not supervise, direct, or control the manner, means, or details of the work performed by matched contractors.
             </p>
           </div>
 
@@ -109,7 +109,7 @@ export const DisclaimerPage: React.FC<DisclaimerPageProps> = ({ onNavigate }) =>
 
           {/* Business Sign-off */}
           <div className="pt-6 border-t border-slate-200 text-xs text-slate-500 space-y-1">
-            <p><strong>Entity:</strong> Leak Detection Pro (Lead Generation & Referral Network)</p>
+            <p><strong>Entity:</strong> Leak Detection Pro (Qualified Contractor Network)</p>
             <p><strong>Physical Address:</strong> 3431 43rd St, San Diego, CA 92105</p>
             <p><strong>Dispatch Hotline:</strong> (619) 910-9411</p>
             <p><strong>Service Location:</strong> City Heights, San Diego County, California</p>
