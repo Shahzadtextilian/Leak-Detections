@@ -63,8 +63,8 @@ export default function App() {
         desc: '24/7 emergency gas leak detection in City Heights, CA (92105). Pressure decay testing, safety inspections & SDG&E tag clearance. Call (619) 910-9411.'
       },
       'blog': {
-        title: 'Leak Detection & Leak Repair Guide | City Heights, San Diego CA',
-        desc: 'Complete leak detection & repair guide for City Heights (92105). Learn how acoustic sensors, thermal imaging & slab repairs work. Call (619) 910-9411.'
+        title: 'Water & Slab Leak Detection Guide | San Diego CA | Leak Detection Pro',
+        desc: 'Expert guide to non-invasive water leak detection, underground slab leak locating & acoustic thermal imaging in San Diego (92105). Call (619) 910-9411.'
       },
       'about': {
         title: 'About Us | City Heights Local Leak Detection Network (92105)',

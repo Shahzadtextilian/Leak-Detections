@@ -730,13 +730,13 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
             <div className="lg:col-span-7 space-y-4">
               <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-cyan-950/80 border border-cyan-800 text-xs text-cyan-300 font-semibold">
                 <FileText className="w-3.5 h-3.5" />
-                <span>Featured Homeowner Guide • City Heights SEO Hub</span>
+                <span>Featured Homeowner Guides • City Heights Leak Detection Hub</span>
               </div>
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-white tracking-tight leading-snug">
-                Complete Guide to <span className="text-cyan-400">Leak Detection</span> &amp; <span className="text-amber-400">Leak Repair</span>
+                Complete Guide to <span className="text-cyan-400">Leak Detection</span> &amp; <span className="text-amber-400">Slab Leak Locating</span>
               </h2>
               <p className="text-sm text-slate-300 leading-relaxed max-w-xl">
-                Wondering how acoustic ground microphones and thermal imaging isolate slab leaks without floor demolition? Or what repair method—spot repair vs. overhead PEX bypass—best protects your San Diego foundation? Read our comprehensive local guide.
+                Wondering how acoustic ground microphones and thermal imaging isolate slab leaks without floor demolition? Explore our diagnostic guides covering underground pipe testing, non-invasive acoustic listening, and cost-effective repair solutions.
               </p>
               <div className="flex flex-wrap items-center gap-3 pt-2">
                 <button
@@ -744,7 +744,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
                   className="px-5 py-3 bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold rounded-xl text-xs sm:text-sm flex items-center gap-2 shadow-lg transition-transform active:scale-95"
                   id="home-read-blog-btn"
                 >
-                  <span>Read Full Leak Detection &amp; Repair Article</span>
+                  <span>Explore Leak Detection Guides</span>
                   <ArrowRight className="w-4 h-4" />
                 </button>
                 <a
@@ -759,20 +759,24 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
 
             <div className="lg:col-span-5 bg-slate-950/70 border border-slate-800 rounded-2xl p-5 sm:p-6 space-y-3.5">
               <div className="text-xs font-bold text-slate-400 uppercase tracking-wider">
-                In This Local Diagnostic Guide:
+                Featured Diagnostic Articles:
               </div>
               <ul className="space-y-2.5 text-xs text-slate-300">
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-cyan-400 shrink-0 mt-0.5" />
-                  <span><strong>Non-Invasive Locating:</strong> Acoustic probes, thermal imaging &amp; line pressure holding.</span>
+                  <span><strong>New Article:</strong> Underground &amp; Slab Leak Detection — Pinpointing hidden pipe leaks without jackhammers.</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-cyan-400 shrink-0 mt-0.5" />
-                  <span><strong>Early Warning Signs:</strong> Spinning water meter dials, warm floor spots &amp; bill spikes.</span>
+                  <span><strong>Non-Invasive Locating:</strong> Acoustic probes, thermal FLIR imaging &amp; line pressure holding.</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-cyan-400 shrink-0 mt-0.5" />
-                  <span><strong>Repair Methods:</strong> Surgical slab spot repair, overhead rerouting, and gas line clearances.</span>
+                  <span><strong>Early Warning Signs:</strong> Spinning water meter dials, warm floor spots &amp; utility bill spikes.</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle2 className="w-4 h-4 text-cyan-400 shrink-0 mt-0.5" />
+                  <span><strong>Repair Methods:</strong> Surgical slab spot repair, overhead PEX rerouting &amp; gas safety clearances.</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-cyan-400 shrink-0 mt-0.5" />
