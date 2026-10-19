@@ -46,9 +46,9 @@ export const SitemapPage: React.FC<SitemapPageProps> = ({ onNavigate }) => {
   </url>
   <url>
     <loc>https://www.cityheightsleakdetectionpro.com/blog/</loc>
-    <lastmod>2026-10-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2026-10-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.cityheightsleakdetectionpro.com/about/</loc>
@@ -118,9 +118,9 @@ export const SitemapPage: React.FC<SitemapPageProps> = ({ onNavigate }) => {
       path: '/blog/',
       page: 'blog' as Page,
       title: 'Leak Diagnostic Knowledgebase & Field Guides',
-      desc: 'In-depth homeowner technical guides on acoustic vs thermal testing, signs of hidden slab leaks, and piping repairs.',
-      priority: '0.8',
-      changefreq: 'weekly',
+      desc: 'In-depth homeowner technical guides on 2026 leak detection costs & insurance rules, underground slab leak locating, and non-destructive repairs.',
+      priority: '0.9',
+      changefreq: 'daily',
       icon: <FileText className="w-5 h-5 text-cyan-500" />
     },
     {
