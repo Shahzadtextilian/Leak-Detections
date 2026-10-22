@@ -1,1 +1,7 @@
+# Canonical domain redirects for HTTPS and WWW
+https://cityheightsleakdetectionpro.com/* https://www.cityheightsleakdetectionpro.com/:splat 301!
+http://cityheightsleakdetectionpro.com/* https://www.cityheightsleakdetectionpro.com/:splat 301!
+http://www.cityheightsleakdetectionpro.com/* https://www.cityheightsleakdetectionpro.com/:splat 301!
+
+# Fallback rewrite for SPA client-side routing
 /*    /index.html   200

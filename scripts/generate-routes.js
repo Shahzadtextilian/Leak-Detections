@@ -107,7 +107,7 @@ const routes = [
     breadcrumbName: 'About Us',
     bodySnippet: `
       <p style="margin-bottom: 12px;">
-        Operating from <strong>3431 43rd St, San Diego CA 92105</strong>, Leak Detection Pro serves the vibrant City Heights community by maintaining an elite referral network of licensed, insured plumbing and leak detection contractors.
+        Operating from <strong>3431 43rd St, San Diego CA 92105</strong>, Leak Detection Pro serves the vibrant City Heights community by maintaining a qualified contractor network of licensed, insured plumbing and leak detection contractors.
       </p>
       <p style="margin-bottom: 12px;">
         Every matched contractor holds active California State License Board (CSLB) credentials and carries advanced diagnostic tools including FLIR thermal cameras and ultrasonic listening probes.
@@ -117,7 +117,7 @@ const routes = [
   {
     path: 'contact',
     title: 'Contact & Emergency Dispatch | 3431 43rd St, City Heights CA 92105',
-    desc: 'Contact Leak Detection Pro at 3431 43rd St, City Heights, CA 92105. 24/7 emergency dispatch desk & instant contractor referral. Call (619) 910-9411.',
+    desc: 'Contact Leak Detection Pro at 3431 43rd St, City Heights, CA 92105. 24/7 emergency dispatch desk & instant contractor matching. Call (619) 910-9411.',
     h1: 'Contact &amp; 24/7 Dispatch — City Heights, San Diego',
     h2: 'Direct Phone Line &amp; Local Dispatch Office',
     breadcrumbName: 'Contact & Dispatch',
@@ -162,20 +162,20 @@ const routes = [
     breadcrumbName: 'Privacy Policy',
     bodySnippet: `
       <p style="margin-bottom: 12px;">
-        Leak Detection Pro respects your privacy. This policy explains how we collect, use, and protect your information when you request leak detection contractor referral services at 3431 43rd St, San Diego CA 92105.
+        Leak Detection Pro respects your privacy. This policy explains how we collect, use, and protect your information when you request leak detection contractor services at 3431 43rd St, San Diego CA 92105.
       </p>
     `
   },
   {
     path: 'disclaimer',
     title: 'Legal Disclaimers & Licensing | Leak Detection Pro',
-    desc: 'Contractor referral disclosure & licensing terms for Leak Detection Pro in City Heights, San Diego CA. Independent CSLB plumbers. Call (619) 910-9411.',
+    desc: 'Contractor network disclosure & licensing terms for Leak Detection Pro in City Heights, San Diego CA. Independent CSLB plumbers. Call (619) 910-9411.',
     h1: 'Licensing &amp; Lead Generation Disclaimers',
     h2: 'Independent Contractor Network Notice',
     breadcrumbName: 'Legal Disclaimers',
     bodySnippet: `
       <p style="margin-bottom: 12px;">
-        Leak Detection Pro is an independent advertising and contractor matchmaking referral service. We connect consumers with independent California State License Board (CSLB) licensed plumbing contractors.
+        Leak Detection Pro connects consumers with independent California State License Board (CSLB) licensed plumbing contractors.
       </p>
     `
   },
@@ -358,7 +358,7 @@ routes.forEach((route) => {
           </nav>
         </div>
         <p style="font-size: 11px; color: #64748b; margin: 0;">
-          &copy; 2026 Leak Detection Pro. Non-invasive water &amp; gas leak detection referral network serving City Heights, San Diego (92105).
+          &copy; 2026 Leak Detection Pro. Non-invasive water &amp; gas leak detection qualified contractor network serving City Heights, San Diego (92105).
         </p>
       </footer>
     </div>
