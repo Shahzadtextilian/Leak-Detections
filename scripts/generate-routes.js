@@ -281,14 +281,47 @@ routes.forEach((route) => {
     ]
   };
 
-  // Replace the default BreadcrumbList in the schema graph
-  pageHtml = pageHtml.replace(
-    /\{\s*"@type":\s*"BreadcrumbList"[\s\S]*?\}\s*\]\s*\}\s*<\/script>/i,
-    (match) => {
-      const extra = route.serviceSchema ? `,\n        ${JSON.stringify(route.serviceSchema, null, 2)}` : '';
-      return `${JSON.stringify(breadcrumbSchema, null, 2)}${extra}\n      ]\n    }\n    </script>`;
+  // Parse and cleanly rebuild Schema.org JSON-LD graph with valid JSON
+  const schemaRegex = /<script\s+type="application\/ld\+json">([\s\S]*?)<\/script>/i;
+  const schemaMatch = baseHtml.match(schemaRegex);
+  if (schemaMatch) {
+    try {
+      const baseJson = JSON.parse(schemaMatch[1]);
+      const baseGraph = baseJson['@graph'] || [];
+      const orgSchema = baseGraph.find((item) => {
+        const t = item['@type'];
+        return Array.isArray(t) ? t.includes('LocalBusiness') : t === 'LocalBusiness';
+      });
+
+      const pageGraph = [];
+      if (orgSchema) {
+        pageGraph.push(orgSchema);
+      }
+      pageGraph.push(breadcrumbSchema);
+
+      if (route.serviceSchema) {
+        pageGraph.push(route.serviceSchema);
+      }
+
+      // If blog route, include the BlogPosting articles for rich search snippets
+      if (route.path === 'blog') {
+        const blogPostings = baseGraph.filter((item) => item['@type'] === 'BlogPosting');
+        pageGraph.push(...blogPostings);
+      }
+
+      const newSchemaJson = {
+        '@context': 'https://schema.org',
+        '@graph': pageGraph
+      };
+
+      pageHtml = pageHtml.replace(
+        schemaRegex,
+        `<script type="application/ld+json">\n${JSON.stringify(newSchemaJson, null, 2)}\n    </script>`
+      );
+    } catch (e) {
+      console.error('Error generating structured data for route ' + route.path + ':', e.message);
     }
-  );
+  }
 
   // Inject Pre-rendered semantic SEO fallback inside #root with full semantic navigation
   const semanticContent = `
