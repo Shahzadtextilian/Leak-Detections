@@ -1,17 +1,19 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, Suspense, lazy } from 'react';
 import { Page } from './types';
 import { Navbar } from './components/Navbar';
 import { Footer } from './components/Footer';
 import { StickyCallBanner } from './components/StickyCallBanner';
 import { HomePage } from './pages/HomePage';
-import { WaterLeakPage } from './pages/WaterLeakPage';
-import { GasLeakPage } from './pages/GasLeakPage';
-import { BlogPage } from './pages/BlogPage';
-import { AboutPage } from './pages/AboutPage';
-import { ContactPage } from './pages/ContactPage';
-import { PrivacyPolicyPage } from './pages/PrivacyPolicyPage';
-import { DisclaimerPage } from './pages/DisclaimerPage';
-import { SitemapPage } from './pages/SitemapPage';
+
+// Route-level code-splitting: Lazy-load subpages on demand to keep initial mobile bundle ultra-light
+const WaterLeakPage = lazy(() => import('./pages/WaterLeakPage').then(m => ({ default: m.WaterLeakPage })));
+const GasLeakPage = lazy(() => import('./pages/GasLeakPage').then(m => ({ default: m.GasLeakPage })));
+const BlogPage = lazy(() => import('./pages/BlogPage').then(m => ({ default: m.BlogPage })));
+const AboutPage = lazy(() => import('./pages/AboutPage').then(m => ({ default: m.AboutPage })));
+const ContactPage = lazy(() => import('./pages/ContactPage').then(m => ({ default: m.ContactPage })));
+const PrivacyPolicyPage = lazy(() => import('./pages/PrivacyPolicyPage').then(m => ({ default: m.PrivacyPolicyPage })));
+const DisclaimerPage = lazy(() => import('./pages/DisclaimerPage').then(m => ({ default: m.DisclaimerPage })));
+const SitemapPage = lazy(() => import('./pages/SitemapPage').then(m => ({ default: m.SitemapPage })));
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState<Page>('home');
@@ -166,33 +168,40 @@ export default function App() {
 
       {/* Main Page Content */}
       <main className="flex-1">
-        {currentPage === 'home' && (
-          <HomePage onNavigate={handleNavigate} />
-        )}
-        {currentPage === 'water-leak' && (
-          <WaterLeakPage onNavigate={handleNavigate} />
-        )}
-        {currentPage === 'gas-leak' && (
-          <GasLeakPage onNavigate={handleNavigate} />
-        )}
-        {currentPage === 'blog' && (
-          <BlogPage onNavigate={handleNavigate} />
-        )}
-        {currentPage === 'about' && (
-          <AboutPage onNavigate={handleNavigate} />
-        )}
-        {currentPage === 'contact' && (
-          <ContactPage onNavigate={handleNavigate} />
-        )}
-        {currentPage === 'privacy' && (
-          <PrivacyPolicyPage onNavigate={handleNavigate} />
-        )}
-        {currentPage === 'disclaimer' && (
-          <DisclaimerPage onNavigate={handleNavigate} />
-        )}
-        {currentPage === 'sitemap' && (
-          <SitemapPage onNavigate={handleNavigate} />
-        )}
+        <Suspense fallback={
+          <div className="min-h-[50vh] flex flex-col items-center justify-center gap-3">
+            <div className="w-8 h-8 border-3 border-blue-600 border-t-transparent rounded-full animate-spin"></div>
+            <span className="text-xs text-slate-500 font-medium">Loading City Heights Leak Services...</span>
+          </div>
+        }>
+          {currentPage === 'home' && (
+            <HomePage onNavigate={handleNavigate} />
+          )}
+          {currentPage === 'water-leak' && (
+            <WaterLeakPage onNavigate={handleNavigate} />
+          )}
+          {currentPage === 'gas-leak' && (
+            <GasLeakPage onNavigate={handleNavigate} />
+          )}
+          {currentPage === 'blog' && (
+            <BlogPage onNavigate={handleNavigate} />
+          )}
+          {currentPage === 'about' && (
+            <AboutPage onNavigate={handleNavigate} />
+          )}
+          {currentPage === 'contact' && (
+            <ContactPage onNavigate={handleNavigate} />
+          )}
+          {currentPage === 'privacy' && (
+            <PrivacyPolicyPage onNavigate={handleNavigate} />
+          )}
+          {currentPage === 'disclaimer' && (
+            <DisclaimerPage onNavigate={handleNavigate} />
+          )}
+          {currentPage === 'sitemap' && (
+            <SitemapPage onNavigate={handleNavigate} />
+          )}
+        </Suspense>
       </main>
 
       {/* Footer */}

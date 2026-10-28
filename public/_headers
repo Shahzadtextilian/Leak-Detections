@@ -1,0 +1,20 @@
+# Long-term 1-year caching for immutable hashed assets
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+  Access-Control-Allow-Origin: *
+
+# Long-term 30-day caching for static WebP images, icons, and vector graphics
+/*.webp
+  Cache-Control: public, max-age=2592000, stale-while-revalidate=86400
+/*.png
+  Cache-Control: public, max-age=2592000, stale-while-revalidate=86400
+/*.svg
+  Cache-Control: public, max-age=2592000, stale-while-revalidate=86400
+/*.ico
+  Cache-Control: public, max-age=2592000, stale-while-revalidate=86400
+
+# HTML documents with revalidation for fresh content
+/*.html
+  Cache-Control: public, max-age=0, must-revalidate
+/
+  Cache-Control: public, max-age=0, must-revalidate

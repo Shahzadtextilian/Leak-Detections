@@ -66,17 +66,37 @@ export const LocationMap: React.FC<LocationMapProps> = ({
     height: 400,
   });
 
-  // Track container size
+  // Track container size using non-blocking ResizeObserver to prevent forced reflow
   useEffect(() => {
-    const updateSize = () => {
-      if (containerRef.current) {
-        const rect = containerRef.current.getBoundingClientRect();
-        setContainerSize({ width: rect.width || 600, height: rect.height || 400 });
-      }
-    };
-    updateSize();
-    window.addEventListener('resize', updateSize);
-    return () => window.removeEventListener('resize', updateSize);
+    if (!containerRef.current) return;
+    
+    // Check if ResizeObserver is supported
+    if (typeof ResizeObserver !== 'undefined') {
+      const observer = new ResizeObserver((entries) => {
+        for (const entry of entries) {
+          if (entry.contentRect) {
+            setContainerSize({
+              width: Math.round(entry.contentRect.width) || 600,
+              height: Math.round(entry.contentRect.height) || 400,
+            });
+          }
+        }
+      });
+      observer.observe(containerRef.current);
+      return () => observer.disconnect();
+    } else {
+      const updateSize = () => {
+        if (containerRef.current) {
+          setContainerSize({
+            width: containerRef.current.clientWidth || 600,
+            height: containerRef.current.clientHeight || 400,
+          });
+        }
+      };
+      updateSize();
+      window.addEventListener('resize', updateSize);
+      return () => window.removeEventListener('resize', updateSize);
+    }
   }, []);
 
   // Center tile coordinates at current zoom

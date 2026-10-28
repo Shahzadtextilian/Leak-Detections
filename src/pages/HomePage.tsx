@@ -22,8 +22,9 @@ import {
 } from 'lucide-react';
 import { Page } from '../types';
 import { BUSINESS_INFO, FAQ_ITEMS, TESTIMONIALS, CITY_HEIGHTS_AREAS } from '../data/content';
-import { LocationMap } from '../components/LocationMap';
 import { APP_IMAGES } from '../data/images';
+
+const LocationMap = React.lazy(() => import('../components/LocationMap').then(m => ({ default: m.LocationMap })));
 
 interface HomePageProps {
   onNavigate: (page: Page) => void;
@@ -32,6 +33,28 @@ interface HomePageProps {
 export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
   const [openFaq, setOpenFaq] = useState<number | null>(0);
   const [diagnosticChoice, setDiagnosticChoice] = useState<'water' | 'gas'>('water');
+  const [mapVisible, setMapVisible] = useState<boolean>(false);
+  const mapRef = React.useRef<HTMLDivElement>(null);
+
+  React.useEffect(() => {
+    if (typeof IntersectionObserver === 'undefined') {
+      setMapVisible(true);
+      return;
+    }
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setMapVisible(true);
+          observer.disconnect();
+        }
+      },
+      { rootMargin: '300px' }
+    );
+    if (mapRef.current) {
+      observer.observe(mapRef.current);
+    }
+    return () => observer.disconnect();
+  }, []);
 
   const toggleFaq = (index: number) => {
     setOpenFaq(openFaq === index ? null : index);
@@ -139,20 +162,32 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
               <div className="pt-1 flex items-center gap-3">
                 <div className="flex -space-x-2 overflow-hidden shrink-0">
                   <img
-                    src={APP_IMAGES.heroWaterLeak}
+                    src={APP_IMAGES.thumbWater}
                     alt="Technician detecting slab leak"
+                    width={36}
+                    height={36}
+                    loading="lazy"
+                    decoding="async"
                     className="inline-block h-9 w-9 rounded-full ring-2 ring-slate-800 object-cover"
                     referrerPolicy="no-referrer"
                   />
                   <img
-                    src={APP_IMAGES.thermalImaging}
+                    src={APP_IMAGES.thumbThermal}
                     alt="Thermal imaging inspection"
+                    width={36}
+                    height={36}
+                    loading="lazy"
+                    decoding="async"
                     className="inline-block h-9 w-9 rounded-full ring-2 ring-slate-800 object-cover"
                     referrerPolicy="no-referrer"
                   />
                   <img
-                    src={APP_IMAGES.gasLeakTesting}
+                    src={APP_IMAGES.thumbGas}
                     alt="Gas detector testing"
+                    width={36}
+                    height={36}
+                    loading="lazy"
+                    decoding="async"
                     className="inline-block h-9 w-9 rounded-full ring-2 ring-slate-800 object-cover"
                     referrerPolicy="no-referrer"
                   />
@@ -170,8 +205,11 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
                   <img
                     src={APP_IMAGES.heroWaterLeak}
                     alt="Acoustic ground sensor detecting slab water leak in City Heights"
-                    width={500}
-                    height={280}
+                    width={600}
+                    height={336}
+                    loading="eager"
+                    fetchPriority="high"
+                    decoding="async"
                     className="w-full h-56 object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent flex items-end p-4">
@@ -688,7 +726,26 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
 
             {/* Visual Location Card with Live Google Map */}
             <div className="lg:col-span-6 space-y-4">
-              <LocationMap height="h-80 sm:h-96" />
+              <div ref={mapRef} className="h-80 sm:h-96 rounded-2xl overflow-hidden border border-slate-700/80">
+                {mapVisible ? (
+                  <React.Suspense fallback={<div className="h-full bg-slate-900 flex items-center justify-center text-slate-400 text-xs">Loading local map...</div>}>
+                    <LocationMap height="h-full" />
+                  </React.Suspense>
+                ) : (
+                  <div className="h-full bg-slate-900 flex flex-col items-center justify-center p-6 text-center">
+                    <MapPin className="w-8 h-8 text-red-400 mb-2 animate-bounce" />
+                    <div className="text-white font-bold text-sm">3431 43rd St, City Heights, San Diego</div>
+                    <div className="text-slate-400 text-xs mt-1">Interactive contractor dispatch &amp; service territory map</div>
+                    <button
+                      type="button"
+                      onClick={() => setMapVisible(true)}
+                      className="mt-3.5 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg text-xs font-bold transition-all shadow-md cursor-pointer"
+                    >
+                      Load Interactive Map
+                    </button>
+                  </div>
+                )}
+              </div>
 
               <div className="bg-slate-900 text-white rounded-2xl p-5 sm:p-6 border border-slate-800">
                 <div className="grid grid-cols-2 gap-3 text-xs mb-4">
