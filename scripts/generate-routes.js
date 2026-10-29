@@ -135,7 +135,7 @@ const routes = [
   {
     path: 'blog',
     title: 'Leak Detection Cost in San Diego (2026 Price Guide)',
-    desc: 'How much does leak detection cost in San Diego? See 2026 price ranges, what changes the bill, and whether insurance covers slab leak locating.',
+    desc: 'How much does leak detection cost in San Diego? See 2026 price ranges, cost factors, and whether insurance covers slab leak locating.',
     h1: 'Leak Detection &amp; Repair Knowledge Base — City Heights',
     h2: 'Expert Guides on Slab Leaks, Gas Line Safety &amp; Non-Invasive Diagnostics',
     breadcrumbName: 'Blog & Field Guides',

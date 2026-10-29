@@ -118,7 +118,7 @@ export const SitemapPage: React.FC<SitemapPageProps> = ({ onNavigate }) => {
       path: '/blog/',
       page: 'blog' as Page,
       title: 'Leak Detection Cost in San Diego (2026 Price Guide)',
-      desc: 'How much does leak detection cost in San Diego? See 2026 price ranges, what changes the bill, and whether insurance covers slab leak locating.',
+      desc: 'How much does leak detection cost in San Diego? See 2026 price ranges, cost factors, and whether insurance covers slab leak locating.',
       priority: '0.9',
       changefreq: 'daily',
       icon: <FileText className="w-5 h-5 text-cyan-500" />

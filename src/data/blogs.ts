@@ -78,7 +78,7 @@ export const BLOG_POSTS: BlogPost[] = [
     title: 'How Much Does Leak Detection Cost in 2026? Pricing, Insurance Coverage & Non-Invasive Methods Explained',
     shortTitle: '2026 Leak Detection Cost & Insurance Guide',
     metaTitle: 'How Much Does Leak Detection Cost? 2026 Price & Insurance Guide',
-    metaDesc: 'Discover 2026 leak detection costs in San Diego. Compare slab, water line & gas testing prices, learn if insurance covers detection, and avoid excavation. Call (619) 910-9411.',
+    metaDesc: 'Compare 2026 leak detection costs in San Diego. See slab, water & gas line pricing, insurance coverage rules, and non-invasive methods.',
     excerpt: 'A comprehensive 2026 cost guide breakdown for homeowners: average pricing for electronic slab leak locating, main line detection, insurance coverage rules (tear-out vs repairs), and how non-invasive diagnostics save thousands in repair bills.',
     badge: '2026 Cost & Insurance Authority Guide',
     readTime: '9 min read',
