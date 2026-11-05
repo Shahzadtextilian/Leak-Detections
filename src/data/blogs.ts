@@ -104,6 +104,39 @@ export const BLOG_POSTS: BlogPost[] = [
       'leak detection City Heights 92105'
     ],
     canonicalUrl: 'https://www.cityheightsleakdetectionpro.com/blog/'
+  },
+  {
+    slug: 'leak-detection-city-heights-san-diego',
+    title: 'Leak Detection in City Heights, San Diego: A Friendly Homeowner’s Guide',
+    shortTitle: 'City Heights Homeowner Guide',
+    metaTitle: 'Leak Detection in City Heights, San Diego | Local Guide',
+    metaDesc: 'Learn the signs of hidden leaks, how pros find them, and what pricing depends on. Call City Heights Leak Detection Pro at (619) 910-9411.',
+    excerpt: 'A practical, friendly guide for City Heights homeowners on hidden water, slab, and gas leaks: warning signs, non-invasive diagnostic tools, cost factors, and finding licensed local pros.',
+    badge: 'City Heights Homeowner Guide',
+    readTime: '7 min read',
+    publishDate: '2026-11-05',
+    updateDate: '2026-11-05',
+    author: 'City Heights Leak Detection Pro Advisory Team',
+    featuredImage: APP_IMAGES.heroWaterLeak,
+    imageAlt: 'Non-invasive acoustic leak detection technician pinpointing hidden water leak in City Heights San Diego home',
+    targetKeywords: [
+      'leak detection in City Heights San Diego',
+      'water leak detection university heights san diego',
+      'slab leak detection service university heights san diego',
+      'gas leak detection san diego',
+      'gas leak survey companies',
+      'how much does leak detection cost',
+      'leak detection costs',
+      'slab leak detection cost',
+      'gas leak detection cost',
+      'leak locating cost',
+      'cost of leak detection',
+      'cost for leak detection',
+      'plumbers city heights ca',
+      'lake city leak detection',
+      'slab leak detection cherry hill'
+    ],
+    canonicalUrl: 'https://www.cityheightsleakdetectionpro.com/leak-detection-city-heights-san-diego/'
   }
 ];
 

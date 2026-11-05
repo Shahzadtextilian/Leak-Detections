@@ -154,6 +154,27 @@ const routes = [
     `
   },
   {
+    path: 'leak-detection-city-heights-san-diego',
+    title: 'Leak Detection in City Heights, San Diego | Local Guide',
+    desc: 'Learn the signs of hidden leaks, how pros find them, and what pricing depends on. Call City Heights Leak Detection Pro at (619) 910-9411.',
+    h1: 'Leak Detection in City Heights, San Diego: A Friendly Homeowner’s Guide',
+    h2: 'Warning Signs, Non-Invasive Technologies &amp; 2026 Price Factors',
+    breadcrumbName: 'City Heights Homeowner Guide',
+    bodySnippet: `
+      <p style="margin-bottom: 12px;">
+        A tiny drip behind a wall can quietly waste thousands of gallons of water, pad your bills, and invite mold long before a stain appears. For City Heights homeowners, many of whom live in older properties with aging pipes, early leak detection can mean the difference between a simple fix and a costly disaster.
+      </p>
+      <p style="margin-bottom: 12px;">
+        This friendly guide walks through hidden water and slab leak warning signs, emergency gas safety protocols, how CSLB-licensed specialists pinpoint issues non-invasively, and 2026 diagnostic cost ranges.
+      </p>
+      <div style="margin-top: 16px;">
+        <a href="tel:+16199109411" style="background: #2563eb; color: white; padding: 10px 20px; border-radius: 8px; text-decoration: none; font-weight: bold; display: inline-block;">
+          📞 Call (619) 910-9411 for Fast Local Help
+        </a>
+      </div>
+    `
+  },
+  {
     path: 'privacy',
     title: 'Privacy Policy | Leak Detection Pro',
     desc: 'How Leak Detection Pro collects, uses and protects your personal information, including your rights under the CCPA.',
@@ -303,8 +324,8 @@ routes.forEach((route) => {
         pageGraph.push(route.serviceSchema);
       }
 
-      // If blog route, include the BlogPosting articles for rich search snippets
-      if (route.path === 'blog') {
+      // If blog route or new homeowner guide, include the BlogPosting articles for rich search snippets
+      if (route.path === 'blog' || route.path === 'leak-detection-city-heights-san-diego') {
         const blogPostings = baseGraph.filter((item) => item['@type'] === 'BlogPosting');
         pageGraph.push(...blogPostings);
       }

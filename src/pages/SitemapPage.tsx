@@ -46,8 +46,14 @@ export const SitemapPage: React.FC<SitemapPageProps> = ({ onNavigate }) => {
   </url>
   <url>
     <loc>https://www.cityheightsleakdetectionpro.com/blog/</loc>
-    <lastmod>2026-10-19</lastmod>
+    <lastmod>2026-11-05</lastmod>
     <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.cityheightsleakdetectionpro.com/leak-detection-city-heights-san-diego/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
@@ -122,6 +128,16 @@ export const SitemapPage: React.FC<SitemapPageProps> = ({ onNavigate }) => {
       priority: '0.9',
       changefreq: 'daily',
       icon: <FileText className="w-5 h-5 text-cyan-500" />
+    },
+    {
+      loc: 'https://www.cityheightsleakdetectionpro.com/leak-detection-city-heights-san-diego/',
+      path: '/leak-detection-city-heights-san-diego/',
+      page: 'leak-detection-city-heights-san-diego' as Page,
+      title: 'Leak Detection in City Heights, San Diego | Local Guide',
+      desc: 'Learn the signs of hidden leaks, how pros find them, and what pricing depends on. Call City Heights Leak Detection Pro at (619) 910-9411.',
+      priority: '0.9',
+      changefreq: 'weekly',
+      icon: <FileText className="w-5 h-5 text-blue-500" />
     },
     {
       loc: 'https://www.cityheightsleakdetectionpro.com/about/',

@@ -20,7 +20,7 @@ export default function App() {
 
   // Resolve initial and updated page based on pathname or hash
   useEffect(() => {
-    const validPages: Page[] = ['home', 'water-leak', 'gas-leak', 'blog', 'about', 'contact', 'privacy', 'disclaimer', 'sitemap'];
+    const validPages: Page[] = ['home', 'water-leak', 'gas-leak', 'blog', 'about', 'contact', 'privacy', 'disclaimer', 'sitemap', 'leak-detection-city-heights-san-diego'];
 
     const resolvePageFromLocation = (): Page => {
       // First check clean pathname e.g. /water-leak or /water-leak/
@@ -67,6 +67,10 @@ export default function App() {
       'blog': {
         title: 'Leak Detection Cost in San Diego (2026 Price Guide)',
         desc: 'How much does leak detection cost in San Diego? See 2026 price ranges, cost factors, and whether insurance covers slab leak locating.'
+      },
+      'leak-detection-city-heights-san-diego': {
+        title: 'Leak Detection in City Heights, San Diego | Local Guide',
+        desc: 'Learn the signs of hidden leaks, how pros find them, and what pricing depends on. Call City Heights Leak Detection Pro at (619) 910-9411.'
       },
       'about': {
         title: 'About Leak Detection Pro | City Heights Plumber Network',
@@ -183,8 +187,11 @@ export default function App() {
           {currentPage === 'gas-leak' && (
             <GasLeakPage onNavigate={handleNavigate} />
           )}
-          {currentPage === 'blog' && (
-            <BlogPage onNavigate={handleNavigate} />
+          {(currentPage === 'blog' || currentPage === 'leak-detection-city-heights-san-diego') && (
+            <BlogPage
+              onNavigate={handleNavigate}
+              initialSlug={currentPage === 'leak-detection-city-heights-san-diego' ? 'leak-detection-city-heights-san-diego' : undefined}
+            />
           )}
           {currentPage === 'about' && (
             <AboutPage onNavigate={handleNavigate} />

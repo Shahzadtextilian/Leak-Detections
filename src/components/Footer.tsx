@@ -216,6 +216,18 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               </li>
               <li>
                 <a
+                  href="/leak-detection-city-heights-san-diego/"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    handleNav('leak-detection-city-heights-san-diego');
+                  }}
+                  className="hover:text-blue-300 transition-colors text-xs text-slate-400 pl-4 block"
+                >
+                  • City Heights Homeowner Guide
+                </a>
+              </li>
+              <li>
+                <a
                   href="/about/"
                   onClick={(e) => {
                     e.preventDefault();

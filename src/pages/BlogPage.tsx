@@ -29,7 +29,8 @@ import {
   HelpCircle,
   FileSpreadsheet,
   ShieldAlert,
-  CreditCard
+  CreditCard,
+  MapPin
 } from 'lucide-react';
 import { Page } from '../types';
 import { BUSINESS_INFO } from '../data/content';
@@ -38,18 +39,26 @@ import { BLOG_POSTS, BlogPost } from '../data/blogs';
 
 interface BlogPageProps {
   onNavigate: (page: Page) => void;
+  initialSlug?: string;
 }
 
-export const BlogPage: React.FC<BlogPageProps> = ({ onNavigate }) => {
-  // Support switching between post 1 (General Guide), post 2 (Underground & Slab In-Depth Technical Guide), and post 3 (Cost & Insurance Guide)
+export const BlogPage: React.FC<BlogPageProps> = ({ onNavigate, initialSlug }) => {
+  // Support switching between post 4 (Homeowner Guide), post 3 (Cost & Insurance Guide), post 2 (Underground & Slab In-Depth Technical Guide), and post 1 (General Guide)
   const [selectedSlug, setSelectedSlug] = useState<string>(
-    'leak-detection-cost-and-insurance-guide'
+    initialSlug || 'leak-detection-city-heights-san-diego'
   );
+
+  useEffect(() => {
+    if (initialSlug) {
+      setSelectedSlug(initialSlug);
+    }
+  }, [initialSlug]);
 
   const activePost =
     BLOG_POSTS.find((p) => p.slug === selectedSlug) ||
+    BLOG_POSTS[3] ||
     BLOG_POSTS[2] ||
-    BLOG_POSTS[1];
+    BLOG_POSTS[0];
 
   // Dynamically synchronize document title and meta description for SEO
   useEffect(() => {
@@ -64,6 +73,11 @@ export const BlogPage: React.FC<BlogPageProps> = ({ onNavigate }) => {
 
   const handleSelectPost = (slug: string) => {
     setSelectedSlug(slug);
+    if (slug === 'leak-detection-city-heights-san-diego') {
+      onNavigate('leak-detection-city-heights-san-diego');
+    } else {
+      onNavigate('blog');
+    }
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
@@ -132,7 +146,15 @@ export const BlogPage: React.FC<BlogPageProps> = ({ onNavigate }) => {
           </div>
 
           <h1 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-extrabold tracking-tight text-white leading-tight">
-            {activePost.slug === 'leak-detection-cost-and-insurance-guide' ? (
+            {activePost.slug === 'leak-detection-city-heights-san-diego' ? (
+              <>
+                Leak Detection in{' '}
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-sky-300 to-blue-400">
+                  City Heights, San Diego
+                </span>
+                : A Friendly Homeowner’s Guide
+              </>
+            ) : activePost.slug === 'leak-detection-cost-and-insurance-guide' ? (
               <>
                 How Much Does{' '}
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-sky-300 to-blue-400">
@@ -205,8 +227,504 @@ export const BlogPage: React.FC<BlogPageProps> = ({ onNavigate }) => {
           </div>
         </div>
 
-        {/* POST 3 CONTENT: 2026 Leak Detection Cost, Insurance Coverage & Non-Invasive Methods Guide */}
-        {activePost.slug === 'leak-detection-cost-and-insurance-guide' ? (
+        {/* POST 4 CONTENT: Leak Detection in City Heights, San Diego: A Friendly Homeowner’s Guide */}
+        {activePost.slug === 'leak-detection-city-heights-san-diego' ? (
+          <>
+            {/* Quick Keyword & Executive Summary Callout */}
+            <div className="bg-gradient-to-br from-blue-50 to-indigo-50/50 border border-blue-200 rounded-2xl p-6 sm:p-7 space-y-4">
+              <div className="flex items-center gap-2 font-extrabold text-blue-950 text-base">
+                <Search className="w-5 h-5 text-blue-600" />
+                <span>Executive Summary: A Friendly Homeowner’s Guide to Leak Detection in City Heights</span>
+              </div>
+              <p className="text-xs sm:text-sm text-blue-950 leading-relaxed">
+                A tiny drip behind a wall can quietly waste thousands of gallons of water, pad your bills, and invite mold long before a stain appears. For City Heights homeowners, many of whom live in older properties with aging pipes, early leak detection can mean the difference between a simple fix and a costly disaster. This guide walks through the warning signs, how professionals pinpoint problems without tearing up your home, and what to expect when it comes to price.
+              </p>
+              <div className="flex flex-wrap gap-1.5 pt-1">
+                <span className="text-[11px] font-semibold text-slate-500 uppercase tracking-wider block w-full mb-1">
+                  Targeted Local SEO &amp; Diagnostic Keywords:
+                </span>
+                {[
+                  'leak detection in City Heights San Diego',
+                  'water leak detection university heights san diego',
+                  'slab leak detection service university heights san diego',
+                  'gas leak detection san diego',
+                  'gas leak survey companies',
+                  'how much does leak detection cost',
+                  'leak detection costs',
+                  'slab leak detection cost',
+                  'gas leak detection cost',
+                  'leak locating cost',
+                  'cost of leak detection',
+                  'cost for leak detection',
+                  'plumbers city heights ca',
+                  'lake city leak detection',
+                  'slab leak detection cherry hill'
+                ].map((kw) => (
+                  <span
+                    key={kw}
+                    className="bg-white border border-blue-200 text-blue-700 font-semibold px-2.5 py-0.5 rounded-md text-xs shadow-xs"
+                  >
+                    #{kw}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            {/* Featured Image 1 */}
+            <div className="rounded-2xl overflow-hidden border border-slate-200 shadow-md">
+              <img
+                src={APP_IMAGES.heroWaterLeak}
+                alt="Non-invasive acoustic leak detection technician pinpointing hidden water leak in City Heights San Diego home"
+                width={800}
+                height={420}
+                className="w-full h-72 sm:h-96 object-cover"
+              />
+              <div className="bg-slate-900 text-slate-300 text-xs px-4 py-2.5 flex items-center justify-between">
+                <span>Precision electro-acoustic listening probe pinpointing concealed sub-surface water leaks.</span>
+                <span className="text-cyan-400 font-semibold">City Heights, San Diego &bull; 92105</span>
+              </div>
+            </div>
+
+            {/* Section 1: Why Hidden Leaks Matter in City Heights */}
+            <section className="space-y-4">
+              <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight flex items-center gap-2">
+                <ShieldCheck className="w-6 h-6 text-blue-600 shrink-0" />
+                <span>Why Hidden Leaks Matter in City Heights</span>
+              </h2>
+              <p>
+                Many City Heights homes were built decades ago, and pipes don’t last forever. Corrosion, shifting soil, and old fittings can all lead to slow leaks that go unnoticed for months. The damage is rarely dramatic at first. It’s gradual, which is exactly why it gets expensive.
+              </p>
+              <p>
+                Whether you live in a classic 1920s Spanish Revival bungalow along University Avenue, a mid-century home near Wightman Street, or a renovated multifamily property in 92105, subterranean copper and galvanized pipes undergo constant stress from San Diego&apos;s hard water minerals and reactive clay soil. Early <strong>leak detection in City Heights San Diego</strong> catches micro-fractures before foundation slab cracks, drywall rot, or mold outbreaks force emergency structural renovations.
+              </p>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
+                <div className="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-2">
+                  <div className="flex items-center gap-2 font-bold text-slate-900 text-sm">
+                    <Activity className="w-4 h-4 text-amber-500" />
+                    <span>Gradual vs. Catastrophic Damage</span>
+                  </div>
+                  <p className="text-xs text-slate-600 leading-relaxed">
+                    A slow subterranean pipe leak losing just 0.5 gallons per minute wastes over <strong>21,600 gallons per month</strong>. The moisture softens supporting foundation soils, leading to uneven slab settling and costly structural remediation.
+                  </p>
+                </div>
+
+                <div className="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-2">
+                  <div className="flex items-center gap-2 font-bold text-slate-900 text-sm">
+                    <ShieldAlert className="w-4 h-4 text-blue-600" />
+                    <span>Aging Plumbing Infrastructure</span>
+                  </div>
+                  <p className="text-xs text-slate-600 leading-relaxed">
+                    Original post-war copper pipes in City Heights often suffer from internal pitting corrosion. When pinholes form under concrete slabs or inside walls, non-invasive electronic locating finds the exact spot without destructive demolition.
+                  </p>
+                </div>
+              </div>
+            </section>
+
+            {/* Section 2: Common Signs of a Hidden Leak */}
+            <section className="space-y-6">
+              <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight flex items-center gap-2">
+                <AlertTriangle className="w-6 h-6 text-amber-500 shrink-0" />
+                <span>Common Signs of a Hidden Leak</span>
+              </h2>
+              <p>
+                Because plumbing lines are hidden behind finished drywall, ceilings, and thick concrete foundation slabs, property owners must watch for subtle behavioral and sensory indicators:
+              </p>
+
+              {/* Water Leak Signs Card */}
+              <div className="bg-blue-50/70 border border-blue-200 rounded-2xl p-5 sm:p-6 space-y-3">
+                <h3 className="text-base sm:text-lg font-bold text-blue-950 flex items-center gap-2">
+                  <Droplets className="w-5 h-5 text-blue-600" />
+                  <span>Water Leak Warning Signs</span>
+                </h3>
+                <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs sm:text-sm text-blue-950">
+                  <li className="flex items-start gap-2 bg-white/80 p-3 rounded-xl border border-blue-100 shadow-xs">
+                    <CheckCircle2 className="w-4 h-4 text-blue-600 shrink-0 mt-0.5" />
+                    <span><strong>Unexplained bill spikes:</strong> A water bill that climbs for no clear reason despite normal household usage.</span>
+                  </li>
+                  <li className="flex items-start gap-2 bg-white/80 p-3 rounded-xl border border-blue-100 shadow-xs">
+                    <CheckCircle2 className="w-4 h-4 text-blue-600 shrink-0 mt-0.5" />
+                    <span><strong>Moisture &amp; odor:</strong> Damp spots, peeling paint, blistered baseboards, or persistent musty smells.</span>
+                  </li>
+                  <li className="flex items-start gap-2 bg-white/80 p-3 rounded-xl border border-blue-100 shadow-xs">
+                    <CheckCircle2 className="w-4 h-4 text-blue-600 shrink-0 mt-0.5" />
+                    <span><strong>Phantom running sounds:</strong> The sound of running or hissing water when every faucet and appliance is switched off.</span>
+                  </li>
+                  <li className="flex items-start gap-2 bg-white/80 p-3 rounded-xl border border-blue-100 shadow-xs">
+                    <CheckCircle2 className="w-4 h-4 text-blue-600 shrink-0 mt-0.5" />
+                    <span><strong>Warm flooring spots:</strong> Warm patches on tile, linoleum, or hardwood flooring—a definitive hallmark of a hot-water slab leak.</span>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Gas Leak Signs Card */}
+              <div className="bg-amber-50/70 border border-amber-200 rounded-2xl p-5 sm:p-6 space-y-3">
+                <h3 className="text-base sm:text-lg font-bold text-amber-950 flex items-center gap-2">
+                  <Flame className="w-5 h-5 text-amber-600" />
+                  <span>Gas Leak Warning Signs</span>
+                </h3>
+                <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs sm:text-sm text-amber-950">
+                  <li className="flex items-start gap-2 bg-white/80 p-3 rounded-xl border border-amber-100 shadow-xs">
+                    <AlertTriangle className="w-4 h-4 text-amber-600 shrink-0 mt-0.5" />
+                    <span><strong>Rotten-egg odor:</strong> A sulfurous rotten-egg smell near gas appliances, water heaters, or meter supply lines.</span>
+                  </li>
+                  <li className="flex items-start gap-2 bg-white/80 p-3 rounded-xl border border-amber-100 shadow-xs">
+                    <AlertTriangle className="w-4 h-4 text-amber-600 shrink-0 mt-0.5" />
+                    <span><strong>Audible hissing:</strong> A faint whistling or hissing sound near threaded gas pipe joints and flexible connectors.</span>
+                  </li>
+                  <li className="flex items-start gap-2 bg-white/80 p-3 rounded-xl border border-amber-100 shadow-xs sm:col-span-2">
+                    <AlertTriangle className="w-4 h-4 text-amber-600 shrink-0 mt-0.5" />
+                    <span><strong>Vegetation die-off:</strong> Dead or discolored patches of grass and plants directly over a buried yard gas service line.</span>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Critical Emergency Banner for Gas Leaks */}
+              <div className="bg-gradient-to-r from-red-600 to-rose-700 text-white rounded-2xl p-6 shadow-lg space-y-3">
+                <div className="flex items-center gap-2 text-base font-extrabold uppercase tracking-wide text-rose-100">
+                  <Flame className="w-5 h-5 text-amber-300 animate-pulse" />
+                  <span>Important Safety Protocol: Gas Leaks Are Immediate Emergencies</span>
+                </div>
+                <p className="text-xs sm:text-sm leading-relaxed text-white">
+                  <strong>A suspected gas leak is an emergency.</strong> Leave the building immediately and do not operate electrical switches, light fixtures, or phones inside the home. Call your gas utility (SDG&amp;E at <strong>1-800-411-7343</strong>) or <strong>911</strong> from outside at a safe distance. Once the scene is secured, our licensed technicians can perform certified digital pressure testing to locate the break and clear utility red tags.
+                </p>
+                <div className="pt-1 flex flex-wrap gap-3">
+                  <a
+                    href="tel:911"
+                    className="bg-white text-red-700 hover:bg-rose-50 font-bold px-4 py-2 rounded-lg text-xs flex items-center gap-1.5 transition-colors shadow-xs"
+                  >
+                    <span>Dial 911 (Life Safety)</span>
+                  </a>
+                  <a
+                    href="tel:+18004117343"
+                    className="bg-red-800 hover:bg-red-900 text-white font-bold px-4 py-2 rounded-lg text-xs flex items-center gap-1.5 border border-red-500 transition-colors"
+                  >
+                    <span>SDG&amp;E Emergency: 1-800-411-7343</span>
+                  </a>
+                </div>
+              </div>
+            </section>
+
+            {/* Featured Image 2: Thermal Imaging */}
+            <div className="rounded-2xl overflow-hidden border border-slate-200 shadow-md">
+              <img
+                src={APP_IMAGES.thermalImaging}
+                alt="Infrared FLIR thermal imaging camera identifying hidden sub-slab water leak temperature differentials under concrete floor"
+                width={800}
+                height={420}
+                className="w-full h-72 sm:h-96 object-cover"
+              />
+              <div className="bg-slate-900 text-slate-300 text-xs px-4 py-2.5 flex items-center justify-between">
+                <span>FLIR thermal infrared sensor isolating hot water slab leak signature without breaking floor tiles.</span>
+                <span className="text-cyan-400 font-semibold">Non-Invasive Diagnostic Inspection</span>
+              </div>
+            </div>
+
+            {/* Section 3: How Professionals Find Leaks */}
+            <section className="space-y-6">
+              <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight flex items-center gap-2">
+                <Wrench className="w-6 h-6 text-blue-600 shrink-0" />
+                <span>How Professionals Find Leaks Without Tearing Up Your Home</span>
+              </h2>
+              <p>
+                Decades ago, finding a buried leak involved sledgehammers, exploratory trenches, and ripped-apart drywall. Modern diagnostic specialists use high-precision non-destructive technologies that identify the source down to the exact inch:
+              </p>
+
+              <div className="space-y-4">
+                {/* Subsection A: Water Leak Detection */}
+                <div className="border border-slate-200 rounded-2xl p-5 sm:p-6 bg-white space-y-3 shadow-xs">
+                  <h3 className="text-lg font-bold text-slate-900 flex items-center gap-2">
+                    <Search className="w-5 h-5 text-blue-600" />
+                    <span>Water Leak Detection</span>
+                  </h3>
+                  <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
+                    Technicians use acoustic listening devices, thermal cameras, and moisture meters to find the exact source of a leak without breaking walls open. Acoustic ground microphones capture the distinct frequency sound of pressurized water escaping tiny pinholes. Homeowners in nearby neighborhoods often search for <strong>water leak detection university heights san diego</strong>, and the same non-invasive methods apply across the area.
+                  </p>
+                </div>
+
+                {/* Subsection B: Slab Leaks */}
+                <div className="border border-slate-200 rounded-2xl p-5 sm:p-6 bg-white space-y-3 shadow-xs">
+                  <h3 className="text-lg font-bold text-slate-900 flex items-center gap-2">
+                    <Layers className="w-5 h-5 text-indigo-600" />
+                    <span>Slab Leaks</span>
+                  </h3>
+                  <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
+                    When pipes run beneath a concrete foundation, finding a leak is tricky. Specialists listen for escaping water and map the line’s path using electromagnetic pipe transmitters. Residents nearby looking for a <strong>slab leak detection service university heights san diego</strong> will find that pinpointing the exact spot first keeps repairs small and targeted, avoiding arbitrary jackhammering through expensive flooring.
+                  </p>
+                </div>
+
+                {/* Subsection C: Gas Lines */}
+                <div className="border border-slate-200 rounded-2xl p-5 sm:p-6 bg-white space-y-3 shadow-xs">
+                  <h3 className="text-lg font-bold text-slate-900 flex items-center gap-2">
+                    <Flame className="w-5 h-5 text-amber-600" />
+                    <span>Gas Lines</span>
+                  </h3>
+                  <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
+                    <strong>Gas leak detection san diego</strong> services rely on sensitive electronic detectors that spot even tiny amounts of escaping gas down to single parts per million (PPM). For larger properties or older systems, <strong>gas leak survey companies</strong> can inspect an entire network of lines and document the results with digital manometer pressure decay readouts, providing certified documentation for city inspectors and utilities.
+                  </p>
+                </div>
+              </div>
+            </section>
+
+            {/* Featured Image 3: Gas Leak Testing */}
+            <div className="rounded-2xl overflow-hidden border border-slate-200 shadow-md">
+              <img
+                src={APP_IMAGES.gasLeakTesting}
+                alt="Electronic gas detector sniffer inspecting gas line valves and meters in San Diego"
+                width={800}
+                height={420}
+                className="w-full h-72 sm:h-96 object-cover"
+              />
+              <div className="bg-slate-900 text-slate-300 text-xs px-4 py-2.5 flex items-center justify-between">
+                <span>Digital combustible gas sniffer verifying natural gas supply connections and emergency shut-offs.</span>
+                <span className="text-amber-400 font-semibold">Certified Gas Safety Survey</span>
+              </div>
+            </div>
+
+            {/* Section 4: What Does Leak Detection Cost? */}
+            <section className="space-y-4">
+              <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight flex items-center gap-2">
+                <DollarSign className="w-6 h-6 text-emerald-600 shrink-0" />
+                <span>What Does Leak Detection Cost? (2026 Price Guide)</span>
+              </h2>
+              <p>
+                Let’s tackle the question on everyone’s mind: <strong>how much does leak detection cost?</strong> It depends. <strong>Leak detection costs</strong> usually reflect the type of leak, how hard it is to reach, and how long the search takes. A simple under-sink check is a different job from a hunt beneath a foundation.
+              </p>
+
+              {/* Factors That Affect Pricing */}
+              <div className="bg-slate-50 border border-slate-200 rounded-2xl p-5 sm:p-6 space-y-3">
+                <h3 className="font-bold text-slate-900 text-base">Key Factors That Affect Pricing:</h3>
+                <ul className="space-y-2 text-xs sm:text-sm text-slate-700">
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="w-4 h-4 text-blue-600 shrink-0 mt-0.5" />
+                    <span><strong>Slab leaks:</strong> <strong>Slab leak detection cost</strong> tends to run higher because specialists need advanced equipment (ultrasonic ground microphones, thermal cameras) and more time to map subterranean foundation lines.</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="w-4 h-4 text-blue-600 shrink-0 mt-0.5" />
+                    <span><strong>Gas leaks:</strong> <strong>Gas leak detection cost</strong> depends on the size of the property and the number of lines inspected, especially when multi-unit manifolds or long yard runs require pressure decay testing.</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="w-4 h-4 text-blue-600 shrink-0 mt-0.5" />
+                    <span><strong>Search time:</strong> <strong>Leak locating cost</strong> can climb when pipes are buried, hidden behind finished walls, or hard to trace due to non-standard post-war plumbing layouts.</span>
+                  </li>
+                </ul>
+              </div>
+
+              {/* 2026 Homeowner Pricing Reference Table */}
+              <div className="overflow-x-auto rounded-2xl border border-slate-200 shadow-sm bg-white pt-2">
+                <table className="w-full text-left text-xs sm:text-sm text-slate-700">
+                  <thead className="bg-slate-900 text-white font-semibold text-xs uppercase tracking-wider">
+                    <tr>
+                      <th className="py-3.5 px-4 sm:px-6">Service Type</th>
+                      <th className="py-3.5 px-4">2026 Typical Cost Range</th>
+                      <th className="py-3.5 px-4">Diagnostic Method</th>
+                      <th className="py-3.5 px-4 sm:px-6">What Is Included</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-slate-200">
+                    <tr className="hover:bg-slate-50 transition-colors">
+                      <td className="py-3 px-4 sm:px-6 font-bold text-slate-900">
+                        Basic Fixture &amp; Exposed Pipe Check
+                      </td>
+                      <td className="py-3 px-4 font-extrabold text-blue-700 whitespace-nowrap">
+                        $125 &ndash; $225
+                      </td>
+                      <td className="py-3 px-4 text-slate-600">Visual, Dye &amp; Pressure Gauge</td>
+                      <td className="py-3 px-4 sm:px-6 text-slate-600">Under-sink, toilets, angle stops, hose bibbs</td>
+                    </tr>
+                    <tr className="hover:bg-slate-50 transition-colors bg-slate-50/50">
+                      <td className="py-3 px-4 sm:px-6 font-bold text-slate-900">
+                        Interior Wall &amp; Ceiling Leak Detection
+                      </td>
+                      <td className="py-3 px-4 font-extrabold text-blue-700 whitespace-nowrap">
+                        $175 &ndash; $325
+                      </td>
+                      <td className="py-3 px-4 text-slate-600">FLIR Thermal &amp; Moisture Probes</td>
+                      <td className="py-3 px-4 sm:px-6 text-slate-600">Concealed risers without drywall cuts</td>
+                    </tr>
+                    <tr className="hover:bg-slate-50 transition-colors">
+                      <td className="py-3 px-4 sm:px-6 font-bold text-slate-900">
+                        Foundation Slab Leak Locating
+                      </td>
+                      <td className="py-3 px-4 font-extrabold text-blue-700 whitespace-nowrap">
+                        $250 &ndash; $450
+                      </td>
+                      <td className="py-3 px-4 text-slate-600">Acoustic Microphones &amp; Tracer Gas</td>
+                      <td className="py-3 px-4 sm:px-6 text-slate-600">Pinpoints sub-slab supply lines within inches</td>
+                    </tr>
+                    <tr className="hover:bg-slate-50 transition-colors bg-slate-50/50">
+                      <td className="py-3 px-4 sm:px-6 font-bold text-slate-900">
+                        Natural Gas Leak Survey &amp; Decay Test
+                      </td>
+                      <td className="py-3 px-4 font-extrabold text-blue-700 whitespace-nowrap">
+                        $195 &ndash; $350
+                      </td>
+                      <td className="py-3 px-4 text-slate-600">Digital Manometer &amp; PPM Sniffers</td>
+                      <td className="py-3 px-4 sm:px-6 text-slate-600">Full system safety check &amp; SDG&amp;E compliance report</td>
+                    </tr>
+                    <tr className="hover:bg-slate-50 transition-colors">
+                      <td className="py-3 px-4 sm:px-6 font-bold text-slate-900">
+                        Underground Yard Water Main Line
+                      </td>
+                      <td className="py-3 px-4 font-extrabold text-blue-700 whitespace-nowrap">
+                        $275 &ndash; $495
+                      </td>
+                      <td className="py-3 px-4 text-slate-600">Electromagnetic Pipe Locators</td>
+                      <td className="py-3 px-4 sm:px-6 text-slate-600">Meter-to-house service lateral tracing</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              {/* Getting a Fair Price Subsection */}
+              <div className="bg-emerald-50/80 border border-emerald-200 rounded-2xl p-5 sm:p-6 space-y-3">
+                <h3 className="font-bold text-emerald-950 text-base flex items-center gap-2">
+                  <CheckCircle2 className="w-5 h-5 text-emerald-600" />
+                  <span>How Homeowners Can Ensure a Fair Price</span>
+                </h3>
+                <p className="text-xs sm:text-sm text-emerald-950 leading-relaxed">
+                  Always ask for a <strong>leak detection cost estimate</strong> in writing before work begins. It also helps to know whether the <strong>cost of leak detection</strong> includes a written report for your insurance company. Before agreeing to any <strong>cost for leak detection</strong>, ask whether repairs are bundled in or billed separately. A transparent provider will happily explain every line item.
+                </p>
+                <div className="text-xs text-emerald-900 bg-white/80 p-3 rounded-xl border border-emerald-100 flex items-center gap-2">
+                  <Sparkles className="w-4 h-4 text-emerald-600 shrink-0" />
+                  <span><strong>Insurance Tip:</strong> Many California homeowners insurance policies cover the <em>cost of leak detection and tear-out</em> to access a ruptured pipe, even when basic plumbing repairs are excluded. A detailed diagnostic report accelerates your claim.</span>
+                </div>
+              </div>
+            </section>
+
+            {/* Featured Image 4: Plumber Inspection */}
+            <div className="rounded-2xl overflow-hidden border border-slate-200 shadow-md">
+              <img
+                src={APP_IMAGES.plumberInspection}
+                alt="CSLB licensed plumber inspecting and repairing water lines in City Heights CA"
+                width={800}
+                height={420}
+                className="w-full h-72 sm:h-96 object-cover"
+              />
+              <div className="bg-slate-900 text-slate-300 text-xs px-4 py-2.5 flex items-center justify-between">
+                <span>Licensed plumbing contractor executing surgical pipe repair following acoustic detection.</span>
+                <span className="text-emerald-400 font-semibold">CSLB Licensed Contractor Network</span>
+              </div>
+            </div>
+
+            {/* Section 5: Choosing the Right Local Help */}
+            <section className="space-y-4">
+              <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight flex items-center gap-2">
+                <User className="w-6 h-6 text-blue-600 shrink-0" />
+                <span>Choosing the Right Local Help in City Heights, CA</span>
+              </h2>
+              <p>
+                Leak finding and leak repair are sometimes handled by different people. If a problem turns out to need a fix, <strong>plumbers city heights ca</strong> are a natural next call. It’s worth checking licenses, reviews, and whether they offer warranties on their work.
+              </p>
+              <p>
+                At <strong>City Heights Leak Detection Pro</strong>, we maintain a pre-screened, qualified contractor network of licensed California plumbers (CSLB C-36). When you request service, you are connected directly with verified professionals who arrive equipped with high-grade acoustic, thermal, and electronic diagnostic gear.
+              </p>
+
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-1">
+                <div className="p-3.5 bg-slate-50 border border-slate-200 rounded-xl space-y-1">
+                  <div className="font-bold text-xs text-slate-900">1. Verify CSLB License</div>
+                  <div className="text-[11px] text-slate-600">Ensure active workers’ comp, general liability, and state plumbing credentials.</div>
+                </div>
+                <div className="p-3.5 bg-slate-50 border border-slate-200 rounded-xl space-y-1">
+                  <div className="font-bold text-xs text-slate-900">2. Request Non-Invasive First</div>
+                  <div className="text-[11px] text-slate-600">Never allow demolition until electronic sensors confirm the exact coordinates.</div>
+                </div>
+                <div className="p-3.5 bg-slate-50 border border-slate-200 rounded-xl space-y-1">
+                  <div className="font-bold text-xs text-slate-900">3. Written Workmanship Warranty</div>
+                  <div className="text-[11px] text-slate-600">Confirm parts, labor, and re-testing are covered under written service warranties.</div>
+                </div>
+              </div>
+            </section>
+
+            {/* Section 6: Searching Beyond City Heights */}
+            <section className="space-y-4">
+              <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight flex items-center gap-2">
+                <MapPin className="w-6 h-6 text-cyan-600 shrink-0" />
+                <span>Searching Beyond City Heights: What Homeowners Everywhere Should Know</span>
+              </h2>
+              <p>
+                Some readers may be looking for help in other areas. People searching for <strong>lake city leak detection</strong> or <strong>slab leak detection cherry hill</strong> will find the same principles apply: look for non-invasive methods, clear pricing, and local experience.
+              </p>
+              <p>
+                Whether you are managing a rental property on the East Coast or dealing with high water bills across San Diego County (from North Park and Normal Heights to El Cajon and Chula Vista), never accept blind demolition. Quality diagnostic technicians anywhere will follow the same gold standard: isolate, electronically pinpoint, document, and preserve your property&apos;s finishes.
+              </p>
+            </section>
+
+            {/* Section 7: Suspect a Leak? Talk to a Local Team */}
+            <section className="bg-gradient-to-br from-slate-900 via-blue-950 to-slate-900 text-white rounded-3xl p-6 sm:p-8 lg:p-10 shadow-2xl space-y-6">
+              <div className="space-y-2">
+                <span className="text-xs font-bold uppercase tracking-wider text-cyan-400 bg-cyan-950/60 px-3 py-1 rounded-full border border-cyan-800/50 inline-block">
+                  City Heights Priority Dispatch
+                </span>
+                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white tracking-tight">
+                  Suspect a Leak? Talk to a Local Team
+                </h2>
+                <p className="text-xs sm:text-sm text-slate-300 max-w-2xl leading-relaxed">
+                  If you notice any of the warning signs above, don’t wait for the damage to spread. <strong>City Heights Leak Detection Pro</strong> serves homeowners and property owners throughout City Heights, San Diego.
+                </p>
+              </div>
+
+              {/* Local Contact Cards */}
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 pt-2">
+                <div className="bg-white/10 border border-white/15 rounded-2xl p-4 space-y-1.5 backdrop-blur-xs">
+                  <div className="flex items-center gap-2 text-cyan-300 font-bold text-xs uppercase tracking-wider">
+                    <Phone className="w-4 h-4" />
+                    <span>Direct Call</span>
+                  </div>
+                  <div className="text-base sm:text-lg font-black text-white">
+                    <a href="tel:+16199109411" className="hover:text-cyan-300 transition-colors">
+                      (619) 910-9411
+                    </a>
+                  </div>
+                  <p className="text-[11px] text-slate-300">24/7 emergency dispatch line</p>
+                </div>
+
+                <div className="bg-white/10 border border-white/15 rounded-2xl p-4 space-y-1.5 backdrop-blur-xs">
+                  <div className="flex items-center gap-2 text-cyan-300 font-bold text-xs uppercase tracking-wider">
+                    <MapPin className="w-4 h-4" />
+                    <span>Local Office</span>
+                  </div>
+                  <div className="text-xs sm:text-sm font-bold text-white leading-snug">
+                    3431 43rd St, San Diego, CA 92105
+                  </div>
+                  <p className="text-[11px] text-slate-300">City Heights dispatch desk</p>
+                </div>
+
+                <div className="bg-white/10 border border-white/15 rounded-2xl p-4 space-y-1.5 backdrop-blur-xs">
+                  <div className="flex items-center gap-2 text-cyan-300 font-bold text-xs uppercase tracking-wider">
+                    <ShieldCheck className="w-4 h-4" />
+                    <span>Official Web</span>
+                  </div>
+                  <div className="text-xs sm:text-sm font-bold text-white">
+                    www.cityheightsleakdetectionpro.com
+                  </div>
+                  <p className="text-[11px] text-slate-300">Licensed plumbing contractor network</p>
+                </div>
+              </div>
+
+              {/* Action Buttons */}
+              <div className="flex flex-col sm:flex-row gap-3 pt-2">
+                <a
+                  href="tel:+16199109411"
+                  className="bg-blue-600 hover:bg-blue-700 text-white font-extrabold px-6 py-3.5 rounded-xl text-sm flex items-center justify-center gap-2 shadow-lg shadow-blue-900/50 transition-all text-center"
+                >
+                  <Phone className="w-4 h-4 animate-pulse" />
+                  <span>Call (619) 910-9411 for Fast Leak Help</span>
+                </a>
+                <a
+                  href="/contact/"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    onNavigate('contact');
+                  }}
+                  className="bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold px-5 py-3.5 rounded-xl text-xs border border-slate-700 transition-colors text-center flex items-center justify-center"
+                >
+                  Request Non-Invasive Estimate &rarr;
+                </a>
+              </div>
+            </section>
+          </>
+        ) : activePost.slug === 'leak-detection-cost-and-insurance-guide' ? (
           <>
             {/* Quick Keyword & Executive Summary Callout */}
             <div className="bg-gradient-to-br from-blue-50 to-indigo-50/50 border border-blue-200 rounded-2xl p-6 sm:p-7 space-y-4">
