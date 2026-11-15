@@ -767,12 +767,16 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
                     <Phone className="w-3.5 h-3.5" />
                     <span>Call {BUSINESS_INFO.phoneFormatted}</span>
                   </a>
-                  <button
-                    onClick={() => onNavigate('contact')}
+                  <a
+                    href="/contact/"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      onNavigate('contact');
+                    }}
                     className="flex-1 bg-slate-800 hover:bg-slate-700 text-slate-200 py-2.5 px-4 rounded-xl font-semibold text-center text-xs border border-slate-700 transition-colors"
                   >
-                    Contact & Driving Directions
-                  </button>
+                    Contact &amp; Driving Directions
+                  </a>
                 </div>
               </div>
             </div>
@@ -796,14 +800,29 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
                 Wondering how acoustic ground microphones and thermal imaging isolate slab leaks without floor demolition? Explore our diagnostic guides covering underground pipe testing, non-invasive acoustic listening, and cost-effective repair solutions.
               </p>
               <div className="flex flex-wrap items-center gap-3 pt-2">
-                <button
-                  onClick={() => onNavigate('blog')}
+                <a
+                  href="/blog/"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    onNavigate('blog');
+                  }}
                   className="px-5 py-3 bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold rounded-xl text-xs sm:text-sm flex items-center gap-2 shadow-lg transition-transform active:scale-95"
                   id="home-read-blog-btn"
                 >
-                  <span>Explore Leak Detection Guides</span>
+                  <span>2026 Cost &amp; Price Guide</span>
                   <ArrowRight className="w-4 h-4" />
-                </button>
+                </a>
+                <a
+                  href="/leak-detection-city-heights-san-diego/"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    onNavigate('leak-detection-city-heights-san-diego');
+                  }}
+                  className="px-4 py-3 bg-blue-600 hover:bg-blue-500 text-white font-bold rounded-xl text-xs sm:text-sm flex items-center gap-1.5 transition-colors"
+                >
+                  <span>City Heights Homeowner Guide</span>
+                  <ArrowRight className="w-3.5 h-3.5" />
+                </a>
                 <a
                   href={BUSINESS_INFO.telLink}
                   className="px-4 py-3 bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold rounded-xl text-xs sm:text-sm border border-slate-700 flex items-center gap-1.5 transition-colors"
@@ -821,28 +840,60 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
               <ul className="space-y-2.5 text-xs text-slate-300">
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-cyan-400 shrink-0 mt-0.5" />
-                  <span><strong>New Article:</strong> Underground &amp; Slab Leak Detection — Pinpointing hidden pipe leaks without jackhammers.</span>
+                  <a
+                    href="/leak-detection-city-heights-san-diego/"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      onNavigate('leak-detection-city-heights-san-diego');
+                    }}
+                    className="hover:text-cyan-300 transition-colors"
+                  >
+                    <strong>City Heights Homeowner’s Guide:</strong> Hidden water &amp; gas warning signs, methods, and local pricing.
+                  </a>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-cyan-400 shrink-0 mt-0.5" />
-                  <span><strong>Non-Invasive Locating:</strong> Acoustic probes, thermal FLIR imaging &amp; line pressure holding.</span>
+                  <a
+                    href="/blog/"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      onNavigate('blog');
+                    }}
+                    className="hover:text-cyan-300 transition-colors"
+                  >
+                    <strong>2026 Leak Detection Cost Guide:</strong> Slab, yard line &amp; gas pricing plus insurance rules.
+                  </a>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-cyan-400 shrink-0 mt-0.5" />
-                  <span><strong>Early Warning Signs:</strong> Spinning water meter dials, warm floor spots &amp; utility bill spikes.</span>
+                  <a
+                    href="/underground-slab-leak-detection/"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      onNavigate('underground-slab-leak-detection');
+                    }}
+                    className="hover:text-cyan-300 transition-colors"
+                  >
+                    <strong>Underground &amp; Slab Leak Deep Dive:</strong> Pinpointing copper pipe leaks without jackhammers.
+                  </a>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-cyan-400 shrink-0 mt-0.5" />
-                  <span><strong>Repair Methods:</strong> Surgical slab spot repair, overhead PEX rerouting &amp; gas safety clearances.</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle2 className="w-4 h-4 text-cyan-400 shrink-0 mt-0.5" />
-                  <span><strong>Soil Heave Prevention:</strong> Safeguarding City Heights expansive clay foundations.</span>
+                  <a
+                    href="/leak-detection-and-repair-guide/"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      onNavigate('leak-detection-and-repair-guide');
+                    }}
+                    className="hover:text-cyan-300 transition-colors"
+                  >
+                    <strong>Complete Repair &amp; Locating Guide:</strong> Acoustic probes, FLIR thermal imaging &amp; PEX rerouting.
+                  </a>
                 </li>
               </ul>
               <div className="pt-2 border-t border-slate-800 flex items-center justify-between text-[11px] text-slate-400">
                 <span>By City Heights Editorial Desk</span>
-                <span className="text-amber-400">6 min read</span>
+                <span className="text-amber-400">4 Full Field Guides</span>
               </div>
             </div>
           </div>

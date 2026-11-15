@@ -43,9 +43,9 @@ interface BlogPageProps {
 }
 
 export const BlogPage: React.FC<BlogPageProps> = ({ onNavigate, initialSlug }) => {
-  // Support switching between post 4 (Homeowner Guide), post 3 (Cost & Insurance Guide), post 2 (Underground & Slab In-Depth Technical Guide), and post 1 (General Guide)
+  // Support switching between all 4 dedicated blog article routes
   const [selectedSlug, setSelectedSlug] = useState<string>(
-    initialSlug || 'leak-detection-city-heights-san-diego'
+    initialSlug || 'leak-detection-cost-and-insurance-guide'
   );
 
   useEffect(() => {
@@ -56,28 +56,32 @@ export const BlogPage: React.FC<BlogPageProps> = ({ onNavigate, initialSlug }) =
 
   const activePost =
     BLOG_POSTS.find((p) => p.slug === selectedSlug) ||
-    BLOG_POSTS[3] ||
     BLOG_POSTS[2] ||
     BLOG_POSTS[0];
 
-  // Dynamically synchronize document title and meta description for SEO
+  // Dynamically synchronize document title, description, OG, and Twitter tags
   useEffect(() => {
     if (activePost) {
       document.title = activePost.metaTitle;
       const metaDesc = document.querySelector('meta[name="description"]');
-      if (metaDesc) {
-        metaDesc.setAttribute('content', activePost.metaDesc);
-      }
+      if (metaDesc) metaDesc.setAttribute('content', activePost.metaDesc);
+      const ogTitle = document.querySelector('meta[property="og:title"]');
+      if (ogTitle) ogTitle.setAttribute('content', activePost.metaTitle);
+      const ogDesc = document.querySelector('meta[property="og:description"]');
+      if (ogDesc) ogDesc.setAttribute('content', activePost.metaDesc);
+      const twTitle = document.querySelector('meta[name="twitter:title"]');
+      if (twTitle) twTitle.setAttribute('content', activePost.metaTitle);
+      const twDesc = document.querySelector('meta[name="twitter:description"]');
+      if (twDesc) twDesc.setAttribute('content', activePost.metaDesc);
     }
   }, [activePost]);
 
-  const handleSelectPost = (slug: string) => {
-    setSelectedSlug(slug);
-    if (slug === 'leak-detection-city-heights-san-diego') {
-      onNavigate('leak-detection-city-heights-san-diego');
-    } else {
-      onNavigate('blog');
-    }
+  const getPostHref = (post: BlogPost) =>
+    post.routePage === 'blog' ? '/blog/' : `/${post.routePage}/`;
+
+  const handleSelectPost = (post: BlogPost) => {
+    setSelectedSlug(post.slug);
+    onNavigate(post.routePage);
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
@@ -91,13 +95,17 @@ export const BlogPage: React.FC<BlogPageProps> = ({ onNavigate, initialSlug }) =
               <BookOpen className="w-4 h-4 text-cyan-400" />
               <span>Leak Detection Diagnostic Knowledge Center:</span>
             </div>
-            <div className="flex items-center gap-2 overflow-x-auto w-full sm:w-auto pb-1 sm:pb-0">
+            <nav aria-label="Blog Articles" className="flex items-center gap-2 overflow-x-auto w-full sm:w-auto pb-1 sm:pb-0">
               {BLOG_POSTS.map((post) => {
                 const isActive = post.slug === selectedSlug;
                 return (
-                  <button
+                  <a
                     key={post.slug}
-                    onClick={() => handleSelectPost(post.slug)}
+                    href={getPostHref(post)}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      handleSelectPost(post);
+                    }}
                     className={`text-xs px-3.5 py-1.5 rounded-lg font-medium transition-all whitespace-nowrap flex items-center gap-1.5 ${
                       isActive
                         ? 'bg-blue-600 text-white shadow-md shadow-blue-900/30 font-bold'
@@ -106,10 +114,10 @@ export const BlogPage: React.FC<BlogPageProps> = ({ onNavigate, initialSlug }) =
                   >
                     <span>{post.shortTitle}</span>
                     {isActive && <Check className="w-3.5 h-3.5" />}
-                  </button>
+                  </a>
                 );
               })}
-            </div>
+            </nav>
           </div>
         </div>
       </section>
@@ -192,7 +200,7 @@ export const BlogPage: React.FC<BlogPageProps> = ({ onNavigate, initialSlug }) =
             </div>
             <div className="flex items-center gap-1.5">
               <Calendar className="w-3.5 h-3.5 text-slate-400" />
-              <span>Published {activePost.publishDate} &bull; Updated October 2026</span>
+              <span>Published {activePost.publishDate} &bull; Updated {activePost.updateDate}</span>
             </div>
             <div className="flex items-center gap-1.5">
               <Clock className="w-3.5 h-3.5 text-amber-400" />
@@ -204,7 +212,7 @@ export const BlogPage: React.FC<BlogPageProps> = ({ onNavigate, initialSlug }) =
 
       {/* Main Blog Content Container */}
       <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10 text-slate-700 leading-relaxed">
-        {/* Switcher Banner with All 3 Articles */}
+        {/* Switcher Banner with All 4 Crawlably Linked Articles */}
         <div className="p-4 rounded-xl bg-slate-100 border border-slate-300 flex flex-col md:flex-row items-center justify-between gap-3 text-xs">
           <div className="flex items-center gap-2 text-slate-700 font-medium">
             <FileText className="w-4 h-4 text-blue-600 shrink-0" />
@@ -212,9 +220,13 @@ export const BlogPage: React.FC<BlogPageProps> = ({ onNavigate, initialSlug }) =
           </div>
           <div className="flex flex-wrap items-center gap-2 w-full md:w-auto">
             {BLOG_POSTS.map((post) => (
-              <button
+              <a
                 key={post.slug}
-                onClick={() => handleSelectPost(post.slug)}
+                href={getPostHref(post)}
+                onClick={(e) => {
+                  e.preventDefault();
+                  handleSelectPost(post);
+                }}
                 className={`px-3 py-1.5 rounded-lg text-xs font-semibold transition-all flex items-center gap-1 ${
                   post.slug === activePost.slug
                     ? 'bg-blue-600 text-white shadow-xs'
@@ -222,7 +234,7 @@ export const BlogPage: React.FC<BlogPageProps> = ({ onNavigate, initialSlug }) =
                 }`}
               >
                 <span>{post.shortTitle}</span>
-              </button>
+              </a>
             ))}
           </div>
         </div>
@@ -239,35 +251,6 @@ export const BlogPage: React.FC<BlogPageProps> = ({ onNavigate, initialSlug }) =
               <p className="text-xs sm:text-sm text-blue-950 leading-relaxed">
                 A tiny drip behind a wall can quietly waste thousands of gallons of water, pad your bills, and invite mold long before a stain appears. For City Heights homeowners, many of whom live in older properties with aging pipes, early leak detection can mean the difference between a simple fix and a costly disaster. This guide walks through the warning signs, how professionals pinpoint problems without tearing up your home, and what to expect when it comes to price.
               </p>
-              <div className="flex flex-wrap gap-1.5 pt-1">
-                <span className="text-[11px] font-semibold text-slate-500 uppercase tracking-wider block w-full mb-1">
-                  Targeted Local SEO &amp; Diagnostic Keywords:
-                </span>
-                {[
-                  'leak detection in City Heights San Diego',
-                  'water leak detection university heights san diego',
-                  'slab leak detection service university heights san diego',
-                  'gas leak detection san diego',
-                  'gas leak survey companies',
-                  'how much does leak detection cost',
-                  'leak detection costs',
-                  'slab leak detection cost',
-                  'gas leak detection cost',
-                  'leak locating cost',
-                  'cost of leak detection',
-                  'cost for leak detection',
-                  'plumbers city heights ca',
-                  'lake city leak detection',
-                  'slab leak detection cherry hill'
-                ].map((kw) => (
-                  <span
-                    key={kw}
-                    className="bg-white border border-blue-200 text-blue-700 font-semibold px-2.5 py-0.5 rounded-md text-xs shadow-xs"
-                  >
-                    #{kw}
-                  </span>
-                ))}
-              </div>
             </div>
 
             {/* Featured Image 1 */}
@@ -735,33 +718,6 @@ export const BlogPage: React.FC<BlogPageProps> = ({ onNavigate, initialSlug }) =
               <p className="text-xs sm:text-sm text-blue-950 leading-relaxed">
                 When property owners face unexplained water bill spikes, warm floorboards, or suspected sub-slab pipe fractures, the first question is invariably: <em>"How much does leak detection cost, and will my insurance cover it?"</em> In 2026, professional non-invasive leak detection typically ranges from <strong>$175 to $450</strong> depending on pipe depth, location, and property layout. Below is an authoritative, industry-vetted cost breakdown, insurance claim blueprint, and technical guide to finding hidden leaks without destructive demolition.
               </p>
-              <div className="flex flex-wrap gap-1.5 pt-1">
-                <span className="text-[11px] font-semibold text-slate-500 uppercase tracking-wider block w-full mb-1">
-                  Targeted Cost &amp; Diagnostic Keywords:
-                </span>
-                {[
-                  'leak detection cost',
-                  'how much does leak detection cost',
-                  'slab leak detection cost',
-                  'water leak detection cost',
-                  'does insurance cover leak detection',
-                  'emergency leak detection',
-                  'underground leak detection cost',
-                  'leak detection San Diego',
-                  'electronic leak detection',
-                  'leak repair cost',
-                  'non-invasive leak detection',
-                  'gas leak detection cost',
-                  'leak detection City Heights 92105'
-                ].map((kw) => (
-                  <span
-                    key={kw}
-                    className="bg-white border border-blue-200 text-blue-700 font-semibold px-2.5 py-0.5 rounded-md text-xs shadow-xs"
-                  >
-                    #{kw}
-                  </span>
-                ))}
-              </div>
             </div>
 
             {/* Featured Image */}
@@ -1264,30 +1220,6 @@ export const BlogPage: React.FC<BlogPageProps> = ({ onNavigate, initialSlug }) =
               <p className="text-xs sm:text-sm text-blue-950 leading-relaxed">
                 When water lines crack beneath concrete foundations, behind insulated drywall, or four feet underground along a municipal service lateral, the damage compounds by the hour. <strong>Professional water leak detection</strong> eliminates the costly guesswork of demolition by pairing acoustic micro-sensors, infrared thermography, and tracer gas forensics. Below is an authoritative technical analysis of how certified leak specialists detect, isolate, and repair hidden leaks across residential and commercial San Diego properties.
               </p>
-              <div className="flex flex-wrap gap-1.5 pt-1">
-                <span className="text-[11px] font-semibold text-slate-500 uppercase tracking-wider block w-full mb-1">
-                  Targeted Diagnostic Disciplines:
-                </span>
-                {[
-                  'water leak detection',
-                  'slab leak detection',
-                  'underground water leak detection',
-                  'acoustic pipe locating',
-                  'thermal imaging leak detection',
-                  'hidden water leak inspection',
-                  'emergency leak detection',
-                  'residential leak detection',
-                  'commercial leak detection',
-                  'water leak repair'
-                ].map((kw) => (
-                  <span
-                    key={kw}
-                    className="bg-white border border-blue-200 text-blue-700 font-semibold px-2.5 py-0.5 rounded-md text-xs shadow-xs"
-                  >
-                    #{kw}
-                  </span>
-                ))}
-              </div>
             </div>
 
             {/* Featured Image */}

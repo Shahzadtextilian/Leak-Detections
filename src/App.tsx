@@ -20,7 +20,20 @@ export default function App() {
 
   // Resolve initial and updated page based on pathname or hash
   useEffect(() => {
-    const validPages: Page[] = ['home', 'water-leak', 'gas-leak', 'blog', 'about', 'contact', 'privacy', 'disclaimer', 'sitemap', 'leak-detection-city-heights-san-diego'];
+    const validPages: Page[] = [
+      'home',
+      'water-leak',
+      'gas-leak',
+      'blog',
+      'about',
+      'contact',
+      'privacy',
+      'disclaimer',
+      'sitemap',
+      'leak-detection-city-heights-san-diego',
+      'underground-slab-leak-detection',
+      'leak-detection-and-repair-guide'
+    ];
 
     const resolvePageFromLocation = (): Page => {
       // First check clean pathname e.g. /water-leak or /water-leak/
@@ -72,6 +85,14 @@ export default function App() {
         title: 'Leak Detection in City Heights, San Diego | Local Guide',
         desc: 'Learn the signs of hidden leaks, how pros find them, and what pricing depends on. Call City Heights Leak Detection Pro at (619) 910-9411.'
       },
+      'underground-slab-leak-detection': {
+        title: 'Underground Water & Slab Leak Detection | San Diego CA',
+        desc: 'How underground water & slab leak detection pinpoints hidden pipe leaks in San Diego without jackhammers. Non-invasive help: (619) 910-9411.'
+      },
+      'leak-detection-and-repair-guide': {
+        title: 'Leak Detection & Repair Guide | City Heights, San Diego',
+        desc: 'Complete leak detection & repair guide for City Heights (92105). Learn how acoustic sensors, thermal imaging & slab repairs work. Call (619) 910-9411.'
+      },
       'about': {
         title: 'About Leak Detection Pro | City Heights Plumber Network',
         desc: 'We connect City Heights homeowners with pre-screened, CSLB-licensed plumbers for leak detection. See how it works. Call (619) 910-9411.'
@@ -86,7 +107,7 @@ export default function App() {
       },
       'disclaimer': {
         title: 'Legal Disclaimer & Licensing | Leak Detection Pro',
-        desc: 'Leak Detection Pro connects customers with qualified contractors. Work is performed by independent CSLB-licensed plumbers. Read our licensing and service terms.'
+        desc: 'Leak Detection Pro connects homeowners with independent CSLB-licensed plumbers. Read our qualified contractor network licensing & service terms.'
       },
       'sitemap': {
         title: 'Sitemap | Leak Detection Pro City Heights',
@@ -151,6 +172,16 @@ export default function App() {
     if (ogUrl) {
       ogUrl.setAttribute('content', canonicalUrl);
     }
+    let ogType = document.querySelector('meta[property="og:type"]');
+    if (ogType) {
+      const isBlogArticle = [
+        'blog',
+        'leak-detection-city-heights-san-diego',
+        'underground-slab-leak-detection',
+        'leak-detection-and-repair-guide'
+      ].includes(currentPage);
+      ogType.setAttribute('content', isBlogArticle ? 'article' : 'website');
+    }
   }, [currentPage]);
 
   const handleNavigate = (page: Page) => {
@@ -187,10 +218,21 @@ export default function App() {
           {currentPage === 'gas-leak' && (
             <GasLeakPage onNavigate={handleNavigate} />
           )}
-          {(currentPage === 'blog' || currentPage === 'leak-detection-city-heights-san-diego') && (
+          {(currentPage === 'blog' ||
+            currentPage === 'leak-detection-city-heights-san-diego' ||
+            currentPage === 'underground-slab-leak-detection' ||
+            currentPage === 'leak-detection-and-repair-guide') && (
             <BlogPage
               onNavigate={handleNavigate}
-              initialSlug={currentPage === 'leak-detection-city-heights-san-diego' ? 'leak-detection-city-heights-san-diego' : undefined}
+              initialSlug={
+                currentPage === 'leak-detection-city-heights-san-diego'
+                  ? 'leak-detection-city-heights-san-diego'
+                  : currentPage === 'underground-slab-leak-detection'
+                    ? 'underground-slab-water-leak-detection-guide'
+                    : currentPage === 'leak-detection-and-repair-guide'
+                      ? 'guide-to-leak-detection-and-repair'
+                      : 'leak-detection-cost-and-insurance-guide'
+              }
             />
           )}
           {currentPage === 'about' && (

@@ -28,43 +28,55 @@ export const SitemapPage: React.FC<SitemapPageProps> = ({ onNavigate }) => {
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.cityheightsleakdetectionpro.com/</loc>
-    <lastmod>2026-10-06</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://www.cityheightsleakdetectionpro.com/water-leak/</loc>
-    <lastmod>2026-10-06</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.cityheightsleakdetectionpro.com/gas-leak/</loc>
-    <lastmod>2026-10-06</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.cityheightsleakdetectionpro.com/blog/</loc>
-    <lastmod>2026-11-05</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.cityheightsleakdetectionpro.com/leak-detection-city-heights-san-diego/</loc>
-    <lastmod>2026-11-05</lastmod>
+    <lastmod>2026-11-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.cityheightsleakdetectionpro.com/underground-slab-leak-detection/</loc>
+    <lastmod>2026-11-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.cityheightsleakdetectionpro.com/leak-detection-and-repair-guide/</loc>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.cityheightsleakdetectionpro.com/about/</loc>
-    <lastmod>2026-10-06</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.cityheightsleakdetectionpro.com/contact/</loc>
-    <lastmod>2026-10-06</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -82,7 +94,7 @@ export const SitemapPage: React.FC<SitemapPageProps> = ({ onNavigate }) => {
   </url>
   <url>
     <loc>https://www.cityheightsleakdetectionpro.com/sitemap/</loc>
-    <lastmod>2026-10-06</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -140,6 +152,26 @@ export const SitemapPage: React.FC<SitemapPageProps> = ({ onNavigate }) => {
       icon: <FileText className="w-5 h-5 text-blue-500" />
     },
     {
+      loc: 'https://www.cityheightsleakdetectionpro.com/underground-slab-leak-detection/',
+      path: '/underground-slab-leak-detection/',
+      page: 'underground-slab-leak-detection' as Page,
+      title: 'Underground Water & Slab Leak Detection | San Diego CA',
+      desc: 'How underground water & slab leak detection pinpoints hidden pipe leaks in San Diego without jackhammers. Non-invasive help: (619) 910-9411.',
+      priority: '0.9',
+      changefreq: 'weekly',
+      icon: <FileText className="w-5 h-5 text-indigo-500" />
+    },
+    {
+      loc: 'https://www.cityheightsleakdetectionpro.com/leak-detection-and-repair-guide/',
+      path: '/leak-detection-and-repair-guide/',
+      page: 'leak-detection-and-repair-guide' as Page,
+      title: 'Leak Detection & Repair Guide | City Heights, San Diego',
+      desc: 'Complete leak detection & repair guide for City Heights (92105). Learn how acoustic sensors, thermal imaging & slab repairs work. Call (619) 910-9411.',
+      priority: '0.9',
+      changefreq: 'weekly',
+      icon: <FileText className="w-5 h-5 text-teal-500" />
+    },
+    {
       loc: 'https://www.cityheightsleakdetectionpro.com/about/',
       path: '/about/',
       page: 'about' as Page,
@@ -174,7 +206,7 @@ export const SitemapPage: React.FC<SitemapPageProps> = ({ onNavigate }) => {
       path: '/disclaimer/',
       page: 'disclaimer' as Page,
       title: 'Legal Disclaimer & Licensing | Leak Detection Pro',
-      desc: 'Leak Detection Pro connects customers with qualified contractors. Work is performed by independent CSLB-licensed plumbers. Read our licensing and service terms.',
+      desc: 'Leak Detection Pro connects homeowners with independent CSLB-licensed plumbers. Read our qualified contractor network licensing & service terms.',
       priority: '0.3',
       changefreq: 'yearly',
       icon: <AlertTriangle className="w-5 h-5 text-slate-400" />

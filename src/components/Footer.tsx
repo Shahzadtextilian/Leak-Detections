@@ -228,6 +228,30 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               </li>
               <li>
                 <a
+                  href="/underground-slab-leak-detection/"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    handleNav('underground-slab-leak-detection');
+                  }}
+                  className="hover:text-blue-300 transition-colors text-xs text-slate-400 pl-4 block"
+                >
+                  • Underground &amp; Slab Leak Guide
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/leak-detection-and-repair-guide/"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    handleNav('leak-detection-and-repair-guide');
+                  }}
+                  className="hover:text-blue-300 transition-colors text-xs text-slate-400 pl-4 block"
+                >
+                  • Leak Detection &amp; Repair Guide
+                </a>
+              </li>
+              <li>
+                <a
                   href="/about/"
                   onClick={(e) => {
                     e.preventDefault();
