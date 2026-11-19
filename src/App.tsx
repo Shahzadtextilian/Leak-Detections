@@ -32,7 +32,8 @@ export default function App() {
       'sitemap',
       'leak-detection-city-heights-san-diego',
       'underground-slab-leak-detection',
-      'leak-detection-and-repair-guide'
+      'leak-detection-and-repair-guide',
+      'hidden-water-leak-signs-city-heights'
     ];
 
     const resolvePageFromLocation = (): Page => {
@@ -78,8 +79,8 @@ export default function App() {
         desc: 'Smell gas? Leave the home and call 911 or SDG&E first. Then call us for licensed gas leak testing in City Heights. (619) 910-9411.'
       },
       'blog': {
-        title: 'Leak Detection Cost in San Diego (2026 Price Guide)',
-        desc: 'How much does leak detection cost in San Diego? See 2026 price ranges, cost factors, and whether insurance covers slab leak locating.'
+        title: 'Leak Detection Blog & Guides | City Heights, San Diego',
+        desc: 'Explore City Heights leak detection guides covering hidden water leak signs, slab leak locating, acoustic testing, and pipe repair methods.'
       },
       'leak-detection-city-heights-san-diego': {
         title: 'Leak Detection in City Heights, San Diego | Local Guide',
@@ -92,6 +93,10 @@ export default function App() {
       'leak-detection-and-repair-guide': {
         title: 'Leak Detection & Repair Guide | City Heights, San Diego',
         desc: 'Complete leak detection & repair guide for City Heights (92105). Learn how acoustic sensors, thermal imaging & slab repairs work. Call (619) 910-9411.'
+      },
+      'hidden-water-leak-signs-city-heights': {
+        title: 'How to Spot a Hidden Water Leak in City Heights Homes',
+        desc: 'Higher water bill, damp smell, or a sound in the walls? Learn how City Heights homeowners can spot a hidden leak early. Call (619) 910-9411.'
       },
       'about': {
         title: 'About Leak Detection Pro | City Heights Plumber Network',
@@ -175,10 +180,10 @@ export default function App() {
     let ogType = document.querySelector('meta[property="og:type"]');
     if (ogType) {
       const isBlogArticle = [
-        'blog',
         'leak-detection-city-heights-san-diego',
         'underground-slab-leak-detection',
-        'leak-detection-and-repair-guide'
+        'leak-detection-and-repair-guide',
+        'hidden-water-leak-signs-city-heights'
       ].includes(currentPage);
       ogType.setAttribute('content', isBlogArticle ? 'article' : 'website');
     }
@@ -221,17 +226,20 @@ export default function App() {
           {(currentPage === 'blog' ||
             currentPage === 'leak-detection-city-heights-san-diego' ||
             currentPage === 'underground-slab-leak-detection' ||
-            currentPage === 'leak-detection-and-repair-guide') && (
+            currentPage === 'leak-detection-and-repair-guide' ||
+            currentPage === 'hidden-water-leak-signs-city-heights') && (
             <BlogPage
               onNavigate={handleNavigate}
               initialSlug={
-                currentPage === 'leak-detection-city-heights-san-diego'
-                  ? 'leak-detection-city-heights-san-diego'
-                  : currentPage === 'underground-slab-leak-detection'
-                    ? 'underground-slab-water-leak-detection-guide'
-                    : currentPage === 'leak-detection-and-repair-guide'
-                      ? 'guide-to-leak-detection-and-repair'
-                      : 'leak-detection-cost-and-insurance-guide'
+                currentPage === 'hidden-water-leak-signs-city-heights'
+                  ? 'hidden-water-leak-signs-city-heights'
+                  : currentPage === 'leak-detection-city-heights-san-diego'
+                    ? 'leak-detection-city-heights-san-diego'
+                    : currentPage === 'underground-slab-leak-detection'
+                      ? 'underground-slab-water-leak-detection-guide'
+                      : currentPage === 'leak-detection-and-repair-guide'
+                        ? 'guide-to-leak-detection-and-repair'
+                        : undefined
               }
             />
           )}

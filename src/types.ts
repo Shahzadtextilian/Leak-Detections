@@ -1,4 +1,4 @@
-export type Page = 'home' | 'water-leak' | 'gas-leak' | 'blog' | 'about' | 'contact' | 'privacy' | 'disclaimer' | 'sitemap' | 'leak-detection-city-heights-san-diego' | 'underground-slab-leak-detection' | 'leak-detection-and-repair-guide';
+export type Page = 'home' | 'water-leak' | 'gas-leak' | 'blog' | 'about' | 'contact' | 'privacy' | 'disclaimer' | 'sitemap' | 'leak-detection-city-heights-san-diego' | 'underground-slab-leak-detection' | 'leak-detection-and-repair-guide' | 'hidden-water-leak-signs-city-heights';
 
 export interface LeadSubmission {
   id: string;

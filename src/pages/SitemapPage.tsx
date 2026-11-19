@@ -46,7 +46,7 @@ export const SitemapPage: React.FC<SitemapPageProps> = ({ onNavigate }) => {
   </url>
   <url>
     <loc>https://www.cityheightsleakdetectionpro.com/blog/</loc>
-    <lastmod>2026-11-15</lastmod>
+    <lastmod>2026-11-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
@@ -65,6 +65,12 @@ export const SitemapPage: React.FC<SitemapPageProps> = ({ onNavigate }) => {
   <url>
     <loc>https://www.cityheightsleakdetectionpro.com/leak-detection-and-repair-guide/</loc>
     <lastmod>2026-11-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.cityheightsleakdetectionpro.com/hidden-water-leak-signs-city-heights/</loc>
+    <lastmod>2026-11-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -135,8 +141,8 @@ export const SitemapPage: React.FC<SitemapPageProps> = ({ onNavigate }) => {
       loc: 'https://www.cityheightsleakdetectionpro.com/blog/',
       path: '/blog/',
       page: 'blog' as Page,
-      title: 'Leak Detection Cost in San Diego (2026 Price Guide)',
-      desc: 'How much does leak detection cost in San Diego? See 2026 price ranges, cost factors, and whether insurance covers slab leak locating.',
+      title: 'Leak Detection Blog & Guides | City Heights, San Diego',
+      desc: 'Explore City Heights leak detection guides covering hidden water leak signs, slab leak locating, acoustic testing, and pipe repair methods.',
       priority: '0.9',
       changefreq: 'daily',
       icon: <FileText className="w-5 h-5 text-cyan-500" />
@@ -170,6 +176,16 @@ export const SitemapPage: React.FC<SitemapPageProps> = ({ onNavigate }) => {
       priority: '0.9',
       changefreq: 'weekly',
       icon: <FileText className="w-5 h-5 text-teal-500" />
+    },
+    {
+      loc: 'https://www.cityheightsleakdetectionpro.com/hidden-water-leak-signs-city-heights/',
+      path: '/hidden-water-leak-signs-city-heights/',
+      page: 'hidden-water-leak-signs-city-heights' as Page,
+      title: 'How to Spot a Hidden Water Leak in City Heights Homes',
+      desc: 'Higher water bill, damp smell, or a sound in the walls? Learn how City Heights homeowners can spot a hidden leak early. Call (619) 910-9411.',
+      priority: '0.9',
+      changefreq: 'weekly',
+      icon: <FileText className="w-5 h-5 text-sky-500" />
     },
     {
       loc: 'https://www.cityheightsleakdetectionpro.com/about/',

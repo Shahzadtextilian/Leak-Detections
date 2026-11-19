@@ -809,7 +809,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
                   className="px-5 py-3 bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold rounded-xl text-xs sm:text-sm flex items-center gap-2 shadow-lg transition-transform active:scale-95"
                   id="home-read-blog-btn"
                 >
-                  <span>2026 Cost &amp; Price Guide</span>
+                  <span>Browse All Diagnostic Guides</span>
                   <ArrowRight className="w-4 h-4" />
                 </a>
                 <a
@@ -841,6 +841,19 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-cyan-400 shrink-0 mt-0.5" />
                   <a
+                    href="/hidden-water-leak-signs-city-heights/"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      onNavigate('hidden-water-leak-signs-city-heights');
+                    }}
+                    className="hover:text-cyan-300 transition-colors"
+                  >
+                    <strong>How to Spot a Hidden Water Leak:</strong> Water bill checks, 10-minute meter test &amp; early signs.
+                  </a>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle2 className="w-4 h-4 text-cyan-400 shrink-0 mt-0.5" />
+                  <a
                     href="/leak-detection-city-heights-san-diego/"
                     onClick={(e) => {
                       e.preventDefault();
@@ -849,19 +862,6 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
                     className="hover:text-cyan-300 transition-colors"
                   >
                     <strong>City Heights Homeowner’s Guide:</strong> Hidden water &amp; gas warning signs, methods, and local pricing.
-                  </a>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle2 className="w-4 h-4 text-cyan-400 shrink-0 mt-0.5" />
-                  <a
-                    href="/blog/"
-                    onClick={(e) => {
-                      e.preventDefault();
-                      onNavigate('blog');
-                    }}
-                    className="hover:text-cyan-300 transition-colors"
-                  >
-                    <strong>2026 Leak Detection Cost Guide:</strong> Slab, yard line &amp; gas pricing plus insurance rules.
                   </a>
                 </li>
                 <li className="flex items-start gap-2">

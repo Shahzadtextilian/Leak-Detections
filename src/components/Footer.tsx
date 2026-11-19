@@ -252,6 +252,18 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               </li>
               <li>
                 <a
+                  href="/hidden-water-leak-signs-city-heights/"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    handleNav('hidden-water-leak-signs-city-heights');
+                  }}
+                  className="hover:text-blue-300 transition-colors text-xs text-slate-400 pl-4 block"
+                >
+                  • Hidden Water Leak Signs
+                </a>
+              </li>
+              <li>
+                <a
                   href="/about/"
                   onClick={(e) => {
                     e.preventDefault();

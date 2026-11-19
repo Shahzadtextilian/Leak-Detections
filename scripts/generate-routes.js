@@ -59,7 +59,7 @@ const routes = [
         <li><strong>Helium / Hydrogen Tracer Gas:</strong> Detects ultra-quiet underground yard and pool supply line breaks.</li>
       </ul>
       <p style="margin-bottom: 16px;">
-        Explore our <a href="/blog/" style="color: #38bdf8; text-decoration: underline;">2026 Leak Detection Price Guide</a> or read our <a href="/underground-slab-leak-detection/" style="color: #38bdf8; text-decoration: underline;">Underground &amp; Slab Leak Deep Dive</a>.
+        Explore our <a href="/hidden-water-leak-signs-city-heights/" style="color: #38bdf8; text-decoration: underline;">Hidden Water Leak Warning Signs Guide</a> or browse all guides in our <a href="/blog/" style="color: #38bdf8; text-decoration: underline;">City Heights Diagnostic Blog</a>.
       </p>
       <div style="margin-top: 16px;">
         <a href="tel:+16199109411" style="background: #2563eb; color: white; padding: 10px 20px; border-radius: 8px; text-decoration: none; font-weight: bold; display: inline-block;">
@@ -131,7 +131,7 @@ const routes = [
         Every specialist in our network carries active general liability coverage, workers' compensation insurance, and non-invasive acoustic, FLIR thermal, and electronic gas sniffing instruments so City Heights homeowners get accurate diagnostics without destructive exploratory digging.
       </p>
       <p style="margin-bottom: 16px;">
-        Explore our <a href="/water-leak/" style="color: #60a5fa; text-decoration: underline;">Water Leak Services</a>, <a href="/gas-leak/" style="color: #fbbf24; text-decoration: underline;">Gas Leak Testing</a>, or <a href="/blog/" style="color: #38bdf8; text-decoration: underline;">2026 Cost Guide</a>.
+        Explore our <a href="/water-leak/" style="color: #60a5fa; text-decoration: underline;">Water Leak Services</a>, <a href="/gas-leak/" style="color: #fbbf24; text-decoration: underline;">Gas Leak Testing</a>, or <a href="/blog/" style="color: #38bdf8; text-decoration: underline;">Leak Detection Blog &amp; Guides</a>.
       </p>
     `
   },
@@ -155,52 +155,28 @@ const routes = [
   },
   {
     path: 'blog',
-    isArticle: true,
-    title: 'Leak Detection Cost in San Diego (2026 Price Guide)',
-    desc: 'How much does leak detection cost in San Diego? See 2026 price ranges, cost factors, and whether insurance covers slab leak locating.',
-    h1: 'How Much Does Leak Detection Cost in 2026? Pricing, Insurance &amp; Non-Invasive Methods',
-    h2: '2026 Leak Detection Cost Breakdown: San Diego &amp; City Heights Pricing',
-    breadcrumbName: '2026 Cost & Insurance Guide',
+    title: 'Leak Detection Blog & Guides | City Heights, San Diego',
+    desc: 'Explore City Heights leak detection guides covering hidden water leak signs, slab leak locating, acoustic testing, and pipe repair methods.',
+    h1: 'City Heights Leak Detection Blog &amp; Homeowner Field Guides',
+    h2: 'Featured Leak Detection &amp; Plumbing Diagnostic Articles',
+    breadcrumbName: 'Blog & Knowledge Center',
     blogSchema: {
-      "@type": "BlogPosting",
-      "@id": "https://www.cityheightsleakdetectionpro.com/blog/#article",
-      "headline": "How Much Does Leak Detection Cost in 2026? Pricing, Insurance Coverage & Non-Invasive Methods Explained",
-      "description": "How much does leak detection cost in San Diego? See 2026 price ranges, cost factors, and whether insurance covers slab leak locating.",
-      "image": "https://www.cityheightsleakdetectionpro.com/og-image.webp",
-      "keywords": "leak detection cost, how much does leak detection cost, slab leak detection cost, water leak detection cost, does insurance cover leak detection, underground leak detection cost, leak detection San Diego, gas leak detection cost, leak detection City Heights 92105",
-      "datePublished": "2026-10-19T08:00:00-07:00",
-      "dateModified": "2026-11-15T09:00:00-08:00",
-      "author": {
-        "@type": "Organization",
-        "name": "San Diego Master Diagnostic Advisory Group"
-      },
-      "publisher": {
-        "@type": "Organization",
-        "name": "Leak Detection Pro",
-        "url": "https://www.cityheightsleakdetectionpro.com/"
-      },
-      "mainEntityOfPage": "https://www.cityheightsleakdetectionpro.com/blog/"
+      "@type": "CollectionPage",
+      "@id": "https://www.cityheightsleakdetectionpro.com/blog/#collection",
+      "name": "City Heights Leak Detection Blog & Homeowner Field Guides",
+      "description": "Explore City Heights leak detection guides covering hidden water leak signs, slab leak locating, acoustic testing, and pipe repair methods.",
+      "url": "https://www.cityheightsleakdetectionpro.com/blog/"
     },
     bodySnippet: `
-      <p style="margin-bottom: 12px;">
-        When homeowners experience unexplained water bill spikes, warm flooring patches, or suspected sub-slab pipe breaks, the first question is: <em>"How much does leak detection cost, and will my homeowners insurance cover it?"</em> In 2026, professional non-invasive electronic leak detection in San Diego typically costs between <strong>$175 and $450</strong> depending on pipe location and diagnostic complexity.
-      </p>
-      <h3 style="font-size: 17px; color: white; margin: 16px 0 8px; font-weight: 700;">2026 San Diego Leak Detection Price Ranges</h3>
-      <ul style="margin: 0 0 16px 20px; line-height: 1.75;">
-        <li><strong>Interior Wall &amp; Ceiling Leaks:</strong> $175 &ndash; $325 (Thermal imaging &amp; moisture meters)</li>
-        <li><strong>Residential Slab Leak Locating:</strong> $250 &ndash; $450 (Acoustic ground mics &amp; FLIR thermal)</li>
-        <li><strong>Underground Yard Main Line:</strong> $275 &ndash; $495 (Electromagnetic tracers &amp; helium tracer gas)</li>
-        <li><strong>Natural Gas Pressure Decay &amp; Sniffing:</strong> $195 &ndash; $350 (Digital manometer &amp; PPM sniffers)</li>
-      </ul>
-      <h3 style="font-size: 17px; color: white; margin: 16px 0 8px; font-weight: 700;">Does Homeowners Insurance Cover Leak Detection?</h3>
       <p style="margin-bottom: 14px;">
-        Most standard California HO-3 homeowners insurance policies cover sudden and accidental water damage plus "tear-out and access" costs required to expose a ruptured slab pipe, including written diagnostic locating fees when documented by a licensed specialist.
+        Welcome to the <strong>Leak Detection Pro</strong> City Heights Knowledge Center. Read practical local guides written for San Diego homeowners covering early leak warning signs, ten-minute meter checks, non-invasive slab leak locating, and targeted repair methods.
       </p>
-      <h3 style="font-size: 17px; color: white; margin: 16px 0 8px; font-weight: 700;">More City Heights Diagnostic Guides</h3>
-      <ul style="margin: 0 0 16px 20px; line-height: 1.75;">
-        <li><a href="/leak-detection-city-heights-san-diego/" style="color: #38bdf8; text-decoration: underline;">Leak Detection in City Heights, San Diego: A Friendly Homeowner’s Guide</a></li>
-        <li><a href="/underground-slab-leak-detection/" style="color: #38bdf8; text-decoration: underline;">Underground Water &amp; Slab Leak Detection Deep Dive</a></li>
-        <li><a href="/leak-detection-and-repair-guide/" style="color: #38bdf8; text-decoration: underline;">Complete Guide to Leak Detection &amp; Leak Repair in City Heights</a></li>
+      <h3 style="font-size: 17px; color: white; margin: 16px 0 8px; font-weight: 700;">Published City Heights Leak Detection Guides</h3>
+      <ul style="margin: 0 0 16px 20px; line-height: 1.8;">
+        <li><a href="/hidden-water-leak-signs-city-heights/" style="color: #38bdf8; text-decoration: underline;"><strong>How to Spot a Hidden Water Leak in City Heights Homes</strong></a> &mdash; Water bill checks, warning signs, and the ten-minute meter test.</li>
+        <li><a href="/leak-detection-city-heights-san-diego/" style="color: #38bdf8; text-decoration: underline;"><strong>Leak Detection in City Heights, San Diego: A Friendly Homeowner’s Guide</strong></a> &mdash; Signs of water and gas leaks, non-invasive locating, and hiring licensed local pros.</li>
+        <li><a href="/underground-slab-leak-detection/" style="color: #38bdf8; text-decoration: underline;"><strong>Underground Water &amp; Slab Leak Detection Deep Dive</strong></a> &mdash; Acoustic ground microphones, FLIR thermography, and helium tracer testing.</li>
+        <li><a href="/leak-detection-and-repair-guide/" style="color: #38bdf8; text-decoration: underline;"><strong>Complete Guide to Leak Detection &amp; Leak Repair in City Heights</strong></a> &mdash; Surgical slab spot repairs and overhead PEX reroutes.</li>
       </ul>
       <div style="margin-top: 16px;">
         <a href="tel:+16199109411" style="background: #2563eb; color: white; padding: 10px 20px; border-radius: 8px; text-decoration: none; font-weight: bold; display: inline-block;">
@@ -353,6 +329,65 @@ const routes = [
     `
   },
   {
+    path: 'hidden-water-leak-signs-city-heights',
+    isArticle: true,
+    title: 'How to Spot a Hidden Water Leak in City Heights Homes',
+    desc: 'Higher water bill, damp smell, or a sound in the walls? Learn how City Heights homeowners can spot a hidden leak early. Call (619) 910-9411.',
+    h1: 'Is Your City Heights Home Hiding a Water Leak?',
+    h2: 'Early Warning Signs, 10-Minute Meter Check &amp; What to Do Next',
+    breadcrumbName: 'Hidden Water Leak Signs',
+    blogSchema: {
+      "@type": "BlogPosting",
+      "@id": "https://www.cityheightsleakdetectionpro.com/hidden-water-leak-signs-city-heights/#article",
+      "headline": "Is Your City Heights Home Hiding a Water Leak?",
+      "description": "Higher water bill, damp smell, or a sound in the walls? Learn how City Heights homeowners can spot a hidden leak early. Call (619) 910-9411.",
+      "image": "https://www.cityheightsleakdetectionpro.com/og-image.webp",
+      "keywords": "hidden water leak signs, water leak City Heights, how to spot a hidden water leak, water meter leak check, City Heights leak detection",
+      "datePublished": "2026-11-18T08:00:00-08:00",
+      "dateModified": "2026-11-18T08:00:00-08:00",
+      "author": {
+        "@type": "Organization",
+        "name": "City Heights Leak Detection Pro Editorial Team"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Leak Detection Pro",
+        "url": "https://www.cityheightsleakdetectionpro.com/"
+      },
+      "mainEntityOfPage": "https://www.cityheightsleakdetectionpro.com/hidden-water-leak-signs-city-heights/"
+    },
+    bodySnippet: `
+      <p style="margin-bottom: 12px;">
+        Most leaks don’t announce themselves. There’s no flood and no dramatic burst pipe, just a small change somewhere that’s easy to shrug off. For City Heights homeowners, learning to notice those small changes is one of the cheapest ways to protect a house.
+      </p>
+      <h3 style="font-size: 17px; color: white; margin: 16px 0 8px; font-weight: 700;">Start With Your Water Bill</h3>
+      <p style="margin-bottom: 12px;">
+        The bill is often the first clue. If usage creeps up month after month and nothing in the household has changed, water may be escaping somewhere. Pull out the last few statements and compare them. A steady upward trend deserves a closer look.
+      </p>
+      <h3 style="font-size: 17px; color: white; margin: 16px 0 8px; font-weight: 700;">Signs Your House Is Trying to Tell You Something</h3>
+      <ul style="margin: 0 0 14px 20px; line-height: 1.75;">
+        <li>Musty smells in a closet, cabinet, or corner room</li>
+        <li>Paint that bubbles, peels, or looks stained</li>
+        <li>Floors that feel warm, soft, or slightly raised</li>
+        <li>The faint sound of water running when nothing is on</li>
+        <li>Weak water pressure that can’t be explained</li>
+      </ul>
+      <h3 style="font-size: 17px; color: white; margin: 16px 0 8px; font-weight: 700;">Try a Ten-Minute Meter Check</h3>
+      <p style="margin-bottom: 12px;">
+        Turn off every faucet and appliance that uses water, note your water meter reading or small dial, wait ten minutes without using any water, and check again. If the numbers or dial moved, water is flowing somewhere it shouldn’t.
+      </p>
+      <h3 style="font-size: 17px; color: white; margin: 16px 0 8px; font-weight: 700;">When to Call a Professional &amp; What to Do While You Wait</h3>
+      <p style="margin-bottom: 14px;">
+        If the meter keeps moving or older City Heights pipes show signs of corrosion, specialists use listening equipment, thermal imaging, and moisture readings to keep repairs small and targeted. Shut off the main water valve if needed, photograph damp stains, avoid opening walls yourself, and keep notes for your insurance claim.
+      </p>
+      <div style="margin-top: 16px;">
+        <a href="tel:+16199109411" style="background: #2563eb; color: white; padding: 10px 20px; border-radius: 8px; text-decoration: none; font-weight: bold; display: inline-block;">
+          📞 Suspect a Leak? Call (619) 910-9411
+        </a>
+      </div>
+    `
+  },
+  {
     path: 'privacy',
     title: 'Privacy Policy | Leak Detection Pro',
     desc: 'How Leak Detection Pro collects, uses and protects your personal information, including your rights under the CCPA.',
@@ -393,8 +428,9 @@ const routes = [
         <li><a href="/" style="color: #60a5fa;">Home (City Heights, San Diego)</a></li>
         <li><a href="/water-leak/" style="color: #60a5fa;">Water &amp; Slab Leak Locating</a></li>
         <li><a href="/gas-leak/" style="color: #60a5fa;">Emergency Gas Leak Testing</a></li>
-        <li><a href="/blog/" style="color: #60a5fa;">2026 Leak Detection Price Guide (Blog)</a></li>
+        <li><a href="/blog/" style="color: #60a5fa;">Leak Detection Blog &amp; Guides</a></li>
         <li><a href="/leak-detection-city-heights-san-diego/" style="color: #60a5fa;">City Heights Homeowner’s Guide</a></li>
+        <li><a href="/hidden-water-leak-signs-city-heights/" style="color: #60a5fa;">How to Spot a Hidden Water Leak</a></li>
         <li><a href="/underground-slab-leak-detection/" style="color: #60a5fa;">Underground &amp; Slab Leak Deep Dive</a></li>
         <li><a href="/leak-detection-and-repair-guide/" style="color: #60a5fa;">Leak Detection &amp; Repair Guide</a></li>
         <li><a href="/about/" style="color: #60a5fa;">About Our Contractor Network</a></li>
@@ -602,6 +638,7 @@ routes.forEach((route) => {
             <a href="/gas-leak/" style="color: #94a3b8; text-decoration: none;">Gas Leaks</a>
             <a href="/blog/" style="color: #94a3b8; text-decoration: none;">Blog</a>
             <a href="/leak-detection-city-heights-san-diego/" style="color: #94a3b8; text-decoration: none;">Local Guide</a>
+            <a href="/hidden-water-leak-signs-city-heights/" style="color: #94a3b8; text-decoration: none;">Leak Signs</a>
             <a href="/underground-slab-leak-detection/" style="color: #94a3b8; text-decoration: none;">Slab Guide</a>
             <a href="/leak-detection-and-repair-guide/" style="color: #94a3b8; text-decoration: none;">Repair Guide</a>
             <a href="/about/" style="color: #94a3b8; text-decoration: none;">About</a>

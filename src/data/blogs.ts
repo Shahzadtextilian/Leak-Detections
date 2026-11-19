@@ -74,34 +74,6 @@ export const BLOG_POSTS: BlogPost[] = [
     canonicalUrl: 'https://www.cityheightsleakdetectionpro.com/underground-slab-leak-detection/'
   },
   {
-    slug: 'leak-detection-cost-and-insurance-guide',
-    routePage: 'blog',
-    title: 'How Much Does Leak Detection Cost in 2026? Pricing, Insurance Coverage & Non-Invasive Methods Explained',
-    shortTitle: '2026 Leak Detection Cost & Insurance Guide',
-    metaTitle: 'Leak Detection Cost in San Diego (2026 Price Guide)',
-    metaDesc: 'How much does leak detection cost in San Diego? See 2026 price ranges, cost factors, and whether insurance covers slab leak locating.',
-    excerpt: 'A comprehensive 2026 cost guide breakdown for homeowners: average pricing for electronic slab leak locating, main line detection, insurance coverage rules (tear-out vs repairs), and how non-invasive diagnostics save thousands in repair bills.',
-    badge: '2026 Cost & Insurance Authority Guide',
-    readTime: '9 min read',
-    publishDate: '2026-10-19',
-    updateDate: '2026-11-15',
-    author: 'San Diego Master Diagnostic Advisory Group',
-    featuredImage: APP_IMAGES.plumberInspection,
-    imageAlt: 'Licensed professional plumbing contractor conducting line pressure testing and electronic leak detection in San Diego',
-    targetKeywords: [
-      'leak detection cost',
-      'how much does leak detection cost',
-      'slab leak detection cost',
-      'water leak detection cost',
-      'does insurance cover leak detection',
-      'underground leak detection cost',
-      'leak detection San Diego',
-      'gas leak detection cost',
-      'leak detection City Heights 92105'
-    ],
-    canonicalUrl: 'https://www.cityheightsleakdetectionpro.com/blog/'
-  },
-  {
     slug: 'leak-detection-city-heights-san-diego',
     routePage: 'leak-detection-city-heights-san-diego',
     title: 'Leak Detection in City Heights, San Diego: A Friendly Homeowner’s Guide',
@@ -125,6 +97,30 @@ export const BLOG_POSTS: BlogPost[] = [
       'plumbers city heights ca'
     ],
     canonicalUrl: 'https://www.cityheightsleakdetectionpro.com/leak-detection-city-heights-san-diego/'
+  },
+  {
+    slug: 'hidden-water-leak-signs-city-heights',
+    routePage: 'hidden-water-leak-signs-city-heights',
+    title: 'Is Your City Heights Home Hiding a Water Leak?',
+    shortTitle: 'Hidden Water Leak Signs',
+    metaTitle: 'How to Spot a Hidden Water Leak in City Heights Homes',
+    metaDesc: 'Higher water bill, damp smell, or a sound in the walls? Learn how City Heights homeowners can spot a hidden leak early. Call (619) 910-9411.',
+    excerpt: 'Learn how City Heights homeowners can spot hidden water leaks early using water bill trends, a ten-minute meter check, and telltale wall or floor warning signs.',
+    badge: 'Homeowner Leak Checklist',
+    readTime: '5 min read',
+    publishDate: '2026-11-18',
+    updateDate: '2026-11-18',
+    author: 'City Heights Leak Detection Pro Editorial Team',
+    featuredImage: APP_IMAGES.thermalImaging,
+    imageAlt: 'Technician checking interior wall for hidden moisture and water leaks with thermal imaging in City Heights home',
+    targetKeywords: [
+      'hidden water leak signs',
+      'water leak City Heights',
+      'how to spot a hidden water leak',
+      'water meter leak check',
+      'City Heights leak detection'
+    ],
+    canonicalUrl: 'https://www.cityheightsleakdetectionpro.com/hidden-water-leak-signs-city-heights/'
   }
 ];
 
