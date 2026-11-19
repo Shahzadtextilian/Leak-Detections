@@ -90,11 +90,11 @@ export const BlogPage: React.FC<BlogPageProps> = ({ onNavigate, initialSlug }) =
   return (
     <div className="space-y-12 pb-16">
       {/* Article Selector Navigation Bar */}
-      <section className="bg-slate-950 border-b border-slate-800 py-3">
+      <section className="bg-white border-b border-slate-200 py-3">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col sm:flex-row items-center justify-between gap-3">
-            <div className="flex items-center gap-2 text-xs font-semibold text-slate-300">
-              <BookOpen className="w-4 h-4 text-cyan-400" />
+            <div className="flex items-center gap-2 text-xs font-semibold text-slate-700">
+              <BookOpen className="w-4 h-4 text-blue-600" />
               <span>Leak Detection Diagnostic Knowledge Center:</span>
             </div>
             <nav aria-label="Blog Articles" className="flex items-center gap-2 overflow-x-auto w-full sm:w-auto pb-1 sm:pb-0">
@@ -107,8 +107,8 @@ export const BlogPage: React.FC<BlogPageProps> = ({ onNavigate, initialSlug }) =
                 }}
                 className={`text-xs px-3.5 py-1.5 rounded-lg font-medium transition-all whitespace-nowrap flex items-center gap-1.5 ${
                   isBlogIndex
-                    ? 'bg-blue-600 text-white shadow-md shadow-blue-900/30 font-bold'
-                    : 'bg-slate-900 text-slate-400 hover:text-white hover:bg-slate-800 border border-slate-800'
+                    ? 'bg-blue-600 text-white shadow-sm font-bold'
+                    : 'bg-slate-100 text-slate-700 hover:text-slate-900 hover:bg-slate-200 border border-slate-200'
                 }`}
               >
                 <span>All Guides</span>
@@ -126,8 +126,8 @@ export const BlogPage: React.FC<BlogPageProps> = ({ onNavigate, initialSlug }) =
                     }}
                     className={`text-xs px-3.5 py-1.5 rounded-lg font-medium transition-all whitespace-nowrap flex items-center gap-1.5 ${
                       isActive
-                        ? 'bg-blue-600 text-white shadow-md shadow-blue-900/30 font-bold'
-                        : 'bg-slate-900 text-slate-400 hover:text-white hover:bg-slate-800 border border-slate-800'
+                        ? 'bg-blue-600 text-white shadow-sm font-bold'
+                        : 'bg-slate-100 text-slate-700 hover:text-slate-900 hover:bg-slate-200 border border-slate-200'
                     }`}
                   >
                     <span>{post.shortTitle}</span>
@@ -141,17 +141,17 @@ export const BlogPage: React.FC<BlogPageProps> = ({ onNavigate, initialSlug }) =
       </section>
 
       {/* Blog Article Header */}
-      <section className="bg-slate-900 text-white py-12 lg:py-16">
+      <section className="bg-gradient-to-br from-sky-50 via-blue-50/50 to-white border-b border-slate-200 text-slate-900 py-12 lg:py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4">
           {/* Breadcrumb */}
-          <nav aria-label="Breadcrumbs" className="flex flex-wrap items-center gap-2 text-xs text-slate-400">
+          <nav aria-label="Breadcrumbs" className="flex flex-wrap items-center gap-2 text-xs text-slate-500">
             <a
               href="/"
               onClick={(e) => {
                 e.preventDefault();
                 onNavigate('home');
               }}
-              className="hover:underline hover:text-white"
+              className="hover:underline hover:text-blue-700"
             >
               Home
             </a>
@@ -165,33 +165,33 @@ export const BlogPage: React.FC<BlogPageProps> = ({ onNavigate, initialSlug }) =
                     setSelectedSlug(null);
                     onNavigate('blog');
                   }}
-                  className="hover:underline hover:text-slate-200 text-slate-300"
+                  className="hover:underline hover:text-blue-700 text-slate-600"
                 >
                   Blog &amp; Knowledge Center
                 </a>
                 <span>/</span>
-                <span className="text-white font-medium">{activePost.shortTitle}</span>
+                <span className="text-slate-900 font-medium">{activePost.shortTitle}</span>
               </>
             ) : (
-              <span className="text-white font-medium">Blog &amp; Knowledge Center</span>
+              <span className="text-slate-900 font-medium">Blog &amp; Knowledge Center</span>
             )}
           </nav>
 
           <div className="flex flex-wrap items-center gap-2 pt-2">
-            <span className="bg-blue-600/30 text-cyan-300 text-xs font-bold px-3 py-1 rounded-full border border-blue-500/40">
+            <span className="bg-blue-100 text-blue-800 text-xs font-bold px-3 py-1 rounded-full border border-blue-200">
               {activePost ? activePost.badge : 'City Heights Leak Detection Knowledge Center'}
             </span>
-            <span className="bg-emerald-600/20 text-emerald-300 text-xs font-semibold px-3 py-1 rounded-full border border-emerald-500/30 flex items-center gap-1">
+            <span className="bg-emerald-50 text-emerald-700 text-xs font-semibold px-3 py-1 rounded-full border border-emerald-200 flex items-center gap-1">
               <ShieldCheck className="w-3.5 h-3.5" />
               CSLB Industry Verified Diagnostic Standard
             </span>
           </div>
 
-          <h1 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-extrabold tracking-tight text-white leading-tight">
+          <h1 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-extrabold tracking-tight text-slate-900 leading-tight">
             {isBlogIndex ? (
               <>
                 City Heights{' '}
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-sky-300 to-blue-400">
+                <span className="text-blue-700">
                   Leak Detection Blog
                 </span>{' '}
                 &amp; Homeowner Field Guides
@@ -199,7 +199,7 @@ export const BlogPage: React.FC<BlogPageProps> = ({ onNavigate, initialSlug }) =
             ) : activePost.slug === 'hidden-water-leak-signs-city-heights' ? (
               <>
                 Is Your{' '}
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-sky-300 to-blue-400">
+                <span className="text-blue-700">
                   City Heights Home
                 </span>{' '}
                 Hiding a Water Leak?
@@ -207,7 +207,7 @@ export const BlogPage: React.FC<BlogPageProps> = ({ onNavigate, initialSlug }) =
             ) : activePost.slug === 'leak-detection-city-heights-san-diego' ? (
               <>
                 Leak Detection in{' '}
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-sky-300 to-blue-400">
+                <span className="text-blue-700">
                   City Heights, San Diego
                 </span>
                 : A Friendly Homeowner’s Guide
@@ -215,11 +215,11 @@ export const BlogPage: React.FC<BlogPageProps> = ({ onNavigate, initialSlug }) =
             ) : activePost.slug === 'guide-to-leak-detection-and-repair' ? (
               <>
                 The Complete Guide to{' '}
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-sky-300 to-blue-400">
+                <span className="text-blue-700">
                   Leak Detection
                 </span>{' '}
                 and{' '}
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-300 via-yellow-300 to-orange-400">
+                <span className="text-amber-700">
                   Leak Repair
                 </span>{' '}
                 in City Heights, San Diego
@@ -227,7 +227,7 @@ export const BlogPage: React.FC<BlogPageProps> = ({ onNavigate, initialSlug }) =
             ) : (
               <>
                 Underground Water &amp; Slab{' '}
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-sky-300 to-blue-400">
+                <span className="text-blue-700">
                   Leak Detection
                 </span>
                 : How Plumbers Pinpoint Hidden Pipe Leaks Without Jackhammers
@@ -236,22 +236,22 @@ export const BlogPage: React.FC<BlogPageProps> = ({ onNavigate, initialSlug }) =
           </h1>
 
           {activePost ? (
-            <div className="flex flex-wrap items-center gap-4 sm:gap-6 text-xs text-slate-400 pt-2 border-t border-slate-800">
+            <div className="flex flex-wrap items-center gap-4 sm:gap-6 text-xs text-slate-500 pt-2 border-t border-slate-200">
               <div className="flex items-center gap-1.5">
-                <User className="w-3.5 h-3.5 text-blue-400" />
+                <User className="w-3.5 h-3.5 text-blue-600" />
                 <span>{activePost.author}</span>
               </div>
               <div className="flex items-center gap-1.5">
-                <Calendar className="w-3.5 h-3.5 text-slate-400" />
+                <Calendar className="w-3.5 h-3.5 text-slate-500" />
                 <span>Published {activePost.publishDate} &bull; Updated {activePost.updateDate}</span>
               </div>
               <div className="flex items-center gap-1.5">
-                <Clock className="w-3.5 h-3.5 text-amber-400" />
+                <Clock className="w-3.5 h-3.5 text-amber-600" />
                 <span>{activePost.readTime}</span>
               </div>
             </div>
           ) : (
-            <p className="text-sm sm:text-base text-slate-300 max-w-2xl leading-relaxed pt-2 border-t border-slate-800">
+            <p className="text-sm sm:text-base text-slate-600 max-w-2xl leading-relaxed pt-2 border-t border-slate-200">
               Practical local articles covering how to spot hidden water leaks early, run a ten-minute meter check, understand non-invasive acoustic &amp; thermal diagnostics, and protect older City Heights (92105) plumbing.
             </p>
           )}
@@ -312,7 +312,7 @@ export const BlogPage: React.FC<BlogPageProps> = ({ onNavigate, initialSlug }) =
                       loading="lazy"
                       className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
                     />
-                    <span className="absolute top-3 left-3 bg-slate-900/90 text-cyan-300 text-[11px] font-bold px-2.5 py-1 rounded-md border border-slate-700">
+                    <span className="absolute top-3 left-3 bg-white/95 text-blue-700 text-[11px] font-bold px-2.5 py-1 rounded-md border border-blue-200 shadow-xs">
                       {post.badge}
                     </span>
                   </a>
@@ -379,9 +379,9 @@ export const BlogPage: React.FC<BlogPageProps> = ({ onNavigate, initialSlug }) =
                 height={420}
                 className="w-full h-72 sm:h-96 object-cover"
               />
-              <div className="bg-slate-900 text-slate-300 text-xs px-4 py-2.5 flex items-center justify-between">
+              <div className="bg-slate-100 border-t border-slate-200 text-slate-700 text-xs px-4 py-2.5 flex items-center justify-between">
                 <span>Non-invasive thermal imaging reveals hidden moisture behind drywall and under flooring without opening walls.</span>
-                <span className="text-cyan-400 font-semibold">City Heights, San Diego &bull; 92105</span>
+                <span className="text-blue-700 font-semibold">City Heights, San Diego &bull; 92105</span>
               </div>
             </div>
 
@@ -444,8 +444,8 @@ export const BlogPage: React.FC<BlogPageProps> = ({ onNavigate, initialSlug }) =
                 <Gauge className="w-6 h-6 text-indigo-600 shrink-0" />
                 <span>Try a Ten-Minute Meter Check</span>
               </h2>
-              <div className="bg-slate-900 text-white rounded-2xl p-6 sm:p-7 space-y-4 shadow-md">
-                <ol className="space-y-3 text-xs sm:text-sm text-slate-200">
+              <div className="bg-sky-50 border border-sky-200 text-slate-900 rounded-2xl p-6 sm:p-7 space-y-4 shadow-xs">
+                <ol className="space-y-3 text-xs sm:text-sm text-slate-700">
                   <li className="flex items-start gap-3">
                     <span className="w-6 h-6 rounded-full bg-blue-600 text-white font-bold flex items-center justify-center shrink-0 text-xs">1</span>
                     <span>Turn off every faucet and appliance that uses water.</span>
@@ -463,7 +463,7 @@ export const BlogPage: React.FC<BlogPageProps> = ({ onNavigate, initialSlug }) =
                     <span>Check again. If the numbers or dial moved, water is flowing somewhere it shouldn’t.</span>
                   </li>
                 </ol>
-                <p className="text-xs sm:text-sm text-cyan-300 border-t border-slate-800 pt-3">
+                <p className="text-xs sm:text-sm text-blue-800 font-medium border-t border-sky-200 pt-3">
                   It isn’t a diagnosis, but it’s a reliable first step before calling anyone.
                 </p>
               </div>
@@ -478,9 +478,9 @@ export const BlogPage: React.FC<BlogPageProps> = ({ onNavigate, initialSlug }) =
                 height={420}
                 className="w-full h-72 sm:h-96 object-cover"
               />
-              <div className="bg-slate-900 text-slate-300 text-xs px-4 py-2.5 flex items-center justify-between">
+              <div className="bg-slate-100 border-t border-slate-200 text-slate-700 text-xs px-4 py-2.5 flex items-center justify-between">
                 <span>Electronic listening equipment traces hidden pipe leaks without cutting open drywall at random.</span>
-                <span className="text-emerald-400 font-semibold">Targeted Non-Invasive Locating</span>
+                <span className="text-emerald-700 font-semibold">Targeted Non-Invasive Locating</span>
               </div>
             </div>
 
@@ -558,60 +558,60 @@ export const BlogPage: React.FC<BlogPageProps> = ({ onNavigate, initialSlug }) =
             </section>
 
             {/* Section 7: Suspect a Leak? Call Us */}
-            <section className="bg-gradient-to-br from-slate-900 via-blue-950 to-slate-900 text-white rounded-3xl p-6 sm:p-8 lg:p-10 shadow-2xl space-y-6">
+            <section className="bg-gradient-to-br from-sky-100 via-blue-50 to-white border border-sky-200 text-slate-900 rounded-3xl p-6 sm:p-8 lg:p-10 shadow-sm space-y-6">
               <div className="space-y-2">
-                <span className="text-xs font-bold uppercase tracking-wider text-cyan-400 bg-cyan-950/60 px-3 py-1 rounded-full border border-cyan-800/50 inline-block">
+                <span className="text-xs font-bold uppercase tracking-wider text-blue-800 bg-white px-3 py-1 rounded-full border border-blue-200 inline-block">
                   City Heights Leak Detection Pro
                 </span>
-                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white tracking-tight">
+                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight">
                   Suspect a Leak? Call Us
                 </h2>
-                <p className="text-xs sm:text-sm text-slate-300 max-w-2xl leading-relaxed">
+                <p className="text-xs sm:text-sm text-slate-600 max-w-2xl leading-relaxed">
                   Reach City Heights Leak Detection Pro anytime for non-invasive water leak locating and targeted repair coordination across City Heights and San Diego.
                 </p>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4 pt-2">
-                <div className="bg-white/10 border border-white/15 rounded-2xl p-4 space-y-1.5">
-                  <div className="flex items-center gap-2 text-cyan-300 font-bold text-xs uppercase tracking-wider">
+                <div className="bg-white border border-slate-200 rounded-2xl p-4 space-y-1.5 shadow-xs">
+                  <div className="flex items-center gap-2 text-blue-700 font-bold text-xs uppercase tracking-wider">
                     <Phone className="w-4 h-4" />
                     <span>Call</span>
                   </div>
-                  <div className="text-base sm:text-lg font-black text-white">
-                    <a href="tel:+16199109411" className="hover:text-cyan-300 transition-colors">
+                  <div className="text-base sm:text-lg font-black text-slate-900">
+                    <a href="tel:+16199109411" className="hover:text-blue-700 transition-colors">
                       (619) 910-9411
                     </a>
                   </div>
-                  <p className="text-[11px] text-slate-300">24/7 dispatch support</p>
+                  <p className="text-[11px] text-slate-500">24/7 dispatch support</p>
                 </div>
 
-                <div className="bg-white/10 border border-white/15 rounded-2xl p-4 space-y-1.5">
-                  <div className="flex items-center gap-2 text-cyan-300 font-bold text-xs uppercase tracking-wider">
+                <div className="bg-white border border-slate-200 rounded-2xl p-4 space-y-1.5 shadow-xs">
+                  <div className="flex items-center gap-2 text-blue-700 font-bold text-xs uppercase tracking-wider">
                     <MapPin className="w-4 h-4" />
                     <span>Visit</span>
                   </div>
-                  <div className="text-xs sm:text-sm font-bold text-white leading-snug">
+                  <div className="text-xs sm:text-sm font-bold text-slate-900 leading-snug">
                     3431 43rd St, San Diego, CA 92105
                   </div>
-                  <p className="text-[11px] text-slate-300">City Heights service desk</p>
+                  <p className="text-[11px] text-slate-500">City Heights service desk</p>
                 </div>
 
-                <div className="bg-white/10 border border-white/15 rounded-2xl p-4 space-y-1.5">
-                  <div className="flex items-center gap-2 text-cyan-300 font-bold text-xs uppercase tracking-wider">
+                <div className="bg-white border border-slate-200 rounded-2xl p-4 space-y-1.5 shadow-xs">
+                  <div className="flex items-center gap-2 text-blue-700 font-bold text-xs uppercase tracking-wider">
                     <ShieldCheck className="w-4 h-4" />
                     <span>Web</span>
                   </div>
-                  <div className="text-xs sm:text-sm font-bold text-white">
+                  <div className="text-xs sm:text-sm font-bold text-slate-900">
                     www.cityheightsleakdetectionpro.com
                   </div>
-                  <p className="text-[11px] text-slate-300">CSLB-licensed contractor network</p>
+                  <p className="text-[11px] text-slate-500">CSLB-licensed contractor network</p>
                 </div>
               </div>
 
               <div className="flex flex-col sm:flex-row gap-3 pt-2">
                 <a
                   href="tel:+16199109411"
-                  className="bg-blue-600 hover:bg-blue-700 text-white font-extrabold px-6 py-3.5 rounded-xl text-sm flex items-center justify-center gap-2 shadow-lg shadow-blue-900/50 transition-all text-center"
+                  className="bg-red-600 hover:bg-red-700 text-white font-extrabold px-6 py-3.5 rounded-xl text-sm flex items-center justify-center gap-2 shadow-md transition-all text-center"
                 >
                   <Phone className="w-4 h-4 animate-pulse" />
                   <span>Call (619) 910-9411 Now</span>
@@ -622,7 +622,7 @@ export const BlogPage: React.FC<BlogPageProps> = ({ onNavigate, initialSlug }) =
                     e.preventDefault();
                     onNavigate('contact');
                   }}
-                  className="bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold px-5 py-3.5 rounded-xl text-xs border border-slate-700 transition-colors text-center flex items-center justify-center"
+                  className="bg-white hover:bg-slate-50 text-blue-700 font-semibold px-5 py-3.5 rounded-xl text-xs border border-blue-200 transition-colors text-center flex items-center justify-center"
                 >
                   Request Non-Invasive Inspection &rarr;
                 </a>
@@ -651,9 +651,9 @@ export const BlogPage: React.FC<BlogPageProps> = ({ onNavigate, initialSlug }) =
                 height={420}
                 className="w-full h-72 sm:h-96 object-cover"
               />
-              <div className="bg-slate-900 text-slate-300 text-xs px-4 py-2.5 flex items-center justify-between">
+              <div className="bg-slate-100 border-t border-slate-200 text-slate-700 text-xs px-4 py-2.5 flex items-center justify-between">
                 <span>Precision electro-acoustic listening probe pinpointing concealed sub-surface water leaks.</span>
-                <span className="text-cyan-400 font-semibold">City Heights, San Diego &bull; 92105</span>
+                <span className="text-blue-700 font-semibold">City Heights, San Diego &bull; 92105</span>
               </div>
             </div>
 
@@ -786,9 +786,9 @@ export const BlogPage: React.FC<BlogPageProps> = ({ onNavigate, initialSlug }) =
                 height={420}
                 className="w-full h-72 sm:h-96 object-cover"
               />
-              <div className="bg-slate-900 text-slate-300 text-xs px-4 py-2.5 flex items-center justify-between">
+              <div className="bg-slate-100 border-t border-slate-200 text-slate-700 text-xs px-4 py-2.5 flex items-center justify-between">
                 <span>FLIR thermal infrared sensor isolating hot water slab leak signature without breaking floor tiles.</span>
-                <span className="text-cyan-400 font-semibold">Non-Invasive Diagnostic Inspection</span>
+                <span className="text-blue-700 font-semibold">Non-Invasive Diagnostic Inspection</span>
               </div>
             </div>
 
@@ -847,9 +847,9 @@ export const BlogPage: React.FC<BlogPageProps> = ({ onNavigate, initialSlug }) =
                 height={420}
                 className="w-full h-72 sm:h-96 object-cover"
               />
-              <div className="bg-slate-900 text-slate-300 text-xs px-4 py-2.5 flex items-center justify-between">
+              <div className="bg-slate-100 border-t border-slate-200 text-slate-700 text-xs px-4 py-2.5 flex items-center justify-between">
                 <span>Digital combustible gas sniffer verifying natural gas supply connections and emergency shut-offs.</span>
-                <span className="text-amber-400 font-semibold">Certified Gas Safety Survey</span>
+                <span className="text-amber-700 font-semibold">Certified Gas Safety Survey</span>
               </div>
             </div>
 
@@ -885,7 +885,7 @@ export const BlogPage: React.FC<BlogPageProps> = ({ onNavigate, initialSlug }) =
               {/* 2026 Homeowner Pricing Reference Table */}
               <div className="overflow-x-auto rounded-2xl border border-slate-200 shadow-sm bg-white pt-2">
                 <table className="w-full text-left text-xs sm:text-sm text-slate-700">
-                  <thead className="bg-slate-900 text-white font-semibold text-xs uppercase tracking-wider">
+                  <thead className="bg-sky-100 text-slate-900 border-b border-sky-200 font-semibold text-xs uppercase tracking-wider">
                     <tr>
                       <th className="py-3.5 px-4 sm:px-6">Service Type</th>
                       <th className="py-3.5 px-4">2026 Typical Cost Range</th>
@@ -973,9 +973,9 @@ export const BlogPage: React.FC<BlogPageProps> = ({ onNavigate, initialSlug }) =
                 height={420}
                 className="w-full h-72 sm:h-96 object-cover"
               />
-              <div className="bg-slate-900 text-slate-300 text-xs px-4 py-2.5 flex items-center justify-between">
+              <div className="bg-slate-100 border-t border-slate-200 text-slate-700 text-xs px-4 py-2.5 flex items-center justify-between">
                 <span>Licensed plumbing contractor executing surgical pipe repair following acoustic detection.</span>
-                <span className="text-emerald-400 font-semibold">CSLB Licensed Contractor Network</span>
+                <span className="text-emerald-700 font-semibold">CSLB Licensed Contractor Network</span>
               </div>
             </div>
 
@@ -1023,54 +1023,54 @@ export const BlogPage: React.FC<BlogPageProps> = ({ onNavigate, initialSlug }) =
             </section>
 
             {/* Section 7: Suspect a Leak? Talk to a Local Team */}
-            <section className="bg-gradient-to-br from-slate-900 via-blue-950 to-slate-900 text-white rounded-3xl p-6 sm:p-8 lg:p-10 shadow-2xl space-y-6">
+            <section className="bg-gradient-to-br from-sky-100 via-blue-50 to-white border border-sky-200 text-slate-900 rounded-3xl p-6 sm:p-8 lg:p-10 shadow-sm space-y-6">
               <div className="space-y-2">
-                <span className="text-xs font-bold uppercase tracking-wider text-cyan-400 bg-cyan-950/60 px-3 py-1 rounded-full border border-cyan-800/50 inline-block">
+                <span className="text-xs font-bold uppercase tracking-wider text-blue-800 bg-white px-3 py-1 rounded-full border border-blue-200 inline-block">
                   City Heights Priority Dispatch
                 </span>
-                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white tracking-tight">
+                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight">
                   Suspect a Leak? Talk to a Local Team
                 </h2>
-                <p className="text-xs sm:text-sm text-slate-300 max-w-2xl leading-relaxed">
-                  If you notice any of the warning signs above, don’t wait for the damage to spread. <strong>City Heights Leak Detection Pro</strong> serves homeowners and property owners throughout City Heights, San Diego.
+                <p className="text-xs sm:text-sm text-slate-600 max-w-2xl leading-relaxed">
+                  If you notice any of the warning signs above, don’t wait for the damage to spread. <strong className="text-slate-900">City Heights Leak Detection Pro</strong> serves homeowners and property owners throughout City Heights, San Diego.
                 </p>
               </div>
 
               {/* Local Contact Cards */}
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4 pt-2">
-                <div className="bg-white/10 border border-white/15 rounded-2xl p-4 space-y-1.5 backdrop-blur-xs">
-                  <div className="flex items-center gap-2 text-cyan-300 font-bold text-xs uppercase tracking-wider">
+                <div className="bg-white border border-slate-200 rounded-2xl p-4 space-y-1.5 shadow-xs">
+                  <div className="flex items-center gap-2 text-blue-700 font-bold text-xs uppercase tracking-wider">
                     <Phone className="w-4 h-4" />
                     <span>Direct Call</span>
                   </div>
-                  <div className="text-base sm:text-lg font-black text-white">
-                    <a href="tel:+16199109411" className="hover:text-cyan-300 transition-colors">
+                  <div className="text-base sm:text-lg font-black text-slate-900">
+                    <a href="tel:+16199109411" className="hover:text-blue-700 transition-colors">
                       (619) 910-9411
                     </a>
                   </div>
-                  <p className="text-[11px] text-slate-300">24/7 emergency dispatch line</p>
+                  <p className="text-[11px] text-slate-500">24/7 emergency dispatch line</p>
                 </div>
 
-                <div className="bg-white/10 border border-white/15 rounded-2xl p-4 space-y-1.5 backdrop-blur-xs">
-                  <div className="flex items-center gap-2 text-cyan-300 font-bold text-xs uppercase tracking-wider">
+                <div className="bg-white border border-slate-200 rounded-2xl p-4 space-y-1.5 shadow-xs">
+                  <div className="flex items-center gap-2 text-blue-700 font-bold text-xs uppercase tracking-wider">
                     <MapPin className="w-4 h-4" />
                     <span>Local Office</span>
                   </div>
-                  <div className="text-xs sm:text-sm font-bold text-white leading-snug">
+                  <div className="text-xs sm:text-sm font-bold text-slate-900 leading-snug">
                     3431 43rd St, San Diego, CA 92105
                   </div>
-                  <p className="text-[11px] text-slate-300">City Heights dispatch desk</p>
+                  <p className="text-[11px] text-slate-500">City Heights dispatch desk</p>
                 </div>
 
-                <div className="bg-white/10 border border-white/15 rounded-2xl p-4 space-y-1.5 backdrop-blur-xs">
-                  <div className="flex items-center gap-2 text-cyan-300 font-bold text-xs uppercase tracking-wider">
+                <div className="bg-white border border-slate-200 rounded-2xl p-4 space-y-1.5 shadow-xs">
+                  <div className="flex items-center gap-2 text-blue-700 font-bold text-xs uppercase tracking-wider">
                     <ShieldCheck className="w-4 h-4" />
                     <span>Official Web</span>
                   </div>
-                  <div className="text-xs sm:text-sm font-bold text-white">
+                  <div className="text-xs sm:text-sm font-bold text-slate-900">
                     www.cityheightsleakdetectionpro.com
                   </div>
-                  <p className="text-[11px] text-slate-300">Licensed plumbing contractor network</p>
+                  <p className="text-[11px] text-slate-500">Licensed plumbing contractor network</p>
                 </div>
               </div>
 
@@ -1078,7 +1078,7 @@ export const BlogPage: React.FC<BlogPageProps> = ({ onNavigate, initialSlug }) =
               <div className="flex flex-col sm:flex-row gap-3 pt-2">
                 <a
                   href="tel:+16199109411"
-                  className="bg-blue-600 hover:bg-blue-700 text-white font-extrabold px-6 py-3.5 rounded-xl text-sm flex items-center justify-center gap-2 shadow-lg shadow-blue-900/50 transition-all text-center"
+                  className="bg-red-600 hover:bg-red-700 text-white font-extrabold px-6 py-3.5 rounded-xl text-sm flex items-center justify-center gap-2 shadow-md transition-all text-center"
                 >
                   <Phone className="w-4 h-4 animate-pulse" />
                   <span>Call (619) 910-9411 for Fast Leak Help</span>
@@ -1089,7 +1089,7 @@ export const BlogPage: React.FC<BlogPageProps> = ({ onNavigate, initialSlug }) =
                     e.preventDefault();
                     onNavigate('contact');
                   }}
-                  className="bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold px-5 py-3.5 rounded-xl text-xs border border-slate-700 transition-colors text-center flex items-center justify-center"
+                  className="bg-white hover:bg-slate-50 text-blue-700 font-semibold px-5 py-3.5 rounded-xl text-xs border border-blue-200 transition-colors text-center flex items-center justify-center"
                 >
                   Request Non-Invasive Estimate &rarr;
                 </a>
@@ -1118,9 +1118,9 @@ export const BlogPage: React.FC<BlogPageProps> = ({ onNavigate, initialSlug }) =
                 height={420}
                 className="w-full h-72 sm:h-96 object-cover"
               />
-              <div className="bg-slate-900 text-slate-300 text-xs px-4 py-2.5 flex items-center justify-between">
+              <div className="bg-slate-100 border-t border-slate-200 text-slate-700 text-xs px-4 py-2.5 flex items-center justify-between">
                 <span>FLIR infrared thermography pinpointing a pressurized hot-water slab pipe rupture.</span>
-                <span className="text-cyan-400 font-semibold">San Diego County &bull; 92105</span>
+                <span className="text-blue-700 font-semibold">San Diego County &bull; 92105</span>
               </div>
             </div>
 
@@ -1141,24 +1141,24 @@ export const BlogPage: React.FC<BlogPageProps> = ({ onNavigate, initialSlug }) =
             </section>
 
             {/* Urgent Dispatch Callout */}
-            <div className="bg-gradient-to-r from-blue-700 via-indigo-700 to-blue-900 text-white rounded-2xl p-6 sm:p-7 shadow-xl flex flex-col sm:flex-row items-center justify-between gap-5">
+            <div className="bg-gradient-to-r from-sky-100 via-blue-50 to-indigo-50 border border-blue-200 text-slate-900 rounded-2xl p-6 sm:p-7 shadow-xs flex flex-col sm:flex-row items-center justify-between gap-5">
               <div className="space-y-1.5 text-center sm:text-left">
-                <div className="text-xs font-bold uppercase tracking-wider text-cyan-300 flex items-center justify-center sm:justify-start gap-1.5">
-                  <Sparkles className="w-4 h-4 text-cyan-300" />
+                <div className="text-xs font-bold uppercase tracking-wider text-blue-700 flex items-center justify-center sm:justify-start gap-1.5">
+                  <Sparkles className="w-4 h-4 text-blue-600" />
                   <span>Immediate Water Leak Detection Dispatch</span>
                 </div>
-                <div className="text-xl sm:text-2xl font-black">
+                <div className="text-xl sm:text-2xl font-black text-slate-900">
                   Suspect a Slab or Hidden Pipe Leak in City Heights?
                 </div>
-                <p className="text-xs text-blue-100 max-w-lg">
+                <p className="text-xs text-slate-600 max-w-lg">
                   Connecting San Diego homeowners with CSLB-licensed, insured leak detection contractors equipped with acoustic ground mics and FLIR infrared gear.
                 </p>
               </div>
               <a
                 href={BUSINESS_INFO.telLink}
-                className="shrink-0 bg-white hover:bg-slate-100 text-blue-700 font-extrabold px-6 py-3.5 rounded-xl text-sm shadow-md transition-transform active:scale-95 flex items-center gap-2"
+                className="shrink-0 bg-red-600 hover:bg-red-700 text-white font-extrabold px-6 py-3.5 rounded-xl text-sm shadow-md transition-transform active:scale-95 flex items-center gap-2"
               >
-                <Phone className="w-4 h-4 text-emerald-600" />
+                <Phone className="w-4 h-4" />
                 <span>Call (619) 910-9411</span>
               </a>
             </div>
@@ -1302,31 +1302,31 @@ export const BlogPage: React.FC<BlogPageProps> = ({ onNavigate, initialSlug }) =
             </section>
 
             {/* Section 5: Step-by-Step DIY Meter Test */}
-            <section className="bg-slate-900 text-white rounded-2xl p-6 sm:p-8 space-y-4">
-              <div className="flex items-center gap-2 text-cyan-400 font-bold text-sm uppercase tracking-wider">
-                <Search className="w-4 h-4 text-cyan-400" />
+            <section className="bg-sky-50 border border-sky-200 text-slate-900 rounded-2xl p-6 sm:p-8 space-y-4">
+              <div className="flex items-center gap-2 text-blue-700 font-bold text-sm uppercase tracking-wider">
+                <Search className="w-4 h-4 text-blue-600" />
                 <span>The 10-Minute Homeowner Water Meter Test</span>
               </div>
-              <p className="text-xs sm:text-sm text-slate-300">
+              <p className="text-xs sm:text-sm text-slate-600">
                 You can independently verify whether your home has a hidden pressurized water leak right now using your curb water meter:
               </p>
-              <ol className="space-y-3 text-xs sm:text-sm text-slate-300">
+              <ol className="space-y-3 text-xs sm:text-sm text-slate-700">
                 <li className="flex items-start gap-2.5">
                   <span className="w-6 h-6 rounded-full bg-blue-600 text-white font-bold flex items-center justify-center shrink-0 text-xs">1</span>
                   <div>
-                    <strong className="text-white font-semibold">Turn Off All Indoor and Outdoor Water:</strong> Ensure washing machines, dishwashers, ice makers, and garden sprinklers are completely idle. Do not flush toilets during the test.
+                    <strong className="text-slate-900 font-semibold">Turn Off All Indoor and Outdoor Water:</strong> Ensure washing machines, dishwashers, ice makers, and garden sprinklers are completely idle. Do not flush toilets during the test.
                   </div>
                 </li>
                 <li className="flex items-start gap-2.5">
                   <span className="w-6 h-6 rounded-full bg-blue-600 text-white font-bold flex items-center justify-center shrink-0 text-xs">2</span>
                   <div>
-                    <strong className="text-white font-semibold">Inspect the Water Meter Dial:</strong> Locate the meter box at your street curb. Open the lid carefully. Look for a small red, blue, or silver triangle, gear, or digital flow rate indicator.
+                    <strong className="text-slate-900 font-semibold">Inspect the Water Meter Dial:</strong> Locate the meter box at your street curb. Open the lid carefully. Look for a small red, blue, or silver triangle, gear, or digital flow rate indicator.
                   </div>
                 </li>
                 <li className="flex items-start gap-2.5">
                   <span className="w-6 h-6 rounded-full bg-blue-600 text-white font-bold flex items-center justify-center shrink-0 text-xs">3</span>
                   <div>
-                    <strong className="text-white font-semibold">Observe Movement:</strong> If the low-flow dial is spinning, or the digital register increases over 15 minutes, water is actively leaking. Immediately call our 24/7 dispatch hotline at <strong>(619) 910-9411</strong> to schedule non-invasive acoustic locating.
+                    <strong className="text-slate-900 font-semibold">Observe Movement:</strong> If the low-flow dial is spinning, or the digital register increases over 15 minutes, water is actively leaking. Immediately call our 24/7 dispatch hotline at <strong className="text-slate-900">(619) 910-9411</strong> to schedule non-invasive acoustic locating.
                   </div>
                 </li>
               </ol>
@@ -1387,7 +1387,7 @@ export const BlogPage: React.FC<BlogPageProps> = ({ onNavigate, initialSlug }) =
                     e.preventDefault();
                     onNavigate('water-leak');
                   }}
-                  className="bg-slate-900 hover:bg-slate-800 text-white font-semibold px-5 py-3.5 rounded-xl text-xs flex items-center justify-center gap-1.5 transition-colors"
+                  className="bg-white hover:bg-slate-50 text-blue-700 border border-blue-200 font-semibold px-5 py-3.5 rounded-xl text-xs flex items-center justify-center gap-1.5 transition-colors"
                 >
                   <span>Explore Water &amp; Slab Leak Services</span>
                   <ArrowRight className="w-3.5 h-3.5" />
@@ -1429,9 +1429,9 @@ export const BlogPage: React.FC<BlogPageProps> = ({ onNavigate, initialSlug }) =
                 height={420}
                 className="w-full h-72 sm:h-96 object-cover"
               />
-              <div className="bg-slate-900 text-slate-300 text-xs px-4 py-2 flex items-center justify-between">
+              <div className="bg-slate-100 border-t border-slate-200 text-slate-700 text-xs px-4 py-2 flex items-center justify-between">
                 <span>Specialized acoustic listening equipment locating hidden pressurized pipe leaks.</span>
-                <span className="text-cyan-400 font-semibold">City Heights, CA 92105</span>
+                <span className="text-blue-700 font-semibold">City Heights, CA 92105</span>
               </div>
             </div>
 
@@ -1605,29 +1605,29 @@ export const BlogPage: React.FC<BlogPageProps> = ({ onNavigate, initialSlug }) =
             </section>
 
             {/* Section 5: Step-by-Step Emergency Response */}
-            <section className="bg-slate-900 text-white rounded-2xl p-6 sm:p-8 space-y-4">
-              <div className="flex items-center gap-2 text-cyan-400 font-bold text-sm uppercase tracking-wider">
-                <AlertTriangle className="w-4 h-4 text-amber-400" />
+            <section className="bg-sky-50 border border-sky-200 text-slate-900 rounded-2xl p-6 sm:p-8 space-y-4">
+              <div className="flex items-center gap-2 text-blue-800 font-bold text-sm uppercase tracking-wider">
+                <AlertTriangle className="w-4 h-4 text-amber-600" />
                 <span>What to Do Right Now if You Suspect an Active Leak</span>
               </div>
 
-              <ol className="space-y-3 text-xs sm:text-sm text-slate-300">
+              <ol className="space-y-3 text-xs sm:text-sm text-slate-700">
                 <li className="flex items-start gap-2.5">
                   <span className="w-6 h-6 rounded-full bg-blue-600 text-white font-bold flex items-center justify-center shrink-0 text-xs">1</span>
                   <div>
-                    <strong className="text-white font-semibold">Locate Your Main Water Shut-Off Valve:</strong> Turn the valve clockwise to stop incoming pressurized water flow and halt foundation saturation immediately.
+                    <strong className="text-slate-900 font-semibold">Locate Your Main Water Shut-Off Valve:</strong> Turn the valve clockwise to stop incoming pressurized water flow and halt foundation saturation immediately.
                   </div>
                 </li>
                 <li className="flex items-start gap-2.5">
                   <span className="w-6 h-6 rounded-full bg-blue-600 text-white font-bold flex items-center justify-center shrink-0 text-xs">2</span>
                   <div>
-                    <strong className="text-white font-semibold">For Gas Odors, Evacuate First:</strong> Do not touch light switches, appliances, or garage openers. Vacate the home and dial SDG&amp;E at 1-800-411-7343 or 911 from outside.
+                    <strong className="text-slate-900 font-semibold">For Gas Odors, Evacuate First:</strong> Do not touch light switches, appliances, or garage openers. Vacate the home and dial SDG&amp;E at 1-800-411-7343 or 911 from outside.
                   </div>
                 </li>
                 <li className="flex items-start gap-2.5">
                   <span className="w-6 h-6 rounded-full bg-blue-600 text-white font-bold flex items-center justify-center shrink-0 text-xs">3</span>
                   <div>
-                    <strong className="text-white font-semibold">Call Our 24/7 City Heights Dispatch Center:</strong> Dial <strong>(619) 910-9411</strong> to have an on-call licensed leak detection and repair specialist routed directly to your home.
+                    <strong className="text-slate-900 font-semibold">Call Our 24/7 City Heights Dispatch Center:</strong> Dial <strong className="text-slate-900">(619) 910-9411</strong> to have an on-call licensed leak detection and repair specialist routed directly to your home.
                   </div>
                 </li>
               </ol>
@@ -1635,7 +1635,7 @@ export const BlogPage: React.FC<BlogPageProps> = ({ onNavigate, initialSlug }) =
               <div className="pt-2 flex flex-col sm:flex-row gap-3">
                 <a
                   href={BUSINESS_INFO.telLink}
-                  className="bg-red-600 hover:bg-red-700 text-white font-extrabold px-6 py-3.5 rounded-xl text-sm flex items-center justify-center gap-2 shadow-lg transition-all"
+                  className="bg-red-600 hover:bg-red-700 text-white font-extrabold px-6 py-3.5 rounded-xl text-sm flex items-center justify-center gap-2 shadow-md transition-all"
                 >
                   <Phone className="w-4 h-4 animate-pulse" />
                   <span>Call Dispatch: {BUSINESS_INFO.phoneFormatted}</span>
@@ -1646,7 +1646,7 @@ export const BlogPage: React.FC<BlogPageProps> = ({ onNavigate, initialSlug }) =
                     e.preventDefault();
                     onNavigate('contact');
                   }}
-                  className="bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold px-5 py-3.5 rounded-xl text-xs border border-slate-700 transition-colors text-center flex items-center justify-center"
+                  className="bg-white hover:bg-slate-50 text-blue-700 font-semibold px-5 py-3.5 rounded-xl text-xs border border-blue-200 transition-colors text-center flex items-center justify-center"
                 >
                   View Dispatch Location (3431 43rd St)
                 </a>

@@ -20,25 +20,25 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate }) => {
   return (
     <header className="sticky top-0 z-40 bg-white border-b border-slate-200 shadow-xs">
       {/* Top Banner: Local Address & Emergency Hotline */}
-      <div className="bg-slate-900 text-slate-200 text-xs py-1.5 px-4">
+      <div className="bg-sky-50 text-slate-700 border-b border-sky-200/80 text-xs py-1.5 px-4">
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2">
           <div className="flex items-center gap-1.5 text-center sm:text-left">
-            <MapPin className="w-3.5 h-3.5 text-red-400 shrink-0" />
-            <span className="text-slate-300">
+            <MapPin className="w-3.5 h-3.5 text-red-600 shrink-0" />
+            <span className="text-slate-700 font-medium">
               Serving City Heights, San Diego (92105) &bull; 3431 43rd St
             </span>
           </div>
 
           <div className="flex items-center gap-4 text-xs font-medium">
-            <div className="flex items-center gap-1 text-emerald-400">
+            <div className="flex items-center gap-1 text-emerald-700 font-semibold">
               <Clock className="w-3 h-3" />
               <span>24/7 Emergency Dispatch</span>
             </div>
             <a
               href={BUSINESS_INFO.telLink}
-              className="text-white hover:text-blue-300 font-bold flex items-center gap-1"
+              className="text-red-700 hover:text-blue-700 font-bold flex items-center gap-1"
             >
-              <Phone className="w-3 h-3 text-emerald-400" />
+              <Phone className="w-3 h-3 text-emerald-600" />
               <span>{BUSINESS_INFO.phoneFormatted}</span>
             </a>
           </div>

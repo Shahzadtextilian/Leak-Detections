@@ -11,30 +11,30 @@ export const DisclaimerPage: React.FC<DisclaimerPageProps> = ({ onNavigate }) =>
   return (
     <div className="space-y-12 pb-16">
       {/* Header */}
-      <section className="bg-slate-900 text-white py-12 lg:py-16">
+      <section className="bg-gradient-to-br from-amber-50/70 via-slate-50 to-white border-b border-slate-200 text-slate-900 py-12 lg:py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-wrap items-center gap-2 text-xs text-slate-400 mb-4">
+          <div className="flex flex-wrap items-center gap-2 text-xs text-slate-500 mb-4">
             <a
               href="/"
               onClick={(e) => {
                 e.preventDefault();
                 onNavigate('home');
               }}
-              className="hover:underline hover:text-white"
+              className="hover:underline hover:text-blue-700"
             >
               Home
             </a>
             <span>/</span>
-            <span className="text-white font-medium">Legal Disclaimers</span>
+            <span className="text-slate-900 font-medium">Legal Disclaimers</span>
           </div>
 
-          <span className="bg-amber-500/20 text-amber-300 text-xs font-bold px-3 py-1 rounded-full border border-amber-500/30">
+          <span className="bg-amber-100 text-amber-800 text-xs font-bold px-3 py-1 rounded-full border border-amber-200 inline-block">
             Consumer Legal Disclosure
           </span>
-          <h1 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-white mt-3">
-            Lead Generation & Service Provider Disclaimer
+          <h1 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-900 mt-3">
+            Lead Generation &amp; Service Provider Disclaimer
           </h1>
-          <p className="text-sm text-slate-300 mt-2">
+          <p className="text-sm text-slate-600 mt-2">
             Important Information Regarding Our Qualified Independent Contractor Network
           </p>
         </div>
@@ -122,7 +122,7 @@ export const DisclaimerPage: React.FC<DisclaimerPageProps> = ({ onNavigate }) =>
                 e.preventDefault();
                 onNavigate('home');
               }}
-              className="px-5 py-3 bg-slate-900 text-white font-bold rounded-xl text-xs hover:bg-slate-800 transition-colors inline-flex items-center justify-center"
+              className="px-5 py-3 bg-slate-100 text-slate-800 border border-slate-200 font-bold rounded-xl text-xs hover:bg-slate-200 transition-colors inline-flex items-center justify-center"
             >
               &larr; Return to Home Page
             </a>

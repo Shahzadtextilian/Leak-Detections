@@ -11,30 +11,30 @@ export const PrivacyPolicyPage: React.FC<PrivacyPolicyPageProps> = ({ onNavigate
   return (
     <div className="space-y-12 pb-16">
       {/* Header */}
-      <section className="bg-slate-900 text-white py-12 lg:py-16">
+      <section className="bg-gradient-to-br from-sky-50 via-slate-50 to-white border-b border-slate-200 text-slate-900 py-12 lg:py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-wrap items-center gap-2 text-xs text-slate-400 mb-4">
+          <div className="flex flex-wrap items-center gap-2 text-xs text-slate-500 mb-4">
             <a
               href="/"
               onClick={(e) => {
                 e.preventDefault();
                 onNavigate('home');
               }}
-              className="hover:underline hover:text-white"
+              className="hover:underline hover:text-blue-700"
             >
               Home
             </a>
             <span>/</span>
-            <span className="text-white font-medium">Privacy Policy</span>
+            <span className="text-slate-900 font-medium">Privacy Policy</span>
           </div>
 
-          <span className="bg-blue-600/20 text-blue-300 text-xs font-bold px-3 py-1 rounded-full border border-blue-500/30">
+          <span className="bg-blue-100 text-blue-800 text-xs font-bold px-3 py-1 rounded-full border border-blue-200 inline-block">
             California Consumer Privacy Notice (CCPA/CPRA Compliant)
           </span>
-          <h1 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-white mt-3">
+          <h1 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-900 mt-3">
             Privacy Policy
           </h1>
-          <p className="text-sm text-slate-300 mt-2">
+          <p className="text-sm text-slate-600 mt-2">
             Last Updated: September 2026 &bull; Leak Detection Pro &bull; 3431 43rd St, San Diego, CA 92105
           </p>
         </div>

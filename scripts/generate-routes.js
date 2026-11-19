@@ -51,7 +51,7 @@ const routes = [
       <p style="margin-bottom: 12px;">
         Many residences in City Heights, Teralta, Castle, and Azalea Park built between 1940 and 1980 have copper pipes routed beneath concrete slab foundations. Soil shifting and mineral scale cause microscopic pinhole leaks that damage subfloors and foundations if left untreated.
       </p>
-      <h3 style="font-size: 17px; color: white; margin: 16px 0 8px; font-weight: 700;">Non-Invasive Detection Methods Used</h3>
+      <h3 style="font-size: 17px; color: #0f172a; margin: 16px 0 8px; font-weight: 700;">Non-Invasive Detection Methods Used</h3>
       <ul style="margin: 0 0 16px 20px; line-height: 1.75;">
         <li><strong>Electro-Acoustic Ground Probes:</strong> Pinpoints pressurized sub-slab copper pinhole leaks within inches without jackhammering.</li>
         <li><strong>FLIR Infrared Thermal Cameras:</strong> Maps hot-water lines and concealed moisture signatures behind drywall, ceilings, and tile.</li>
@@ -59,7 +59,7 @@ const routes = [
         <li><strong>Helium / Hydrogen Tracer Gas:</strong> Detects ultra-quiet underground yard and pool supply line breaks.</li>
       </ul>
       <p style="margin-bottom: 16px;">
-        Explore our <a href="/hidden-water-leak-signs-city-heights/" style="color: #38bdf8; text-decoration: underline;">Hidden Water Leak Warning Signs Guide</a> or browse all guides in our <a href="/blog/" style="color: #38bdf8; text-decoration: underline;">City Heights Diagnostic Blog</a>.
+        Explore our <a href="/hidden-water-leak-signs-city-heights/" style="color: #1d4ed8; text-decoration: underline;">Hidden Water Leak Warning Signs Guide</a> or browse all guides in our <a href="/blog/" style="color: #1d4ed8; text-decoration: underline;">City Heights Diagnostic Blog</a>.
       </p>
       <div style="margin-top: 16px;">
         <a href="tel:+16199109411" style="background: #2563eb; color: white; padding: 10px 20px; border-radius: 8px; text-decoration: none; font-weight: bold; display: inline-block;">
@@ -103,7 +103,7 @@ const routes = [
       <p style="margin-bottom: 12px;">
         Once emergency responders secure the structure, <strong>Leak Detection Pro</strong> (3431 43rd St, San Diego CA 92105) dispatches CSLB-licensed gas plumbing contractors across 92105 and nearby San Diego neighborhoods for certified testing and permanent repairs.
       </p>
-      <h3 style="font-size: 17px; color: white; margin: 16px 0 8px; font-weight: 700;">Gas Testing &amp; Restoration Services</h3>
+      <h3 style="font-size: 17px; color: #0f172a; margin: 16px 0 8px; font-weight: 700;">Gas Testing &amp; Restoration Services</h3>
       <ul style="margin: 0 0 16px 20px; line-height: 1.75;">
         <li><strong>Electronic PPM Gas Sniffers:</strong> Pinpoints trace methane and propane vapors behind walls, appliances, and threaded joints.</li>
         <li><strong>Digital Manometer Pressure Decay Tests:</strong> Certifies gas line pressure integrity for San Diego city inspections.</li>
@@ -131,7 +131,7 @@ const routes = [
         Every specialist in our network carries active general liability coverage, workers' compensation insurance, and non-invasive acoustic, FLIR thermal, and electronic gas sniffing instruments so City Heights homeowners get accurate diagnostics without destructive exploratory digging.
       </p>
       <p style="margin-bottom: 16px;">
-        Explore our <a href="/water-leak/" style="color: #60a5fa; text-decoration: underline;">Water Leak Services</a>, <a href="/gas-leak/" style="color: #fbbf24; text-decoration: underline;">Gas Leak Testing</a>, or <a href="/blog/" style="color: #38bdf8; text-decoration: underline;">Leak Detection Blog &amp; Guides</a>.
+        Explore our <a href="/water-leak/" style="color: #1d4ed8; text-decoration: underline;">Water Leak Services</a>, <a href="/gas-leak/" style="color: #b45309; text-decoration: underline;">Gas Leak Testing</a>, or <a href="/blog/" style="color: #1d4ed8; text-decoration: underline;">Leak Detection Blog &amp; Guides</a>.
       </p>
     `
   },
@@ -145,7 +145,7 @@ const routes = [
     bodySnippet: `
       <p style="margin-bottom: 12px;">
         <strong>Address:</strong> 3431 43rd St, San Diego, CA 92105<br/>
-        <strong>Emergency Phone:</strong> <a href="tel:+16199109411" style="color: #60a5fa;">(619) 910-9411</a><br/>
+        <strong>Emergency Phone:</strong> <a href="tel:+16199109411" style="color: #1d4ed8;">(619) 910-9411</a><br/>
         <strong>Operating Hours:</strong> 24 Hours a Day, 7 Days a Week, 365 Days a Year
       </p>
       <p style="margin-bottom: 12px;">
@@ -171,12 +171,12 @@ const routes = [
       <p style="margin-bottom: 14px;">
         Welcome to the <strong>Leak Detection Pro</strong> City Heights Knowledge Center. Read practical local guides written for San Diego homeowners covering early leak warning signs, ten-minute meter checks, non-invasive slab leak locating, and targeted repair methods.
       </p>
-      <h3 style="font-size: 17px; color: white; margin: 16px 0 8px; font-weight: 700;">Published City Heights Leak Detection Guides</h3>
+      <h3 style="font-size: 17px; color: #0f172a; margin: 16px 0 8px; font-weight: 700;">Published City Heights Leak Detection Guides</h3>
       <ul style="margin: 0 0 16px 20px; line-height: 1.8;">
-        <li><a href="/hidden-water-leak-signs-city-heights/" style="color: #38bdf8; text-decoration: underline;"><strong>How to Spot a Hidden Water Leak in City Heights Homes</strong></a> &mdash; Water bill checks, warning signs, and the ten-minute meter test.</li>
-        <li><a href="/leak-detection-city-heights-san-diego/" style="color: #38bdf8; text-decoration: underline;"><strong>Leak Detection in City Heights, San Diego: A Friendly Homeowner’s Guide</strong></a> &mdash; Signs of water and gas leaks, non-invasive locating, and hiring licensed local pros.</li>
-        <li><a href="/underground-slab-leak-detection/" style="color: #38bdf8; text-decoration: underline;"><strong>Underground Water &amp; Slab Leak Detection Deep Dive</strong></a> &mdash; Acoustic ground microphones, FLIR thermography, and helium tracer testing.</li>
-        <li><a href="/leak-detection-and-repair-guide/" style="color: #38bdf8; text-decoration: underline;"><strong>Complete Guide to Leak Detection &amp; Leak Repair in City Heights</strong></a> &mdash; Surgical slab spot repairs and overhead PEX reroutes.</li>
+        <li><a href="/hidden-water-leak-signs-city-heights/" style="color: #1d4ed8; text-decoration: underline;"><strong>How to Spot a Hidden Water Leak in City Heights Homes</strong></a> &mdash; Water bill checks, warning signs, and the ten-minute meter test.</li>
+        <li><a href="/leak-detection-city-heights-san-diego/" style="color: #1d4ed8; text-decoration: underline;"><strong>Leak Detection in City Heights, San Diego: A Friendly Homeowner’s Guide</strong></a> &mdash; Signs of water and gas leaks, non-invasive locating, and hiring licensed local pros.</li>
+        <li><a href="/underground-slab-leak-detection/" style="color: #1d4ed8; text-decoration: underline;"><strong>Underground Water &amp; Slab Leak Detection Deep Dive</strong></a> &mdash; Acoustic ground microphones, FLIR thermography, and helium tracer testing.</li>
+        <li><a href="/leak-detection-and-repair-guide/" style="color: #1d4ed8; text-decoration: underline;"><strong>Complete Guide to Leak Detection &amp; Leak Repair in City Heights</strong></a> &mdash; Surgical slab spot repairs and overhead PEX reroutes.</li>
       </ul>
       <div style="margin-top: 16px;">
         <a href="tel:+16199109411" style="background: #2563eb; color: white; padding: 10px 20px; border-radius: 8px; text-decoration: none; font-weight: bold; display: inline-block;">
@@ -217,16 +217,16 @@ const routes = [
       <p style="margin-bottom: 12px;">
         A tiny drip behind a wall can quietly waste thousands of gallons of water, pad your bills, and invite mold long before a stain appears. For City Heights homeowners—many living in older bungalows and mid-century homes along University Ave, Fairmount Ave, and 43rd St—early <strong>leak detection in City Heights, San Diego</strong> prevents gradual pipe corrosion and shifting clay soil from turning into costly structural repairs.
       </p>
-      <h3 style="font-size: 17px; color: white; margin: 16px 0 8px; font-weight: 700;">Common Signs of a Hidden Water or Gas Leak</h3>
+      <h3 style="font-size: 17px; color: #0f172a; margin: 16px 0 8px; font-weight: 700;">Common Signs of a Hidden Water or Gas Leak</h3>
       <ul style="margin: 0 0 16px 20px; line-height: 1.75;">
         <li><strong>Water Leaks:</strong> Unexplained water bill climbs, damp drywall, musty odors, sound of running water when fixtures are off, or warm patches on tile and hardwood floors.</li>
         <li><strong>Gas Leaks:</strong> Rotten-egg odor near appliances, hissing sounds near pipes, or dead grass patches above buried lines. <em>If you smell gas, evacuate immediately and call 911 or SDG&amp;E (1-800-411-7343).</em></li>
       </ul>
-      <h3 style="font-size: 17px; color: white; margin: 16px 0 8px; font-weight: 700;">How Professionals Find Leaks Non-Invasively</h3>
+      <h3 style="font-size: 17px; color: #0f172a; margin: 16px 0 8px; font-weight: 700;">How Professionals Find Leaks Non-Invasively</h3>
       <p style="margin-bottom: 12px;">
         Specialists use acoustic ground listening microphones, FLIR thermal imaging cameras, moisture probes, and sensitive electronic gas sniffers to pinpoint slab, wall, and yard pipe leaks without breaking open walls or floors.
       </p>
-      <h3 style="font-size: 17px; color: white; margin: 16px 0 8px; font-weight: 700;">What Affects Leak Detection Cost?</h3>
+      <h3 style="font-size: 17px; color: #0f172a; margin: 16px 0 8px; font-weight: 700;">What Affects Leak Detection Cost?</h3>
       <p style="margin-bottom: 14px;">
         Basic fixture checks typically cost $125&ndash;$225, concealed wall leaks $175&ndash;$325, sub-slab locating $250&ndash;$450, and full natural gas pressure decay surveys $195&ndash;$350. Always request a written estimate and insurance-ready diagnostic report before work begins.
       </p>
@@ -269,7 +269,7 @@ const routes = [
       <p style="margin-bottom: 12px;">
         When pressurized copper or PEX lines fracture beneath a concrete slab foundation or four feet underground along a yard supply main, water tracks along gravel beds before surfacing feet away. Modern <strong>underground water leak detection</strong> eliminates exploratory trenching and jackhammering.
       </p>
-      <h3 style="font-size: 17px; color: white; margin: 16px 0 8px; font-weight: 700;">4 Non-Invasive Subsurface Technologies</h3>
+      <h3 style="font-size: 17px; color: #0f172a; margin: 16px 0 8px; font-weight: 700;">4 Non-Invasive Subsurface Technologies</h3>
       <ul style="margin: 0 0 16px 20px; line-height: 1.75;">
         <li><strong>Piezo-Acoustic Ground Listening:</strong> Amplifies the high-frequency sound signature of pressurized water escaping a sub-slab pinhole.</li>
         <li><strong>FLIR Infrared Thermal Imaging:</strong> Reveals hot water slab runs and damp subfloor plumes through concrete and tile.</li>
@@ -315,7 +315,7 @@ const routes = [
       <p style="margin-bottom: 12px;">
         Whether facing a silent slab leak beneath living room flooring or an aging main water supply pipe in City Heights (92105), combining pinpoint non-invasive diagnostics with lasting plumbing repair protects your foundation and lowers utility bills.
       </p>
-      <h3 style="font-size: 17px; color: white; margin: 16px 0 8px; font-weight: 700;">Diagnostic &amp; Repair Options</h3>
+      <h3 style="font-size: 17px; color: #0f172a; margin: 16px 0 8px; font-weight: 700;">Diagnostic &amp; Repair Options</h3>
       <ul style="margin: 0 0 16px 20px; line-height: 1.75;">
         <li><strong>Surgical Spot Repair:</strong> Opens only a small targeted access point directly above the located pipe break.</li>
         <li><strong>Overhead PEX Reroute:</strong> Bypasses corroded under-slab copper completely by routing Type-A PEX cleanly through attics and walls.</li>
@@ -360,11 +360,11 @@ const routes = [
       <p style="margin-bottom: 12px;">
         Most leaks don’t announce themselves. There’s no flood and no dramatic burst pipe, just a small change somewhere that’s easy to shrug off. For City Heights homeowners, learning to notice those small changes is one of the cheapest ways to protect a house.
       </p>
-      <h3 style="font-size: 17px; color: white; margin: 16px 0 8px; font-weight: 700;">Start With Your Water Bill</h3>
+      <h3 style="font-size: 17px; color: #0f172a; margin: 16px 0 8px; font-weight: 700;">Start With Your Water Bill</h3>
       <p style="margin-bottom: 12px;">
         The bill is often the first clue. If usage creeps up month after month and nothing in the household has changed, water may be escaping somewhere. Pull out the last few statements and compare them. A steady upward trend deserves a closer look.
       </p>
-      <h3 style="font-size: 17px; color: white; margin: 16px 0 8px; font-weight: 700;">Signs Your House Is Trying to Tell You Something</h3>
+      <h3 style="font-size: 17px; color: #0f172a; margin: 16px 0 8px; font-weight: 700;">Signs Your House Is Trying to Tell You Something</h3>
       <ul style="margin: 0 0 14px 20px; line-height: 1.75;">
         <li>Musty smells in a closet, cabinet, or corner room</li>
         <li>Paint that bubbles, peels, or looks stained</li>
@@ -372,11 +372,11 @@ const routes = [
         <li>The faint sound of water running when nothing is on</li>
         <li>Weak water pressure that can’t be explained</li>
       </ul>
-      <h3 style="font-size: 17px; color: white; margin: 16px 0 8px; font-weight: 700;">Try a Ten-Minute Meter Check</h3>
+      <h3 style="font-size: 17px; color: #0f172a; margin: 16px 0 8px; font-weight: 700;">Try a Ten-Minute Meter Check</h3>
       <p style="margin-bottom: 12px;">
         Turn off every faucet and appliance that uses water, note your water meter reading or small dial, wait ten minutes without using any water, and check again. If the numbers or dial moved, water is flowing somewhere it shouldn’t.
       </p>
-      <h3 style="font-size: 17px; color: white; margin: 16px 0 8px; font-weight: 700;">When to Call a Professional &amp; What to Do While You Wait</h3>
+      <h3 style="font-size: 17px; color: #0f172a; margin: 16px 0 8px; font-weight: 700;">When to Call a Professional &amp; What to Do While You Wait</h3>
       <p style="margin-bottom: 14px;">
         If the meter keeps moving or older City Heights pipes show signs of corrosion, specialists use listening equipment, thermal imaging, and moisture readings to keep repairs small and targeted. Shut off the main water valve if needed, photograph damp stains, avoid opening walls yourself, and keep notes for your insurance claim.
       </p>
@@ -425,18 +425,18 @@ const routes = [
         Browse the complete directory of services, diagnostic guides, and emergency dispatch links for Leak Detection Pro.
       </p>
       <ul style="margin: 12px 0 16px 20px; line-height: 1.8;">
-        <li><a href="/" style="color: #60a5fa;">Home (City Heights, San Diego)</a></li>
-        <li><a href="/water-leak/" style="color: #60a5fa;">Water &amp; Slab Leak Locating</a></li>
-        <li><a href="/gas-leak/" style="color: #60a5fa;">Emergency Gas Leak Testing</a></li>
-        <li><a href="/blog/" style="color: #60a5fa;">Leak Detection Blog &amp; Guides</a></li>
-        <li><a href="/leak-detection-city-heights-san-diego/" style="color: #60a5fa;">City Heights Homeowner’s Guide</a></li>
-        <li><a href="/hidden-water-leak-signs-city-heights/" style="color: #60a5fa;">How to Spot a Hidden Water Leak</a></li>
-        <li><a href="/underground-slab-leak-detection/" style="color: #60a5fa;">Underground &amp; Slab Leak Deep Dive</a></li>
-        <li><a href="/leak-detection-and-repair-guide/" style="color: #60a5fa;">Leak Detection &amp; Repair Guide</a></li>
-        <li><a href="/about/" style="color: #60a5fa;">About Our Contractor Network</a></li>
-        <li><a href="/contact/" style="color: #60a5fa;">Contact &amp; 24/7 Dispatch</a></li>
-        <li><a href="/privacy/" style="color: #60a5fa;">Privacy Policy</a></li>
-        <li><a href="/disclaimer/" style="color: #60a5fa;">Legal Disclaimers</a></li>
+        <li><a href="/" style="color: #1d4ed8;">Home (City Heights, San Diego)</a></li>
+        <li><a href="/water-leak/" style="color: #1d4ed8;">Water &amp; Slab Leak Locating</a></li>
+        <li><a href="/gas-leak/" style="color: #1d4ed8;">Emergency Gas Leak Testing</a></li>
+        <li><a href="/blog/" style="color: #1d4ed8;">Leak Detection Blog &amp; Guides</a></li>
+        <li><a href="/leak-detection-city-heights-san-diego/" style="color: #1d4ed8;">City Heights Homeowner’s Guide</a></li>
+        <li><a href="/hidden-water-leak-signs-city-heights/" style="color: #1d4ed8;">How to Spot a Hidden Water Leak</a></li>
+        <li><a href="/underground-slab-leak-detection/" style="color: #1d4ed8;">Underground &amp; Slab Leak Deep Dive</a></li>
+        <li><a href="/leak-detection-and-repair-guide/" style="color: #1d4ed8;">Leak Detection &amp; Repair Guide</a></li>
+        <li><a href="/about/" style="color: #1d4ed8;">About Our Contractor Network</a></li>
+        <li><a href="/contact/" style="color: #1d4ed8;">Contact &amp; 24/7 Dispatch</a></li>
+        <li><a href="/privacy/" style="color: #1d4ed8;">Privacy Policy</a></li>
+        <li><a href="/disclaimer/" style="color: #1d4ed8;">Legal Disclaimers</a></li>
       </ul>
       <div style="margin-top: 16px;">
         <a href="/sitemap.xml" target="_blank" style="background: #2563eb; color: white; padding: 10px 18px; border-radius: 8px; text-decoration: none; font-weight: bold; display: inline-block;">
@@ -579,29 +579,29 @@ routes.forEach((route) => {
 
   // Inject Pre-rendered semantic SEO fallback inside #root with full semantic navigation
   const semanticContent = `
-    <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; min-height: 100vh; background: #0f172a; color: #f8fafc;">
-      <header style="padding: 20px 24px; border-bottom: 1px solid rgba(255,255,255,0.1); display: flex; align-items: center; justify-content: space-between; max-width: 1200px; margin: 0 auto;">
+    <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; min-height: 100vh; background: #f8fafc; color: #0f172a;">
+      <header style="padding: 20px 24px; background: #ffffff; border-bottom: 1px solid #e2e8f0; display: flex; align-items: center; justify-content: space-between; max-width: 1200px; margin: 0 auto; flex-wrap: wrap; gap: 16px;">
         <div style="display: flex; align-items: center; gap: 12px;">
           <a href="/" style="text-decoration: none; display: flex; align-items: center; gap: 12px; color: inherit;">
-            <div style="width: 40px; height: 40px; border-radius: 12px; background: linear-gradient(135deg, #2563eb, #4f46e5); display: flex; align-items: center; justify-content: center; font-size: 20px;">
+            <div style="width: 40px; height: 40px; border-radius: 12px; background: linear-gradient(135deg, #2563eb, #4f46e5); color: #ffffff; display: flex; align-items: center; justify-content: center; font-size: 20px;">
               💧
             </div>
             <div>
-              <div style="font-size: 20px; font-weight: 800; letter-spacing: -0.5px;">
-                Leak Detection <span style="color: #60a5fa;">Pro</span>
+              <div style="font-size: 20px; font-weight: 800; letter-spacing: -0.5px; color: #0f172a;">
+                Leak Detection <span style="color: #2563eb;">Pro</span>
               </div>
-              <div style="font-size: 12px; color: #94a3b8;">City Heights, San Diego CA &bull; 92105</div>
+              <div style="font-size: 12px; color: #475569;">City Heights, San Diego CA &bull; 92105</div>
             </div>
           </a>
         </div>
-        <div style="display: flex; align-items: center; gap: 16px;">
+        <div style="display: flex; align-items: center; gap: 16px; flex-wrap: wrap;">
           <nav style="display: flex; gap: 14px; font-size: 14px; flex-wrap: wrap;">
-            <a href="/" style="color: #94a3b8; text-decoration: none;">Home</a>
-            <a href="/water-leak/" style="color: #94a3b8; text-decoration: none;">Water Leaks</a>
-            <a href="/gas-leak/" style="color: #94a3b8; text-decoration: none;">Gas Leaks</a>
-            <a href="/blog/" style="color: #94a3b8; text-decoration: none;">Blog</a>
-            <a href="/about/" style="color: #94a3b8; text-decoration: none;">About</a>
-            <a href="/contact/" style="color: #94a3b8; text-decoration: none;">Contact</a>
+            <a href="/" style="color: #334155; text-decoration: none;">Home</a>
+            <a href="/water-leak/" style="color: #334155; text-decoration: none;">Water Leaks</a>
+            <a href="/gas-leak/" style="color: #334155; text-decoration: none;">Gas Leaks</a>
+            <a href="/blog/" style="color: #334155; text-decoration: none;">Blog</a>
+            <a href="/about/" style="color: #334155; text-decoration: none;">About</a>
+            <a href="/contact/" style="color: #334155; text-decoration: none;">Contact</a>
           </nav>
           <a href="tel:+16199109411" style="background: #dc2626; color: white; padding: 10px 18px; border-radius: 10px; font-weight: bold; text-decoration: none; font-size: 14px; display: inline-flex; align-items: center; gap: 8px;">
             📞 (619) 910-9411
@@ -610,42 +610,42 @@ routes.forEach((route) => {
       </header>
 
       <main style="max-width: 900px; margin: 40px auto; padding: 0 24px;">
-        <nav aria-label="Breadcrumb" style="font-size: 13px; color: #94a3b8; margin-bottom: 20px;">
-          <a href="/" style="color: #60a5fa; text-decoration: none;">Home</a> &rsaquo; <span>${route.breadcrumbName}</span>
+        <nav aria-label="Breadcrumb" style="font-size: 13px; color: #64748b; margin-bottom: 20px;">
+          <a href="/" style="color: #1d4ed8; font-weight: 600; text-decoration: none;">Home</a> &rsaquo; <span style="color: #0f172a;">${route.breadcrumbName}</span>
         </nav>
-        <h1 style="font-size: 32px; font-weight: 800; margin-bottom: 16px; line-height: 1.25; color: white;">
+        <h1 style="font-size: 32px; font-weight: 800; margin-bottom: 16px; line-height: 1.25; color: #0f172a;">
           ${route.h1}
         </h1>
-        <p style="font-size: 18px; color: #cbd5e1; line-height: 1.6; margin-bottom: 24px;">
+        <p style="font-size: 18px; color: #475569; line-height: 1.6; margin-bottom: 24px;">
           ${route.desc}
         </p>
-        <div style="background: rgba(30, 41, 59, 0.7); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 16px; padding: 28px; line-height: 1.7; color: #cbd5e1; font-size: 15px;">
-          <h2 style="font-size: 20px; color: white; margin-bottom: 12px; font-weight: 700;">
+        <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 16px; padding: 28px; line-height: 1.7; color: #334155; font-size: 15px;">
+          <h2 style="font-size: 20px; color: #0f172a; margin-bottom: 12px; font-weight: 700;">
             ${route.h2}
           </h2>
           ${route.bodySnippet}
         </div>
       </main>
 
-      <footer style="margin-top: 60px; padding: 32px 24px; border-top: 1px solid rgba(255,255,255,0.1); max-width: 1200px; margin-left: auto; margin-right: auto; font-size: 13px; color: #94a3b8;">
+      <footer style="margin-top: 60px; padding: 32px 24px; background: #f1f5f9; border-top: 1px solid #e2e8f0; max-width: 1200px; margin-left: auto; margin-right: auto; font-size: 13px; color: #475569;">
         <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; margin-bottom: 16px;">
           <div>
-            <strong>Leak Detection Pro</strong> &bull; 3431 43rd St, City Heights, San Diego, CA 92105 &bull; <a href="tel:+16199109411" style="color: #60a5fa; text-decoration: none;">(619) 910-9411</a>
+            <strong style="color: #0f172a;">Leak Detection Pro</strong> &bull; 3431 43rd St, City Heights, San Diego, CA 92105 &bull; <a href="tel:+16199109411" style="color: #1d4ed8; font-weight: 700; text-decoration: none;">(619) 910-9411</a>
           </div>
           <nav style="display: flex; gap: 16px; flex-wrap: wrap;">
-            <a href="/" style="color: #94a3b8; text-decoration: none;">Home</a>
-            <a href="/water-leak/" style="color: #94a3b8; text-decoration: none;">Water Leaks</a>
-            <a href="/gas-leak/" style="color: #94a3b8; text-decoration: none;">Gas Leaks</a>
-            <a href="/blog/" style="color: #94a3b8; text-decoration: none;">Blog</a>
-            <a href="/leak-detection-city-heights-san-diego/" style="color: #94a3b8; text-decoration: none;">Local Guide</a>
-            <a href="/hidden-water-leak-signs-city-heights/" style="color: #94a3b8; text-decoration: none;">Leak Signs</a>
-            <a href="/underground-slab-leak-detection/" style="color: #94a3b8; text-decoration: none;">Slab Guide</a>
-            <a href="/leak-detection-and-repair-guide/" style="color: #94a3b8; text-decoration: none;">Repair Guide</a>
-            <a href="/about/" style="color: #94a3b8; text-decoration: none;">About</a>
-            <a href="/contact/" style="color: #94a3b8; text-decoration: none;">Contact</a>
-            <a href="/privacy/" style="color: #94a3b8; text-decoration: none;">Privacy</a>
-            <a href="/disclaimer/" style="color: #94a3b8; text-decoration: none;">Disclaimer</a>
-            <a href="/sitemap/" style="color: #94a3b8; text-decoration: none;">Sitemap</a>
+            <a href="/" style="color: #475569; text-decoration: none;">Home</a>
+            <a href="/water-leak/" style="color: #475569; text-decoration: none;">Water Leaks</a>
+            <a href="/gas-leak/" style="color: #475569; text-decoration: none;">Gas Leaks</a>
+            <a href="/blog/" style="color: #475569; text-decoration: none;">Blog</a>
+            <a href="/leak-detection-city-heights-san-diego/" style="color: #475569; text-decoration: none;">Local Guide</a>
+            <a href="/hidden-water-leak-signs-city-heights/" style="color: #475569; text-decoration: none;">Leak Signs</a>
+            <a href="/underground-slab-leak-detection/" style="color: #475569; text-decoration: none;">Slab Guide</a>
+            <a href="/leak-detection-and-repair-guide/" style="color: #475569; text-decoration: none;">Repair Guide</a>
+            <a href="/about/" style="color: #475569; text-decoration: none;">About</a>
+            <a href="/contact/" style="color: #475569; text-decoration: none;">Contact</a>
+            <a href="/privacy/" style="color: #475569; text-decoration: none;">Privacy</a>
+            <a href="/disclaimer/" style="color: #475569; text-decoration: none;">Disclaimer</a>
+            <a href="/sitemap/" style="color: #475569; text-decoration: none;">Sitemap</a>
           </nav>
         </div>
         <p style="font-size: 11px; color: #64748b; margin: 0;">

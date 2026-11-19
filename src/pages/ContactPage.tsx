@@ -23,31 +23,31 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate }) => {
   return (
     <div className="space-y-16 pb-16">
       {/* Header */}
-      <section className="bg-slate-900 text-white py-12 lg:py-16">
+      <section className="bg-gradient-to-br from-sky-50 via-blue-50/50 to-white border-b border-slate-200 text-slate-900 py-12 lg:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-wrap items-center gap-2 text-xs text-slate-400 mb-4">
+          <div className="flex flex-wrap items-center gap-2 text-xs text-slate-500 mb-4">
             <a
               href="/"
               onClick={(e) => {
                 e.preventDefault();
                 onNavigate('home');
               }}
-              className="hover:underline hover:text-white"
+              className="hover:underline hover:text-blue-700"
             >
               Home
             </a>
             <span>/</span>
-            <span className="text-white font-medium">Contact Us</span>
+            <span className="text-slate-900 font-medium">Contact Us</span>
           </div>
 
           <div className="max-w-3xl space-y-3">
-            <span className="bg-blue-600/20 text-blue-300 text-xs font-bold px-3 py-1 rounded-full border border-blue-500/30">
+            <span className="bg-blue-100 text-blue-800 text-xs font-bold px-3 py-1 rounded-full border border-blue-200 inline-block">
               City Heights, San Diego CA
             </span>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-white">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-slate-900">
               Contact &amp; 24/7 Emergency Dispatch
             </h1>
-            <p className="text-base text-slate-300 leading-relaxed">
+            <p className="text-base text-slate-600 leading-relaxed">
               Have an urgent water or gas leak? Stationed at 3431 43rd St in City Heights, our qualified contractor network connects you immediately with certified technicians across the 92105 area.
             </p>
           </div>
@@ -111,14 +111,14 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate }) => {
               </div>
 
               {/* Call Action Box */}
-              <div className="p-4 bg-slate-900 text-white rounded-xl space-y-3">
-                <div className="flex items-center gap-2 text-xs font-semibold text-emerald-400">
-                  <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+              <div className="p-4 bg-sky-50 border border-sky-200 text-slate-900 rounded-xl space-y-3">
+                <div className="flex items-center gap-2 text-xs font-semibold text-emerald-700">
+                  <span className="w-2 h-2 rounded-full bg-emerald-500 animate-ping"></span>
                   <span>Technicians Active in 92105</span>
                 </div>
                 <a
                   href={BUSINESS_INFO.telLink}
-                  className="w-full py-3.5 bg-red-600 hover:bg-red-700 active:scale-98 text-white font-extrabold text-sm rounded-xl flex items-center justify-center gap-2 shadow-lg transition-all"
+                  className="w-full py-3.5 bg-red-600 hover:bg-red-700 active:scale-98 text-white font-extrabold text-sm rounded-xl flex items-center justify-center gap-2 shadow-md transition-all"
                 >
                   <Phone className="w-4 h-4" />
                   <span>Call 24/7 Dispatch: {BUSINESS_INFO.phoneFormatted}</span>
@@ -139,7 +139,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate }) => {
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"
                 />
-                <span className="absolute bottom-2 left-2 bg-slate-900/85 text-emerald-300 text-[10px] font-bold px-2 py-0.5 rounded flex items-center gap-1">
+                <span className="absolute bottom-2 left-2 bg-white/95 text-emerald-700 border border-emerald-200 text-[10px] font-bold px-2 py-0.5 rounded flex items-center gap-1 shadow-xs">
                   <CheckCircle2 className="w-3 h-3" />
                   <span>CSLB Licensed Specialists</span>
                 </span>
@@ -161,22 +161,22 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate }) => {
             <LocationMap height="h-96 sm:h-[420px]" />
 
             {/* Local Navigation Details Card */}
-            <div className="bg-slate-900 text-white rounded-2xl p-6 border border-slate-800 space-y-4">
+            <div className="bg-white text-slate-900 rounded-2xl p-6 border border-slate-200 shadow-xs space-y-4">
               <div className="flex items-center justify-between">
-                <div className="flex items-center gap-2 font-bold text-base text-white">
-                  <Navigation className="w-5 h-5 text-blue-400" />
+                <div className="flex items-center gap-2 font-bold text-base text-slate-900">
+                  <Navigation className="w-5 h-5 text-blue-600" />
                   <span>City Heights Area Navigation</span>
                 </div>
-                <span className="text-[11px] bg-blue-900/60 text-blue-300 px-2.5 py-1 rounded-md border border-blue-700">
+                <span className="text-[11px] bg-blue-50 text-blue-700 font-semibold px-2.5 py-1 rounded-md border border-blue-200">
                   Zip 92105
                 </span>
               </div>
 
-              <div className="bg-slate-950 border border-slate-800 rounded-xl p-4 text-xs space-y-3">
-                <p className="text-slate-300 leading-relaxed">
-                  Our network dispatch coordination center is based at <strong>3431 43rd St, San Diego, CA 92105</strong>, strategically positioned between Interstate 15 and Interstate 805 corridors. This central position enables partner plumbing contractors to reach City Heights, Normal Heights, Talmadge, Kensington, and North Park within minutes.
+              <div className="bg-slate-50 border border-slate-200 rounded-xl p-4 text-xs space-y-3">
+                <p className="text-slate-600 leading-relaxed">
+                  Our network dispatch coordination center is based at <strong className="text-slate-900">3431 43rd St, San Diego, CA 92105</strong>, strategically positioned between Interstate 15 and Interstate 805 corridors. This central position enables partner plumbing contractors to reach City Heights, Normal Heights, Talmadge, Kensington, and North Park within minutes.
                 </p>
-                <div className="pt-2 border-t border-slate-800 grid grid-cols-2 gap-2 text-[11px] text-slate-400">
+                <div className="pt-2 border-t border-slate-200 grid grid-cols-2 gap-2 text-[11px] text-slate-600">
                   <div>• University Ave (2 blocks)</div>
                   <div>• Fairmount Ave (3 mins)</div>
                   <div>• I-15 Freeway (4 mins)</div>

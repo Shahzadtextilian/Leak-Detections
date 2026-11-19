@@ -24,56 +24,56 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
   };
 
   return (
-    <footer className="bg-slate-950 text-slate-300 border-t border-slate-800 pt-14 pb-24 sm:pb-16">
+    <footer className="bg-slate-100 text-slate-700 border-t border-slate-200 pt-14 pb-24 sm:pb-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* 4-Column Layout */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-slate-800/80">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-slate-200">
           {/* Col 1: About & Local Presence */}
           <div className="space-y-4">
             <div className="flex items-center gap-2.5">
-              <div className="w-9 h-9 rounded-lg bg-blue-600 flex items-center justify-center text-white">
+              <div className="w-9 h-9 rounded-lg bg-blue-600 flex items-center justify-center text-white shadow-xs">
                 <Droplets className="w-5 h-5" />
               </div>
-              <span className="text-lg font-bold text-white tracking-tight">
-                Leak Detection <span className="text-blue-400">Pro</span>
+              <span className="text-lg font-bold text-slate-900 tracking-tight">
+                Leak Detection <span className="text-blue-600">Pro</span>
               </span>
             </div>
-            <p className="text-xs text-slate-400 leading-relaxed">
+            <p className="text-xs text-slate-600 leading-relaxed">
               Your trusted connection for prompt, non-destructive water and gas leak detection and plumbing repair services throughout City Heights, San Diego CA 92105.
             </p>
             <div className="pt-1 space-y-2 text-xs">
-              <div className="flex items-start gap-2 text-slate-300">
-                <MapPin className="w-4 h-4 text-red-400 shrink-0 mt-0.5" />
+              <div className="flex items-start gap-2 text-slate-700">
+                <MapPin className="w-4 h-4 text-red-600 shrink-0 mt-0.5" />
                 <span>
                   {BUSINESS_INFO.fullAddress}
                   <br />
-                  <span className="text-slate-400">(City Heights, San Diego County)</span>
+                  <span className="text-slate-500">(City Heights, San Diego County)</span>
                 </span>
               </div>
-              <div className="flex items-center gap-2 text-slate-300">
-                <Phone className="w-4 h-4 text-emerald-400 shrink-0" />
-                <a href={BUSINESS_INFO.telLink} className="text-white hover:text-blue-400 font-semibold text-sm">
+              <div className="flex items-center gap-2 text-slate-700">
+                <Phone className="w-4 h-4 text-emerald-600 shrink-0" />
+                <a href={BUSINESS_INFO.telLink} className="text-slate-900 hover:text-blue-700 font-bold text-sm">
                   {BUSINESS_INFO.phoneFormatted}
                 </a>
               </div>
-              <div className="flex items-center gap-2 text-slate-300">
-                <Clock className="w-4 h-4 text-blue-400 shrink-0" />
+              <div className="flex items-center gap-2 text-slate-700">
+                <Clock className="w-4 h-4 text-blue-600 shrink-0" />
                 <span>24/7 Rapid Emergency Dispatch Line</span>
               </div>
             </div>
 
             {/* Social Media Links in Brand Column */}
-            <div className="pt-3 border-t border-slate-800 space-y-2">
-              <div className="text-xs font-semibold text-slate-300">Follow Our Community Updates:</div>
+            <div className="pt-3 border-t border-slate-200 space-y-2">
+              <div className="text-xs font-semibold text-slate-800">Follow Our Community Updates:</div>
               <div className="flex items-center gap-2.5">
                 <a
                   href={BUSINESS_INFO.facebookUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Visit Leak Detection Pro on Facebook"
-                  className="px-3 py-1.5 rounded-lg bg-slate-900 hover:bg-blue-600 text-slate-300 hover:text-white text-xs font-medium flex items-center gap-1.5 transition-colors border border-slate-800"
+                  className="px-3 py-1.5 rounded-lg bg-white hover:bg-blue-600 text-slate-700 hover:text-white text-xs font-medium flex items-center gap-1.5 transition-colors border border-slate-200 shadow-xs group"
                 >
-                  <Facebook className="w-3.5 h-3.5 text-blue-400 group-hover:text-white" />
+                  <Facebook className="w-3.5 h-3.5 text-blue-600 group-hover:text-white" />
                   <span>Facebook</span>
                 </a>
               </div>
@@ -82,10 +82,10 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
 
           {/* Col 2: Services */}
           <div className="space-y-3">
-            <h3 className="text-sm font-bold uppercase tracking-wider text-slate-100">
+            <h3 className="text-sm font-bold uppercase tracking-wider text-slate-900">
               Leak Detection Services
             </h3>
-            <ul className="space-y-2 text-sm text-slate-400">
+            <ul className="space-y-2 text-sm text-slate-600">
               <li>
                 <a
                   href="/water-leak/"
@@ -93,9 +93,9 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                     e.preventDefault();
                     handleNav('water-leak');
                   }}
-                  className="hover:text-blue-400 transition-colors flex items-center gap-2 text-left"
+                  className="hover:text-blue-700 transition-colors flex items-center gap-2 text-left font-medium text-slate-800"
                 >
-                  <Droplets className="w-3.5 h-3.5 text-blue-400" />
+                  <Droplets className="w-3.5 h-3.5 text-blue-600" />
                   Water Leak Detection
                 </a>
               </li>
@@ -106,7 +106,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                     e.preventDefault();
                     handleNav('water-leak');
                   }}
-                  className="hover:text-blue-400 transition-colors pl-5 text-xs text-left block"
+                  className="hover:text-blue-700 transition-colors pl-5 text-xs text-left block"
                 >
                   • Concrete Slab Leak Tracing
                 </a>
@@ -118,7 +118,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                     e.preventDefault();
                     handleNav('water-leak');
                   }}
-                  className="hover:text-blue-400 transition-colors pl-5 text-xs text-left block"
+                  className="hover:text-blue-700 transition-colors pl-5 text-xs text-left block"
                 >
                   • Underground Main Line Acoustic Locating
                 </a>
@@ -130,9 +130,9 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                     e.preventDefault();
                     handleNav('gas-leak');
                   }}
-                  className="hover:text-amber-400 transition-colors flex items-center gap-2 text-left pt-1"
+                  className="hover:text-amber-700 transition-colors flex items-center gap-2 text-left pt-1 font-medium text-slate-800"
                 >
-                  <Flame className="w-3.5 h-3.5 text-amber-400" />
+                  <Flame className="w-3.5 h-3.5 text-amber-600" />
                   Gas Leak Detection &amp; Testing
                 </a>
               </li>
@@ -143,7 +143,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                     e.preventDefault();
                     handleNav('gas-leak');
                   }}
-                  className="hover:text-amber-400 transition-colors pl-5 text-xs text-left block"
+                  className="hover:text-amber-700 transition-colors pl-5 text-xs text-left block"
                 >
                   • Electronic Sniffer &amp; Pressure Drop
                 </a>
@@ -155,7 +155,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                     e.preventDefault();
                     handleNav('gas-leak');
                   }}
-                  className="hover:text-amber-400 transition-colors pl-5 text-xs text-left block"
+                  className="hover:text-amber-700 transition-colors pl-5 text-xs text-left block"
                 >
                   • SDG&amp;E Shut-Off Tag Clearance
                 </a>
@@ -165,15 +165,15 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
 
           {/* Col 3: Service Areas in City Heights */}
           <div className="space-y-3">
-            <h3 className="text-sm font-bold uppercase tracking-wider text-slate-100">
+            <h3 className="text-sm font-bold uppercase tracking-wider text-slate-900">
               City Heights Service Coverage
             </h3>
-            <ul className="space-y-1.5 text-xs text-slate-400">
+            <ul className="space-y-1.5 text-xs text-slate-600">
               {CITY_HEIGHTS_AREAS.map((area, idx) => (
                 <li key={idx} className="flex items-start gap-1.5">
-                  <span className="text-blue-400 font-bold">•</span>
+                  <span className="text-blue-600 font-bold">•</span>
                   <span>
-                    <strong className="text-slate-300">{area.name}</strong> - {area.desc}
+                    <strong className="text-slate-900">{area.name}</strong> - {area.desc}
                   </span>
                 </li>
               ))}
@@ -185,10 +185,10 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
 
           {/* Col 4: Quick Links, Blog & Legal */}
           <div className="space-y-3">
-            <h3 className="text-sm font-bold uppercase tracking-wider text-slate-100">
+            <h3 className="text-sm font-bold uppercase tracking-wider text-slate-900">
               Company &amp; Resources
             </h3>
-            <ul className="space-y-2 text-sm text-slate-400">
+            <ul className="space-y-2 text-sm text-slate-600">
               <li>
                 <a
                   href="/"
@@ -196,7 +196,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                     e.preventDefault();
                     handleNav('home');
                   }}
-                  className="hover:text-white transition-colors block"
+                  className="hover:text-blue-700 transition-colors block"
                 >
                   Home
                 </a>
@@ -208,9 +208,9 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                     e.preventDefault();
                     handleNav('blog');
                   }}
-                  className="hover:text-cyan-400 transition-colors flex items-center gap-1.5 font-medium text-cyan-300"
+                  className="hover:text-blue-700 transition-colors flex items-center gap-1.5 font-semibold text-blue-700"
                 >
-                  <FileText className="w-3.5 h-3.5 text-cyan-400" />
+                  <FileText className="w-3.5 h-3.5 text-blue-600" />
                   <span>Leak Detection &amp; Repair Blog</span>
                 </a>
               </li>
@@ -221,7 +221,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                     e.preventDefault();
                     handleNav('leak-detection-city-heights-san-diego');
                   }}
-                  className="hover:text-blue-300 transition-colors text-xs text-slate-400 pl-4 block"
+                  className="hover:text-blue-700 transition-colors text-xs text-slate-600 pl-4 block"
                 >
                   • City Heights Homeowner Guide
                 </a>
@@ -233,7 +233,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                     e.preventDefault();
                     handleNav('underground-slab-leak-detection');
                   }}
-                  className="hover:text-blue-300 transition-colors text-xs text-slate-400 pl-4 block"
+                  className="hover:text-blue-700 transition-colors text-xs text-slate-600 pl-4 block"
                 >
                   • Underground &amp; Slab Leak Guide
                 </a>
@@ -245,7 +245,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                     e.preventDefault();
                     handleNav('leak-detection-and-repair-guide');
                   }}
-                  className="hover:text-blue-300 transition-colors text-xs text-slate-400 pl-4 block"
+                  className="hover:text-blue-700 transition-colors text-xs text-slate-600 pl-4 block"
                 >
                   • Leak Detection &amp; Repair Guide
                 </a>
@@ -257,7 +257,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                     e.preventDefault();
                     handleNav('hidden-water-leak-signs-city-heights');
                   }}
-                  className="hover:text-blue-300 transition-colors text-xs text-slate-400 pl-4 block"
+                  className="hover:text-blue-700 transition-colors text-xs text-slate-600 pl-4 block"
                 >
                   • Hidden Water Leak Signs
                 </a>
@@ -269,7 +269,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                     e.preventDefault();
                     handleNav('about');
                   }}
-                  className="hover:text-white transition-colors block"
+                  className="hover:text-blue-700 transition-colors block"
                 >
                   About Our Contractor Network
                 </a>
@@ -281,7 +281,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                     e.preventDefault();
                     handleNav('contact');
                   }}
-                  className="hover:text-white transition-colors block"
+                  className="hover:text-blue-700 transition-colors block"
                 >
                   Contact &amp; Location Details
                 </a>
@@ -293,7 +293,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                     e.preventDefault();
                     handleNav('privacy');
                   }}
-                  className="hover:text-white transition-colors block"
+                  className="hover:text-blue-700 transition-colors block"
                 >
                   Privacy Policy (CCPA Compliant)
                 </a>
@@ -305,7 +305,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                     e.preventDefault();
                     handleNav('disclaimer');
                   }}
-                  className="hover:text-amber-400 transition-colors block"
+                  className="hover:text-amber-700 transition-colors block"
                 >
                   Lead Generation &amp; Contractor Disclaimer
                 </a>
@@ -317,25 +317,25 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                     e.preventDefault();
                     handleNav('sitemap');
                   }}
-                  className="text-cyan-400 hover:underline font-semibold"
+                  className="text-blue-700 hover:underline font-semibold"
                 >
                   HTML Sitemap
                 </a>
-                <span className="text-slate-600">&bull;</span>
+                <span className="text-slate-400">&bull;</span>
                 <a
                   href="/sitemap.xml"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-blue-400 hover:underline font-semibold"
+                  className="text-blue-700 hover:underline font-semibold"
                 >
                   XML Sitemap
                 </a>
               </li>
             </ul>
 
-            <div className="pt-3 border-t border-slate-800">
-              <div className="flex items-center gap-2 text-xs text-slate-300">
-                <HeartHandshake className="w-4 h-4 text-blue-400" />
+            <div className="pt-3 border-t border-slate-200">
+              <div className="flex items-center gap-2 text-xs text-slate-700">
+                <HeartHandshake className="w-4 h-4 text-blue-600" />
                 <span>Pre-screened &amp; CSLB licensed independent contractor network</span>
               </div>
             </div>
@@ -349,21 +349,21 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
           </p>
 
           {/* Social Links Centered on Bottom Bar */}
-          <div className="flex items-center gap-2.5 text-xs text-slate-400">
+          <div className="flex items-center gap-2.5 text-xs text-slate-600">
             <span className="text-slate-500 font-medium">Follow Us:</span>
             <a
               href={BUSINESS_INFO.facebookUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-blue-400 flex items-center gap-1.5 transition-colors"
+              className="hover:text-blue-700 flex items-center gap-1.5 transition-colors font-medium"
               aria-label="Facebook Page"
             >
-              <Facebook className="w-4 h-4 text-blue-500" />
+              <Facebook className="w-4 h-4 text-blue-600" />
               <span>Facebook</span>
             </a>
           </div>
 
-          <p className="text-center md:text-right text-[11px] text-slate-400">
+          <p className="text-center md:text-right text-[11px] text-slate-500">
             Immediate Gas Emergency? Call 911 or SDG&amp;E at 1-800-411-7343 before ordering contractor service.
           </p>
         </div>

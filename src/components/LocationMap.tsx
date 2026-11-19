@@ -204,17 +204,17 @@ export const LocationMap: React.FC<LocationMapProps> = ({
       className={`bg-white rounded-2xl border border-slate-200 shadow-md overflow-hidden flex flex-col ${className}`}
     >
       {showCardHeader && (
-        <div className="p-4 sm:p-5 bg-gradient-to-r from-slate-900 via-blue-950 to-slate-900 text-white flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+        <div className="p-4 sm:p-5 bg-gradient-to-r from-sky-50 via-blue-50 to-white border-b border-slate-200 text-slate-900 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-xl bg-red-600 flex items-center justify-center text-white shrink-0 shadow-md ring-2 ring-red-400/30">
+            <div className="w-10 h-10 rounded-xl bg-red-600 flex items-center justify-center text-white shrink-0 shadow-md ring-2 ring-red-100">
               <MapPin className="w-5 h-5 animate-bounce" />
             </div>
             <div>
-              <div className="text-xs font-bold uppercase tracking-wider text-blue-300 flex items-center gap-1.5">
+              <div className="text-xs font-bold uppercase tracking-wider text-blue-700 flex items-center gap-1.5">
                 <span>City Heights Operations Base</span>
-                <span className="inline-block w-2 h-2 rounded-full bg-emerald-400"></span>
+                <span className="inline-block w-2 h-2 rounded-full bg-emerald-500"></span>
               </div>
-              <h3 className="text-base sm:text-lg font-bold text-white">
+              <h3 className="text-base sm:text-lg font-bold text-slate-900">
                 {BUSINESS_INFO.fullAddress}
               </h3>
             </div>
@@ -232,9 +232,9 @@ export const LocationMap: React.FC<LocationMapProps> = ({
             </a>
             <a
               href={BUSINESS_INFO.telLink}
-              className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-semibold transition-colors border border-slate-700"
+              className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-white hover:bg-slate-50 text-slate-800 text-xs font-semibold transition-colors border border-slate-300"
             >
-              <Phone className="w-3.5 h-3.5 text-emerald-400" />
+              <Phone className="w-3.5 h-3.5 text-emerald-600" />
               <span className="hidden sm:inline">{BUSINESS_INFO.phoneFormatted}</span>
               <span className="sm:hidden">Call</span>
             </a>

@@ -55,44 +55,44 @@ export const GasLeakPage: React.FC<GasLeakPageProps> = ({ onNavigate }) => {
       </div>
 
       {/* Hero Header */}
-      <section className="bg-gradient-to-br from-amber-950 via-slate-900 to-amber-900 text-white py-12 lg:py-16">
+      <section className="bg-gradient-to-br from-amber-50 via-orange-50/60 to-white border-b border-amber-200/80 text-slate-900 py-12 lg:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-wrap items-center gap-2 text-xs text-amber-200 mb-4">
+          <div className="flex flex-wrap items-center gap-2 text-xs text-slate-500 mb-4">
             <a
               href="/"
               onClick={(e) => {
                 e.preventDefault();
                 onNavigate('home');
               }}
-              className="hover:underline hover:text-white"
+              className="hover:underline hover:text-amber-700"
             >
               Home
             </a>
             <span>/</span>
-            <span className="text-white font-medium">Services</span>
+            <span className="text-slate-700 font-medium">Services</span>
             <span>/</span>
-            <span className="text-amber-300 font-semibold">Gas Leak Detection</span>
+            <span className="text-amber-700 font-semibold">Gas Leak Detection</span>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             <div className="lg:col-span-8 space-y-4">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-800/60 border border-amber-600/60 text-xs text-amber-200">
-                <Flame className="w-3.5 h-3.5 text-amber-400" />
-                <span>City Heights Gas Safety & Qualified Contractor Network</span>
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-100/90 border border-amber-200 text-xs font-semibold text-amber-800">
+                <Flame className="w-3.5 h-3.5 text-amber-600" />
+                <span>City Heights Gas Safety &amp; Qualified Contractor Network</span>
               </div>
 
-              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-white leading-tight">
-                Emergency <span className="text-amber-400">Gas Leak Detection</span> & Line Safety in City Heights, CA
+              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-slate-900 leading-tight">
+                Emergency <span className="text-amber-700">Gas Leak Detection</span> &amp; Line Safety in City Heights, CA
               </h1>
 
-              <p className="text-base text-slate-200 max-w-2xl leading-relaxed">
+              <p className="text-base text-slate-600 max-w-2xl leading-relaxed">
                 Connect 24/7 with pre-screened, licensed gas line plumbing specialists in City Heights (92105). Fast electronic sniffing, pressure drop testing, and red-tag meter clearance repairs.
               </p>
 
               <div className="flex flex-wrap items-center gap-3 pt-2">
                 <a
                   href={BUSINESS_INFO.telLink}
-                  className="bg-red-600 hover:bg-red-700 text-white font-bold px-6 py-3.5 rounded-xl text-sm flex items-center gap-2 shadow-lg"
+                  className="bg-red-600 hover:bg-red-700 text-white font-bold px-6 py-3.5 rounded-xl text-sm flex items-center gap-2 shadow-md"
                   id="gas-call-top"
                 >
                   <Phone className="w-4 h-4" />
@@ -101,8 +101,8 @@ export const GasLeakPage: React.FC<GasLeakPageProps> = ({ onNavigate }) => {
               </div>
             </div>
 
-            <div className="lg:col-span-4 bg-slate-800/80 border border-slate-700 rounded-2xl p-5 text-xs space-y-3 overflow-hidden">
-              <div className="relative rounded-xl overflow-hidden mb-3 border border-slate-700">
+            <div className="lg:col-span-4 bg-white border border-amber-200/80 shadow-sm rounded-2xl p-5 text-xs space-y-3 overflow-hidden">
+              <div className="relative rounded-xl overflow-hidden mb-3 border border-slate-200">
                 <img
                   src={APP_IMAGES.gasLeakTesting}
                   alt="Electronic combustible gas detector sniffer inspecting gas line valve"
@@ -113,33 +113,33 @@ export const GasLeakPage: React.FC<GasLeakPageProps> = ({ onNavigate }) => {
                   className="w-full h-40 object-cover"
                   referrerPolicy="no-referrer"
                 />
-                <span className="absolute bottom-2 left-2 bg-slate-900/90 text-amber-300 text-[10px] font-semibold px-2 py-0.5 rounded">
+                <span className="absolute bottom-2 left-2 bg-white/95 text-amber-800 border border-amber-200 text-[10px] font-semibold px-2 py-0.5 rounded shadow-xs">
                   Digital Combustible Gas Sniffing
                 </span>
               </div>
-              <div className="text-sm font-bold text-white flex items-center gap-2">
-                <ShieldCheck className="w-4 h-4 text-amber-400" />
+              <div className="text-sm font-bold text-slate-900 flex items-center gap-2">
+                <ShieldCheck className="w-4 h-4 text-amber-600" />
                 <span>Gas Diagnostic Standards</span>
               </div>
-              <ul className="space-y-2 text-slate-300">
+              <ul className="space-y-2 text-slate-700">
                 <li className="flex items-center gap-2">
-                  <span className="w-1.5 h-1.5 rounded-full bg-amber-400" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-amber-600" />
                   <span>Combustible electronic vapor sniffers</span>
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className="w-1.5 h-1.5 rounded-full bg-amber-400" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-amber-600" />
                   <span>Digital manometer pressure decay testing</span>
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className="w-1.5 h-1.5 rounded-full bg-amber-400" />
-                  <span>SDG&E red tag lock removal support</span>
+                  <span className="w-1.5 h-1.5 rounded-full bg-amber-600" />
+                  <span>SDG&amp;E red tag lock removal support</span>
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className="w-1.5 h-1.5 rounded-full bg-amber-400" />
-                  <span>Residential & commercial meter certifications</span>
+                  <span className="w-1.5 h-1.5 rounded-full bg-amber-600" />
+                  <span>Residential &amp; commercial meter certifications</span>
                 </li>
               </ul>
-              <div className="pt-2 border-t border-slate-700 text-[11px] text-slate-400">
+              <div className="pt-2 border-t border-slate-100 text-[11px] text-slate-500">
                 Local Base: 3431 43rd St, City Heights, CA 92105
               </div>
             </div>
@@ -364,37 +364,37 @@ export const GasLeakPage: React.FC<GasLeakPageProps> = ({ onNavigate }) => {
           {/* Sidebar */}
           <div className="lg:col-span-4 space-y-6">
             <div className="sticky top-28 space-y-6">
-              <div className="bg-slate-900 text-white rounded-2xl p-6 border border-slate-800 shadow-xl space-y-4">
-                <div className="flex items-center gap-2 text-xs uppercase tracking-wider font-bold text-amber-400">
+              <div className="bg-gradient-to-br from-amber-50 to-white text-slate-900 rounded-2xl p-6 border border-amber-200 shadow-sm space-y-4">
+                <div className="flex items-center gap-2 text-xs uppercase tracking-wider font-bold text-amber-700">
                   <span className="flex h-2 w-2 relative">
                     <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span>
                     <span className="relative inline-flex rounded-full h-2 w-2 bg-amber-500"></span>
                   </span>
                   <span>Urgent Gas Safety &amp; Dispatch</span>
                 </div>
-                <h3 className="text-xl font-extrabold text-white">
+                <h3 className="text-xl font-extrabold text-slate-900">
                   Smell Rotten Eggs or Gas?
                 </h3>
-                <p className="text-xs text-slate-300 leading-relaxed">
+                <p className="text-xs text-slate-600 leading-relaxed">
                   Evacuate immediately if odor is strong. For line inspections, digital PPM sniffing, and SDG&amp;E red-tag clearance, call our direct 24/7 hotline.
                 </p>
-                <div className="p-3 bg-slate-800/80 rounded-xl border border-slate-700 space-y-2 text-xs text-slate-300">
+                <div className="p-3 bg-white rounded-xl border border-amber-200/80 space-y-2 text-xs text-slate-600">
                   <div className="flex items-center justify-between">
                     <span>Dispatch Priority:</span>
-                    <strong className="text-amber-400">Immediate Routing</strong>
+                    <strong className="text-amber-700">Immediate Routing</strong>
                   </div>
                   <div className="flex items-center justify-between">
                     <span>Safety Standard:</span>
-                    <strong className="text-white">CSLB Gas Licensed</strong>
+                    <strong className="text-slate-900">CSLB Gas Licensed</strong>
                   </div>
                   <div className="flex items-center justify-between">
                     <span>SDG&amp;E Notice:</span>
-                    <strong className="text-emerald-400">Clearance Repairs</strong>
+                    <strong className="text-emerald-700">Clearance Repairs</strong>
                   </div>
                 </div>
                 <a
                   href={BUSINESS_INFO.telLink}
-                  className="block w-full py-3.5 bg-amber-600 hover:bg-amber-700 active:scale-98 text-white font-extrabold text-center rounded-xl shadow-lg transition-all"
+                  className="block w-full py-3.5 bg-amber-600 hover:bg-amber-700 active:scale-98 text-white font-extrabold text-center rounded-xl shadow-md transition-all"
                   id="gas-sidebar-call"
                 >
                   <div className="flex items-center justify-center gap-2">
@@ -409,7 +409,7 @@ export const GasLeakPage: React.FC<GasLeakPageProps> = ({ onNavigate }) => {
                     e.preventDefault();
                     onNavigate('contact');
                   }}
-                  className="block w-full py-2.5 px-4 bg-slate-800 hover:bg-slate-700 text-amber-300 border border-slate-700 font-semibold text-center rounded-xl text-xs transition-colors"
+                  className="block w-full py-2.5 px-4 bg-white hover:bg-amber-50 text-amber-800 border border-amber-200 font-semibold text-center rounded-xl text-xs transition-colors"
                   id="gas-sidebar-contact"
                 >
                   Non-Emergency Dispatch Inquiry &rarr;

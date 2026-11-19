@@ -23,48 +23,48 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
   return (
     <div className="space-y-16 pb-16">
       {/* Header */}
-      <section className="bg-slate-900 text-white py-12 lg:py-16">
+      <section className="bg-gradient-to-br from-sky-50 via-blue-50/50 to-white border-b border-slate-200 text-slate-900 py-12 lg:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-wrap items-center gap-2 text-xs text-slate-400 mb-4">
+          <div className="flex flex-wrap items-center gap-2 text-xs text-slate-500 mb-4">
             <a
               href="/"
               onClick={(e) => {
                 e.preventDefault();
                 onNavigate('home');
               }}
-              className="hover:underline hover:text-white"
+              className="hover:underline hover:text-blue-700"
             >
               Home
             </a>
             <span>/</span>
-            <span className="text-white font-medium">About Us</span>
+            <span className="text-slate-900 font-medium">About Us</span>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             <div className="lg:col-span-7 space-y-4">
-              <span className="bg-blue-600/20 text-blue-300 text-xs font-bold px-3 py-1 rounded-full border border-blue-500/30">
+              <span className="bg-blue-100 text-blue-800 text-xs font-bold px-3 py-1 rounded-full border border-blue-200 inline-block">
                 City Heights, San Diego • Established Network
               </span>
-              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-white">
+              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-slate-900">
                 Connecting City Heights with Trusted Leak Detection Specialists
               </h1>
-              <p className="text-base text-slate-300 leading-relaxed">
-                Based at <strong>3431 43rd St, San Diego, CA 92105</strong>, Leak Detection Pro was created to solve a pressing neighborhood problem: getting prompt, non-destructive water and gas leak diagnostics when you need it most.
+              <p className="text-base text-slate-600 leading-relaxed">
+                Based at <strong className="text-slate-900">3431 43rd St, San Diego, CA 92105</strong>, Leak Detection Pro was created to solve a pressing neighborhood problem: getting prompt, non-destructive water and gas leak diagnostics when you need it most.
               </p>
-              <div className="flex items-center gap-4 text-xs text-slate-300 pt-2">
+              <div className="flex flex-wrap items-center gap-4 text-xs text-slate-700 pt-2">
                 <div className="flex items-center gap-1.5">
-                  <ShieldCheck className="w-4 h-4 text-emerald-400" />
+                  <ShieldCheck className="w-4 h-4 text-emerald-600" />
                   <span>Licensed Independent Contractors</span>
                 </div>
                 <div className="flex items-center gap-1.5">
-                  <CheckCircle2 className="w-4 h-4 text-cyan-400" />
-                  <span>Non-Invasive Acoustic & Thermal Tools</span>
+                  <CheckCircle2 className="w-4 h-4 text-blue-600" />
+                  <span>Non-Invasive Acoustic &amp; Thermal Tools</span>
                 </div>
               </div>
             </div>
 
             <div className="lg:col-span-5">
-              <div className="relative rounded-2xl overflow-hidden border border-slate-700 shadow-2xl">
+              <div className="relative rounded-2xl overflow-hidden border border-slate-200 shadow-lg bg-white">
                 <img
                   src={APP_IMAGES.plumberInspection}
                   alt="Verified plumbing specialist inspecting residential water system in City Heights"
@@ -75,11 +75,9 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
                   className="w-full h-64 sm:h-72 object-cover"
                   referrerPolicy="no-referrer"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent flex items-end p-4">
-                  <div className="text-white">
-                    <div className="text-xs font-bold">Local Verified Plumbing Contractors</div>
-                    <div className="text-[11px] text-slate-300">Ready for non-invasive water & gas leak dispatch</div>
-                  </div>
+                <div className="bg-white/95 border-t border-slate-200 p-4">
+                  <div className="text-xs font-bold text-slate-900">Local Verified Plumbing Contractors</div>
+                  <div className="text-[11px] text-slate-600">Ready for non-invasive water &amp; gas leak dispatch</div>
                 </div>
               </div>
             </div>
@@ -133,16 +131,16 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
 
       {/* Business Details Summary */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="bg-slate-900 text-white rounded-3xl p-8 sm:p-12 border border-slate-800">
+        <div className="bg-gradient-to-br from-sky-50 via-white to-blue-50/40 text-slate-900 rounded-3xl p-8 sm:p-12 border border-sky-200 shadow-sm">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             <div className="lg:col-span-7 space-y-4">
-              <span className="text-xs font-bold text-blue-400 uppercase tracking-wider">
+              <span className="text-xs font-bold text-blue-700 uppercase tracking-wider">
                 Official Business Information
               </span>
-              <h3 className="text-2xl sm:text-3xl font-bold text-white">
+              <h3 className="text-2xl sm:text-3xl font-bold text-slate-900">
                 Leak Detection Pro
               </h3>
-              <p className="text-sm text-slate-300 leading-relaxed">
+              <p className="text-sm text-slate-600 leading-relaxed">
                 Dedicated plumbing and leak detection dispatch service for residential, commercial, and property management accounts across City Heights and Greater San Diego County through our qualified contractor network. Looking for specific services? Connect with specialists in{' '}
                 <a
                   href="/water-leak/"
@@ -150,7 +148,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
                     e.preventDefault();
                     onNavigate('water-leak');
                   }}
-                  className="text-cyan-400 font-bold underline hover:text-cyan-300"
+                  className="text-blue-700 font-bold underline hover:text-blue-900"
                 >
                   Underground Water &amp; Slab Leaks
                 </a>,{' '}
@@ -160,7 +158,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
                     e.preventDefault();
                     onNavigate('gas-leak');
                   }}
-                  className="text-amber-400 font-bold underline hover:text-amber-300"
+                  className="text-amber-700 font-bold underline hover:text-amber-900"
                 >
                   Emergency Gas Line Testing
                 </a>, or browse our{' '}
@@ -170,39 +168,39 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
                     e.preventDefault();
                     onNavigate('blog');
                   }}
-                  className="text-blue-400 font-bold underline hover:text-blue-300"
+                  className="text-cyan-700 font-bold underline hover:text-cyan-900"
                 >
                   City Heights Diagnostic Guides
                 </a>.
               </p>
 
-              <div className="space-y-2 text-xs text-slate-300 pt-2">
+              <div className="space-y-2 text-xs text-slate-700 pt-2">
                 <div className="flex items-center gap-2">
-                  <strong className="text-white w-28">Address:</strong>
+                  <strong className="text-slate-900 w-28">Address:</strong>
                   <span>{BUSINESS_INFO.fullAddress}</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <strong className="text-white w-28">Neighborhood:</strong>
+                  <strong className="text-slate-900 w-28">Neighborhood:</strong>
                   <span>City Heights, San Diego (Zip: 92105)</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <strong className="text-white w-28">Phone Line:</strong>
-                  <a href={BUSINESS_INFO.telLink} className="text-blue-400 font-bold hover:underline">
+                  <strong className="text-slate-900 w-28">Phone Line:</strong>
+                  <a href={BUSINESS_INFO.telLink} className="text-blue-700 font-bold hover:underline">
                     {BUSINESS_INFO.phoneFormatted}
                   </a>
                 </div>
                 <div className="flex items-center gap-2">
-                  <strong className="text-white w-28">Operation:</strong>
+                  <strong className="text-slate-900 w-28">Operation:</strong>
                   <span>24 Hours / 7 Days Network Dispatch</span>
                 </div>
               </div>
             </div>
 
-            <div className="lg:col-span-5 bg-slate-800 p-6 rounded-2xl border border-slate-700 space-y-4 text-center">
-              <div className="text-xs text-slate-400 uppercase font-semibold">
+            <div className="lg:col-span-5 bg-white p-6 rounded-2xl border border-slate-200 shadow-xs space-y-4 text-center">
+              <div className="text-xs text-slate-500 uppercase font-semibold">
                 Ready to find your leak?
               </div>
-              <div className="text-lg font-bold text-white">
+              <div className="text-lg font-bold text-slate-900">
                 Speak with a Local Dispatch Coordinator
               </div>
               <a
@@ -217,7 +215,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
                   e.preventDefault();
                   onNavigate('contact');
                 }}
-                className="block w-full py-3 bg-slate-700 hover:bg-slate-600 text-slate-200 font-semibold rounded-xl text-xs"
+                className="block w-full py-3 bg-slate-100 hover:bg-slate-200 text-slate-800 border border-slate-200 font-semibold rounded-xl text-xs transition-colors"
               >
                 View Dispatch Office &amp; Details
               </a>

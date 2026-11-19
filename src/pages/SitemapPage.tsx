@@ -248,33 +248,33 @@ export const SitemapPage: React.FC<SitemapPageProps> = ({ onNavigate }) => {
   return (
     <div className="space-y-12 pb-16">
       {/* Header Banner */}
-      <section className="bg-slate-900 text-white py-12 lg:py-16">
+      <section className="bg-gradient-to-br from-sky-50 via-blue-50/40 to-white border-b border-slate-200 text-slate-900 py-12 lg:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4">
-          <nav aria-label="Breadcrumb" className="flex flex-wrap items-center gap-2 text-xs text-slate-400">
+          <nav aria-label="Breadcrumb" className="flex flex-wrap items-center gap-2 text-xs text-slate-500">
             <a
               href="/"
               onClick={(e) => {
                 e.preventDefault();
                 onNavigate('home');
               }}
-              className="hover:underline hover:text-white"
+              className="hover:underline hover:text-blue-700"
             >
               Home
             </a>
             <span>/</span>
-            <span className="text-white font-medium">Sitemap</span>
+            <span className="text-slate-900 font-medium">Sitemap</span>
           </nav>
 
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-900/60 border border-blue-600/60 text-xs text-blue-200">
-            <FileCode className="w-3.5 h-3.5 text-blue-400" />
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-100 border border-blue-200 text-xs font-semibold text-blue-800">
+            <FileCode className="w-3.5 h-3.5 text-blue-600" />
             <span>Search Engine &amp; Human-Readable Index</span>
           </div>
 
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-white">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-slate-900">
             Website Sitemap &amp; XML Feed
           </h1>
 
-          <p className="text-base text-slate-300 max-w-2xl leading-relaxed">
+          <p className="text-base text-slate-600 max-w-2xl leading-relaxed">
             Direct access to all verified pages, services, diagnostic guides, and XML feeds for search engine crawlers and users.
           </p>
 
@@ -283,16 +283,16 @@ export const SitemapPage: React.FC<SitemapPageProps> = ({ onNavigate }) => {
               href="/sitemap.xml"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-4 py-2.5 bg-blue-600 hover:bg-blue-700 text-white rounded-xl text-xs font-bold transition-all shadow-md"
+              className="inline-flex items-center gap-2 px-4 py-2.5 bg-blue-600 hover:bg-blue-700 text-white rounded-xl text-xs font-bold transition-all shadow-sm"
             >
               <ExternalLink className="w-4 h-4" />
               <span>Open Raw /sitemap.xml</span>
             </a>
             <button
               onClick={handleCopy}
-              className="inline-flex items-center gap-2 px-4 py-2.5 bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 rounded-xl text-xs font-semibold transition-all cursor-pointer"
+              className="inline-flex items-center gap-2 px-4 py-2.5 bg-white hover:bg-slate-100 text-slate-800 border border-slate-300 rounded-xl text-xs font-semibold transition-all cursor-pointer shadow-xs"
             >
-              {copied ? <Check className="w-4 h-4 text-emerald-400" /> : <Copy className="w-4 h-4" />}
+              {copied ? <Check className="w-4 h-4 text-emerald-600" /> : <Copy className="w-4 h-4" />}
               <span>{copied ? 'Copied XML to Clipboard!' : 'Copy XML Sitemap Code'}</span>
             </button>
           </div>
@@ -386,14 +386,14 @@ export const SitemapPage: React.FC<SitemapPageProps> = ({ onNavigate }) => {
           </div>
 
           {/* XML Code Viewer Accordion */}
-          <div className="bg-slate-900 rounded-2xl p-6 border border-slate-800 text-white space-y-4">
+          <div className="bg-white rounded-2xl p-6 border border-slate-200 shadow-xs text-slate-900 space-y-4">
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
               <div>
-                <h3 className="font-bold text-base text-white flex items-center gap-2">
-                  <FileCode className="w-4 h-4 text-cyan-400" />
+                <h3 className="font-bold text-base text-slate-900 flex items-center gap-2">
+                  <FileCode className="w-4 h-4 text-blue-600" />
                   <span>Raw sitemap.xml Source (Clean Sitemaps Protocol 0.9)</span>
                 </h3>
-                <p className="text-xs text-slate-400 mt-1">
+                <p className="text-xs text-slate-500 mt-1">
                   Ready to copy and submit to Google Search Console or Bing Webmaster Tools.
                 </p>
               </div>
@@ -401,12 +401,12 @@ export const SitemapPage: React.FC<SitemapPageProps> = ({ onNavigate }) => {
                 onClick={handleCopy}
                 className="self-start sm:self-auto inline-flex items-center gap-2 px-3 py-1.5 bg-blue-600 hover:bg-blue-700 text-white rounded-lg text-xs font-semibold transition-all cursor-pointer"
               >
-                {copied ? <Check className="w-3.5 h-3.5 text-emerald-300" /> : <Copy className="w-3.5 h-3.5" />}
+                {copied ? <Check className="w-3.5 h-3.5 text-emerald-200" /> : <Copy className="w-3.5 h-3.5" />}
                 <span>{copied ? 'Copied!' : 'Copy XML'}</span>
               </button>
             </div>
 
-            <pre className="p-4 bg-slate-950 rounded-xl border border-slate-800 text-xs font-mono text-cyan-300 overflow-x-auto leading-relaxed max-h-96">
+            <pre className="p-4 bg-slate-50 rounded-xl border border-slate-200 text-xs font-mono text-slate-800 overflow-x-auto leading-relaxed max-h-96">
               {rawXml}
             </pre>
           </div>
