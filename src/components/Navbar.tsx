@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Phone, ShieldAlert, Droplets, Flame, Menu, X, MapPin, Clock, Info, FileText } from 'lucide-react';
+import { Phone, ShieldAlert, Droplets, Flame, Menu, X, MapPin, Clock, Info, FileText, Facebook } from 'lucide-react';
 import { Page } from '../types';
 import { BUSINESS_INFO } from '../data/content';
 
@@ -34,6 +34,16 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate }) => {
               <Clock className="w-3 h-3" />
               <span>24/7 Emergency Dispatch</span>
             </div>
+            <a
+              href={BUSINESS_INFO.facebookUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Follow Leak Detection Pro on Facebook"
+              className="text-blue-700 hover:text-blue-900 font-semibold flex items-center gap-1"
+            >
+              <Facebook className="w-3 h-3 text-blue-600" />
+              <span>Facebook</span>
+            </a>
             <a
               href={BUSINESS_INFO.telLink}
               className="text-red-700 hover:text-blue-700 font-bold flex items-center gap-1"

@@ -8,7 +8,8 @@ import {
   CheckCircle2,
   AlertTriangle,
   Droplets,
-  Flame
+  Flame,
+  Facebook
 } from 'lucide-react';
 import { Page } from '../types';
 import { BUSINESS_INFO } from '../data/content';
@@ -105,6 +106,26 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate }) => {
                     <p className="text-sm text-slate-700 font-medium">Open 24 Hours / 7 Days a Week</p>
                     <p className="text-xs text-slate-500 mt-0.5">
                       Round-the-clock weekend, holiday, and overnight contractor routing
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <div className="w-10 h-10 rounded-xl bg-blue-100 text-blue-600 flex items-center justify-center shrink-0 mt-1">
+                    <Facebook className="w-5 h-5" />
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-sm text-slate-900">Official Facebook Page:</h3>
+                    <a
+                      href={BUSINESS_INFO.facebookUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-sm font-bold text-blue-600 hover:text-blue-700 hover:underline inline-flex items-center gap-1.5"
+                    >
+                      <span>Follow Leak Detection Pro on Facebook</span>
+                    </a>
+                    <p className="text-xs text-slate-500 mt-0.5">
+                      Local City Heights leak prevention tips &amp; community updates
                     </p>
                   </div>
                 </div>
