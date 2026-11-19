@@ -38,12 +38,86 @@ IMPORTANT DISCLOSURES:
 };
 
 export const CITY_HEIGHTS_AREAS = [
-  { name: 'City Heights Core (92105)', desc: 'Near 43rd St, University Ave, and Fairmount Ave' },
-  { name: 'Teralta West & East', desc: 'Covering residential blocks north & south of University Ave' },
-  { name: 'Castle & Azalea Park', desc: 'Charming older homes prone to underground slab & galvanized pipe leaks' },
-  { name: 'Fairmount Village & Swan Canyon', desc: 'Hillside and canyon properties requiring acoustic detection' },
-  { name: 'Colina Park & Cherokee Point', desc: 'Multi-family and residential water & gas meter inspections' },
-  { name: 'Adjacent Metro Neighborhoods', desc: 'Normal Heights, Talmadge, Kensington, and North Park' }
+  {
+    name: 'Teralta (92105)',
+    desc: '1920s–1940s Craftsman & bungalow blocks north and south of University Ave near Teralta Park; raised-foundation galvanized pipe and drain leaks.'
+  },
+  {
+    name: 'Azalea Park (92105)',
+    desc: 'Canyon-rim cottages and mid-century slab homes along Poplar St & Violet St prone to copper slab pinholes and hillside main line stress.'
+  },
+  {
+    name: 'Fairmount Village (92105)',
+    desc: 'Hillside residences near Fairmount Ave & Swan Canyon with aging cast-iron sewer lines, pressure-regulator faults, and foundation seepage.'
+  },
+  {
+    name: 'Fox Canyon (92105)',
+    desc: 'Sloped canyon parcels south of Orange Ave & Euclid Ave requiring tracer gas yard main locating and precision acoustic slab diagnostics.'
+  },
+  {
+    name: 'Chollas Creek (92105 / 92102)',
+    desc: 'Properties along the Chollas Creek corridor near 47th St & Market St affected by alluvial soil shifting, root intrusion, and under-slab moisture.'
+  },
+  {
+    name: 'Surrounding Metro ZIPs (92104, 92115, 92116)',
+    desc: 'Rapid 24/7 dispatch extending from 43rd St into Normal Heights, North Park, Talmadge, Kensington, and Rolando.'
+  }
+];
+
+export const CITY_HEIGHTS_PLUMBING_ISSUES = [
+  {
+    title: '1920s–1950s Craftsman Homes & Bungalows',
+    badge: 'Historic Raised Foundations',
+    summary: 'Pre-war wood-framed homes near Teralta, Azalea Park, and University Ave often contain original crawlspace risers, aging brass shutoffs, and brittle solder joints that weep quietly behind lath-and-plaster walls.'
+  },
+  {
+    title: 'Corroded Galvanized Steel Supply Pipes',
+    badge: 'Rust & Pressure Drops',
+    summary: 'Before copper and PEX became standard, City Heights builders installed galvanized steel water piping. Internal rust buildup restricts water flow, spikes line pressure, and causes sudden pinhole ruptures at threaded joints.'
+  },
+  {
+    title: 'Aging Cast-Iron & Clay Sewer Lines',
+    badge: 'Root Intrusion & Soil Shift',
+    summary: 'Heavy San Diego clay soils and mature neighborhood tree roots stress decades-old cast-iron and vitrified clay drains across Fairmount Village, Fox Canyon, and Chollas Creek, leading to slow backups and concealed foundation dampness.'
+  },
+  {
+    title: 'Mid-Century Concrete Slab Foundations',
+    badge: 'Sub-Slab Copper Leaks',
+    summary: '1950s–1970s slab-on-grade homes and fourplexes route pressurized hot and cold copper lines straight through abrasive earth and concrete footings, creating warm floor spots, hissing sounds, and spiking water bills.'
+  }
+];
+
+export const HOMEPAGE_PRICING_TIERS = [
+  {
+    service: 'Visual Fixture & Meter Isolation Check',
+    method: 'City Meter Spin Test & Valve Check',
+    range: '$125 – $225',
+    details: 'Confirms whether water loss is active on your private service lateral, indoor fixtures, or irrigation manifold.'
+  },
+  {
+    service: 'Thermal FLIR Infrared Wall & Ceiling Scan',
+    method: 'FLIR Thermography & Moisture Mapping',
+    range: '$175 – $325',
+    details: 'Pinpoints hidden cold or hot pipe drips behind drywall, plaster, cabinetry, and tile without exploratory cutouts.'
+  },
+  {
+    service: 'Acoustic Concrete Slab Leak Locating',
+    method: 'Piezo-Acoustic Ground Sensors',
+    range: '$250 – $450',
+    details: 'Tracks pressurized water vibrations beneath concrete slab foundations within 1–2 inches before any targeted repair.'
+  },
+  {
+    service: 'Underground Yard Main & Tracer Gas Test',
+    method: 'Nitrogen/Helium Tracer & Ground Probe',
+    range: '$295 – $525',
+    details: 'Isolates deep buried supply runs under driveways, walkways, and landscaped yards between the curb meter and home.'
+  },
+  {
+    service: 'Natural Gas Pressure Decay & Sniffer Survey',
+    method: 'Digital Manometer & 1-PPM Electronic Sniffer',
+    range: '$195 – $350',
+    details: 'Tests gas line holding pressure, locates active vapor leaks, and provides compliance testing for SDG&E service restoration.'
+  }
 ];
 
 export const TESTIMONIALS = [

@@ -28,7 +28,7 @@ export const SitemapPage: React.FC<SitemapPageProps> = ({ onNavigate }) => {
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.cityheightsleakdetectionpro.com/</loc>
-    <lastmod>2026-11-15</lastmod>
+    <lastmod>2026-11-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -111,7 +111,7 @@ export const SitemapPage: React.FC<SitemapPageProps> = ({ onNavigate }) => {
       loc: 'https://www.cityheightsleakdetectionpro.com/',
       path: '/',
       page: 'home' as Page,
-      title: 'Leak Detection in City Heights, San Diego | Fast Help',
+      title: 'Leak Detection & Repair in City Heights, San Diego | (619) 910-9411',
       desc: 'Hidden water, slab or gas leak in City Heights? Get matched with a licensed local pro for non-invasive leak detection. Call (619) 910-9411.',
       priority: '1.0',
       changefreq: 'daily',

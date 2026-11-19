@@ -18,10 +18,20 @@ import {
   Layers,
   HelpCircle,
   Eye,
-  FileText
+  FileText,
+  Wrench,
+  Building2,
+  DollarSign
 } from 'lucide-react';
 import { Page } from '../types';
-import { BUSINESS_INFO, FAQ_ITEMS, TESTIMONIALS, CITY_HEIGHTS_AREAS } from '../data/content';
+import {
+  BUSINESS_INFO,
+  FAQ_ITEMS,
+  TESTIMONIALS,
+  CITY_HEIGHTS_AREAS,
+  CITY_HEIGHTS_PLUMBING_ISSUES,
+  HOMEPAGE_PRICING_TIERS
+} from '../data/content';
 import { APP_IMAGES } from '../data/images';
 
 const LocationMap = React.lazy(() => import('../components/LocationMap').then(m => ({ default: m.LocationMap })));
@@ -89,11 +99,11 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
                 </span>
               </div>
 
-              {/* Refined, Balanced Title with High Aesthetic Hierarchy */}
+              {/* Single Primary H1 focused on Water, Slab, and Gas Leak Detection in City Heights */}
               <h1 className="text-3xl sm:text-4xl lg:text-[42px] xl:text-[48px] font-extrabold tracking-tight text-white leading-[1.16]">
-                <span className="text-slate-100">Water &amp; Gas Leak</span>
+                <span className="text-slate-100">Water, Slab &amp; Gas Leak</span>
                 <span className="block text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-sky-300 to-blue-400 mt-1 sm:mt-1.5">
-                  Detection &amp; Repair Services in City Heights, San Diego
+                  Detection in City Heights, San Diego
                 </span>
               </h1>
 
@@ -708,17 +718,17 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
                 Local Presence & Community
               </span>
               <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                Serving All Neighborhoods in City Heights, CA (92105)
+                Neighborhood Dispatch: Teralta, Azalea Park, Fairmount Village, Fox Canyon &amp; Chollas Creek
               </h2>
               <p className="text-sm text-slate-600 leading-relaxed">
-                Leak Detection Pro operates right from <strong>3431 43rd St, San Diego, CA 92105</strong>. Our dispatch network covers the dense residential corridors along University Ave, El Cajon Blvd, Fairmount Ave, and Euclid Ave. We know the unique plumbing challenges of older Spanish-revival bungalows, mid-century ranch homes, and multi-unit apartment complexes prevalent in City Heights.
+                Leak Detection Pro dispatches locally from <strong>3431 43rd St, San Diego, CA 92105</strong> across City Heights, Teralta, Azalea Park, Fairmount Village, Fox Canyon, and Chollas Creek, extending throughout ZIP codes <strong>92105, 92104, 92115, and 92116</strong>. Our partner technicians know the architectural quirks of 1920s craftsman bungalows, mid-century concrete slabs, and canyon hillside residences.
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
                 {CITY_HEIGHTS_AREAS.map((area, idx) => (
                   <div key={idx} className="p-3 bg-slate-50 border border-slate-200/80 rounded-xl">
-                    <div className="text-xs font-bold text-slate-900">{area.name}</div>
-                    <div className="text-[11px] text-slate-500 mt-0.5">{area.desc}</div>
+                    <h3 className="text-xs font-bold text-slate-900">{area.name}</h3>
+                    <p className="text-[11px] text-slate-600 mt-0.5 leading-relaxed">{area.desc}</p>
                   </div>
                 ))}
               </div>
@@ -781,6 +791,135 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* 4A-1. COMMON CITY HEIGHTS (92105) PLUMBING & FOUNDATION LEAK ISSUES */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="bg-white rounded-3xl border border-slate-200 p-6 sm:p-10 shadow-xs space-y-8">
+          <div className="max-w-3xl space-y-2">
+            <span className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-blue-700 bg-blue-50 px-3 py-1 rounded-full border border-blue-200">
+              <Wrench className="w-3.5 h-3.5" /> 92105 Infrastructure Diagnostics
+            </span>
+            <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+              Common Plumbing &amp; Slab Leak Issues in City Heights (92105) Homes
+            </h2>
+            <p className="text-sm text-slate-600 leading-relaxed">
+              Central San Diego housing stock spans nearly a century of construction methods. Whether your home sits on a raised wood floor in Teralta or a post-war concrete slab along Chollas Creek, aging piping reacts predictably to hard local water minerals and expansive canyon clay soils.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {CITY_HEIGHTS_PLUMBING_ISSUES.map((item, idx) => (
+              <div key={idx} className="p-6 rounded-2xl bg-slate-50 border border-slate-200/90 space-y-2.5">
+                <div className="flex items-center justify-between gap-2 flex-wrap">
+                  <h3 className="text-base sm:text-lg font-bold text-slate-900">{item.title}</h3>
+                  <span className="text-[11px] font-bold text-blue-700 bg-blue-100/80 px-2.5 py-0.5 rounded-full">
+                    {item.badge}
+                  </span>
+                </div>
+                <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">{item.summary}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 4A-2. LOCAL UTILITY COORDINATION: CITY OF SAN DIEGO PUD & SDG&E */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="bg-slate-900 text-white rounded-3xl p-6 sm:p-10 border border-slate-800 shadow-xl space-y-8">
+          <div className="max-w-3xl space-y-2">
+            <span className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-emerald-300 bg-emerald-950/80 px-3 py-1 rounded-full border border-emerald-800">
+              <Building2 className="w-3.5 h-3.5" /> Municipal Utility Coordination
+            </span>
+            <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+              Working Alongside the City of San Diego Public Utilities &amp; SDG&amp;E
+            </h2>
+            <p className="text-sm text-slate-300 leading-relaxed">
+              Accurate leak resolution requires knowing where utility responsibility stops and homeowner lateral piping begins. Licensed technicians in our City Heights network coordinate seamlessly with local public agencies to resolve active losses and restore shut-off service.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="bg-slate-800/80 border border-slate-700 rounded-2xl p-6 space-y-3">
+              <div className="flex items-center gap-2 text-cyan-300 font-bold text-sm">
+                <Droplets className="w-5 h-5" />
+                <span>Water Meter &amp; Lateral Isolation</span>
+              </div>
+              <h3 className="text-lg font-bold text-white">
+                City of San Diego Public Utilities Department
+              </h3>
+              <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                Before any yard trenching starts, contractors perform a static spin test at the municipal curb box to verify whether water is leaking on the City side of the meter or along your private service lateral. Once repaired, you receive an itemized acoustic and pressure test report structured for submission when applying for a City of San Diego High-Water-Bill Leak Adjustment.
+              </p>
+            </div>
+
+            <div className="bg-slate-800/80 border border-slate-700 rounded-2xl p-6 space-y-3">
+              <div className="flex items-center gap-2 text-amber-300 font-bold text-sm">
+                <Flame className="w-5 h-5" />
+                <span>Emergency Shutoffs &amp; Red-Tag Restoration</span>
+              </div>
+              <h3 className="text-lg font-bold text-white">
+                San Diego Gas &amp; Electric (SDG&amp;E) Coordination
+              </h3>
+              <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                If you smell natural gas outdoors or inside, evacuate immediately and call <strong>SDG&amp;E Emergency Dispatch at 1-800-411-7343</strong> or <strong>911</strong>. When SDG&amp;E locks a meter with a safety Red Tag, our matched CSLB-licensed gas plumbers perform calibrated digital manometer pressure decay tests, repair leaking black-iron joints or shutoff valves, and document line integrity so SDG&amp;E can safely turn service back on.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 4A-3. TRANSPARENT ACOUSTIC & THERMAL LEAK DETECTION PRICING IN SAN DIEGO */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="bg-white rounded-3xl border border-slate-200 p-6 sm:p-10 shadow-xs space-y-6">
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
+            <div className="max-w-3xl space-y-2">
+              <span className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-emerald-700 bg-emerald-50 px-3 py-1 rounded-full border border-emerald-200">
+                <DollarSign className="w-3.5 h-3.5" /> San Diego Pricing Transparency
+              </span>
+              <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                Upfront Acoustic &amp; Thermal Leak Detection Price Ranges
+              </h2>
+              <p className="text-sm text-slate-600 leading-relaxed">
+                Every home in City Heights (92105) receives a clear diagnostic quote before electronic testing begins. Exact pricing depends on slab thickness, raised crawlspace access, yard main depth, and whether multiple zones require tracer gas testing.
+              </p>
+            </div>
+            <a
+              href={BUSINESS_INFO.telLink}
+              className="inline-flex items-center justify-center gap-2 px-5 py-3 bg-blue-600 hover:bg-blue-700 text-white font-bold text-xs sm:text-sm rounded-xl shadow-sm transition-colors shrink-0"
+            >
+              <Phone className="w-4 h-4" />
+              <span>Request Free Phone Quote</span>
+            </a>
+          </div>
+
+          <div className="overflow-x-auto rounded-2xl border border-slate-200">
+            <table className="w-full text-left border-collapse">
+              <thead>
+                <tr className="bg-slate-900 text-white text-xs uppercase tracking-wider">
+                  <th className="py-3.5 px-4 font-bold">Diagnostic Service</th>
+                  <th className="py-3.5 px-4 font-bold">Primary Method</th>
+                  <th className="py-3.5 px-4 font-bold">Typical San Diego Range</th>
+                  <th className="py-3.5 px-4 font-bold">What Is Included</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-slate-200 text-xs sm:text-sm text-slate-700">
+                {HOMEPAGE_PRICING_TIERS.map((tier, idx) => (
+                  <tr key={idx} className={idx % 2 === 0 ? 'bg-white' : 'bg-slate-50/70'}>
+                    <td className="py-3.5 px-4 font-bold text-slate-900">{tier.service}</td>
+                    <td className="py-3.5 px-4 text-slate-600">{tier.method}</td>
+                    <td className="py-3.5 px-4 font-extrabold text-blue-700 whitespace-nowrap">{tier.range}</td>
+                    <td className="py-3.5 px-4 text-slate-600 leading-relaxed">{tier.details}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+
+          <p className="text-xs text-slate-500 leading-relaxed">
+            Diagnostic rates cover precision locating and leak marking prior to any invasive excavation. Once located, technicians explain targeted spot-repair vs. overhead PEX reroute options with written flat-rate pricing before repair work proceeds.
+          </p>
         </div>
       </section>
 
