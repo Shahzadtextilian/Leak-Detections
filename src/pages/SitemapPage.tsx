@@ -28,25 +28,25 @@ export const SitemapPage: React.FC<SitemapPageProps> = ({ onNavigate }) => {
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.cityheightsleakdetectionpro.com/</loc>
-    <lastmod>2026-11-19</lastmod>
+    <lastmod>2026-11-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://www.cityheightsleakdetectionpro.com/water-leak/</loc>
-    <lastmod>2026-11-15</lastmod>
+    <lastmod>2026-11-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.cityheightsleakdetectionpro.com/gas-leak/</loc>
-    <lastmod>2026-11-15</lastmod>
+    <lastmod>2026-11-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.cityheightsleakdetectionpro.com/blog/</loc>
-    <lastmod>2026-11-18</lastmod>
+    <lastmod>2026-11-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
@@ -58,13 +58,13 @@ export const SitemapPage: React.FC<SitemapPageProps> = ({ onNavigate }) => {
   </url>
   <url>
     <loc>https://www.cityheightsleakdetectionpro.com/underground-slab-leak-detection/</loc>
-    <lastmod>2026-11-15</lastmod>
+    <lastmod>2026-11-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.cityheightsleakdetectionpro.com/leak-detection-and-repair-guide/</loc>
-    <lastmod>2026-11-15</lastmod>
+    <lastmod>2026-11-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -76,13 +76,13 @@ export const SitemapPage: React.FC<SitemapPageProps> = ({ onNavigate }) => {
   </url>
   <url>
     <loc>https://www.cityheightsleakdetectionpro.com/about/</loc>
-    <lastmod>2026-11-15</lastmod>
+    <lastmod>2026-11-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.cityheightsleakdetectionpro.com/contact/</loc>
-    <lastmod>2026-11-15</lastmod>
+    <lastmod>2026-11-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -111,8 +111,8 @@ export const SitemapPage: React.FC<SitemapPageProps> = ({ onNavigate }) => {
       loc: 'https://www.cityheightsleakdetectionpro.com/',
       path: '/',
       page: 'home' as Page,
-      title: 'Leak Detection & Repair in City Heights, San Diego | (619) 910-9411',
-      desc: 'Hidden water, slab or gas leak in City Heights? Get matched with a licensed local pro for non-invasive leak detection. Call (619) 910-9411.',
+      title: 'Leak Detection & Repair in San Diego, CA | (619) 910-9411',
+      desc: 'Hidden water, slab or gas leak anywhere in San Diego? Get matched with a CSLB-licensed pro for non-invasive leak detection. Call (619) 910-9411.',
       priority: '1.0',
       changefreq: 'daily',
       icon: <Globe className="w-5 h-5 text-blue-500" />
@@ -121,8 +121,8 @@ export const SitemapPage: React.FC<SitemapPageProps> = ({ onNavigate }) => {
       loc: 'https://www.cityheightsleakdetectionpro.com/water-leak/',
       path: '/water-leak/',
       page: 'water-leak' as Page,
-      title: 'Slab & Water Leak Detection in City Heights | No Digging',
-      desc: 'Suspect a leak under your slab or walls? Acoustic and thermal imaging pinpoints it without tearing up floors. Free estimate: (619) 910-9411.',
+      title: 'Slab & Water Leak Detection in San Diego | No Digging',
+      desc: 'Suspect a leak under your slab or walls in San Diego? Acoustic & thermal imaging pinpoints it without tearing up floors. Free quote: (619) 910-9411.',
       priority: '0.9',
       changefreq: 'weekly',
       icon: <Droplets className="w-5 h-5 text-blue-400" />
@@ -131,8 +131,8 @@ export const SitemapPage: React.FC<SitemapPageProps> = ({ onNavigate }) => {
       loc: 'https://www.cityheightsleakdetectionpro.com/gas-leak/',
       path: '/gas-leak/',
       page: 'gas-leak' as Page,
-      title: 'Gas Leak Detection City Heights, CA | 24/7 Emergency',
-      desc: 'Smell gas? Leave the home and call 911 or SDG&E first. Then call us for licensed gas leak testing in City Heights. (619) 910-9411.',
+      title: 'Gas Leak Detection San Diego, CA | 24/7 Emergency',
+      desc: 'Smell gas in San Diego? Evacuate and call 911 or SDG&E first, then call our 24/7 dispatch for licensed gas leak testing & clearance: (619) 910-9411.',
       priority: '0.9',
       changefreq: 'weekly',
       icon: <Flame className="w-5 h-5 text-amber-500" />
@@ -141,8 +141,8 @@ export const SitemapPage: React.FC<SitemapPageProps> = ({ onNavigate }) => {
       loc: 'https://www.cityheightsleakdetectionpro.com/blog/',
       path: '/blog/',
       page: 'blog' as Page,
-      title: 'Leak Detection Blog & Guides | City Heights, San Diego',
-      desc: 'Explore City Heights leak detection guides covering hidden water leak signs, slab leak locating, acoustic testing, and pipe repair methods.',
+      title: 'San Diego Leak Detection Blog & Homeowner Guides',
+      desc: 'Explore San Diego leak detection guides covering hidden water leak signs, slab leak locating, acoustic testing, and targeted pipe repair methods.',
       priority: '0.9',
       changefreq: 'daily',
       icon: <FileText className="w-5 h-5 text-cyan-500" />
@@ -152,7 +152,7 @@ export const SitemapPage: React.FC<SitemapPageProps> = ({ onNavigate }) => {
       path: '/leak-detection-city-heights-san-diego/',
       page: 'leak-detection-city-heights-san-diego' as Page,
       title: 'Leak Detection in City Heights, San Diego | Local Guide',
-      desc: 'Learn the signs of hidden leaks, how pros find them, and what pricing depends on. Call City Heights Leak Detection Pro at (619) 910-9411.',
+      desc: 'Learn the signs of hidden leaks, how pros find them, and what pricing depends on. Call Leak Detection Pro in San Diego at (619) 910-9411.',
       priority: '0.9',
       changefreq: 'weekly',
       icon: <FileText className="w-5 h-5 text-blue-500" />
@@ -171,8 +171,8 @@ export const SitemapPage: React.FC<SitemapPageProps> = ({ onNavigate }) => {
       loc: 'https://www.cityheightsleakdetectionpro.com/leak-detection-and-repair-guide/',
       path: '/leak-detection-and-repair-guide/',
       page: 'leak-detection-and-repair-guide' as Page,
-      title: 'Leak Detection & Repair Guide | City Heights, San Diego',
-      desc: 'Complete leak detection & repair guide for City Heights (92105). Learn how acoustic sensors, thermal imaging & slab repairs work. Call (619) 910-9411.',
+      title: 'Leak Detection & Repair Guide | San Diego, CA',
+      desc: 'Complete leak detection & repair guide for San Diego homeowners. Learn how acoustic sensors, thermal imaging & slab repairs work. Call (619) 910-9411.',
       priority: '0.9',
       changefreq: 'weekly',
       icon: <FileText className="w-5 h-5 text-teal-500" />
@@ -182,7 +182,7 @@ export const SitemapPage: React.FC<SitemapPageProps> = ({ onNavigate }) => {
       path: '/hidden-water-leak-signs-city-heights/',
       page: 'hidden-water-leak-signs-city-heights' as Page,
       title: 'How to Spot a Hidden Water Leak in City Heights Homes',
-      desc: 'Higher water bill, damp smell, or a sound in the walls? Learn how City Heights homeowners can spot a hidden leak early. Call (619) 910-9411.',
+      desc: 'Higher water bill, damp smell, or a sound in the walls? Learn how San Diego homeowners can spot a hidden leak early. Call (619) 910-9411.',
       priority: '0.9',
       changefreq: 'weekly',
       icon: <FileText className="w-5 h-5 text-sky-500" />
@@ -191,8 +191,8 @@ export const SitemapPage: React.FC<SitemapPageProps> = ({ onNavigate }) => {
       loc: 'https://www.cityheightsleakdetectionpro.com/about/',
       path: '/about/',
       page: 'about' as Page,
-      title: 'About Leak Detection Pro | City Heights Plumber Network',
-      desc: 'We connect City Heights homeowners with pre-screened, CSLB-licensed plumbers for leak detection. See how it works. Call (619) 910-9411.',
+      title: 'About Leak Detection Pro | San Diego Plumber Network',
+      desc: 'We connect San Diego homeowners with pre-screened, CSLB-licensed plumbers for non-invasive leak detection citywide. See how it works: (619) 910-9411.',
       priority: '0.7',
       changefreq: 'monthly',
       icon: <Info className="w-5 h-5 text-indigo-500" />
@@ -201,8 +201,8 @@ export const SitemapPage: React.FC<SitemapPageProps> = ({ onNavigate }) => {
       loc: 'https://www.cityheightsleakdetectionpro.com/contact/',
       path: '/contact/',
       page: 'contact' as Page,
-      title: 'Contact Leak Detection Pro | City Heights, CA 92105',
-      desc: 'Request a leak detection estimate in City Heights. Call (619) 910-9411 anytime or reach our dispatch desk at 3431 43rd St, San Diego, CA 92105.',
+      title: 'Contact Leak Detection Pro | San Diego, CA 24/7 Dispatch',
+      desc: 'Request a leak detection estimate anywhere in San Diego. Call (619) 910-9411 anytime or reach our central dispatch at 3431 43rd St, San Diego, CA.',
       priority: '0.8',
       changefreq: 'monthly',
       icon: <Mail className="w-5 h-5 text-emerald-500" />
@@ -211,8 +211,8 @@ export const SitemapPage: React.FC<SitemapPageProps> = ({ onNavigate }) => {
       loc: 'https://www.cityheightsleakdetectionpro.com/privacy/',
       path: '/privacy/',
       page: 'privacy' as Page,
-      title: 'Privacy Policy | Leak Detection Pro',
-      desc: 'How Leak Detection Pro collects, uses and protects your personal information, including your rights under the CCPA.',
+      title: 'Privacy Policy | Leak Detection Pro San Diego',
+      desc: 'How Leak Detection Pro collects, uses and protects your personal information across San Diego, including your rights under California CCPA/CPRA.',
       priority: '0.3',
       changefreq: 'yearly',
       icon: <ShieldCheck className="w-5 h-5 text-slate-400" />
@@ -222,7 +222,7 @@ export const SitemapPage: React.FC<SitemapPageProps> = ({ onNavigate }) => {
       path: '/disclaimer/',
       page: 'disclaimer' as Page,
       title: 'Legal Disclaimer & Licensing | Leak Detection Pro',
-      desc: 'Leak Detection Pro connects homeowners with independent CSLB-licensed plumbers. Read our qualified contractor network licensing & service terms.',
+      desc: 'Leak Detection Pro connects San Diego property owners with independent CSLB-licensed plumbers. Read our qualified contractor network licensing terms.',
       priority: '0.3',
       changefreq: 'yearly',
       icon: <AlertTriangle className="w-5 h-5 text-slate-400" />
@@ -231,8 +231,8 @@ export const SitemapPage: React.FC<SitemapPageProps> = ({ onNavigate }) => {
       loc: 'https://www.cityheightsleakdetectionpro.com/sitemap/',
       path: '/sitemap/',
       page: 'sitemap' as Page,
-      title: 'Sitemap | Leak Detection Pro City Heights',
-      desc: 'Browse every Leak Detection Pro page: water leak detection, gas leak detection, cost guides and contact details for City Heights, San Diego.',
+      title: 'Sitemap | Leak Detection Pro San Diego',
+      desc: 'Browse every Leak Detection Pro San Diego page: water & slab leak detection, gas leak testing, homeowner guides, and 24/7 citywide dispatch details.',
       priority: '0.5',
       changefreq: 'weekly',
       icon: <FileCode className="w-5 h-5 text-blue-400" />

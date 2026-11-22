@@ -51,7 +51,7 @@ export const DisclaimerPage: React.FC<DisclaimerPageProps> = ({ onNavigate }) =>
                 Summary of Business Operations:
               </h2>
               <p className="text-xs sm:text-sm leading-relaxed">
-                <strong>Leak Detection Pro delivers plumbing and leak detection services through a qualified network of licensed contractors.</strong> Field plumbing, acoustic diagnostics, and physical repairs are performed by independent third-party licensed contractors in City Heights, San Diego, CA.
+                <strong>Leak Detection Pro delivers plumbing and leak detection services through a qualified network of licensed contractors.</strong> Field plumbing, acoustic diagnostics, and physical repairs are performed by independent third-party licensed contractors across the City of San Diego, CA.
               </p>
             </div>
           </div>
@@ -62,7 +62,7 @@ export const DisclaimerPage: React.FC<DisclaimerPageProps> = ({ onNavigate }) =>
               1. Qualified Contractor Network &amp; Services
             </h3>
             <p>
-              The purpose of Leak Detection Pro (accessible via our website and telephone hotline (619) 910-9411) is to assist property owners in City Heights, San Diego (92105) by connecting them with our network of independent, third-party contractors who perform water leak detection, slab leak testing, gas leak locating, and pipe repairs. When you request service, you are requesting prompt dispatch of an independent qualified contractor.
+              The purpose of Leak Detection Pro (accessible via our website and telephone hotline (619) 910-9411) is to assist property owners across San Diego, CA by connecting them with our network of independent, third-party contractors who perform water leak detection, slab leak testing, gas leak locating, and pipe repairs. When you request service, you are requesting prompt dispatch of an independent qualified contractor.
             </p>
           </div>
 
@@ -112,7 +112,7 @@ export const DisclaimerPage: React.FC<DisclaimerPageProps> = ({ onNavigate }) =>
             <p><strong>Entity:</strong> Leak Detection Pro (Qualified Contractor Network)</p>
             <p><strong>Physical Address:</strong> 3431 43rd St, San Diego, CA 92105</p>
             <p><strong>Dispatch Hotline:</strong> (619) 910-9411</p>
-            <p><strong>Service Location:</strong> City Heights, San Diego County, California</p>
+            <p><strong>Service Location:</strong> City of San Diego &amp; San Diego County, California</p>
           </div>
 
           <div className="flex flex-col sm:flex-row gap-3 pt-4">

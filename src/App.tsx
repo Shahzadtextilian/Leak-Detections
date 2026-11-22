@@ -67,56 +67,56 @@ export default function App() {
   useEffect(() => {
     const pageMeta: Record<Page, { title: string; desc: string }> = {
       'home': {
-        title: 'Leak Detection & Repair in City Heights, San Diego | (619) 910-9411',
-        desc: 'Hidden water, slab or gas leak in City Heights? Get matched with a licensed local pro for non-invasive leak detection. Call (619) 910-9411.'
+        title: 'Leak Detection & Repair in San Diego, CA | (619) 910-9411',
+        desc: 'Hidden water, slab or gas leak anywhere in San Diego? Get matched with a CSLB-licensed pro for non-invasive leak detection. Call (619) 910-9411.'
       },
       'water-leak': {
-        title: 'Slab & Water Leak Detection in City Heights | No Digging',
-        desc: 'Suspect a leak under your slab or walls? Acoustic and thermal imaging pinpoints it without tearing up floors. Free estimate: (619) 910-9411.'
+        title: 'Slab & Water Leak Detection in San Diego | No Digging',
+        desc: 'Suspect a leak under your slab or walls in San Diego? Acoustic & thermal imaging pinpoints it without tearing up floors. Free quote: (619) 910-9411.'
       },
       'gas-leak': {
-        title: 'Gas Leak Detection City Heights, CA | 24/7 Emergency',
-        desc: 'Smell gas? Leave the home and call 911 or SDG&E first. Then call us for licensed gas leak testing in City Heights. (619) 910-9411.'
+        title: 'Gas Leak Detection San Diego, CA | 24/7 Emergency',
+        desc: 'Smell gas in San Diego? Evacuate and call 911 or SDG&E first, then call our 24/7 dispatch for licensed gas leak testing & clearance: (619) 910-9411.'
       },
       'blog': {
-        title: 'Leak Detection Blog & Guides | City Heights, San Diego',
-        desc: 'Explore City Heights leak detection guides covering hidden water leak signs, slab leak locating, acoustic testing, and pipe repair methods.'
+        title: 'San Diego Leak Detection Blog & Homeowner Guides',
+        desc: 'Explore San Diego leak detection guides covering hidden water leak signs, slab leak locating, acoustic testing, and targeted pipe repair methods.'
       },
       'leak-detection-city-heights-san-diego': {
         title: 'Leak Detection in City Heights, San Diego | Local Guide',
-        desc: 'Learn the signs of hidden leaks, how pros find them, and what pricing depends on. Call City Heights Leak Detection Pro at (619) 910-9411.'
+        desc: 'Learn the signs of hidden leaks, how pros find them, and what pricing depends on. Call Leak Detection Pro in San Diego at (619) 910-9411.'
       },
       'underground-slab-leak-detection': {
         title: 'Underground Water & Slab Leak Detection | San Diego CA',
         desc: 'How underground water & slab leak detection pinpoints hidden pipe leaks in San Diego without jackhammers. Non-invasive help: (619) 910-9411.'
       },
       'leak-detection-and-repair-guide': {
-        title: 'Leak Detection & Repair Guide | City Heights, San Diego',
-        desc: 'Complete leak detection & repair guide for City Heights (92105). Learn how acoustic sensors, thermal imaging & slab repairs work. Call (619) 910-9411.'
+        title: 'Leak Detection & Repair Guide | San Diego, CA',
+        desc: 'Complete leak detection & repair guide for San Diego homeowners. Learn how acoustic sensors, thermal imaging & slab repairs work. Call (619) 910-9411.'
       },
       'hidden-water-leak-signs-city-heights': {
         title: 'How to Spot a Hidden Water Leak in City Heights Homes',
-        desc: 'Higher water bill, damp smell, or a sound in the walls? Learn how City Heights homeowners can spot a hidden leak early. Call (619) 910-9411.'
+        desc: 'Higher water bill, damp smell, or a sound in the walls? Learn how San Diego homeowners can spot a hidden leak early. Call (619) 910-9411.'
       },
       'about': {
-        title: 'About Leak Detection Pro | City Heights Plumber Network',
-        desc: 'We connect City Heights homeowners with pre-screened, CSLB-licensed plumbers for leak detection. See how it works. Call (619) 910-9411.'
+        title: 'About Leak Detection Pro | San Diego Plumber Network',
+        desc: 'We connect San Diego homeowners with pre-screened, CSLB-licensed plumbers for non-invasive leak detection citywide. See how it works: (619) 910-9411.'
       },
       'contact': {
-        title: 'Contact Leak Detection Pro | City Heights, CA 92105',
-        desc: 'Request a leak detection estimate in City Heights. Call (619) 910-9411 anytime or reach our dispatch desk at 3431 43rd St, San Diego, CA 92105.'
+        title: 'Contact Leak Detection Pro | San Diego, CA 24/7 Dispatch',
+        desc: 'Request a leak detection estimate anywhere in San Diego. Call (619) 910-9411 anytime or reach our central dispatch at 3431 43rd St, San Diego, CA.'
       },
       'privacy': {
-        title: 'Privacy Policy | Leak Detection Pro',
-        desc: 'How Leak Detection Pro collects, uses and protects your personal information, including your rights under the CCPA.'
+        title: 'Privacy Policy | Leak Detection Pro San Diego',
+        desc: 'How Leak Detection Pro collects, uses and protects your personal information across San Diego, including your rights under California CCPA/CPRA.'
       },
       'disclaimer': {
         title: 'Legal Disclaimer & Licensing | Leak Detection Pro',
-        desc: 'Leak Detection Pro connects homeowners with independent CSLB-licensed plumbers. Read our qualified contractor network licensing & service terms.'
+        desc: 'Leak Detection Pro connects San Diego property owners with independent CSLB-licensed plumbers. Read our qualified contractor network licensing terms.'
       },
       'sitemap': {
-        title: 'Sitemap | Leak Detection Pro City Heights',
-        desc: 'Browse every Leak Detection Pro page: water leak detection, gas leak detection, cost guides and contact details for City Heights, San Diego.'
+        title: 'Sitemap | Leak Detection Pro San Diego',
+        desc: 'Browse every Leak Detection Pro San Diego page: water & slab leak detection, gas leak testing, homeowner guides, and 24/7 citywide dispatch details.'
       }
     };
 
@@ -211,7 +211,7 @@ export default function App() {
         <Suspense fallback={
           <div className="min-h-[50vh] flex flex-col items-center justify-center gap-3">
             <div className="w-8 h-8 border-3 border-blue-600 border-t-transparent rounded-full animate-spin"></div>
-            <span className="text-xs text-slate-500 font-medium">Loading City Heights Leak Services...</span>
+            <span className="text-xs text-slate-500 font-medium">Loading San Diego Leak Services...</span>
           </div>
         }>
           {currentPage === 'home' && (

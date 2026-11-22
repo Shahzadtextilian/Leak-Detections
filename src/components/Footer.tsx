@@ -39,7 +39,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               </span>
             </div>
             <p className="text-xs text-slate-600 leading-relaxed">
-              Your trusted connection for prompt, non-destructive water and gas leak detection and plumbing repair services throughout City Heights, San Diego CA 92105.
+              Your trusted citywide connection for prompt, non-destructive water, slab, and gas leak detection and plumbing repair services across every neighborhood in San Diego, CA.
             </p>
             <div className="pt-1 space-y-2 text-xs">
               <div className="flex items-start gap-2 text-slate-700">
@@ -47,7 +47,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                 <span>
                   {BUSINESS_INFO.fullAddress}
                   <br />
-                  <span className="text-slate-500">(City Heights, San Diego County)</span>
+                  <span className="text-slate-500">(Central San Diego Dispatch Hub)</span>
                 </span>
               </div>
               <div className="flex items-center gap-2 text-slate-700">
@@ -163,10 +163,10 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
             </ul>
           </div>
 
-          {/* Col 3: Service Areas in City Heights */}
+          {/* Col 3: Service Areas Across San Diego */}
           <div className="space-y-3">
             <h3 className="text-sm font-bold uppercase tracking-wider text-slate-900">
-              City Heights Service Coverage
+              San Diego Citywide Coverage
             </h3>
             <ul className="space-y-1.5 text-xs text-slate-600">
               {CITY_HEIGHTS_AREAS.map((area, idx) => (
@@ -179,7 +179,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               ))}
             </ul>
             <p className="text-[11px] text-slate-500 pt-1">
-              Serving Zip Codes: 92105, 92104, 92115, 92116, 92102, 92113
+              Serving All City of San Diego ZIPs: 92037, 92101–92111, 92113–92117, 92119–92124, 92126–92131, 92139, 92154, 92173
             </p>
           </div>
 

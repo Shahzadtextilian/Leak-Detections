@@ -47,7 +47,7 @@ export const PrivacyPolicyPage: React.FC<PrivacyPolicyPageProps> = ({ onNavigate
           <div>
             <h2 className="text-lg font-bold text-slate-900 mb-2">1. Introduction & Overview</h2>
             <p>
-              This Privacy Policy describes how <strong>Leak Detection Pro</strong> ("we", "us", or "our"), located at <strong>3431 43rd St, San Diego, CA 92105</strong>, collects, uses, processes, and shares personal information when you visit our website, call our telephone number (<strong>(619) 910-9411</strong>), or submit an online inquiry for water and gas leak detection plumbing services through our qualified contractors network in City Heights, San Diego, California.
+              This Privacy Policy describes how <strong>Leak Detection Pro</strong> ("we", "us", or "our"), located at <strong>3431 43rd St, San Diego, CA 92105</strong>, collects, uses, processes, and shares personal information when you visit our website, call our telephone number (<strong>(619) 910-9411</strong>), or submit an online inquiry for water and gas leak detection plumbing services through our qualified contractors network across San Diego, California.
             </p>
           </div>
 
@@ -77,7 +77,7 @@ export const PrivacyPolicyPage: React.FC<PrivacyPolicyPageProps> = ({ onNavigate
             <h2 className="text-lg font-bold text-slate-900 mb-2">4. How We Use Your Information</h2>
             <p className="mb-2">We utilize your personal information strictly for the following purposes:</p>
             <ul className="list-disc pl-5 space-y-1 text-xs sm:text-sm text-slate-600">
-              <li>To match and dispatch independent licensed contractors capable of servicing your City Heights property.</li>
+              <li>To match and dispatch independent licensed contractors capable of servicing your San Diego property.</li>
               <li>To facilitate immediate telephone calls or SMS confirmations regarding your diagnostic request.</li>
               <li>To monitor quality of service, contractor responsiveness, and user satisfaction.</li>
               <li>To comply with California State legal, consumer protection, and regulatory requirements.</li>
@@ -114,7 +114,7 @@ export const PrivacyPolicyPage: React.FC<PrivacyPolicyPageProps> = ({ onNavigate
             <p><strong>Privacy Office:</strong> Leak Detection Pro</p>
             <p><strong>Address:</strong> 3431 43rd St, San Diego, CA 92105</p>
             <p><strong>Phone:</strong> (619) 910-9411</p>
-            <p><strong>City Heights Service Area:</strong> San Diego County, California</p>
+            <p><strong>Service Territory:</strong> City of San Diego &amp; San Diego County, California</p>
           </div>
         </div>
       </section>

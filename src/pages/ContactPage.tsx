@@ -43,13 +43,13 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate }) => {
 
           <div className="max-w-3xl space-y-3">
             <span className="bg-blue-100 text-blue-800 text-xs font-bold px-3 py-1 rounded-full border border-blue-200 inline-block">
-              City Heights, San Diego CA
+              Serving All of San Diego, CA
             </span>
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-slate-900">
-              Contact &amp; 24/7 Emergency Dispatch
+              Contact &amp; 24/7 San Diego Emergency Dispatch
             </h1>
             <p className="text-base text-slate-600 leading-relaxed">
-              Have an urgent water or gas leak? Stationed at 3431 43rd St in City Heights, our qualified contractor network connects you immediately with certified technicians across the 92105 area.
+              Have an urgent water, slab, or gas leak anywhere in San Diego? From our central hub at 3431 43rd St, our qualified contractor network dispatches certified technicians across Downtown, La Jolla, Clairemont, Mira Mesa, Rancho Bernardo, College Area, and South Bay.
             </p>
           </div>
         </div>
@@ -135,7 +135,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate }) => {
               <div className="p-4 bg-sky-50 border border-sky-200 text-slate-900 rounded-xl space-y-3">
                 <div className="flex items-center gap-2 text-xs font-semibold text-emerald-700">
                   <span className="w-2 h-2 rounded-full bg-emerald-500 animate-ping"></span>
-                  <span>Technicians Active in 92105</span>
+                  <span>Technicians Active Across San Diego</span>
                 </div>
                 <a
                   href={BUSINESS_INFO.telLink}
@@ -167,10 +167,10 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate }) => {
               </div>
               <div className="p-4 text-xs text-slate-600 space-y-1">
                 <div className="font-bold text-slate-900 flex items-center gap-1.5">
-                  Fast Local Diagnostic Dispatch
+                  Fast San Diego Diagnostic Dispatch
                 </div>
                 <p className="leading-relaxed">
-                  Our City Heights coordination desk routes incoming calls directly to certified local leak locators equipped with acoustic microphones, thermal FLIR cameras, and combustible gas sensors.
+                  Our San Diego coordination desk routes incoming calls directly to certified local leak locators equipped with acoustic microphones, thermal FLIR cameras, and combustible gas sensors.
                 </p>
               </div>
             </div>
@@ -186,22 +186,22 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate }) => {
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-2 font-bold text-base text-slate-900">
                   <Navigation className="w-5 h-5 text-blue-600" />
-                  <span>City Heights Area Navigation</span>
+                  <span>San Diego Citywide Dispatch Coverage</span>
                 </div>
                 <span className="text-[11px] bg-blue-50 text-blue-700 font-semibold px-2.5 py-1 rounded-md border border-blue-200">
-                  Zip 92105
+                  All San Diego ZIPs
                 </span>
               </div>
 
               <div className="bg-slate-50 border border-slate-200 rounded-xl p-4 text-xs space-y-3">
                 <p className="text-slate-600 leading-relaxed">
-                  Our network dispatch coordination center is based at <strong className="text-slate-900">3431 43rd St, San Diego, CA 92105</strong>, strategically positioned between Interstate 15 and Interstate 805 corridors. This central position enables partner plumbing contractors to reach City Heights, Normal Heights, Talmadge, Kensington, and North Park within minutes.
+                  Our central San Diego coordination center is based at <strong className="text-slate-900">3431 43rd St, San Diego, CA 92105</strong>, directly linked to the Interstate 15, Interstate 805, and I-8 freeway corridors. This central position enables partner plumbing contractors to reach Downtown, La Jolla, Coastal Beaches, Mission Valley, North City, and South Bay within minutes.
                 </p>
                 <div className="pt-2 border-t border-slate-200 grid grid-cols-2 gap-2 text-[11px] text-slate-600">
-                  <div>• University Ave (2 blocks)</div>
-                  <div>• Fairmount Ave (3 mins)</div>
-                  <div>• I-15 Freeway (4 mins)</div>
-                  <div>• El Cajon Blvd (5 mins)</div>
+                  <div>• Downtown &amp; Uptown (5–10 mins)</div>
+                  <div>• Mission Valley &amp; I-8 (6 mins)</div>
+                  <div>• La Jolla &amp; Coastal (15–20 mins)</div>
+                  <div>• North City &amp; I-15 (15–25 mins)</div>
                 </div>
               </div>
             </div>

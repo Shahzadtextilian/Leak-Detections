@@ -60,10 +60,10 @@ export const BlogPage: React.FC<BlogPageProps> = ({ onNavigate, initialSlug }) =
   useEffect(() => {
     const targetTitle = activePost
       ? activePost.metaTitle
-      : 'Leak Detection Blog & Guides | City Heights, San Diego';
+      : 'San Diego Leak Detection Blog & Homeowner Guides';
     const targetDesc = activePost
       ? activePost.metaDesc
-      : 'Explore City Heights leak detection guides covering hidden water leak signs, slab leak locating, acoustic testing, and pipe repair methods.';
+      : 'Explore San Diego leak detection guides covering hidden water leak signs, slab leak locating, acoustic testing, and targeted pipe repair methods.';
 
     document.title = targetTitle;
     const metaDesc = document.querySelector('meta[name="description"]');
@@ -179,7 +179,7 @@ export const BlogPage: React.FC<BlogPageProps> = ({ onNavigate, initialSlug }) =
 
           <div className="flex flex-wrap items-center gap-2 pt-2">
             <span className="bg-blue-100 text-blue-800 text-xs font-bold px-3 py-1 rounded-full border border-blue-200">
-              {activePost ? activePost.badge : 'City Heights Leak Detection Knowledge Center'}
+              {activePost ? activePost.badge : 'San Diego Leak Detection Knowledge Center'}
             </span>
             <span className="bg-emerald-50 text-emerald-700 text-xs font-semibold px-3 py-1 rounded-full border border-emerald-200 flex items-center gap-1">
               <ShieldCheck className="w-3.5 h-3.5" />
@@ -190,7 +190,7 @@ export const BlogPage: React.FC<BlogPageProps> = ({ onNavigate, initialSlug }) =
           <h1 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-extrabold tracking-tight text-slate-900 leading-tight">
             {isBlogIndex ? (
               <>
-                City Heights{' '}
+                San Diego{' '}
                 <span className="text-blue-700">
                   Leak Detection Blog
                 </span>{' '}
@@ -222,7 +222,7 @@ export const BlogPage: React.FC<BlogPageProps> = ({ onNavigate, initialSlug }) =
                 <span className="text-amber-700">
                   Leak Repair
                 </span>{' '}
-                in City Heights, San Diego
+                in San Diego, CA
               </>
             ) : (
               <>
@@ -252,7 +252,7 @@ export const BlogPage: React.FC<BlogPageProps> = ({ onNavigate, initialSlug }) =
             </div>
           ) : (
             <p className="text-sm sm:text-base text-slate-600 max-w-2xl leading-relaxed pt-2 border-t border-slate-200">
-              Practical local articles covering how to spot hidden water leaks early, run a ten-minute meter check, understand non-invasive acoustic &amp; thermal diagnostics, and protect older City Heights (92105) plumbing.
+              Practical San Diego homeowner guides covering how to spot hidden water leaks early, run a ten-minute meter check, understand non-invasive acoustic &amp; thermal diagnostics, and protect aging slab and coastal plumbing.
             </p>
           )}
         </div>
@@ -1368,10 +1368,10 @@ export const BlogPage: React.FC<BlogPageProps> = ({ onNavigate, initialSlug }) =
             <section className="p-6 rounded-2xl bg-blue-50/70 border border-blue-200 space-y-3">
               <h3 className="font-extrabold text-blue-950 text-base flex items-center gap-2">
                 <Flame className="w-4 h-4 text-red-500" />
-                <span>Need Underground Leak Detection in City Heights, San Diego?</span>
+                <span>Need Underground Leak Detection Anywhere in San Diego, CA?</span>
               </h3>
               <p className="text-xs sm:text-sm text-blue-900 leading-relaxed">
-                Whether you live near 43rd Street, University Avenue, Fairmount Avenue, Azalea Park, or Teralta West, our qualified contractor network connects you with pre-screened California State License Board (CSLB) contractors specialized in non-destructive electronic leak detection and long-term leak repair.
+                From La Jolla, Pacific Beach, and Clairemont Mesa to Downtown, North Park, City Heights, Mira Mesa, and Rancho Bernardo, our qualified contractor network connects you with pre-screened California State License Board (CSLB) contractors specialized in non-destructive electronic leak detection and long-term leak repair.
               </p>
               <div className="pt-2 flex flex-col sm:flex-row gap-3">
                 <a
@@ -1424,14 +1424,14 @@ export const BlogPage: React.FC<BlogPageProps> = ({ onNavigate, initialSlug }) =
             <div className="rounded-2xl overflow-hidden border border-slate-200 shadow-md">
               <img
                 src={APP_IMAGES.heroWaterLeak}
-                alt="Licensed technician performing acoustic leak detection on a concrete slab in City Heights San Diego"
+                alt="Licensed technician performing acoustic leak detection on a concrete slab in San Diego CA"
                 width={800}
                 height={420}
                 className="w-full h-72 sm:h-96 object-cover"
               />
               <div className="bg-slate-100 border-t border-slate-200 text-slate-700 text-xs px-4 py-2 flex items-center justify-between">
                 <span>Specialized acoustic listening equipment locating hidden pressurized pipe leaks.</span>
-                <span className="text-blue-700 font-semibold">City Heights, CA 92105</span>
+                <span className="text-blue-700 font-semibold">San Diego, CA &bull; Citywide Dispatch</span>
               </div>
             </div>
 
@@ -1487,10 +1487,10 @@ export const BlogPage: React.FC<BlogPageProps> = ({ onNavigate, initialSlug }) =
                   Need Immediate Leak Detection or Leak Repair?
                 </div>
                 <div className="text-xl sm:text-2xl font-black">
-                  24/7 City Heights Priority Hotline
+                  24/7 San Diego Priority Hotline
                 </div>
                 <p className="text-xs text-rose-100 max-w-md">
-                  Speak with a local dispatch coordinator stationed on 43rd Street for urgent water and gas leak diagnostics.
+                  Speak with our central dispatch team at 3431 43rd St for rapid citywide routing to your San Diego home or business.
                 </p>
               </div>
               <a
@@ -1508,7 +1508,7 @@ export const BlogPage: React.FC<BlogPageProps> = ({ onNavigate, initialSlug }) =
                 2. When Does a Homeowner Need Professional Leak Repair?
               </h2>
               <p>
-                In City Heights and the broader San Diego metro, thousands of homes built in the mid-20th century feature copper piping laid directly beneath slab foundations without protective conduit. Over decades, acidic soil conditions, thermal expansion friction, and aggressive water chemistry induce pinhole pitting corrosion.
+                Across the entire City of San Diego—from historic craftsman homes in Uptown and Mid-City to slab foundations in Clairemont, Mission Valley, and Mira Mesa—thousands of properties feature copper piping laid directly beneath concrete slabs without protective conduit. Over decades, soil conditions, thermal expansion friction, and water chemistry induce pinhole pitting corrosion.
               </p>
               <p>
                 Watch for these critical symptoms indicating it is time to arrange professional <strong>leak detection</strong> followed by lasting <strong>leak repair</strong>:
@@ -1597,7 +1597,7 @@ export const BlogPage: React.FC<BlogPageProps> = ({ onNavigate, initialSlug }) =
                 4. Why Prompt Leak Detection &amp; Leak Repair Protects San Diego Home Value
               </h2>
               <p>
-                City Heights properties along University Avenue, 43rd Street, and Fairmount Avenue sit on expansive clay soils common across central San Diego. When subterranean water leaks soak into this soil, the clay swells unevenly, exerting intense upward pressure against concrete slabs. Over time, this hydraulic heave causes cracked tile, unaligned doorways, and catastrophic foundation movement.
+                Properties throughout San Diego—from Downtown, North Park, and City Heights to Clairemont, Mira Mesa, and Scripps Ranch—often sit on expansive clay soils or coastal alluvial terraces. When subterranean water leaks soak into this soil, the ground swells unevenly, exerting intense upward pressure against concrete slabs. Over time, this hydraulic heave causes cracked tile, unaligned doorways, and costly foundation movement.
               </p>
               <p>
                 Furthermore, San Diego's warm coastal climate creates an ideal incubation environment for black mold (Stachybotrys chartarum) inside damp wall cavities within just 24 to 48 hours of water intrusion. Prompt <strong>leak detection</strong> and prompt <strong>leak repair</strong> save thousands of dollars in water mitigation and mold remediation expenses.
@@ -1627,7 +1627,7 @@ export const BlogPage: React.FC<BlogPageProps> = ({ onNavigate, initialSlug }) =
                 <li className="flex items-start gap-2.5">
                   <span className="w-6 h-6 rounded-full bg-blue-600 text-white font-bold flex items-center justify-center shrink-0 text-xs">3</span>
                   <div>
-                    <strong className="text-slate-900 font-semibold">Call Our 24/7 City Heights Dispatch Center:</strong> Dial <strong className="text-slate-900">(619) 910-9411</strong> to have an on-call licensed leak detection and repair specialist routed directly to your home.
+                    <strong className="text-slate-900 font-semibold">Call Our 24/7 San Diego Dispatch Center:</strong> Dial <strong className="text-slate-900">(619) 910-9411</strong> to have an on-call licensed leak detection and repair specialist routed directly to your San Diego property.
                   </div>
                 </li>
               </ol>
@@ -1679,7 +1679,7 @@ export const BlogPage: React.FC<BlogPageProps> = ({ onNavigate, initialSlug }) =
         {/* Related Services Links for Internal Linking & SEO */}
         <div className="pt-4 border-t border-slate-200">
           <h3 className="font-bold text-slate-900 text-sm mb-3">
-            Related Emergency Services in City Heights, San Diego:
+            Related Emergency Services Across San Diego, CA:
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             <a

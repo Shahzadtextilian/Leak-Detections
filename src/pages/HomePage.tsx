@@ -89,26 +89,26 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
                   <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
                 </span>
                 <span className="font-semibold text-blue-700 flex items-center gap-1">
-                  <MapPin className="w-3.5 h-3.5 text-red-600" /> City Heights, San Diego • 92105
+                  <MapPin className="w-3.5 h-3.5 text-red-600" /> City of San Diego, CA
                 </span>
                 <span className="text-slate-300 hidden sm:inline">&bull;</span>
-                <span className="text-slate-600 hidden sm:inline">3431 43rd St Corridor</span>
+                <span className="text-slate-600 hidden sm:inline">All Neighborhoods &amp; ZIP Codes</span>
                 <span className="text-slate-300">&bull;</span>
                 <span className="text-emerald-700 font-semibold flex items-center gap-1">
                   <Clock className="w-3 h-3" /> Rapid 24/7 Dispatch
                 </span>
               </div>
 
-              {/* Single Primary H1 focused on Water, Slab, and Gas Leak Detection in City Heights */}
+              {/* Single Primary H1 focused on Water, Slab, and Gas Leak Detection in San Diego */}
               <h1 className="text-3xl sm:text-4xl lg:text-[42px] xl:text-[48px] font-extrabold tracking-tight text-slate-900 leading-[1.16]">
                 <span className="text-slate-900">Water, Slab &amp; Gas Leak</span>
                 <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-700 via-sky-600 to-indigo-700 mt-1 sm:mt-1.5">
-                  Detection in City Heights, San Diego
+                  Detection Across San Diego, CA
                 </span>
               </h1>
 
               <p className="text-sm sm:text-base text-slate-600 max-w-xl leading-relaxed">
-                Suffering from an unexplained high water bill, warm flooring, or dangerous sulfur gas odor? <strong>Leak Detection Pro</strong> connects City Heights (92105) homeowners and businesses with licensed, insured leak detection contractors equipped with acoustic ground probes and thermal FLIR cameras.
+                Suffering from an unexplained high water bill, warm flooring, or dangerous sulfur gas odor? <strong>Leak Detection Pro</strong> connects San Diego homeowners and businesses—from La Jolla and Downtown to Clairemont, Mira Mesa, Rancho Bernardo, and City Heights—with licensed, insured leak detection contractors equipped with acoustic ground probes and thermal FLIR cameras.
               </p>
 
               {/* Quick Trust Badges */}
@@ -214,7 +214,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
                 <div className="relative rounded-xl overflow-hidden border border-slate-200">
                   <img
                     src={APP_IMAGES.heroWaterLeak}
-                    alt="Acoustic ground sensor detecting slab water leak in City Heights"
+                    alt="Acoustic ground sensor detecting slab water leak in San Diego"
                     width={600}
                     height={336}
                     loading="eager"
@@ -228,7 +228,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
                         ● Technicians On Call 24/7
                       </span>
                       <div className="text-white font-bold text-sm mt-1.5 drop-shadow-xs">
-                        City Heights (92105) &amp; San Diego County
+                        Full City of San Diego &amp; All Local ZIPs
                       </div>
                     </div>
                   </div>
@@ -238,7 +238,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
                   <div className="flex items-center justify-between text-xs text-slate-600">
                     <span className="flex items-center gap-1.5 font-semibold text-slate-900">
                       <MapPin className="w-3.5 h-3.5 text-red-600" />
-                      3431 43rd St, City Heights
+                      Hub: 3431 43rd St, San Diego
                     </span>
                     <span className="text-emerald-700 font-bold">45-90 Min Response</span>
                   </div>
@@ -277,10 +277,10 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-12">
           <span className="text-xs font-bold uppercase tracking-wider text-blue-600 bg-blue-50 px-3 py-1 rounded-full border border-blue-200">
-            Specialized Services in City Heights
+            Citywide Services Across San Diego
           </span>
           <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-2 tracking-tight">
-            Precision Water & Gas Leak Detection
+            Precision Water &amp; Gas Leak Detection
           </h2>
           <p className="text-sm text-slate-600 mt-2">
             Independent specialists matched to your home utilize non-destructive diagnostic tools to pinpoint hidden leaks under concrete slabs, behind walls, or in gas supply lines.
@@ -323,7 +323,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
               </h3>
 
               <p className="text-sm text-slate-600 mb-5 leading-relaxed">
-                Older homes in City Heights (built between the 1920s and 1960s) frequently suffer from corroded copper lines and sub-slab foundation leaks. Our contractor network accurately maps your pressurized water system without destructive drywall demolition.
+                San Diego homes—from 1920s Uptown cottages and coastal La Jolla villas to post-war concrete slab houses in Clairemont, Mira Mesa, and Allied Gardens—frequently suffer from corroded copper lines and sub-slab foundation leaks. Our contractor network accurately maps your pressurized water system without destructive demolition.
               </p>
 
               <div className="space-y-2 mb-6">
@@ -360,7 +360,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
                 }}
                 className="text-sm font-bold text-blue-600 hover:text-blue-700 flex items-center gap-1.5"
                 id="explore-water-leak-btn"
-                title="View City Heights Water & Slab Leak Detection Services"
+                title="View San Diego Water & Slab Leak Detection Services"
               >
                 <span>View Water Leak Service Page</span>
                 <ArrowRight className="w-4 h-4" />
@@ -448,7 +448,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
                 }}
                 className="text-sm font-bold text-amber-700 hover:text-amber-800 flex items-center gap-1.5"
                 id="explore-gas-leak-btn"
-                title="View City Heights Emergency Gas Leak Detection Services"
+                title="View San Diego Emergency Gas Leak Detection Services"
               >
                 <span>View Gas Leak Service Page</span>
                 <ArrowRight className="w-4 h-4" />
@@ -477,7 +477,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
               Advanced Non-Destructive Leak Detection Technology
             </h2>
             <p className="text-sm text-slate-600 mt-2 leading-relaxed">
-              We connect City Heights property owners with licensed specialists who use diagnostic sensors to pinpoint leaks within inches before tearing up floors, slabs, or drywall.
+              We connect San Diego property owners with licensed specialists who use diagnostic sensors to pinpoint leaks within inches before tearing up floors, slabs, or drywall.
             </p>
           </div>
 
@@ -597,7 +597,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
                   </p>
                 </div>
                 <div className="text-[11px] text-emerald-700 font-semibold pt-2 border-t border-slate-100">
-                  3431 43rd St, City Heights base
+                  Central San Diego base (43rd St)
                 </div>
               </div>
             </div>
@@ -610,13 +610,13 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
         <div className="bg-sky-50/70 rounded-3xl text-slate-900 p-6 sm:p-10 border border-sky-200 shadow-xs">
           <div className="max-w-3xl mb-8">
             <span className="text-xs font-bold text-blue-700 uppercase tracking-wider flex items-center gap-1.5">
-              <Eye className="w-4 h-4" /> City Heights Homeowner Diagnostic Guide
+              <Eye className="w-4 h-4" /> San Diego Homeowner Diagnostic Guide
             </span>
             <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-2">
               Common Signs You Need Emergency Leak Detection
             </h2>
             <p className="text-sm text-slate-600 mt-2">
-              Don't wait for visible ceiling collapse or dangerous gas accumulation. Look for these early telltale signs around your 92105 property:
+              Don't wait for visible ceiling collapse or dangerous gas accumulation. Look for these early telltale signs around your San Diego property:
             </p>
           </div>
 
@@ -709,19 +709,19 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
         </div>
       </section>
 
-      {/* 4. LOCAL SEO: CITY HEIGHTS, SAN DIEGO COVERAGE */}
+      {/* 4. LOCAL SEO: FULL CITY OF SAN DIEGO COVERAGE */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="bg-white rounded-2xl border border-slate-200 p-6 sm:p-10 shadow-xs">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             <div className="lg:col-span-6 space-y-4">
               <span className="text-xs font-bold uppercase tracking-wider text-blue-600 bg-blue-50 px-3 py-1 rounded-full border border-blue-200">
-                Local Presence & Community
+                Citywide San Diego Service Territory
               </span>
               <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                Neighborhood Dispatch: Teralta, Azalea Park, Fairmount Village, Fox Canyon &amp; Chollas Creek
+                Covering Every Neighborhood Across the City of San Diego
               </h2>
               <p className="text-sm text-slate-600 leading-relaxed">
-                Leak Detection Pro dispatches locally from <strong>3431 43rd St, San Diego, CA 92105</strong> across City Heights, Teralta, Azalea Park, Fairmount Village, Fox Canyon, and Chollas Creek, extending throughout ZIP codes <strong>92105, 92104, 92115, and 92116</strong>. Our partner technicians know the architectural quirks of 1920s craftsman bungalows, mid-century concrete slabs, and canyon hillside residences.
+                Coordinated from our central San Diego dispatch base at <strong>3431 43rd St, San Diego, CA 92105</strong>, <strong>Leak Detection Pro</strong> connects homeowners and commercial properties across every region of the city—including <strong>Downtown, La Jolla, Pacific Beach, Point Loma, North Park, Clairemont, Mission Valley, Mira Mesa, Scripps Ranch, Rancho Bernardo, Carmel Valley, College Area, City Heights, and South Bay</strong>.
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
@@ -738,14 +738,14 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
             <div className="lg:col-span-6 space-y-4">
               <div ref={mapRef} className="h-80 sm:h-96 rounded-2xl overflow-hidden border border-slate-200 shadow-xs">
                 {mapVisible ? (
-                  <React.Suspense fallback={<div className="h-full bg-sky-50 flex items-center justify-center text-slate-600 text-xs">Loading local map...</div>}>
+                  <React.Suspense fallback={<div className="h-full bg-sky-50 flex items-center justify-center text-slate-600 text-xs">Loading San Diego dispatch map...</div>}>
                     <LocationMap height="h-full" />
                   </React.Suspense>
                 ) : (
                   <div className="h-full bg-sky-50 flex flex-col items-center justify-center p-6 text-center">
                     <MapPin className="w-8 h-8 text-red-600 mb-2 animate-bounce" />
-                    <div className="text-slate-900 font-bold text-sm">3431 43rd St, City Heights, San Diego</div>
-                    <div className="text-slate-600 text-xs mt-1">Interactive contractor dispatch &amp; service territory map</div>
+                    <div className="text-slate-900 font-bold text-sm">Central San Diego Dispatch Hub: 3431 43rd St</div>
+                    <div className="text-slate-600 text-xs mt-1">Interactive San Diego citywide contractor dispatch &amp; coverage map</div>
                     <button
                       type="button"
                       onClick={() => setMapVisible(true)}
@@ -760,12 +760,12 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
               <div className="bg-slate-50 text-slate-900 rounded-2xl p-5 sm:p-6 border border-slate-200">
                 <div className="grid grid-cols-2 gap-3 text-xs mb-4">
                   <div className="bg-white p-3 rounded-xl border border-slate-200">
-                    <span className="text-slate-500 block text-[11px]">Primary Service Zip:</span>
-                    <strong className="text-emerald-700 font-bold">92105 (City Heights Core)</strong>
+                    <span className="text-slate-500 block text-[11px]">Citywide Coverage:</span>
+                    <strong className="text-emerald-700 font-bold">All San Diego ZIPs (92037–92173)</strong>
                   </div>
                   <div className="bg-white p-3 rounded-xl border border-slate-200">
-                    <span className="text-slate-500 block text-[11px]">Major Cross Streets:</span>
-                    <strong className="text-slate-900 font-semibold">43rd St &amp; University Ave</strong>
+                    <span className="text-slate-500 block text-[11px]">Central Dispatch Base:</span>
+                    <strong className="text-slate-900 font-semibold">3431 43rd St (I-15 / I-805)</strong>
                   </div>
                 </div>
 
@@ -794,18 +794,18 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
         </div>
       </section>
 
-      {/* 4A-1. COMMON CITY HEIGHTS (92105) PLUMBING & FOUNDATION LEAK ISSUES */}
+      {/* 4A-1. COMMON SAN DIEGO PLUMBING & FOUNDATION LEAK ISSUES */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="bg-white rounded-3xl border border-slate-200 p-6 sm:p-10 shadow-xs space-y-8">
           <div className="max-w-3xl space-y-2">
             <span className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-blue-700 bg-blue-50 px-3 py-1 rounded-full border border-blue-200">
-              <Wrench className="w-3.5 h-3.5" /> 92105 Infrastructure Diagnostics
+              <Wrench className="w-3.5 h-3.5" /> San Diego Infrastructure Diagnostics
             </span>
             <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-              Common Plumbing &amp; Slab Leak Issues in City Heights (92105) Homes
+              Common Plumbing &amp; Slab Leak Issues Across San Diego Homes
             </h2>
             <p className="text-sm text-slate-600 leading-relaxed">
-              Central San Diego housing stock spans nearly a century of construction methods. Whether your home sits on a raised wood floor in Teralta or a post-war concrete slab along Chollas Creek, aging piping reacts predictably to hard local water minerals and expansive canyon clay soils.
+              San Diego neighborhoods span nearly a century of residential building styles. From coastal salt air in La Jolla and Point Loma to raised bungalows in Uptown and concrete slabs in Clairemont, Mira Mesa, and Tierrasanta, aging pipes react predictably to local hard water minerals, elevated pressure zones, and canyon clay soil.
             </p>
           </div>
 
@@ -836,7 +836,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
               Working Alongside the City of San Diego Public Utilities &amp; SDG&amp;E
             </h2>
             <p className="text-sm text-slate-600 leading-relaxed">
-              Accurate leak resolution requires knowing where utility responsibility stops and homeowner lateral piping begins. Licensed technicians in our City Heights network coordinate seamlessly with local public agencies to resolve active losses and restore shut-off service.
+              Accurate leak resolution requires knowing where utility responsibility stops and homeowner lateral piping begins. Licensed technicians in our San Diego network coordinate seamlessly with local public agencies to resolve active losses and restore shut-off service across the city.
             </p>
           </div>
 
@@ -882,7 +882,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
                 Upfront Acoustic &amp; Thermal Leak Detection Price Ranges
               </h2>
               <p className="text-sm text-slate-600 leading-relaxed">
-                Every home in City Heights (92105) receives a clear diagnostic quote before electronic testing begins. Exact pricing depends on slab thickness, raised crawlspace access, yard main depth, and whether multiple zones require tracer gas testing.
+                Every San Diego property receives a clear diagnostic quote before electronic testing begins. Exact pricing depends on slab thickness, crawlspace access, yard main depth, and whether multiple zones require tracer gas testing.
               </p>
             </div>
             <a
@@ -930,7 +930,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
             <div className="lg:col-span-7 space-y-4">
               <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-blue-100/80 border border-blue-200 text-xs text-blue-800 font-semibold">
                 <FileText className="w-3.5 h-3.5" />
-                <span>Featured Homeowner Guides • City Heights Leak Detection Hub</span>
+                <span>Featured Homeowner Guides • San Diego Leak Detection Hub</span>
               </div>
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-slate-900 tracking-tight leading-snug">
                 Complete Guide to <span className="text-blue-700">Leak Detection</span> &amp; <span className="text-amber-600">Slab Leak Locating</span>
@@ -1031,7 +1031,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
                 </li>
               </ul>
               <div className="pt-2 border-t border-slate-100 flex items-center justify-between text-[11px] text-slate-500">
-                <span>By City Heights Editorial Desk</span>
+                <span>By San Diego Editorial Desk</span>
                 <span className="text-amber-700 font-semibold">4 Full Field Guides</span>
               </div>
             </div>
@@ -1043,13 +1043,13 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-2xl mx-auto mb-10">
           <span className="text-xs font-bold uppercase tracking-wider text-emerald-600 bg-emerald-50 px-3 py-1 rounded-full border border-emerald-200">
-            Real City Heights Feedback
+            Real San Diego Feedback
           </span>
           <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-2 tracking-tight">
-            Trusted by Your Neighbors in 92105
+            Trusted by Homeowners Across San Diego
           </h2>
           <p className="text-sm text-slate-600 mt-1">
-            See how our local leak specialists helped San Diego residents with rapid leak solutions.
+            See how our citywide leak specialists helped San Diego residents with rapid, non-invasive solutions.
           </p>
         </div>
 
@@ -1092,7 +1092,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
             Frequently Asked Questions
           </span>
           <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-2 tracking-tight">
-            City Heights Leak Detection FAQs
+            San Diego Leak Detection FAQs
           </h2>
           <p className="text-sm text-slate-600 mt-1">
             Clear answers about pricing, service process, technology, and gas emergency protocols.
@@ -1135,13 +1135,13 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
         <div className="bg-gradient-to-br from-sky-100 via-blue-50 to-indigo-50 border border-blue-200 rounded-3xl text-slate-900 p-8 sm:p-12 text-center shadow-sm relative overflow-hidden">
           <div className="max-w-2xl mx-auto space-y-4">
             <span className="bg-white text-blue-700 text-xs font-semibold px-3 py-1 rounded-full border border-blue-200 inline-block">
-              City Heights 24/7 Hotline
+              San Diego 24/7 Emergency Hotline
             </span>
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold tracking-tight text-slate-900">
-              Suspect a Leak in Your Home or Building?
+              Suspect a Leak in Your San Diego Home or Building?
             </h2>
             <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
-              Don't allow hidden water to rot your foundation or natural gas to build up inside your walls. Connect with a licensed City Heights leak technician now.
+              Don't allow hidden water to rot your foundation or natural gas to build up inside your walls. Connect with a licensed San Diego leak technician now.
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">

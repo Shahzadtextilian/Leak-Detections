@@ -29,8 +29,8 @@ export const WaterLeakPage: React.FC<WaterLeakPageProps> = ({ onNavigate }) => {
 
   const waterFaqs = [
     {
-      q: 'What are the main causes of water slab leaks in City Heights?',
-      a: 'Many City Heights residences constructed between 1940 and 1980 feature copper plumbing laid directly underneath concrete slabs. Over decades, acidic soil, friction from thermal expansion, and water velocity cause copper pinhole pitting, leading to active foundation water leaks.'
+      q: 'What are the main causes of water slab leaks in San Diego?',
+      a: 'Many San Diego residences—from coastal cottages in La Jolla and Point Loma to post-war homes in Clairemont, Mira Mesa, City Heights, and Allied Gardens—feature copper plumbing laid directly beneath concrete slabs. Decades of soil movement, high municipal water pressure, and thermal expansion cause copper pinhole pitting and foundation water leaks.'
     },
     {
       q: 'How do technicians pinpoint a water leak without breaking my tile or hardwood?',
@@ -72,15 +72,15 @@ export const WaterLeakPage: React.FC<WaterLeakPageProps> = ({ onNavigate }) => {
             <div className="lg:col-span-8 space-y-4">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-100/80 border border-blue-200 text-xs font-semibold text-blue-800">
                 <Droplets className="w-3.5 h-3.5 text-blue-600" />
-                <span>City Heights Specialist Contractor Network</span>
+                <span>San Diego Specialist Contractor Network</span>
               </div>
 
               <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-slate-900 leading-tight">
-                Non-Invasive <span className="text-blue-700">Water Leak Detection</span> &amp; Slab Leak Locating in City Heights, CA
+                Non-Invasive <span className="text-blue-700">Water Leak Detection</span> &amp; Slab Leak Locating in San Diego, CA
               </h1>
 
               <p className="text-base text-slate-600 max-w-2xl leading-relaxed">
-                Pinpoint pressurized water leaks hidden deep under concrete foundation slabs, behind finished drywall, or along underground yard supply lines. Serving residential properties and multi-family units across 92105 and San Diego County.
+                Pinpoint pressurized water leaks hidden deep under concrete foundation slabs, behind finished drywall, or along underground yard supply lines. Serving residential properties, coastal homes, and commercial buildings across the entire City of San Diego.
               </p>
 
               <div className="flex flex-wrap items-center gap-3 pt-2">
@@ -134,7 +134,7 @@ export const WaterLeakPage: React.FC<WaterLeakPageProps> = ({ onNavigate }) => {
                 </li>
               </ul>
               <div className="pt-2 border-t border-slate-100 text-[11px] text-slate-500">
-                Local Hub: 3431 43rd St, City Heights, CA 92105
+                Central San Diego Hub: 3431 43rd St, San Diego, CA 92105
               </div>
             </div>
           </div>
@@ -148,10 +148,10 @@ export const WaterLeakPage: React.FC<WaterLeakPageProps> = ({ onNavigate }) => {
             {/* Overview */}
             <div>
               <h2 className="text-2xl font-bold text-slate-900 mb-4 tracking-tight">
-                Types of Water Leaks Located in City Heights Properties
+                Types of Water Leaks Located Across San Diego Properties
               </h2>
               <p className="text-sm text-slate-600 leading-relaxed mb-4">
-                Hidden water leaks waste thousands of gallons per month and inflict catastrophic structural damage before water ever surfaces. The independent contractors in our qualified network specialize in diagnosing all residential and light commercial plumbing systems across City Heights and 92105.
+                Hidden water leaks waste thousands of gallons per month and inflict catastrophic structural damage before water ever surfaces. The independent contractors in our qualified network specialize in diagnosing residential and commercial plumbing systems across all City of San Diego neighborhoods—from La Jolla, Pacific Beach, and Downtown to Clairemont, Mira Mesa, Rancho Bernardo, and City Heights.
               </p>
               <p className="text-xs text-slate-500 leading-relaxed mb-6 bg-blue-50/60 p-3.5 rounded-xl border border-blue-100">
                 <strong>Need more information?</strong> Consult our comprehensive{' '}
@@ -331,7 +331,7 @@ export const WaterLeakPage: React.FC<WaterLeakPageProps> = ({ onNavigate }) => {
                   Need Immediate Water Leak Help?
                 </h3>
                 <p className="text-xs text-slate-600 leading-relaxed">
-                  Connect directly with on-call licensed leak detection specialists stationed in City Heights (92105) equipped with acoustic listening probes and thermal imaging cameras.
+                  Connect directly with on-call licensed leak detection specialists serving all San Diego ZIP codes equipped with acoustic listening probes and thermal imaging cameras.
                 </p>
                 <div className="p-3 bg-white rounded-xl border border-slate-200 space-y-2 text-xs text-slate-600">
                   <div className="flex items-center justify-between">
@@ -339,8 +339,8 @@ export const WaterLeakPage: React.FC<WaterLeakPageProps> = ({ onNavigate }) => {
                     <strong className="text-emerald-700">45-90 Minutes</strong>
                   </div>
                   <div className="flex items-center justify-between">
-                    <span>Local Base:</span>
-                    <strong className="text-slate-900">3431 43rd St</strong>
+                    <span>Dispatch Hub:</span>
+                    <strong className="text-slate-900">3431 43rd St, San Diego</strong>
                   </div>
                   <div className="flex items-center justify-between">
                     <span>Diagnostic Tools:</span>
@@ -426,7 +426,7 @@ export const WaterLeakPage: React.FC<WaterLeakPageProps> = ({ onNavigate }) => {
                       className="text-blue-600 hover:underline flex items-center gap-1.5"
                     >
                       <ArrowRight className="w-3 h-3 text-emerald-500" />
-                      City Heights Dispatch Office
+                      San Diego Dispatch Office
                     </a>
                   </li>
                 </ul>

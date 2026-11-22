@@ -43,13 +43,13 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             <div className="lg:col-span-7 space-y-4">
               <span className="bg-blue-100 text-blue-800 text-xs font-bold px-3 py-1 rounded-full border border-blue-200 inline-block">
-                City Heights, San Diego • Established Network
+                City of San Diego • Established Contractor Network
               </span>
               <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-slate-900">
-                Connecting City Heights with Trusted Leak Detection Specialists
+                Connecting San Diego with Trusted Leak Detection Specialists
               </h1>
               <p className="text-base text-slate-600 leading-relaxed">
-                Based at <strong className="text-slate-900">3431 43rd St, San Diego, CA 92105</strong>, Leak Detection Pro was created to solve a pressing neighborhood problem: getting prompt, non-destructive water and gas leak diagnostics when you need it most.
+                With our central dispatch hub at <strong className="text-slate-900">3431 43rd St, San Diego, CA 92105</strong>, Leak Detection Pro was created to solve an urgent citywide challenge: getting prompt, non-destructive water, slab, and gas leak diagnostics anywhere in San Diego when you need it most.
               </p>
               <div className="flex flex-wrap items-center gap-4 text-xs text-slate-700 pt-2">
                 <div className="flex items-center gap-1.5">
@@ -89,10 +89,10 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-2xl mx-auto mb-12">
           <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-            Why City Heights Property Owners Trust Our Network
+            Why San Diego Property Owners Trust Our Network
           </h2>
           <p className="text-sm text-slate-600 mt-2">
-            Instead of calling ten different plumbing companies only to be put on voicemail, our network provides single-call dispatch.
+            Instead of calling ten different plumbing companies only to be put on voicemail, our citywide network provides single-call dispatch.
           </p>
         </div>
 
@@ -111,9 +111,9 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
             <div className="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-600 flex items-center justify-center">
               <MapPin className="w-6 h-6" />
             </div>
-            <h3 className="text-lg font-bold text-slate-900">City Heights Focus</h3>
+            <h3 className="text-lg font-bold text-slate-900">Full San Diego City Coverage</h3>
             <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-              Positioned on the 43rd Street corridor near University Ave, we understand the specific plumbing architecture of City Heights — from 1950s copper slab foundations to older black iron gas risers that require seasoned diagnostic expertise.
+              From coastal salt-air corrosion in La Jolla and Point Loma to post-war concrete slabs in Clairemont, Mira Mesa, Rancho Bernardo, and historic homes in Uptown and City Heights, our technicians understand every local San Diego foundation type.
             </p>
           </div>
 
@@ -141,7 +141,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
                 Leak Detection Pro
               </h3>
               <p className="text-sm text-slate-600 leading-relaxed">
-                Dedicated plumbing and leak detection dispatch service for residential, commercial, and property management accounts across City Heights and Greater San Diego County through our qualified contractor network. Looking for specific services? Connect with specialists in{' '}
+                Dedicated plumbing and leak detection dispatch service for residential, commercial, and property management accounts across the entire City of San Diego through our qualified contractor network. Looking for specific services? Connect with specialists in{' '}
                 <a
                   href="/water-leak/"
                   onClick={(e) => {
@@ -170,18 +170,18 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
                   }}
                   className="text-cyan-700 font-bold underline hover:text-cyan-900"
                 >
-                  City Heights Diagnostic Guides
+                  San Diego Diagnostic Guides
                 </a>.
               </p>
 
               <div className="space-y-2 text-xs text-slate-700 pt-2">
                 <div className="flex items-center gap-2">
-                  <strong className="text-slate-900 w-28">Address:</strong>
+                  <strong className="text-slate-900 w-28">Dispatch Hub:</strong>
                   <span>{BUSINESS_INFO.fullAddress}</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <strong className="text-slate-900 w-28">Neighborhood:</strong>
-                  <span>City Heights, San Diego (Zip: 92105)</span>
+                  <strong className="text-slate-900 w-28">Service Territory:</strong>
+                  <span>Full City of San Diego (All Metro &amp; Coastal ZIPs)</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <strong className="text-slate-900 w-28">Phone Line:</strong>

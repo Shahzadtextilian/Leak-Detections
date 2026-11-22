@@ -35,8 +35,8 @@ export const GasLeakPage: React.FC<GasLeakPageProps> = ({ onNavigate }) => {
       a: 'When SDG&E identifies a leak, they shut off the main meter and place a red safety tag. By California law, the gas line must be inspected, pressure tested with a certified gauge, and repaired by a licensed plumbing/gas contractor. The city or SDG&E requires an air pressure test clearance before they will unlock the meter.'
     },
     {
-      q: 'What causes gas line leaks in older City Heights properties?',
-      a: 'Many homes in City Heights feature vintage black iron pipe with threaded joints that deteriorate over decades from foundation settlement, earthquakes, or seismic vibrations along the I-15 corridor, causing dried joint dope and microscopic leaks at pipe elbows.'
+      q: 'What causes gas line leaks in older San Diego properties?',
+      a: 'Many older homes across San Diego—from Mission Hills, Point Loma, and North Park to City Heights and Pacific Beach—feature vintage black iron pipe with threaded joints that deteriorate over decades from foundation settlement, coastal moisture, or seismic activity, causing dried joint dope and leaks at pipe elbows and appliance valves.'
     },
     {
       q: 'How do technicians locate invisible gas leaks?',
@@ -78,15 +78,15 @@ export const GasLeakPage: React.FC<GasLeakPageProps> = ({ onNavigate }) => {
             <div className="lg:col-span-8 space-y-4">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-100/90 border border-amber-200 text-xs font-semibold text-amber-800">
                 <Flame className="w-3.5 h-3.5 text-amber-600" />
-                <span>City Heights Gas Safety &amp; Qualified Contractor Network</span>
+                <span>San Diego Gas Safety &amp; Qualified Contractor Network</span>
               </div>
 
               <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-slate-900 leading-tight">
-                Emergency <span className="text-amber-700">Gas Leak Detection</span> &amp; Line Safety in City Heights, CA
+                Emergency <span className="text-amber-700">Gas Leak Detection</span> &amp; Line Safety in San Diego, CA
               </h1>
 
               <p className="text-base text-slate-600 max-w-2xl leading-relaxed">
-                Connect 24/7 with pre-screened, licensed gas line plumbing specialists in City Heights (92105). Fast electronic sniffing, pressure drop testing, and red-tag meter clearance repairs.
+                Connect 24/7 with pre-screened, licensed gas line plumbing specialists across the City of San Diego. Fast electronic sniffing, pressure drop testing, and SDG&amp;E red-tag meter clearance repairs.
               </p>
 
               <div className="flex flex-wrap items-center gap-3 pt-2">
@@ -140,7 +140,7 @@ export const GasLeakPage: React.FC<GasLeakPageProps> = ({ onNavigate }) => {
                 </li>
               </ul>
               <div className="pt-2 border-t border-slate-100 text-[11px] text-slate-500">
-                Local Base: 3431 43rd St, City Heights, CA 92105
+                Central San Diego Hub: 3431 43rd St, San Diego, CA 92105
               </div>
             </div>
           </div>
@@ -215,7 +215,7 @@ export const GasLeakPage: React.FC<GasLeakPageProps> = ({ onNavigate }) => {
                 Complete Gas Line Detection & Inspection Capabilities
               </h2>
               <p className="text-sm text-slate-600 leading-relaxed mb-4">
-                Gas line systems require licensed technical precision. The independent contractors in our City Heights network are certified to test and locate leaks across natural gas and propane infrastructure.
+                Gas line systems require licensed technical precision. The independent contractors in our San Diego network are certified to test and locate leaks across natural gas and propane infrastructure citywide.
               </p>
               <p className="text-xs text-slate-500 leading-relaxed mb-6 bg-amber-50/60 p-3.5 rounded-xl border border-amber-200/80">
                 <strong>Need non-gas leak locating?</strong> Check our{' '}
@@ -238,7 +238,7 @@ export const GasLeakPage: React.FC<GasLeakPageProps> = ({ onNavigate }) => {
                   }}
                   className="text-cyan-700 font-bold underline hover:text-cyan-900"
                 >
-                  City Heights Diagnostic Field Guide
+                  San Diego Diagnostic Field Guide
                 </a>{' '}
                 for technical inspection methods. For safety guidelines, view our{' '}
                 <a
@@ -471,7 +471,7 @@ export const GasLeakPage: React.FC<GasLeakPageProps> = ({ onNavigate }) => {
                       className="text-blue-600 hover:underline flex items-center gap-1.5"
                     >
                       <ArrowRight className="w-3 h-3 text-emerald-500" />
-                      City Heights Dispatch Office
+                      San Diego Dispatch Office
                     </a>
                   </li>
                 </ul>

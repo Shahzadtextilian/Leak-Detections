@@ -211,7 +211,7 @@ export const LocationMap: React.FC<LocationMapProps> = ({
             </div>
             <div>
               <div className="text-xs font-bold uppercase tracking-wider text-blue-700 flex items-center gap-1.5">
-                <span>City Heights Operations Base</span>
+                <span>Central San Diego Dispatch Hub</span>
                 <span className="inline-block w-2 h-2 rounded-full bg-emerald-500"></span>
               </div>
               <h3 className="text-base sm:text-lg font-bold text-slate-900">
@@ -290,7 +290,7 @@ export const LocationMap: React.FC<LocationMapProps> = ({
             }}
           >
             <div className="absolute -top-6 left-1/2 -translate-x-1/2 bg-red-600 text-white text-[9px] font-bold px-2 py-0.5 rounded-full shadow-xs whitespace-nowrap">
-              Priority Dispatch Zone (92105)
+              San Diego Citywide Dispatch Hub
             </div>
           </div>
         )}
@@ -423,14 +423,14 @@ export const LocationMap: React.FC<LocationMapProps> = ({
                 ? 'bg-red-50 text-red-700 border border-red-200'
                 : 'text-slate-600 hover:bg-slate-100'
             }`}
-            title="Toggle 92105 dispatch radius"
+            title="Toggle San Diego dispatch radius"
           >
             <span
               className={`w-1.5 h-1.5 rounded-full ${
                 showCoverageRadius ? 'bg-red-600' : 'bg-slate-400'
               }`}
             ></span>
-            <span>92105 Zone</span>
+            <span>San Diego Zone</span>
           </button>
         </div>
 
@@ -513,7 +513,7 @@ export const LocationMap: React.FC<LocationMapProps> = ({
         <div className="flex items-center gap-2">
           <span className="inline-block w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
           <span className="font-medium text-slate-700">
-            Stationed at 43rd St &amp; University Ave corridor (City Heights, 92105)
+            Central San Diego Dispatch Hub (43rd St) &bull; Serving All City of San Diego Neighborhoods
           </span>
         </div>
         <div className="flex items-center gap-3">

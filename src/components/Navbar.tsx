@@ -25,7 +25,7 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate }) => {
           <div className="flex items-center gap-1.5 text-center sm:text-left">
             <MapPin className="w-3.5 h-3.5 text-red-600 shrink-0" />
             <span className="text-slate-700 font-medium">
-              Serving City Heights, San Diego (92105) &bull; 3431 43rd St
+              Serving All of San Diego, CA &bull; Central Dispatch: 3431 43rd St
             </span>
           </div>
 
@@ -77,7 +77,7 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate }) => {
                   Leak Detection <span className="text-blue-600">Pro</span>
                 </span>
                 <span className="hidden sm:inline-flex lg:hidden 2xl:inline-flex bg-blue-50/80 text-blue-700 text-xs font-semibold px-2 py-0.5 rounded-full border border-blue-200/80 whitespace-nowrap shrink-0">
-                  City Heights, CA
+                  San Diego, CA
                 </span>
               </div>
               <p className="text-[11px] text-slate-500 font-medium hidden 2xl:block whitespace-nowrap mt-0.5">
@@ -241,9 +241,9 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate }) => {
       {mobileMenuOpen && (
         <div className="lg:hidden border-t border-slate-200 bg-white px-4 pt-3 pb-6 space-y-2 shadow-xl animate-in slide-in-from-top-2">
           <div className="p-3 bg-blue-50/60 rounded-xl border border-blue-100 text-xs text-blue-900 mb-3">
-            <p className="font-semibold text-blue-950">City Heights 24/7 Leak Detection Network</p>
+            <p className="font-semibold text-blue-950">San Diego 24/7 Leak Detection Network</p>
             <p className="text-blue-800 mt-0.5">
-              3431 43rd St, San Diego, CA 92105 • Priority local dispatch
+              All City of San Diego Neighborhoods • Hub: 3431 43rd St, 92105
             </p>
           </div>
 
