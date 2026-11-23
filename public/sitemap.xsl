@@ -7,7 +7,7 @@
   <xsl:template match="/">
     <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
       <head>
-        <title>XML Sitemap | Leak Detection Pro City Heights, San Diego</title>
+        <title>XML Sitemap | Leak Detection, San Diego</title>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <style type="text/css">
@@ -192,13 +192,13 @@
             <div class="brand">
               <div class="brand-icon">&#x1F4A7;</div>
               <div>
-                <div class="brand-title">Leak Detection <span>Pro</span></div>
-                <div class="brand-subtitle">City Heights, San Diego CA 92105 &bull; 3431 43rd St</div>
+                <div class="brand-title">Leak Detection, <span>San Diego</span></div>
+                <div class="brand-subtitle">City of San Diego, CA &bull; Hub: 3431 43rd St, San Diego, CA 92105</div>
               </div>
             </div>
             <h1>XML Sitemap Index</h1>
             <p class="intro">
-              This XML Sitemap is structured for search engine crawlers (Google, Bing, Yahoo) to discover and index all primary pages of <strong>Leak Detection Pro</strong>. Browsers apply this stylesheet for human readability.
+              This XML Sitemap is structured for search engine crawlers (Google, Bing, Yahoo) to discover and index all primary pages of <strong>Leak Detection, San Diego</strong>. Browsers apply this stylesheet for human readability.
             </p>
             <div class="stats-bar">
               <span class="badge">
@@ -255,7 +255,7 @@
 
           <div class="footer">
             <p>
-              &copy; 2026 Leak Detection Pro &bull; 3431 43rd St, San Diego, CA 92105 &bull; Hotline: <a href="tel:+16199109411">(619) 910-9411</a>
+              &copy; 2026 Leak Detection, San Diego &bull; 3431 43rd St, San Diego, CA 92105 &bull; Hotline: <a href="tel:+16199109411">(619) 910-9411</a>
             </p>
             <p style="margin-top: 4px;">
               <a href="https://www.cityheightsleakdetectionpro.com/">Return to Website Homepage</a>

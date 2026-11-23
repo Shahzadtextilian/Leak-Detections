@@ -1,4 +1,4 @@
-# robots.txt for Leak Detection Pro - City Heights, San Diego
+# robots.txt for Leak Detection, San Diego
 User-agent: *
 Allow: /
 

@@ -108,7 +108,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
               </h1>
 
               <p className="text-sm sm:text-base text-slate-600 max-w-xl leading-relaxed">
-                Suffering from an unexplained high water bill, warm flooring, or dangerous sulfur gas odor? <strong>Leak Detection Pro</strong> connects San Diego homeowners and businesses—from La Jolla and Downtown to Clairemont, Mira Mesa, Rancho Bernardo, and City Heights—with licensed, insured leak detection contractors equipped with acoustic ground probes and thermal FLIR cameras.
+                Suffering from an unexplained high water bill, warm flooring, or dangerous sulfur gas odor? <strong>Leak Detection, San Diego</strong> connects San Diego homeowners and businesses—from La Jolla and Downtown to Clairemont, Mira Mesa, Rancho Bernardo, and City Heights—with licensed, insured leak detection contractors equipped with acoustic ground probes and thermal FLIR cameras.
               </p>
 
               {/* Quick Trust Badges */}
@@ -721,7 +721,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
                 Covering Every Neighborhood Across the City of San Diego
               </h2>
               <p className="text-sm text-slate-600 leading-relaxed">
-                Coordinated from our central San Diego dispatch base at <strong>3431 43rd St, San Diego, CA 92105</strong>, <strong>Leak Detection Pro</strong> connects homeowners and commercial properties across every region of the city—including <strong>Downtown, La Jolla, Pacific Beach, Point Loma, North Park, Clairemont, Mission Valley, Mira Mesa, Scripps Ranch, Rancho Bernardo, Carmel Valley, College Area, City Heights, and South Bay</strong>.
+                Coordinated from our central San Diego dispatch base at <strong>3431 43rd St, San Diego, CA 92105</strong>, <strong>Leak Detection, San Diego</strong> connects homeowners and commercial properties across every region of the city—including <strong>Downtown, La Jolla, Pacific Beach, Point Loma, North Park, Clairemont, Mission Valley, Mira Mesa, Scripps Ranch, Rancho Bernardo, Carmel Valley, College Area, City Heights, and South Bay</strong>.
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">

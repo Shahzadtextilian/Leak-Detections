@@ -1,5 +1,5 @@
 export const BUSINESS_INFO = {
-  name: 'Leak Detection Pro',
+  name: 'Leak Detection, San Diego',
   tagline: 'Fast Water, Slab & Gas Leak Detection & Repair Across San Diego, CA',
   phone: '619-910-9411',
   phoneFormatted: '(619) 910-9411',
@@ -32,14 +32,14 @@ export const BUSINESS_INFO = {
 
 export const LEGAL_DISCLAIMER = {
   shortNotice:
-    'Notice: Leak Detection Pro connects San Diego property owners with our qualified network of licensed, pre-screened plumbing and leak detection contractors. We facilitate service dispatch through independent licensed contractor partners.',
-  fullNotice: `Leak Detection Pro connects property owners across the City of San Diego, CA with qualified, pre-screened licensed and insured plumbing and leak detection contractors.
+    'Notice: Leak Detection, San Diego connects San Diego property owners with our qualified network of licensed, pre-screened plumbing and leak detection contractors. We facilitate service dispatch through independent licensed contractor partners.',
+  fullNotice: `Leak Detection, San Diego connects property owners across the City of San Diego, CA with qualified, pre-screened licensed and insured plumbing and leak detection contractors.
 
 IMPORTANT DISCLOSURES:
-1. Qualified Contractor Network: Leak Detection Pro coordinates services through an elite network of independent California State License Board (CSLB) licensed plumbing and leak detection specialists. Field inspections, diagnostics, and repairs are performed directly by qualified contractor professionals.
+1. Qualified Contractor Network: Leak Detection, San Diego coordinates services through an elite network of independent California State License Board (CSLB) licensed plumbing and leak detection specialists. Field inspections, diagnostics, and repairs are performed directly by qualified contractor professionals.
 2. Independent Contractor Network: All technicians in our contractor network are independent licensed service professionals. We do not employ plumbers or field technicians directly.
 3. Verification & Estimates: Homeowners and business owners are encouraged to verify licenses, insurance, and warranty terms directly with the matched contractor prior to authorizing any work.
-4. No Liability: Leak Detection Pro assumes no responsibility or liability for contractor performance, pricing disputes, property damages, or work guarantees.
+4. No Liability: Leak Detection, San Diego assumes no responsibility or liability for contractor performance, pricing disputes, property damages, or work guarantees.
 5. Emergency Protocol: If you detect a severe natural gas leak or smell strong rotten egg odor indoors, please evacuate immediately and contact SDG&E at 1-800-411-7343 or dial 911.`
 };
 
@@ -147,7 +147,7 @@ export const TESTIMONIALS = [
     service: 'Underground Slab Water Leak',
     rating: 5,
     date: '2 weeks ago',
-    text: 'Our San Diego water bill jumped $340 in one cycle with no puddles in sight. Called Leak Detection Pro and their partner technician arrived within 70 minutes. Ultrasonic ground sensors pinpointed a hot-water copper pinhole under our hallway tile with zero unnecessary demolition.'
+    text: 'Our San Diego water bill jumped $340 in one cycle with no puddles in sight. Called Leak Detection, San Diego and their partner technician arrived within 70 minutes. Ultrasonic ground sensors pinpointed a hot-water copper pinhole under our hallway tile with zero unnecessary demolition.'
   },
   {
     id: '2',
@@ -176,9 +176,9 @@ export const FAQ_ITEMS = [
       'Contractors across our San Diego network provide priority 24/7 emergency dispatch, commonly arriving within 45 to 90 minutes across Downtown, Uptown, Mid-City, Coastal neighborhoods (La Jolla, Pacific Beach, Point Loma), Mission Valley, Clairemont, North City (Carmel Valley, Mira Mesa, Rancho Bernardo), East San Diego, and South Bay.'
   },
   {
-    question: 'What is the role of Leak Detection Pro?',
+    question: 'What is the role of Leak Detection, San Diego?',
     answer:
-      'Leak Detection Pro provides specialized plumbing and leak detection solutions across the City of San Diego by connecting residential and commercial property owners with licensed, vetted, and insured independent leak detection and plumbing specialists.'
+      'Leak Detection, San Diego provides specialized plumbing and leak detection solutions across the City of San Diego by connecting residential and commercial property owners with licensed, vetted, and insured independent leak detection and plumbing specialists.'
   },
   {
     question: 'How do technicians find leaks without tearing down walls or jackhammering floors?',

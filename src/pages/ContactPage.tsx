@@ -122,10 +122,10 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate }) => {
                       rel="noopener noreferrer"
                       className="text-sm font-bold text-blue-600 hover:text-blue-700 hover:underline inline-flex items-center gap-1.5"
                     >
-                      <span>Follow Leak Detection Pro on Facebook</span>
+                      <span>Follow Leak Detection, San Diego on Facebook</span>
                     </a>
                     <p className="text-xs text-slate-500 mt-0.5">
-                      Local City Heights leak prevention tips &amp; community updates
+                      San Diego leak prevention tips &amp; community updates
                     </p>
                   </div>
                 </div>

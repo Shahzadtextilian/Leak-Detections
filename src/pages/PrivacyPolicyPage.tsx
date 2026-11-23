@@ -35,7 +35,7 @@ export const PrivacyPolicyPage: React.FC<PrivacyPolicyPageProps> = ({ onNavigate
             Privacy Policy
           </h1>
           <p className="text-sm text-slate-600 mt-2">
-            Last Updated: September 2026 &bull; Leak Detection Pro &bull; 3431 43rd St, San Diego, CA 92105
+            Last Updated: September 2026 &bull; Leak Detection, San Diego &bull; 3431 43rd St, San Diego, CA 92105
           </p>
         </div>
       </section>
@@ -47,7 +47,7 @@ export const PrivacyPolicyPage: React.FC<PrivacyPolicyPageProps> = ({ onNavigate
           <div>
             <h2 className="text-lg font-bold text-slate-900 mb-2">1. Introduction & Overview</h2>
             <p>
-              This Privacy Policy describes how <strong>Leak Detection Pro</strong> ("we", "us", or "our"), located at <strong>3431 43rd St, San Diego, CA 92105</strong>, collects, uses, processes, and shares personal information when you visit our website, call our telephone number (<strong>(619) 910-9411</strong>), or submit an online inquiry for water and gas leak detection plumbing services through our qualified contractors network across San Diego, California.
+              This Privacy Policy describes how <strong>Leak Detection, San Diego</strong> ("we", "us", or "our"), located at <strong>3431 43rd St, San Diego, CA 92105</strong>, collects, uses, processes, and shares personal information when you visit our website, call our telephone number (<strong>(619) 910-9411</strong>), or submit an online inquiry for water and gas leak detection plumbing services through our qualified contractors network across San Diego, California.
             </p>
           </div>
 
@@ -57,7 +57,7 @@ export const PrivacyPolicyPage: React.FC<PrivacyPolicyPageProps> = ({ onNavigate
               2. Explicit Contractor Network & Service Coordination Disclosure
             </h3>
             <p className="leading-relaxed">
-              Leak Detection Pro operates as a service coordination platform. When you submit your name, telephone number, address, zip code, or leak details on our website or over the phone, you expressly authorize us to transmit this information to independent third-party licensed plumbing and leak detection contractors in San Diego County to evaluate, quote, and fulfill your service inquiry.
+              Leak Detection, San Diego operates as a service coordination platform. When you submit your name, telephone number, address, zip code, or leak details on our website or over the phone, you expressly authorize us to transmit this information to independent third-party licensed plumbing and leak detection contractors in San Diego County to evaluate, quote, and fulfill your service inquiry.
             </p>
           </div>
 
@@ -88,7 +88,7 @@ export const PrivacyPolicyPage: React.FC<PrivacyPolicyPageProps> = ({ onNavigate
           <div>
             <h2 className="text-lg font-bold text-slate-900 mb-2">5. Telephone & SMS Communication Consent</h2>
             <p>
-              By providing your telephone number on this website or calling <strong>(619) 910-9411</strong>, you grant express consent to receive telephone calls, automated dispatch notifications, and SMS/text messages from Leak Detection Pro and our matched independent plumbing partners regarding your service inquiry, even if your phone number is registered on any state or federal Do-Not-Call registry. Consent is not a condition of purchase; message and data rates may apply.
+              By providing your telephone number on this website or calling <strong>(619) 910-9411</strong>, you grant express consent to receive telephone calls, automated dispatch notifications, and SMS/text messages from Leak Detection, San Diego and our matched independent plumbing partners regarding your service inquiry, even if your phone number is registered on any state or federal Do-Not-Call registry. Consent is not a condition of purchase; message and data rates may apply.
             </p>
           </div>
 
@@ -111,7 +111,7 @@ export const PrivacyPolicyPage: React.FC<PrivacyPolicyPageProps> = ({ onNavigate
 
           {/* Section 7: Contact Us */}
           <div className="pt-4 border-t border-slate-200 text-xs text-slate-500 space-y-1">
-            <p><strong>Privacy Office:</strong> Leak Detection Pro</p>
+            <p><strong>Privacy Office:</strong> Leak Detection, San Diego</p>
             <p><strong>Address:</strong> 3431 43rd St, San Diego, CA 92105</p>
             <p><strong>Phone:</strong> (619) 910-9411</p>
             <p><strong>Service Territory:</strong> City of San Diego &amp; San Diego County, California</p>

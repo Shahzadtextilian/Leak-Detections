@@ -38,7 +38,7 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate }) => {
               href={BUSINESS_INFO.facebookUrl}
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Follow Leak Detection Pro on Facebook"
+              aria-label="Follow Leak Detection, San Diego on Facebook"
               className="text-blue-700 hover:text-blue-900 font-semibold flex items-center gap-1"
             >
               <Facebook className="w-3 h-3 text-blue-600" />
@@ -74,10 +74,10 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate }) => {
             <div>
               <div className="flex items-center gap-2">
                 <span className="text-lg sm:text-xl xl:text-2xl font-extrabold tracking-tight text-slate-900 whitespace-nowrap">
-                  Leak Detection <span className="text-blue-600">Pro</span>
+                  Leak Detection, <span className="text-blue-600">San Diego</span>
                 </span>
                 <span className="hidden sm:inline-flex lg:hidden 2xl:inline-flex bg-blue-50/80 text-blue-700 text-xs font-semibold px-2 py-0.5 rounded-full border border-blue-200/80 whitespace-nowrap shrink-0">
-                  San Diego, CA
+                  24/7 Dispatch
                 </span>
               </div>
               <p className="text-[11px] text-slate-500 font-medium hidden 2xl:block whitespace-nowrap mt-0.5">

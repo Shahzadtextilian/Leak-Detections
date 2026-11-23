@@ -561,13 +561,13 @@ export const BlogPage: React.FC<BlogPageProps> = ({ onNavigate, initialSlug }) =
             <section className="bg-gradient-to-br from-sky-100 via-blue-50 to-white border border-sky-200 text-slate-900 rounded-3xl p-6 sm:p-8 lg:p-10 shadow-sm space-y-6">
               <div className="space-y-2">
                 <span className="text-xs font-bold uppercase tracking-wider text-blue-800 bg-white px-3 py-1 rounded-full border border-blue-200 inline-block">
-                  City Heights Leak Detection Pro
+                  Leak Detection, San Diego
                 </span>
                 <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight">
                   Suspect a Leak? Call Us
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-600 max-w-2xl leading-relaxed">
-                  Reach City Heights Leak Detection Pro anytime for non-invasive water leak locating and targeted repair coordination across City Heights and San Diego.
+                  Reach Leak Detection, San Diego anytime for non-invasive water leak locating and targeted repair coordination across City Heights and San Diego.
                 </p>
               </div>
 
@@ -989,7 +989,7 @@ export const BlogPage: React.FC<BlogPageProps> = ({ onNavigate, initialSlug }) =
                 Leak finding and leak repair are sometimes handled by different people. If a problem turns out to need a fix, <strong>plumbers city heights ca</strong> are a natural next call. It’s worth checking licenses, reviews, and whether they offer warranties on their work.
               </p>
               <p>
-                At <strong>City Heights Leak Detection Pro</strong>, we maintain a pre-screened, qualified contractor network of licensed California plumbers (CSLB C-36). When you request service, you are connected directly with verified professionals who arrive equipped with high-grade acoustic, thermal, and electronic diagnostic gear.
+                At <strong>Leak Detection, San Diego</strong>, we maintain a pre-screened, qualified contractor network of licensed California plumbers (CSLB C-36). When you request service, you are connected directly with verified professionals who arrive equipped with high-grade acoustic, thermal, and electronic diagnostic gear.
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-1">
@@ -1032,7 +1032,7 @@ export const BlogPage: React.FC<BlogPageProps> = ({ onNavigate, initialSlug }) =
                   Suspect a Leak? Talk to a Local Team
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-600 max-w-2xl leading-relaxed">
-                  If you notice any of the warning signs above, don’t wait for the damage to spread. <strong className="text-slate-900">City Heights Leak Detection Pro</strong> serves homeowners and property owners throughout City Heights, San Diego.
+                  If you notice any of the warning signs above, don’t wait for the damage to spread. <strong className="text-slate-900">Leak Detection, San Diego</strong> serves homeowners and property owners throughout City Heights and the entire City of San Diego.
                 </p>
               </div>
 
@@ -1668,7 +1668,7 @@ export const BlogPage: React.FC<BlogPageProps> = ({ onNavigate, initialSlug }) =
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-blue-50 text-blue-700 hover:bg-blue-100 font-medium transition-colors border border-blue-200"
-              aria-label="Follow Leak Detection Pro on Facebook"
+              aria-label="Follow Leak Detection, San Diego on Facebook"
             >
               <Facebook className="w-4 h-4 text-blue-600" />
               <span>Facebook</span>

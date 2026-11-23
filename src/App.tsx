@@ -67,7 +67,7 @@ export default function App() {
   useEffect(() => {
     const pageMeta: Record<Page, { title: string; desc: string }> = {
       'home': {
-        title: 'Leak Detection & Repair in San Diego, CA | (619) 910-9411',
+        title: 'Leak Detection, San Diego | Water & Gas | (619) 910-9411',
         desc: 'Hidden water, slab or gas leak anywhere in San Diego? Get matched with a CSLB-licensed pro for non-invasive leak detection. Call (619) 910-9411.'
       },
       'water-leak': {
@@ -84,7 +84,7 @@ export default function App() {
       },
       'leak-detection-city-heights-san-diego': {
         title: 'Leak Detection in City Heights, San Diego | Local Guide',
-        desc: 'Learn the signs of hidden leaks, how pros find them, and what pricing depends on. Call Leak Detection Pro in San Diego at (619) 910-9411.'
+        desc: 'Learn the signs of hidden leaks, how pros find them, and what pricing depends on. Call Leak Detection, San Diego at (619) 910-9411.'
       },
       'underground-slab-leak-detection': {
         title: 'Underground Water & Slab Leak Detection | San Diego CA',
@@ -99,24 +99,24 @@ export default function App() {
         desc: 'Higher water bill, damp smell, or a sound in the walls? Learn how San Diego homeowners can spot a hidden leak early. Call (619) 910-9411.'
       },
       'about': {
-        title: 'About Leak Detection Pro | San Diego Plumber Network',
+        title: 'About Leak Detection, San Diego | Plumber Network',
         desc: 'We connect San Diego homeowners with pre-screened, CSLB-licensed plumbers for non-invasive leak detection citywide. See how it works: (619) 910-9411.'
       },
       'contact': {
-        title: 'Contact Leak Detection Pro | San Diego, CA 24/7 Dispatch',
+        title: 'Contact Leak Detection, San Diego | 24/7 Dispatch',
         desc: 'Request a leak detection estimate anywhere in San Diego. Call (619) 910-9411 anytime or reach our central dispatch at 3431 43rd St, San Diego, CA.'
       },
       'privacy': {
-        title: 'Privacy Policy | Leak Detection Pro San Diego',
-        desc: 'How Leak Detection Pro collects, uses and protects your personal information across San Diego, including your rights under California CCPA/CPRA.'
+        title: 'Privacy Policy | Leak Detection, San Diego',
+        desc: 'How Leak Detection, San Diego collects, uses and protects your personal information across San Diego, including your rights under California CCPA/CPRA.'
       },
       'disclaimer': {
-        title: 'Legal Disclaimer & Licensing | Leak Detection Pro',
-        desc: 'Leak Detection Pro connects San Diego property owners with independent CSLB-licensed plumbers. Read our qualified contractor network licensing terms.'
+        title: 'Legal Disclaimer & Licensing | Leak Detection, San Diego',
+        desc: 'Leak Detection, San Diego connects San Diego property owners with independent CSLB-licensed plumbers. Read our qualified contractor network licensing terms.'
       },
       'sitemap': {
-        title: 'Sitemap | Leak Detection Pro San Diego',
-        desc: 'Browse every Leak Detection Pro San Diego page: water & slab leak detection, gas leak testing, homeowner guides, and 24/7 citywide dispatch details.'
+        title: 'Sitemap | Leak Detection, San Diego',
+        desc: 'Browse every Leak Detection, San Diego page: water & slab leak detection, gas leak testing, homeowner guides, and 24/7 citywide dispatch details.'
       }
     };
 

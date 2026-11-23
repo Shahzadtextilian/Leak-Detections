@@ -51,7 +51,7 @@ export const DisclaimerPage: React.FC<DisclaimerPageProps> = ({ onNavigate }) =>
                 Summary of Business Operations:
               </h2>
               <p className="text-xs sm:text-sm leading-relaxed">
-                <strong>Leak Detection Pro delivers plumbing and leak detection services through a qualified network of licensed contractors.</strong> Field plumbing, acoustic diagnostics, and physical repairs are performed by independent third-party licensed contractors across the City of San Diego, CA.
+                <strong>Leak Detection, San Diego delivers plumbing and leak detection services through a qualified network of licensed contractors.</strong> Field plumbing, acoustic diagnostics, and physical repairs are performed by independent third-party licensed contractors across the City of San Diego, CA.
               </p>
             </div>
           </div>
@@ -62,7 +62,7 @@ export const DisclaimerPage: React.FC<DisclaimerPageProps> = ({ onNavigate }) =>
               1. Qualified Contractor Network &amp; Services
             </h3>
             <p>
-              The purpose of Leak Detection Pro (accessible via our website and telephone hotline (619) 910-9411) is to assist property owners across San Diego, CA by connecting them with our network of independent, third-party contractors who perform water leak detection, slab leak testing, gas leak locating, and pipe repairs. When you request service, you are requesting prompt dispatch of an independent qualified contractor.
+              The purpose of Leak Detection, San Diego (accessible via our website and telephone hotline (619) 910-9411) is to assist property owners across San Diego, CA by connecting them with our network of independent, third-party contractors who perform water leak detection, slab leak testing, gas leak locating, and pipe repairs. When you request service, you are requesting prompt dispatch of an independent qualified contractor.
             </p>
           </div>
 
@@ -72,7 +72,7 @@ export const DisclaimerPage: React.FC<DisclaimerPageProps> = ({ onNavigate }) =>
               2. Independent Contractor Relationship
             </h3>
             <p>
-              All service providers in our qualified contractor network are independent business entities and are not employees, partners, agents, or joint venturers of Leak Detection Pro. We do not supervise, direct, or control the manner, means, or details of the work performed by matched contractors.
+              All service providers in our qualified contractor network are independent business entities and are not employees, partners, agents, or joint venturers of Leak Detection, San Diego. We do not supervise, direct, or control the manner, means, or details of the work performed by matched contractors.
             </p>
           </div>
 
@@ -92,7 +92,7 @@ export const DisclaimerPage: React.FC<DisclaimerPageProps> = ({ onNavigate }) =>
               4. Limitation of Liability & No Warranty
             </h3>
             <p>
-              Leak Detection Pro makes no representations, warranties, or guarantees regarding the quotes, quality of workmanship, safety, timeliness, pricing, or results of any services provided by matched contractors. In no event shall Leak Detection Pro, its affiliates, officers, or representatives be liable for any direct, indirect, incidental, consequential, or punitive damages arising from contracts, negotiations, property damage, or disputes between you and any third-party service provider.
+              Leak Detection, San Diego makes no representations, warranties, or guarantees regarding the quotes, quality of workmanship, safety, timeliness, pricing, or results of any services provided by matched contractors. In no event shall Leak Detection, San Diego, its affiliates, officers, or representatives be liable for any direct, indirect, incidental, consequential, or punitive damages arising from contracts, negotiations, property damage, or disputes between you and any third-party service provider.
             </p>
           </div>
 
@@ -109,7 +109,7 @@ export const DisclaimerPage: React.FC<DisclaimerPageProps> = ({ onNavigate }) =>
 
           {/* Business Sign-off */}
           <div className="pt-6 border-t border-slate-200 text-xs text-slate-500 space-y-1">
-            <p><strong>Entity:</strong> Leak Detection Pro (Qualified Contractor Network)</p>
+            <p><strong>Entity:</strong> Leak Detection, San Diego (Qualified Contractor Network)</p>
             <p><strong>Physical Address:</strong> 3431 43rd St, San Diego, CA 92105</p>
             <p><strong>Dispatch Hotline:</strong> (619) 910-9411</p>
             <p><strong>Service Location:</strong> City of San Diego &amp; San Diego County, California</p>

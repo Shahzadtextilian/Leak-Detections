@@ -49,7 +49,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
                 Connecting San Diego with Trusted Leak Detection Specialists
               </h1>
               <p className="text-base text-slate-600 leading-relaxed">
-                With our central dispatch hub at <strong className="text-slate-900">3431 43rd St, San Diego, CA 92105</strong>, Leak Detection Pro was created to solve an urgent citywide challenge: getting prompt, non-destructive water, slab, and gas leak diagnostics anywhere in San Diego when you need it most.
+                With our central dispatch hub at <strong className="text-slate-900">3431 43rd St, San Diego, CA 92105</strong>, Leak Detection, San Diego was created to solve an urgent citywide challenge: getting prompt, non-destructive water, slab, and gas leak diagnostics anywhere in San Diego when you need it most.
               </p>
               <div className="flex flex-wrap items-center gap-4 text-xs text-slate-700 pt-2">
                 <div className="flex items-center gap-1.5">
@@ -138,7 +138,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
                 Official Business Information
               </span>
               <h3 className="text-2xl sm:text-3xl font-bold text-slate-900">
-                Leak Detection Pro
+                Leak Detection, San Diego
               </h3>
               <p className="text-sm text-slate-600 leading-relaxed">
                 Dedicated plumbing and leak detection dispatch service for residential, commercial, and property management accounts across the entire City of San Diego through our qualified contractor network. Looking for specific services? Connect with specialists in{' '}

@@ -35,7 +35,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                 <Droplets className="w-5 h-5" />
               </div>
               <span className="text-lg font-bold text-slate-900 tracking-tight">
-                Leak Detection <span className="text-blue-600">Pro</span>
+                Leak Detection, <span className="text-blue-600">San Diego</span>
               </span>
             </div>
             <p className="text-xs text-slate-600 leading-relaxed">
@@ -70,7 +70,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                   href={BUSINESS_INFO.facebookUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label="Visit Leak Detection Pro on Facebook"
+                  aria-label="Visit Leak Detection, San Diego on Facebook"
                   className="px-3 py-1.5 rounded-lg bg-white hover:bg-blue-600 text-slate-700 hover:text-white text-xs font-medium flex items-center gap-1.5 transition-colors border border-slate-200 shadow-xs group"
                 >
                   <Facebook className="w-3.5 h-3.5 text-blue-600 group-hover:text-white" />
@@ -345,7 +345,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
         {/* Bottom copyright, social media links & emergency warning */}
         <div className="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-slate-500">
           <p>
-            &copy; {new Date().getFullYear()} Leak Detection Pro. All rights reserved. 3431 43rd St, San Diego, CA 92105.
+            &copy; {new Date().getFullYear()} Leak Detection, San Diego. All rights reserved. 3431 43rd St, San Diego, CA 92105.
           </p>
 
           {/* Social Links Centered on Bottom Bar */}
