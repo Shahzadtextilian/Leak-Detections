@@ -20,8 +20,7 @@ import {
   Eye,
   FileText,
   Wrench,
-  Building2,
-  DollarSign
+  Building2
 } from 'lucide-react';
 import { Page } from '../types';
 import {
@@ -30,7 +29,7 @@ import {
   TESTIMONIALS,
   CITY_HEIGHTS_AREAS,
   CITY_HEIGHTS_PLUMBING_ISSUES,
-  HOMEPAGE_PRICING_TIERS
+  LEGAL_DISCLAIMER
 } from '../data/content';
 import { APP_IMAGES } from '../data/images';
 
@@ -870,59 +869,6 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
         </div>
       </section>
 
-      {/* 4A-3. TRANSPARENT ACOUSTIC & THERMAL LEAK DETECTION PRICING IN SAN DIEGO */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="bg-white rounded-3xl border border-slate-200 p-6 sm:p-10 shadow-xs space-y-6">
-          <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
-            <div className="max-w-3xl space-y-2">
-              <span className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-emerald-700 bg-emerald-50 px-3 py-1 rounded-full border border-emerald-200">
-                <DollarSign className="w-3.5 h-3.5" /> San Diego Pricing Transparency
-              </span>
-              <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                Upfront Acoustic &amp; Thermal Leak Detection Price Ranges
-              </h2>
-              <p className="text-sm text-slate-600 leading-relaxed">
-                Every San Diego property receives a clear diagnostic quote before electronic testing begins. Exact pricing depends on slab thickness, crawlspace access, yard main depth, and whether multiple zones require tracer gas testing.
-              </p>
-            </div>
-            <a
-              href={BUSINESS_INFO.telLink}
-              className="inline-flex items-center justify-center gap-2 px-5 py-3 bg-blue-600 hover:bg-blue-700 text-white font-bold text-xs sm:text-sm rounded-xl shadow-sm transition-colors shrink-0"
-            >
-              <Phone className="w-4 h-4" />
-              <span>Request Free Phone Quote</span>
-            </a>
-          </div>
-
-          <div className="overflow-x-auto rounded-2xl border border-slate-200">
-            <table className="w-full text-left border-collapse">
-              <thead>
-                <tr className="bg-sky-50 text-slate-900 border-b border-slate-200 text-xs uppercase tracking-wider">
-                  <th className="py-3.5 px-4 font-bold">Diagnostic Service</th>
-                  <th className="py-3.5 px-4 font-bold">Primary Method</th>
-                  <th className="py-3.5 px-4 font-bold">Typical San Diego Range</th>
-                  <th className="py-3.5 px-4 font-bold">What Is Included</th>
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-slate-200 text-xs sm:text-sm text-slate-700">
-                {HOMEPAGE_PRICING_TIERS.map((tier, idx) => (
-                  <tr key={idx} className={idx % 2 === 0 ? 'bg-white' : 'bg-slate-50/70'}>
-                    <td className="py-3.5 px-4 font-bold text-slate-900">{tier.service}</td>
-                    <td className="py-3.5 px-4 text-slate-600">{tier.method}</td>
-                    <td className="py-3.5 px-4 font-extrabold text-blue-700 whitespace-nowrap">{tier.range}</td>
-                    <td className="py-3.5 px-4 text-slate-600 leading-relaxed">{tier.details}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-
-          <p className="text-xs text-slate-500 leading-relaxed">
-            Diagnostic rates cover precision locating and leak marking prior to any invasive excavation. Once located, technicians explain targeted spot-repair vs. overhead PEX reroute options with written flat-rate pricing before repair work proceeds.
-          </p>
-        </div>
-      </section>
-
       {/* 4B. FEATURED BLOG & KNOWLEDGE CENTER: LEAK DETECTION & LEAK REPAIR */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="bg-gradient-to-br from-sky-50 via-white to-indigo-50 text-slate-900 rounded-3xl p-6 sm:p-10 border border-blue-200/80 shadow-xs">
@@ -1095,7 +1041,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
             San Diego Leak Detection FAQs
           </h2>
           <p className="text-sm text-slate-600 mt-1">
-            Clear answers about pricing, service process, technology, and gas emergency protocols.
+            Clear answers about estimates, service process, technology, and gas emergency protocols.
           </p>
         </div>
 
@@ -1127,6 +1073,47 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
               )}
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* 6B. PROMINENT REFERRAL & CONTRACTOR NETWORK DISCLAIMER */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="bg-amber-50/90 border-2 border-amber-300 rounded-2xl p-6 sm:p-8 shadow-xs flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6">
+          <div className="flex items-start gap-4">
+            <div className="w-11 h-11 rounded-xl bg-amber-100 border border-amber-300 text-amber-700 flex items-center justify-center shrink-0 mt-0.5">
+              <ShieldAlert className="w-6 h-6" />
+            </div>
+            <div className="space-y-1.5">
+              <div className="text-xs font-extrabold uppercase tracking-wider text-amber-800">
+                Service Referral &amp; Independent Contractor Network Disclosure
+              </div>
+              <p className="text-xs sm:text-sm text-amber-950 leading-relaxed max-w-4xl">
+                {LEGAL_DISCLAIMER.shortNotice} All quotes, diagnostic inspections, plumbing repairs, contracts, and workmanship warranties are executed directly between you and the matched independent CSLB-licensed contractor.
+              </p>
+            </div>
+          </div>
+          <div className="flex flex-wrap items-center gap-3 shrink-0">
+            <a
+              href="/disclaimer/"
+              onClick={(e) => {
+                e.preventDefault();
+                onNavigate('disclaimer');
+              }}
+              className="px-4 py-2.5 bg-white hover:bg-amber-100 text-amber-900 font-bold text-xs rounded-xl border border-amber-300 transition-colors whitespace-nowrap"
+            >
+              Read Full Legal Disclaimer &rarr;
+            </a>
+            <a
+              href="/about/"
+              onClick={(e) => {
+                e.preventDefault();
+                onNavigate('about');
+              }}
+              className="px-4 py-2.5 bg-amber-900/5 hover:bg-amber-900/10 text-amber-950 font-semibold text-xs rounded-xl border border-amber-300/80 transition-colors whitespace-nowrap"
+            >
+              How Contractor Matching Works
+            </a>
+          </div>
         </div>
       </section>
 

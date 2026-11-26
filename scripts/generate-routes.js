@@ -649,6 +649,9 @@ routes.forEach((route) => {
             <a href="/sitemap/" style="color: #475569; text-decoration: none;">Sitemap</a>
           </nav>
         </div>
+        <p style="font-size: 12px; color: #475569; margin: 0 0 8px; padding-bottom: 8px; border-bottom: 1px solid #e2e8f0;">
+          <strong style="color: #0f172a;">Referral Disclosure:</strong> Leak Detection, San Diego connects property owners with independent CSLB-licensed plumbing and leak detection contractors and does not perform plumbing work directly. <a href="/disclaimer/" style="color: #1d4ed8; font-weight: 600; text-decoration: underline;">Full Legal Disclaimer</a>.
+        </p>
         <p style="font-size: 11px; color: #64748b; margin: 0;">
           &copy; 2026 Leak Detection, San Diego. Non-invasive water &amp; gas leak detection qualified contractor network serving the entire City of San Diego, CA.
         </p>

@@ -101,44 +101,6 @@ export const SAN_DIEGO_PLUMBING_ISSUES = [
 
 export const CITY_HEIGHTS_PLUMBING_ISSUES = SAN_DIEGO_PLUMBING_ISSUES;
 
-export const HOMEPAGE_PRICING_TIERS = [
-  {
-    service: 'Visual Fixture & Meter Isolation Check',
-    method: 'City Meter Spin Test & Valve Check',
-    range: '$125 – $225',
-    details:
-      'Confirms whether water loss is active on your private service lateral, indoor fixtures, or irrigation manifold.'
-  },
-  {
-    service: 'Thermal FLIR Infrared Wall & Ceiling Scan',
-    method: 'FLIR Thermography & Moisture Mapping',
-    range: '$175 – $325',
-    details:
-      'Pinpoints hidden cold or hot pipe drips behind drywall, plaster, cabinetry, and tile without exploratory cutouts.'
-  },
-  {
-    service: 'Acoustic Concrete Slab Leak Locating',
-    method: 'Piezo-Acoustic Ground Sensors',
-    range: '$250 – $450',
-    details:
-      'Tracks pressurized water vibrations beneath concrete slab foundations within 1–2 inches before any targeted repair.'
-  },
-  {
-    service: 'Underground Yard Main & Tracer Gas Test',
-    method: 'Nitrogen/Helium Tracer & Ground Probe',
-    range: '$295 – $525',
-    details:
-      'Isolates deep buried supply runs under driveways, walkways, and landscaped yards between the curb meter and home.'
-  },
-  {
-    service: 'Natural Gas Pressure Decay & Sniffer Survey',
-    method: 'Digital Manometer & 1-PPM Electronic Sniffer',
-    range: '$195 – $350',
-    details:
-      'Tests gas line holding pressure, locates active vapor leaks, and provides compliance testing for SDG&E service restoration.'
-  }
-];
-
 export const TESTIMONIALS = [
   {
     id: '1',

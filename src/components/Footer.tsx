@@ -342,8 +342,25 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
           </div>
         </div>
 
+        {/* Short Referral & Independent Contractor Network Disclosure */}
+        <div className="py-4 border-b border-slate-200 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 text-xs text-slate-600">
+          <p className="leading-relaxed">
+            <strong className="text-slate-900">Referral Disclosure:</strong> {BUSINESS_INFO.name} connects property owners with independent CSLB-licensed plumbing and leak detection contractors and does not perform plumbing work directly.
+          </p>
+          <a
+            href="/disclaimer/"
+            onClick={(e) => {
+              e.preventDefault();
+              handleNav('disclaimer');
+            }}
+            className="text-blue-700 hover:underline font-semibold whitespace-nowrap shrink-0"
+          >
+            Full Legal Disclaimer &rarr;
+          </a>
+        </div>
+
         {/* Bottom copyright, social media links & emergency warning */}
-        <div className="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+        <div className="pt-6 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-slate-500">
           <p>
             &copy; {new Date().getFullYear()} Leak Detection, San Diego. All rights reserved. 3431 43rd St, San Diego, CA 92105.
           </p>
